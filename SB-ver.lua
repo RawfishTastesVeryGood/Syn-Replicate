@@ -425,7 +425,7 @@ return function()
 				end,
 
 				__newindex = function(self, index, value)
-					workspace.CurrentCamera[index] = value
+					workspace.CurrentCamera[index] = reals(value)
 					--error("Camera is set to read only", 0)
 				end,
 

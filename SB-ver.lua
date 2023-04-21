@@ -573,8 +573,7 @@ RunService.RenderStepped:Connect(function(...)
 	})
 end)
 	]], Holder)
-	Client.Name = createRandomID(3
-	Client.Disabled = false
+	Client.Name = createRandomID(3)
 	local ReplicateRemote = Instance.new("RemoteEvent", Holder)
 	ReplicateRemote.Name = createRandomID(3)
 	ReplicateRemote.OnServerEvent:Connect(function(plr, ...)

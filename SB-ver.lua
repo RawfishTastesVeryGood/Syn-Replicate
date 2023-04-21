@@ -22,7 +22,7 @@
 
 assert(game:GetService("RunService"):IsServer(), "Syn-Replicate can only be used in serversided scripts!")
 
-return function(debugMode)
+return function()
 	local currentEnv = getfenv(2)
 	local realOwner = (currentEnv.owner or game:GetService("Players"):GetPlayerFromCharacter(script.Parent)) do
 		assert(realOwner, "Syn-Replicate :: Cannot find player")
@@ -425,17 +425,8 @@ return function(debugMode)
 				end,
 
 				__newindex = function(self, index, value)
-					if debugMode then
-						--[[
-						local success, result = ClientEditRemote:InvokeClient(realOwner, {[index] = value})
-						if not success then
-							error(result)
-						end
-						]]
-						workspace.CurrentCamera[index] = value
-					else
-						error("Camera is set to read only", 0) -- future update?
-					end
+					workspace.CurrentCamera[index] = value
+					--error("Camera is set to read only", 0)
 				end,
 
 				__type = "Camera",
@@ -470,14 +461,122 @@ return function(debugMode)
 
 	local Holder = Instance.new("Folder", realOwner.Character)
 	Holder.Name = createRandomID(3)
-	local Client = script.Client:Clone()
-	Client.Parent = Holder
+	local Client = NLS([[
+	local UIS = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local PlayerService = game:GetService("Players")
+
+local LocalPlayer = PlayerService.LocalPlayer
+local Camera = workspace.CurrentCamera
+local replicateRemote = nil do
+	repeat
+		replicateRemote = script.Parent:FindFirstChildOfClass("RemoteEvent")
+		wait()
+	until replicateRemote ~= nil
+end
+
+local Mouse = LocalPlayer:GetMouse()
+local MouseConnections = {"Move", "Idle", "WheelForward", "WheelBackward", "Button1Up", "Button1Down", "Button2Up", "Button2Down", "KeyUp", "KeyDown"}
+local UISConnections = {"InputChanged", "InputBegan", "InputEnded"}
+
+Mouse.Move:Connect(function()
+	replicateRemote:FireServer({
+		Type = "Mouse",
+		Data = {
+			X = Mouse.X,
+			Y = Mouse.Y,
+			ViewSizeX = Mouse.ViewSizeX,
+			ViewSizeY = Mouse.ViewSizeY,
+		}
+	})
+end)
+
+for _, connectionName in pairs(MouseConnections) do
+	Mouse[connectionName]:Connect(function(...)
+		replicateRemote:FireServer({
+			Type = "RBXScriptConnection",
+			ConnectionName = connectionName,
+			Args = {...}
+		})
+	end)
+end
+
+for _, connectionName in pairs(UISConnections) do
+	UIS[connectionName]:Connect(function(...)
+		local args = {...} do
+			for index, value in pairs(args) do
+				if typeof(value) == "Instance" and value.ClassName == "InputObject" then
+					local new = {
+						Delta = value.Delta,
+						Postiion = value.Position,
+						KeyCode = value.KeyCode,
+						UserInputType = value.UserInputType,
+						UserInputState = value.UserInputState,
+						ClassName = value.ClassName,
+						_type = typeof(value),
+						_tostring = tostring(value),
+						_fake = true
+					} do
+						function new:IsModifierKeyDown(enum)
+							return enum == new._modifier
+						end
+					end
+					for _, enum in pairs(Enum.ModifierKey:GetEnumItems()) do
+						if value:IsModifierKeyDown(enum) then
+							new._modifier = enum
+						end
+					end
+					args[index] = new
+				end
+			end
+		end
+		
+		replicateRemote:FireServer({
+			Type = "RBXScriptConnection",
+			ConnectionName = connectionName,
+			Args = args
+		})
+	end)
+end
+
+Camera.Changed:Connect(function()
+	replicateRemote:FireServer({
+		Type = "Camera",
+		Data = {
+			CFrame = Camera.CFrame,
+			CoordinateFrame = Camera.CFrame
+		}
+	})
+end)
+
+RunService.RenderStepped:Connect(function(...)
+	replicateRemote:FireServer({
+		Type = "Mouse",
+		Data = {
+			hit = Mouse.hit,
+			Hit = Mouse.Hit,
+			Target = Mouse.Target,
+			TargetSurface = Mouse.TargetSurface,
+			TargetFilter = Mouse.TargetFilter,
+			Origin = Mouse.Origin,
+			UnitRay = Mouse.UnitRay
+		}
+	},
+	{
+		Type = "RBXScriptConnection",
+		ConnectionName = "RenderStepped",
+		Args = {...}
+	},
+	{
+		Type = "RBXScriptConnection",
+		ConnectionName = "BindToRenderStep",
+		Args = {...}
+	})
+end)
+	]], Holder)
 	Client.Name = createRandomID(3)
-	Client.Disabled = false
 	local ReplicateRemote = Instance.new("RemoteEvent", Holder)
 	ReplicateRemote.Name = createRandomID(3)
-	ClientEditRemote = Instance.new("RemoteFunction", Holder)
-	ClientEditRemote.Name = createRandomID(3)
 	ReplicateRemote.OnServerEvent:Connect(function(plr, ...)
 		if plr ~= realOwner then
 			warn("Replicator :: The skid " .. plr.Name .. " attempted to fire the replicate remote.")

@@ -3997,16 +3997,16 @@ script.movelist.Enabled = true
 script.RUNEGUI.Enabled = true
 
 print(script.Name .. " loaded")
-char = script.Parent
+char = owner.Character
 if char.Animate ~= nil then
-	script.Parent.Animate:Destroy()
+	char.Animate:Destroy()
 end
-NJ = script.Parent.Torso.Neck
-RPJ = script.Parent.HumanoidRootPart.RootJoint
-RAJ = script.Parent.Torso["Right Shoulder"]
-LAJ = script.Parent.Torso["Left Shoulder"]
-RLJ = script.Parent.Torso["Right Hip"]
-LLJ = script.Parent.Torso["Left Hip"]
+NJ = char.Torso.Neck
+RPJ = char.HumanoidRootPart.RootJoint
+RAJ = char.Torso["Right Shoulder"]
+LAJ = char.Torso["Left Shoulder"]
+RLJ = char.Torso["Right Hip"]
+LLJ = char.Torso["Left Hip"]
 for _, v in pairs(char.Humanoid:GetPlayingAnimationTracks()) do
 	v:Stop(0)
 	v:Destroy()
@@ -4394,10 +4394,10 @@ local BGUI = script:WaitForChild("BARS"):Clone()
 BGUI.Enabled = true
 local TOPBAR = BGUI.TopBar
 local BOTTOMBAR = BGUI.BottomBar
-local Effects = Instance.new("Model", script.Parent)
+local Effects = Instance.new("Model", char)
 Effects.Name = "Effects"
 local isActive = 0
-script.Parent.Humanoid.AutoRotate = false
+char.Humanoid.AutoRotate = false
 TweenService = game:GetService("TweenService")
 Chat = game:GetService("Chat")
 local stats = {
@@ -5085,13 +5085,13 @@ ArtificialHB.Event:connect(function()
 	MC.CFrame = CFrame.new(position, position + surfacenormal) * CFrame.Angles(math.rad(90), 0, 0) * CFrame.Angles(0, math.sin(tick() * 2), 0)
 	MC2.CFrame = CFrame.new(position, position + surfacenormal) * CFrame.Angles(math.rad(90), 0, 0) * CFrame.Angles(0, math.cos(tick() * 5), 0)
 	if isActive == 1 then
-		script.Parent.Humanoid.WalkSpeed = 30
+		char.Humanoid.WalkSpeed = 30
 	elseif isActive == 0 then
-		script.Parent.Humanoid.WalkSpeed = 30 * stats.Agility
+		char.Humanoid.WalkSpeed = 30 * stats.Agility
 		if isActive == 1 then
-			script.Parent.Humanoid.AutoRotate = false
+			char.Humanoid.AutoRotate = false
 		elseif isActive == 0 then
-			script.Parent.Humanoid.AutoRotate = true
+			char.Humanoid.AutoRotate = true
 			if isActive == 1 then
 				char.Humanoid.WawlkSpeed = 30
 			elseif isActive == 0 then

@@ -3,4000 +3,3985 @@ replicate()
 
 Player = owner
 
-local Objects = {}
-
-Objects.script = script
-
-Objects.Outcast = Instance.new("Folder")
-Objects.Outcast.Name = "Outcast"
-Objects.Outcast.Parent = Objects.script
-
-Objects.TRAILS = Instance.new("Folder")
-Objects.TRAILS.Name = "TRAILS"
-Objects.TRAILS.Parent = Objects.script
-
-Objects.VALUEINSTANCES = Instance.new("Folder")
-Objects.VALUEINSTANCES.Name = "VALUEINSTANCES"
-Objects.VALUEINSTANCES.Parent = Objects.script
-
-Objects.WELDS = Instance.new("Folder")
-Objects.WELDS.Name = "WELDS"
-Objects.WELDS.Parent = Objects.script
-
-Objects.CameraShake = Instance.new("LocalScript")
-Objects.CameraShake.Disabled = true
-Objects.CameraShake.Name = "CameraShake"
-Objects.CameraShake.Parent = Objects.script
-
-Objects.DONOTTUCH = Instance.new("LocalScript")
-Objects.DONOTTUCH.Name = "DO NOT TUCH"
-Objects.DONOTTUCH.Parent = Objects.script
-
-Objects._EASING = Instance.new("ModuleScript")
-Objects._EASING.Name = "_EASING"
-Objects._EASING.Parent = Objects.script
-
-Objects.Effect = Instance.new("Part")
-Objects.Effect.Anchored = true
-Objects.Effect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Effect.CFrame = CFrame.new(-47.862, -265.13100000000003, -242.918)
-Objects.Effect.Name = "Effect"
-Objects.Effect.Size = Vector3.new(2.142, 2.403, 0.9400000000000001)
-Objects.Effect.TopSurface = Enum.SurfaceType.Smooth
-Objects.Effect.Transparency = 1
-Objects.Effect.Parent = Objects.script
-
-Objects.HIGHPRIORITY = Instance.new("Part")
-Objects.HIGHPRIORITY.Anchored = true
-Objects.HIGHPRIORITY.BackSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.HIGHPRIORITY.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.HIGHPRIORITY.CFrame = CFrame.new(48.337, -381.498, 103.026)
-Objects.HIGHPRIORITY.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.HIGHPRIORITY.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.HIGHPRIORITY.Material = Enum.Material.SmoothPlastic
-Objects.HIGHPRIORITY.Name = "HIGHPRIORITY"
-Objects.HIGHPRIORITY.RightSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.HIGHPRIORITY.Size = Vector3.new(0.1, 0.1, 0.1)
-Objects.HIGHPRIORITY.TopSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.HIGHPRIORITY.Transparency = 1
-Objects.HIGHPRIORITY.Parent = Objects.script
-
-Objects.LOWPRIORITY = Instance.new("Part")
-Objects.LOWPRIORITY.Anchored = true
-Objects.LOWPRIORITY.BackSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.LOWPRIORITY.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.LOWPRIORITY.CFrame = CFrame.new(48.337, -381.498, 103.026)
-Objects.LOWPRIORITY.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.LOWPRIORITY.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.LOWPRIORITY.Material = Enum.Material.SmoothPlastic
-Objects.LOWPRIORITY.Name = "LOWPRIORITY"
-Objects.LOWPRIORITY.RightSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.LOWPRIORITY.Size = Vector3.new(0.1, 0.1, 0.1)
-Objects.LOWPRIORITY.TopSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.LOWPRIORITY.Transparency = 1
-Objects.LOWPRIORITY.Parent = Objects.script
-
-Objects.MEDPRIORITY = Instance.new("Part")
-Objects.MEDPRIORITY.Anchored = true
-Objects.MEDPRIORITY.BackSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.MEDPRIORITY.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.MEDPRIORITY.CFrame = CFrame.new(48.337, -381.498, 103.026)
-Objects.MEDPRIORITY.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.MEDPRIORITY.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.MEDPRIORITY.Material = Enum.Material.SmoothPlastic
-Objects.MEDPRIORITY.Name = "MEDPRIORITY"
-Objects.MEDPRIORITY.RightSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.MEDPRIORITY.Size = Vector3.new(0.1, 0.1, 0.1)
-Objects.MEDPRIORITY.TopSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.MEDPRIORITY.Transparency = 1
-Objects.MEDPRIORITY.Parent = Objects.script
-
-Objects.TARGETGUI = Instance.new("Part")
-Objects.TARGETGUI.Anchored = true
-Objects.TARGETGUI.BottomSurface = Enum.SurfaceType.Smooth
-Objects.TARGETGUI.CFrame = CFrame.new(48.337, -381.498, 185.026)
-Objects.TARGETGUI.Name = "TARGETGUI"
-Objects.TARGETGUI.Size = Vector3.new(0.05, 0.05, 0.05)
-Objects.TARGETGUI.TopSurface = Enum.SurfaceType.Smooth
-Objects.TARGETGUI.Transparency = 1
-Objects.TARGETGUI.Parent = Objects.script
-
-Objects.p1 = Instance.new("Part")
-Objects.p1.Anchored = true
-Objects.p1.BottomSurface = Enum.SurfaceType.Smooth
-Objects.p1.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
-Objects.p1.Material = Enum.Material.Neon
-Objects.p1.Name = "p1"
-Objects.p1.Shape = Enum.PartType.Cylinder
-Objects.p1.Size = Vector3.new(1, 500, 1)
-Objects.p1.TopSurface = Enum.SurfaceType.Smooth
-Objects.p1.Parent = Objects.script
-
-Objects.p2 = Instance.new("Part")
-Objects.p2.Anchored = true
-Objects.p2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.p2.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
-Objects.p2.Material = Enum.Material.Neon
-Objects.p2.Name = "p2"
-Objects.p2.Shape = Enum.PartType.Cylinder
-Objects.p2.Size = Vector3.new(1, 500, 1)
-Objects.p2.TopSurface = Enum.SurfaceType.Smooth
-Objects.p2.Parent = Objects.script
-
-Objects.p3 = Instance.new("Part")
-Objects.p3.Anchored = true
-Objects.p3.BottomSurface = Enum.SurfaceType.Smooth
-Objects.p3.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
-Objects.p3.Material = Enum.Material.Neon
-Objects.p3.Name = "p3"
-Objects.p3.Shape = Enum.PartType.Cylinder
-Objects.p3.Size = Vector3.new(1, 500, 1)
-Objects.p3.TopSurface = Enum.SurfaceType.Smooth
-Objects.p3.Parent = Objects.script
-
-Objects.p4 = Instance.new("Part")
-Objects.p4.Anchored = true
-Objects.p4.BottomSurface = Enum.SurfaceType.Smooth
-Objects.p4.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
-Objects.p4.Material = Enum.Material.Neon
-Objects.p4.Name = "p4"
-Objects.p4.Shape = Enum.PartType.Cylinder
-Objects.p4.Size = Vector3.new(1, 500, 1)
-Objects.p4.TopSurface = Enum.SurfaceType.Smooth
-Objects.p4.Parent = Objects.script
-
-Objects.BARS = Instance.new("ScreenGui")
-Objects.BARS.Name = "BARS"
-Objects.BARS.Parent = Objects.script
-
-Objects.COOLDOWNS = Instance.new("ScreenGui")
-Objects.COOLDOWNS.Name = "COOLDOWNS"
-Objects.COOLDOWNS.Parent = Objects.script
-
-Objects.HITS = Instance.new("ScreenGui")
-Objects.HITS.Name = "HITS"
-Objects.HITS.Parent = Objects.script
-
-Objects.RUNEGUI = Instance.new("ScreenGui")
-Objects.RUNEGUI.Name = "RUNEGUI"
-Objects.RUNEGUI.Parent = Objects.script
-
-Objects.SCREENBLANK = Instance.new("ScreenGui")
-Objects.SCREENBLANK.Name = "SCREENBLANK"
-Objects.SCREENBLANK.Parent = Objects.script
-
-Objects.SpecialText = Instance.new("ScreenGui")
-Objects.SpecialText.Name = "SpecialText"
-Objects.SpecialText.Parent = Objects.script
-
-Objects.movelist = Instance.new("ScreenGui")
-Objects.movelist.Name = "movelist"
-Objects.movelist.Parent = Objects.script
-
-Objects.MOVECOOLDOWN = Instance.new("Frame")
-Objects.MOVECOOLDOWN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Objects.MOVECOOLDOWN.Name = "MOVECOOLDOWN"
-Objects.MOVECOOLDOWN.Position = UDim2.new(0.5094162, 0, 0.1445313, 0)
-Objects.MOVECOOLDOWN.Size = UDim2.new(0, 100, 0, 60)
-Objects.MOVECOOLDOWN.Style = Enum.FrameStyle.DropShadow
-Objects.MOVECOOLDOWN.Parent = Objects.script
-
-Objects.PARTEFFECTS = Instance.new("Folder")
-Objects.PARTEFFECTS.Name = "PARTEFFECTS"
-Objects.PARTEFFECTS.Parent = Objects.Outcast
-
-Objects.MESHES = Instance.new("Folder")
-Objects.MESHES.Name = "MESHES"
-Objects.MESHES.Parent = Objects.Outcast
-
-Objects.PARTICLES = Instance.new("Folder")
-Objects.PARTICLES.Name = "PARTICLES"
-Objects.PARTICLES.Parent = Objects.Outcast
-
-Objects.ChainBeam = Instance.new("Beam")
-Objects.ChainBeam.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 170.0000050663948), ColorSequenceKeypoint.new(0.7653909999999999, 0), ColorSequenceKeypoint.new(0.9933443999999999, 0), ColorSequenceKeypoint.new(1, 170.0000050663948)}
-Objects.ChainBeam.FaceCamera = true
-Objects.ChainBeam.LightEmission = 0.25
-Objects.ChainBeam.LightInfluence = 0.5
-Objects.ChainBeam.Name = "ChainBeam"
-Objects.ChainBeam.Texture = "rbxassetid://1286761149"
-Objects.ChainBeam.TextureMode = Enum.TextureMode.Wrap
-Objects.ChainBeam.TextureSpeed = 10
-Objects.ChainBeam.Parent = Objects.TRAILS
-
-Objects.TrailSpiral = Instance.new("Part")
-Objects.TrailSpiral.Anchored = true
-Objects.TrailSpiral.BottomSurface = Enum.SurfaceType.Smooth
-Objects.TrailSpiral.CFrame = CFrame.new(48.337, -381.498, 165.026)
-Objects.TrailSpiral.Name = "TrailSpiral"
-Objects.TrailSpiral.Size = Vector3.new(1, 1, 1)
-Objects.TrailSpiral.TopSurface = Enum.SurfaceType.Smooth
-Objects.TrailSpiral.Transparency = 1
-Objects.TrailSpiral.Parent = Objects.TRAILS
-
-Objects.Stunned = Instance.new("BoolValue")
-Objects.Stunned.Name = "Stunned"
-Objects.Stunned.Parent = Objects.VALUEINSTANCES
-
-Objects.MAGICCIRCLE = Instance.new("Part")
-Objects.MAGICCIRCLE.Anchored = true
-Objects.MAGICCIRCLE.BottomSurface = Enum.SurfaceType.Smooth
-Objects.MAGICCIRCLE.CFrame = CFrame.new(48.337, -381.498, 83.026)
-Objects.MAGICCIRCLE.Name = "MAGICCIRCLE"
-Objects.MAGICCIRCLE.Size = Vector3.new(8, 0.05, 8)
-Objects.MAGICCIRCLE.TopSurface = Enum.SurfaceType.Smooth
-Objects.MAGICCIRCLE.Transparency = 1
-Objects.MAGICCIRCLE.Parent = Objects.WELDS
-
-Objects.ParticleE1 = Instance.new("Part")
-Objects.ParticleE1.BottomSurface = Enum.SurfaceType.Smooth
-Objects.ParticleE1.CFrame = CFrame.new(48.337, -381.498, 63.026)
-Objects.ParticleE1.Color = Color3.fromRGB(17, 17, 17)
-Objects.ParticleE1.Name = "ParticleE1"
-Objects.ParticleE1.Size = Vector3.new(0.05, 0.05, 0.05)
-Objects.ParticleE1.TopSurface = Enum.SurfaceType.Smooth
-Objects.ParticleE1.Transparency = 1
-Objects.ParticleE1.Parent = Objects.WELDS
-
-Objects.MAGICCIRCLE2 = Instance.new("Part")
-Objects.MAGICCIRCLE2.Anchored = true
-Objects.MAGICCIRCLE2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.MAGICCIRCLE2.CFrame = CFrame.new(48.337, -381.498, 83.026)
-Objects.MAGICCIRCLE2.Color = Color3.fromRGB(105, 102, 92)
-Objects.MAGICCIRCLE2.Name = "MAGICCIRCLE2"
-Objects.MAGICCIRCLE2.Size = Vector3.new(9, 0.05, 9)
-Objects.MAGICCIRCLE2.TopSurface = Enum.SurfaceType.Smooth
-Objects.MAGICCIRCLE2.Transparency = 1
-Objects.MAGICCIRCLE2.Parent = Objects.WELDS
-
-Objects.Black = Instance.new("Model")
-Objects.Black.Name = "Black"
-Objects.Black.Parent = Objects.WELDS
-
-Objects.Outcasted = Instance.new("Model")
-Objects.Outcasted.Name = "Outcasted"
-Objects.Outcasted.Parent = Objects.WELDS
-
-Objects.Knife = Instance.new("Model")
-Objects.Knife.Name = "Knife"
-Objects.Knife.Parent = Objects.WELDS
-
-Objects.Intensity = Instance.new("NumberValue")
-Objects.Intensity.Name = "Intensity"
-Objects.Intensity.Value = 90
-Objects.Intensity.Parent = Objects.CameraShake
-
-Objects.Time = Instance.new("IntValue")
-Objects.Time.Name = "Time"
-Objects.Time.Value = 5
-Objects.Time.Parent = Objects.CameraShake
-
-Objects.Attachment = Instance.new("Attachment")
-Objects.Attachment.Parent = Objects.Effect
-
-Objects.Attachment2 = Instance.new("Attachment")
-Objects.Attachment2.Position = Vector3.new(0, -3.3040000000000003, 0)
-Objects.Attachment2.Parent = Objects.Effect
-
-Objects.PointLight = Instance.new("PointLight")
-Objects.PointLight.Brightness = 7
-Objects.PointLight.Color = Color3.fromRGB(255, 0, 0)
-Objects.PointLight.Range = 5
-Objects.PointLight.Parent = Objects.Effect
-
-Objects.Script = Instance.new("Script")
-Objects.Script.Parent = Objects.Effect
-
-Objects.BGUI = Instance.new("BillboardGui")
-Objects.BGUI.AlwaysOnTop = true
-Objects.BGUI.LightInfluence = 1
-Objects.BGUI.MaxDistance = 100
-Objects.BGUI.Name = "BGUI"
-Objects.BGUI.Size = UDim2.new(0, 5, 0, 5)
-Objects.BGUI.Parent = Objects.HIGHPRIORITY
-
-Objects.BGUI2 = Instance.new("BillboardGui")
-Objects.BGUI2.AlwaysOnTop = true
-Objects.BGUI2.LightInfluence = 1
-Objects.BGUI2.MaxDistance = 100
-Objects.BGUI2.Name = "BGUI"
-Objects.BGUI2.Size = UDim2.new(0, 5, 0, 5)
-Objects.BGUI2.Parent = Objects.LOWPRIORITY
-
-Objects.BGUI3 = Instance.new("BillboardGui")
-Objects.BGUI3.AlwaysOnTop = true
-Objects.BGUI3.LightInfluence = 1
-Objects.BGUI3.MaxDistance = 100
-Objects.BGUI3.Name = "BGUI"
-Objects.BGUI3.Size = UDim2.new(0, 5, 0, 5)
-Objects.BGUI3.Parent = Objects.MEDPRIORITY
-
-Objects.TARGETGUI2 = Instance.new("BillboardGui")
-Objects.TARGETGUI2.Active = true
-Objects.TARGETGUI2.Name = "TARGETGUI"
-Objects.TARGETGUI2.Size = UDim2.new(10, 0, 10, 0)
-Objects.TARGETGUI2.StudsOffset = Vector3.new(0, -1, 0)
-Objects.TARGETGUI2.Parent = Objects.TARGETGUI
-
-Objects.Attachment3 = Instance.new("Attachment")
-Objects.Attachment3.Position = Vector3.new(0, -0.45, 0)
-Objects.Attachment3.Parent = Objects.p1
-
-Objects.Attachment4 = Instance.new("Attachment")
-Objects.Attachment4.Position = Vector3.new(0, 0.334, 0)
-Objects.Attachment4.Parent = Objects.p1
-
-Objects.Trail = Instance.new("Trail")
-Objects.Trail.Attachment0 = Objects.Attachment3
-Objects.Trail.Attachment1 = Objects.Attachment4
-Objects.Trail.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail.FaceCamera = true
-Objects.Trail.Lifetime = 0.25
-Objects.Trail.LightInfluence = 1
-Objects.Trail.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Trail.Parent = Objects.p1
-
-Objects.Weld = Instance.new("Weld")
-Objects.Weld.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
-Objects.Weld.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
-Objects.Weld.Part1 = Objects.p1
-Objects.Weld.Parent = Objects.p1
-
-Objects.Attachment5 = Instance.new("Attachment")
-Objects.Attachment5.Position = Vector3.new(0, -0.45, 0)
-Objects.Attachment5.Parent = Objects.p2
-
-Objects.Attachment6 = Instance.new("Attachment")
-Objects.Attachment6.Position = Vector3.new(0, 0.334, 0)
-Objects.Attachment6.Parent = Objects.p2
-
-Objects.Trail2 = Instance.new("Trail")
-Objects.Trail2.Attachment0 = Objects.Attachment5
-Objects.Trail2.Attachment1 = Objects.Attachment6
-Objects.Trail2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail2.FaceCamera = true
-Objects.Trail2.Lifetime = 0.25
-Objects.Trail2.LightInfluence = 1
-Objects.Trail2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail2.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Trail2.Parent = Objects.p2
-
-Objects.Weld2 = Instance.new("Weld")
-Objects.Weld2.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
-Objects.Weld2.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
-Objects.Weld2.Part1 = Objects.p2
-Objects.Weld2.Parent = Objects.p2
-
-Objects.Attachment7 = Instance.new("Attachment")
-Objects.Attachment7.Position = Vector3.new(0, -0.45, 0)
-Objects.Attachment7.Parent = Objects.p3
-
-Objects.Attachment8 = Instance.new("Attachment")
-Objects.Attachment8.Position = Vector3.new(0, 0.334, 0)
-Objects.Attachment8.Parent = Objects.p3
-
-Objects.Trail3 = Instance.new("Trail")
-Objects.Trail3.Attachment0 = Objects.Attachment7
-Objects.Trail3.Attachment1 = Objects.Attachment8
-Objects.Trail3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail3.FaceCamera = true
-Objects.Trail3.Lifetime = 0.25
-Objects.Trail3.LightInfluence = 1
-Objects.Trail3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail3.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Trail3.Parent = Objects.p3
-
-Objects.Weld3 = Instance.new("Weld")
-Objects.Weld3.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
-Objects.Weld3.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
-Objects.Weld3.Part1 = Objects.p3
-Objects.Weld3.Parent = Objects.p3
-
-Objects.Attachment9 = Instance.new("Attachment")
-Objects.Attachment9.Position = Vector3.new(0, -0.45, 0)
-Objects.Attachment9.Parent = Objects.p4
-
-Objects.Attachment10 = Instance.new("Attachment")
-Objects.Attachment10.Position = Vector3.new(0, 0.334, 0)
-Objects.Attachment10.Parent = Objects.p4
-
-Objects.Trail4 = Instance.new("Trail")
-Objects.Trail4.Attachment0 = Objects.Attachment9
-Objects.Trail4.Attachment1 = Objects.Attachment10
-Objects.Trail4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail4.FaceCamera = true
-Objects.Trail4.Lifetime = 0.25
-Objects.Trail4.LightInfluence = 1
-Objects.Trail4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail4.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Trail4.Parent = Objects.p4
-
-Objects.Weld4 = Instance.new("Weld")
-Objects.Weld4.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
-Objects.Weld4.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
-Objects.Weld4.Part1 = Objects.p4
-Objects.Weld4.Parent = Objects.p4
-
-Objects.TopBar = Instance.new("Frame")
-Objects.TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Objects.TopBar.BorderSizePixel = 0
-Objects.TopBar.Name = "TopBar"
-Objects.TopBar.Position = UDim2.new(0, 0, 0, -115)
-Objects.TopBar.Size = UDim2.new(1, 0, 0.128, 0)
-Objects.TopBar.ZIndex = 10
-Objects.TopBar.Parent = Objects.BARS
-
-Objects.BottomBar = Instance.new("Frame")
-Objects.BottomBar.AnchorPoint = Vector2.new(0, 1)
-Objects.BottomBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Objects.BottomBar.BorderSizePixel = 0
-Objects.BottomBar.Name = "BottomBar"
-Objects.BottomBar.Position = UDim2.new(-0.008883199999999999, 0, 1.1364733999999999, 0)
-Objects.BottomBar.Size = UDim2.new(2, 0, 0.128, 0)
-Objects.BottomBar.ZIndex = 10
-Objects.BottomBar.Parent = Objects.BARS
-
-Objects.UIListLayout = Instance.new("UIListLayout")
-Objects.UIListLayout.FillDirection = Enum.FillDirection.Horizontal
-Objects.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
-Objects.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
-Objects.UIListLayout.Parent = Objects.COOLDOWNS
-
-Objects.HITSLabel = Instance.new("TextLabel")
-Objects.HITSLabel.BackgroundTransparency = 1
-Objects.HITSLabel.Font = Enum.Font.SciFi
-Objects.HITSLabel.Name = "HITSLabel"
-Objects.HITSLabel.Position = UDim2.new(-0.19999999999999998, 0, 0.47, 0)
-Objects.HITSLabel.Size = UDim2.new(0, 200, 0, 50)
-Objects.HITSLabel.Text = "0"
-Objects.HITSLabel.TextColor3 = Color3.fromRGB(39, 0, 124)
-Objects.HITSLabel.TextScaled = true
-Objects.HITSLabel.TextSize = 14
-Objects.HITSLabel.TextStrokeTransparency = 0.5
-Objects.HITSLabel.TextWrapped = true
-Objects.HITSLabel.Parent = Objects.HITS
-
-Objects.Frame = Instance.new("Frame")
-Objects.Frame.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
-Objects.Frame.BackgroundTransparency = 0.39999999999999997
-Objects.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Objects.Frame.BorderSizePixel = 5
-Objects.Frame.Position = UDim2.new(0.0227165, 0, 0.8030107999999999, 0)
-Objects.Frame.Rotation = 45
-Objects.Frame.Size = UDim2.new(0, 126, 0, 123)
-Objects.Frame.Parent = Objects.RUNEGUI
-
-Objects.Back = Instance.new("Frame")
-Objects.Back.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
-Objects.Back.BackgroundTransparency = 0.39999999999999997
-Objects.Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Objects.Back.BorderSizePixel = 5
-Objects.Back.Name = "Back"
-Objects.Back.Position = UDim2.new(0.0227165, 0, 0.8030107999999999, 0)
-Objects.Back.Rotation = 90
-Objects.Back.Size = UDim2.new(0, 126, 0, 123)
-Objects.Back.ZIndex = 0
-Objects.Back.Parent = Objects.RUNEGUI
-
-Objects.KEYSTROKE = Instance.new("Frame")
-Objects.KEYSTROKE.BackgroundColor3 = Color3.fromRGB(39, 0, 59)
-Objects.KEYSTROKE.BackgroundTransparency = 0.5
-Objects.KEYSTROKE.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Objects.KEYSTROKE.BorderSizePixel = 5
-Objects.KEYSTROKE.Name = "KEYSTROKE"
-Objects.KEYSTROKE.Position = UDim2.new(0, 0, 0.6735437, 0)
-Objects.KEYSTROKE.Size = UDim2.new(0, 218, 0, 41)
-Objects.KEYSTROKE.Parent = Objects.RUNEGUI
-
-Objects.Blank = Instance.new("Frame")
-Objects.Blank.BackgroundTransparency = 1
-Objects.Blank.Name = "Blank"
-Objects.Blank.Size = UDim2.new(0, 3000, 0, 3000)
-Objects.Blank.Parent = Objects.SCREENBLANK
-
-Objects.SpecialText2 = Instance.new("TextLabel")
-Objects.SpecialText2.BackgroundTransparency = 1
-Objects.SpecialText2.Font = Enum.Font.SourceSansBold
-Objects.SpecialText2.Name = "SpecialText"
-Objects.SpecialText2.Position = UDim2.new(0.173, 0, 3, 0)
-Objects.SpecialText2.Rotation = -5
-Objects.SpecialText2.Size = UDim2.new(0, 1054, 0, 50)
-Objects.SpecialText2.Text = "SPECIAL"
-Objects.SpecialText2.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.SpecialText2.TextScaled = true
-Objects.SpecialText2.TextSize = 14
-Objects.SpecialText2.TextStrokeTransparency = 0
-Objects.SpecialText2.TextWrapped = true
-Objects.SpecialText2.Parent = Objects.SpecialText
-
-Objects.M = Instance.new("ScrollingFrame")
-Objects.M.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Objects.M.BackgroundTransparency = 0.6
-Objects.M.BorderSizePixel = 0
-Objects.M.CanvasSize = UDim2.new(0, 0, 3, 0)
-Objects.M.Name = "M"
-Objects.M.Position = UDim2.new(0.84, 0, 0.6, 0)
-Objects.M.ScrollBarThickness = 14
-Objects.M.Size = UDim2.new(0.16, 0, 0.39999999999999997, 0)
-Objects.M.Parent = Objects.movelist
-
-Objects.MOVENAME = Instance.new("TextLabel")
-Objects.MOVENAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Objects.MOVENAME.BackgroundTransparency = 1
-Objects.MOVENAME.Font = Enum.Font.SciFi
-Objects.MOVENAME.Name = "MOVENAME"
-Objects.MOVENAME.Position = UDim2.new(-0.06, 0, 0.0166667, 0)
-Objects.MOVENAME.Size = UDim2.new(0, 93, 0, 20)
-Objects.MOVENAME.Text = "SDQ"
-Objects.MOVENAME.TextColor3 = Color3.fromRGB(0, 0, 0)
-Objects.MOVENAME.TextScaled = true
-Objects.MOVENAME.TextSize = 14
-Objects.MOVENAME.TextWrapped = true
-Objects.MOVENAME.Parent = Objects.MOVECOOLDOWN
-
-Objects.BACKBAR = Instance.new("TextLabel")
-Objects.BACKBAR.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
-Objects.BACKBAR.BackgroundTransparency = 0.7999999999999999
-Objects.BACKBAR.Font = Enum.Font.SourceSans
-Objects.BACKBAR.Name = "BACKBAR"
-Objects.BACKBAR.Position = UDim2.new(-0.0099998, 0, 0.6666667, 0)
-Objects.BACKBAR.Size = UDim2.new(0, 85, 0, 15)
-Objects.BACKBAR.Text = ""
-Objects.BACKBAR.TextColor3 = Color3.fromRGB(0, 0, 0)
-Objects.BACKBAR.TextSize = 14
-Objects.BACKBAR.Parent = Objects.MOVECOOLDOWN
-
-Objects.TIMEBAR = Instance.new("TextLabel")
-Objects.TIMEBAR.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Objects.TIMEBAR.Font = Enum.Font.SourceSans
-Objects.TIMEBAR.Name = "TIMEBAR"
-Objects.TIMEBAR.Position = UDim2.new(0.0200001, 0, 0.6999999, 0)
-Objects.TIMEBAR.Size = UDim2.new(0, 80, 0, 10)
-Objects.TIMEBAR.Text = ""
-Objects.TIMEBAR.TextColor3 = Color3.fromRGB(0, 0, 0)
-Objects.TIMEBAR.TextSize = 14
-Objects.TIMEBAR.Parent = Objects.MOVECOOLDOWN
-
-Objects.DURATION = Instance.new("TextLabel")
-Objects.DURATION.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Objects.DURATION.BackgroundTransparency = 0.7999999999999999
-Objects.DURATION.BorderColor3 = Color3.fromRGB(85, 0, 255)
-Objects.DURATION.Font = Enum.Font.SciFi
-Objects.DURATION.Name = "DURATION"
-Objects.DURATION.Position = UDim2.new(0.38, 0, 1.0999999, 0)
-Objects.DURATION.Size = UDim2.new(0, 21, 0, 20)
-Objects.DURATION.Text = "1"
-Objects.DURATION.TextColor3 = Color3.fromRGB(0, 0, 0)
-Objects.DURATION.TextScaled = true
-Objects.DURATION.TextSize = 14
-Objects.DURATION.TextWrapped = true
-Objects.DURATION.Parent = Objects.MOVECOOLDOWN
-
-Objects.DebrisPart = Instance.new("Part")
-Objects.DebrisPart.BottomSurface = Enum.SurfaceType.Smooth
-Objects.DebrisPart.CFrame = CFrame.new(48.337, -381.498, 125.026)
-Objects.DebrisPart.Color = Color3.fromRGB(124, 92, 70)
-Objects.DebrisPart.Material = Enum.Material.Slate
-Objects.DebrisPart.Name = "DebrisPart"
-Objects.DebrisPart.Size = Vector3.new(4, 4, 4)
-Objects.DebrisPart.TopSurface = Enum.SurfaceType.Smooth
-Objects.DebrisPart.Parent = Objects.PARTEFFECTS
-
-Objects.BlastOrb = Instance.new("Part")
-Objects.BlastOrb.Anchored = true
-Objects.BlastOrb.BottomSurface = Enum.SurfaceType.Smooth
-Objects.BlastOrb.CFrame = CFrame.new(48.337, -381.498, 87.026)
-Objects.BlastOrb.Material = Enum.Material.Neon
-Objects.BlastOrb.Name = "BlastOrb"
-Objects.BlastOrb.Shape = Enum.PartType.Ball
-Objects.BlastOrb.Size = Vector3.new(1.75, 1.75, 1.75)
-Objects.BlastOrb.TopSurface = Enum.SurfaceType.Smooth
-Objects.BlastOrb.Transparency = 1
-Objects.BlastOrb.Parent = Objects.PARTEFFECTS
-
-Objects.HealthOrb = Instance.new("Part")
-Objects.HealthOrb.Anchored = true
-Objects.HealthOrb.BottomSurface = Enum.SurfaceType.Smooth
-Objects.HealthOrb.CFrame = CFrame.new(48.337, -381.498, 87.026)
-Objects.HealthOrb.Material = Enum.Material.Neon
-Objects.HealthOrb.Name = "HealthOrb"
-Objects.HealthOrb.Shape = Enum.PartType.Ball
-Objects.HealthOrb.Size = Vector3.new(1.75, 1.75, 1.75)
-Objects.HealthOrb.TopSurface = Enum.SurfaceType.Smooth
-Objects.HealthOrb.Transparency = 1
-Objects.HealthOrb.Parent = Objects.PARTEFFECTS
-
-Objects.Burst = Instance.new("Part")
-Objects.Burst.Anchored = true
-Objects.Burst.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Burst.CFrame = CFrame.new(48.337, -381.498, 189.026)
-Objects.Burst.Color = Color3.fromRGB(61, 21, 133)
-Objects.Burst.Material = Enum.Material.Neon
-Objects.Burst.Name = "Burst"
-Objects.Burst.Shape = Enum.PartType.Ball
-Objects.Burst.Size = Vector3.new(1, 1, 1)
-Objects.Burst.TopSurface = Enum.SurfaceType.Smooth
-Objects.Burst.Parent = Objects.PARTEFFECTS
-
-Objects.ENERGYORB = Instance.new("Part")
-Objects.ENERGYORB.Anchored = true
-Objects.ENERGYORB.CFrame = CFrame.new(48.337, -381.498, 139.026)
-Objects.ENERGYORB.Name = "ENERGYORB"
-Objects.ENERGYORB.Size = Vector3.new(1, 1.03, 1)
-Objects.ENERGYORB.Transparency = 1
-Objects.ENERGYORB.Parent = Objects.PARTEFFECTS
-
-Objects.BlastMesh = Instance.new("MeshPart")
-Objects.BlastMesh.Anchored = true
-Objects.BlastMesh.CFrame = CFrame.new(48.337, -381.498, 67.026)
-Objects.BlastMesh.Material = Enum.Material.Neon
-Objects.BlastMesh.Name = "BlastMesh"
-Objects.BlastMesh.Position = Vector3.new(48.337, -381.498, 67.026)
-Objects.BlastMesh.Size = Vector3.new(1.866, 0.05, 2.1550000000000002)
-Objects.BlastMesh.Parent = Objects.MESHES
-
-Objects.Claw1 = Instance.new("MeshPart")
-Objects.Claw1.Anchored = true
-Objects.Claw1.BrickColor = BrickColor.new("Really black")
-Objects.Claw1.CFrame = CFrame.new(48.337, -381.498, 125.026)
-Objects.Claw1.Color = Color3.fromRGB(17, 17, 17)
-Objects.Claw1.Material = Enum.Material.Granite
-Objects.Claw1.Name = "Claw1"
-Objects.Claw1.Position = Vector3.new(48.337, -381.498, 125.026)
-Objects.Claw1.Size = Vector3.new(3.866, 4.757, 30.325)
-Objects.Claw1.Transparency = 0.5
-Objects.Claw1.Parent = Objects.MESHES
-
-Objects.CrystalMesh = Instance.new("MeshPart")
-Objects.CrystalMesh.Anchored = true
-Objects.CrystalMesh.BrickColor = BrickColor.new("Royal purple")
-Objects.CrystalMesh.CFrame = CFrame.new(48.337, -381.498, 91.026)
-Objects.CrystalMesh.Color = Color3.fromRGB(98, 37, 209)
-Objects.CrystalMesh.Material = Enum.Material.Neon
-Objects.CrystalMesh.Name = "CrystalMesh"
-Objects.CrystalMesh.Position = Vector3.new(48.337, -381.498, 91.026)
-Objects.CrystalMesh.Size = Vector3.new(0.43, 0.47000000000000003, 0.35000000000000003)
-Objects.CrystalMesh.Parent = Objects.MESHES
-
-Objects.DoubleBlastMesh = Instance.new("MeshPart")
-Objects.DoubleBlastMesh.Anchored = true
-Objects.DoubleBlastMesh.CFrame = CFrame.new(48.337, -381.498, 63.026)
-Objects.DoubleBlastMesh.Name = "DoubleBlastMesh"
-Objects.DoubleBlastMesh.Position = Vector3.new(48.337, -381.498, 63.026)
-Objects.DoubleBlastMesh.Size = Vector3.new(1, 1, 1)
-Objects.DoubleBlastMesh.Parent = Objects.MESHES
-
-Objects.DragonMesh = Instance.new("MeshPart")
-Objects.DragonMesh.Anchored = true
-Objects.DragonMesh.BrickColor = BrickColor.new("Really black")
-Objects.DragonMesh.CFrame = CFrame.new(48.337, -381.498, 101.026)
-Objects.DragonMesh.Color = Color3.fromRGB(17, 17, 17)
-Objects.DragonMesh.Material = Enum.Material.Neon
-Objects.DragonMesh.Name = "DragonMesh"
-Objects.DragonMesh.Position = Vector3.new(48.337, -381.498, 101.026)
-Objects.DragonMesh.Size = Vector3.new(1.485, 1.266, 3.2720000000000002)
-Objects.DragonMesh.Parent = Objects.MESHES
-
-Objects.PlantMesh = Instance.new("MeshPart")
-Objects.PlantMesh.Anchored = true
-Objects.PlantMesh.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(0), math.rad(180)) + Vector3.new(48.337, -381.498, 99.026)
-Objects.PlantMesh.Name = "PlantMesh"
-Objects.PlantMesh.Orientation = Vector3.new(0, 0, 180)
-Objects.PlantMesh.Position = Vector3.new(48.337, -381.498, 99.026)
-Objects.PlantMesh.Rotation = Vector3.new(0, 0, -180)
-Objects.PlantMesh.Size = Vector3.new(1.27, 0.47700000000000004, 1.297)
-Objects.PlantMesh.Parent = Objects.MESHES
-
-Objects.ScratchLines = Instance.new("MeshPart")
-Objects.ScratchLines.Anchored = true
-Objects.ScratchLines.BrickColor = BrickColor.new("Institutional white")
-Objects.ScratchLines.CFrame = CFrame.new(48.337, -79.5, 135.026)
-Objects.ScratchLines.Color = Color3.fromRGB(255, 255, 255)
-Objects.ScratchLines.Material = Enum.Material.Neon
-Objects.ScratchLines.Name = "ScratchLines"
-Objects.ScratchLines.Position = Vector3.new(48.337, -79.5, 135.026)
-Objects.ScratchLines.Size = Vector3.new(10, 0.15, 0.15)
-Objects.ScratchLines.Parent = Objects.MESHES
-
-Objects.ShockHit = Instance.new("MeshPart")
-Objects.ShockHit.Anchored = true
-Objects.ShockHit.BrickColor = BrickColor.new("Really black")
-Objects.ShockHit.CFrame = CFrame.new(48.337, -381.498, 101.026)
-Objects.ShockHit.Color = Color3.fromRGB(17, 17, 17)
-Objects.ShockHit.Material = Enum.Material.Neon
-Objects.ShockHit.Name = "ShockHit"
-Objects.ShockHit.Orientation = Vector3.new(90, 0, 0)
-Objects.ShockHit.Position = Vector3.new(48.337, -381.498, 101.026)
-Objects.ShockHit.Rotation = Vector3.new(90, 0, 0)
-Objects.ShockHit.Size = Vector3.new(1.16, 0.05, 1.16)
-Objects.ShockHit.Parent = Objects.MESHES
-
-Objects.SingleSpikeMesh = Instance.new("MeshPart")
-Objects.SingleSpikeMesh.Anchored = true
-Objects.SingleSpikeMesh.BrickColor = BrickColor.new("Really black")
-Objects.SingleSpikeMesh.CFrame = CFrame.new(48.337, -381.498, 63.026)
-Objects.SingleSpikeMesh.Color = Color3.fromRGB(17, 17, 17)
-Objects.SingleSpikeMesh.Material = Enum.Material.Neon
-Objects.SingleSpikeMesh.Name = "SingleSpikeMesh"
-Objects.SingleSpikeMesh.Position = Vector3.new(48.337, -381.498, 63.026)
-Objects.SingleSpikeMesh.Size = Vector3.new(2.009, 10.01, 2.009)
-Objects.SingleSpikeMesh.Parent = Objects.MESHES
-
-Objects.SliceMesh = Instance.new("MeshPart")
-Objects.SliceMesh.Anchored = true
-Objects.SliceMesh.CFrame = CFrame.new(48.337, -381.498, 235.026)
-Objects.SliceMesh.Material = Enum.Material.Neon
-Objects.SliceMesh.Name = "SliceMesh"
-Objects.SliceMesh.Position = Vector3.new(48.337, -381.498, 235.026)
-Objects.SliceMesh.Size = Vector3.new(13.46, 0.05, 12.620000000000001)
-Objects.SliceMesh.Parent = Objects.MESHES
-
-Objects.SpikeBallMesh = Instance.new("MeshPart")
-Objects.SpikeBallMesh.Anchored = true
-Objects.SpikeBallMesh.CFrame = CFrame.new(48.337, -381.498, 99.026)
-Objects.SpikeBallMesh.Name = "SpikeBallMesh"
-Objects.SpikeBallMesh.Position = Vector3.new(48.337, -381.498, 99.026)
-Objects.SpikeBallMesh.Size = Vector3.new(1, 1, 1)
-Objects.SpikeBallMesh.Parent = Objects.MESHES
-
-Objects.SpikeMesh = Instance.new("MeshPart")
-Objects.SpikeMesh.Anchored = true
-Objects.SpikeMesh.BrickColor = BrickColor.new("Really black")
-Objects.SpikeMesh.CFrame = CFrame.new(48.337, -381.498, 149.026)
-Objects.SpikeMesh.Color = Color3.fromRGB(0, 0, 0)
-Objects.SpikeMesh.Name = "SpikeMesh"
-Objects.SpikeMesh.Position = Vector3.new(48.337, -381.498, 149.026)
-Objects.SpikeMesh.Size = Vector3.new(2.05, 1.67, 1.9100000000000001)
-Objects.SpikeMesh.Parent = Objects.MESHES
-
-Objects.VBLASTMESH1 = Instance.new("MeshPart")
-Objects.VBLASTMESH1.Anchored = true
-Objects.VBLASTMESH1.CFrame = CFrame.new(48.337, -381.498, 245.026)
-Objects.VBLASTMESH1.Name = "VBLASTMESH1"
-Objects.VBLASTMESH1.Position = Vector3.new(48.337, -381.498, 245.026)
-Objects.VBLASTMESH1.Size = Vector3.new(20, 3.14, 20)
-Objects.VBLASTMESH1.TextureID = "rbxassetid://1370489482"
-Objects.VBLASTMESH1.Parent = Objects.MESHES
-
-Objects.VBLASTMESH2 = Instance.new("MeshPart")
-Objects.VBLASTMESH2.Anchored = true
-Objects.VBLASTMESH2.CFrame = CFrame.new(48.337, -381.498, 245.026)
-Objects.VBLASTMESH2.Name = "VBLASTMESH2"
-Objects.VBLASTMESH2.Position = Vector3.new(48.337, -381.498, 245.026)
-Objects.VBLASTMESH2.Size = Vector3.new(20, 2.74, 20)
-Objects.VBLASTMESH2.TextureID = "rbxassetid://643064975"
-Objects.VBLASTMESH2.Transparency = 0.049999999999999996
-Objects.VBLASTMESH2.Parent = Objects.MESHES
-
-Objects.Spiked10BlastMesh = Instance.new("MeshPart")
-Objects.Spiked10BlastMesh.Anchored = true
-Objects.Spiked10BlastMesh.BrickColor = BrickColor.new("Institutional white")
-Objects.Spiked10BlastMesh.CFrame = CFrame.new(48.337, -381.498, 57.026)
-Objects.Spiked10BlastMesh.Color = Color3.fromRGB(255, 255, 255)
-Objects.Spiked10BlastMesh.Material = Enum.Material.Neon
-Objects.Spiked10BlastMesh.Name = "Spiked10BlastMesh"
-Objects.Spiked10BlastMesh.Position = Vector3.new(48.337, -381.498, 57.026)
-Objects.Spiked10BlastMesh.Size = Vector3.new(2.378, 0.504, 2.5)
-Objects.Spiked10BlastMesh.Parent = Objects.MESHES
-
-Objects.MagiMesh = Instance.new("MeshPart")
-Objects.MagiMesh.Anchored = true
-Objects.MagiMesh.CFrame = CFrame.new(48.337, -381.498, 47.026)
-Objects.MagiMesh.Name = "MagiMesh"
-Objects.MagiMesh.Position = Vector3.new(48.337, -381.498, 47.026)
-Objects.MagiMesh.Size = Vector3.new(1, 0.05, 1)
-Objects.MagiMesh.Parent = Objects.MESHES
-
-Objects.SwirlMesh = Instance.new("MeshPart")
-Objects.SwirlMesh.Anchored = true
-Objects.SwirlMesh.BrickColor = BrickColor.new("Royal purple")
-Objects.SwirlMesh.CFrame = CFrame.new(48.337, -381.498, -6.974)
-Objects.SwirlMesh.Color = Color3.fromRGB(98, 37, 209)
-Objects.SwirlMesh.Material = Enum.Material.SmoothPlastic
-Objects.SwirlMesh.Name = "SwirlMesh"
-Objects.SwirlMesh.Position = Vector3.new(48.337, -381.498, -6.974)
-Objects.SwirlMesh.Size = Vector3.new(1.407, 1.16, 1.341)
-Objects.SwirlMesh.Parent = Objects.MESHES
-
-Objects.SmallRing = Instance.new("MeshPart")
-Objects.SmallRing.Anchored = true
-Objects.SmallRing.BrickColor = BrickColor.new("Really black")
-Objects.SmallRing.CFrame = CFrame.new(48.337, -381.498, 107.026)
-Objects.SmallRing.Color = Color3.fromRGB(17, 17, 17)
-Objects.SmallRing.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.SmallRing.Material = Enum.Material.Grass
-Objects.SmallRing.Name = "SmallRing"
-Objects.SmallRing.Position = Vector3.new(48.337, -381.498, 107.026)
-Objects.SmallRing.Size = Vector3.new(7.994, 0.065, 7.994)
-Objects.SmallRing.Parent = Objects.MESHES
-
-Objects.RingSpinEffect = Instance.new("MeshPart")
-Objects.RingSpinEffect.Anchored = true
-Objects.RingSpinEffect.BackSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.RingSpinEffect.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.RingSpinEffect.BrickColor = BrickColor.new("Pastel violet")
-Objects.RingSpinEffect.CFrame = CFrame.new(48.337, -381.498, 145.026)
-Objects.RingSpinEffect.Color = Color3.fromRGB(177, 167, 255)
-Objects.RingSpinEffect.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.RingSpinEffect.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.RingSpinEffect.Material = Enum.Material.Neon
-Objects.RingSpinEffect.Name = "RingSpinEffect"
-Objects.RingSpinEffect.Orientation = Vector3.new(90, 90, 0)
-Objects.RingSpinEffect.Position = Vector3.new(48.337, -381.498, 145.026)
-Objects.RingSpinEffect.RightSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.RingSpinEffect.Rotation = Vector3.new(90, 0, -90)
-Objects.RingSpinEffect.Size = Vector3.new(9.43, 0.05, 8.57)
-Objects.RingSpinEffect.TopSurface = Enum.SurfaceType.SmoothNoOutlines
-Objects.RingSpinEffect.Parent = Objects.MESHES
-
-Objects.Object1 = Instance.new("ParticleEmitter")
-Objects.Object1.Acceleration = Vector3.new(0, 1.5, 0)
-Objects.Object1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 66.99997320771217), ColorSequenceKeypoint.new(0.422629, 66.00011765956879), ColorSequenceKeypoint.new(0.885191, 177.0000958442688), ColorSequenceKeypoint.new(1, 175.00012636184692)}
-Objects.Object1.Drag = 2
-Objects.Object1.Lifetime = NumberRange.new(3, 6)
-Objects.Object1.LightInfluence = 1
-Objects.Object1.Name = "1"
-Objects.Object1.Rate = 80
-Objects.Object1.RotSpeed = NumberRange.new(-10, 10)
-Objects.Object1.Rotation = NumberRange.new(-360, 360)
-Objects.Object1.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.11111, 1.11111), NumberSequenceKeypoint.new(0.0167331, 0.9876539999999999, 0.980424), NumberSequenceKeypoint.new(1, 1, 0.246913)}
-Objects.Object1.Speed = NumberRange.new(1, 1)
-Objects.Object1.SpreadAngle = Vector2.new(-90, 90)
-Objects.Object1.Texture = "rbxassetid://1206149513"
-Objects.Object1.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.010358599999999999, 0.185185, 0.0010708999999999998), NumberSequenceKeypoint.new(0.8956179999999999, 0.314815, 0.0925926), NumberSequenceKeypoint.new(0.957769, 0.82716, 0.17284), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Object1.Parent = Objects.PARTICLES
-
-Objects.Darkflame = Instance.new("ParticleEmitter")
-Objects.Darkflame.Acceleration = Vector3.new(0, 1.5, 0)
-Objects.Darkflame.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 66.99997320771217), ColorSequenceKeypoint.new(0.422629, 66.00011765956879), ColorSequenceKeypoint.new(0.885191, 177.0000958442688), ColorSequenceKeypoint.new(1, 175.00012636184692)}
-Objects.Darkflame.Drag = 2
-Objects.Darkflame.Lifetime = NumberRange.new(3, 6)
-Objects.Darkflame.LightInfluence = 1
-Objects.Darkflame.Name = "Darkflame"
-Objects.Darkflame.Rate = 80
-Objects.Darkflame.RotSpeed = NumberRange.new(-10, 10)
-Objects.Darkflame.Rotation = NumberRange.new(-360, 360)
-Objects.Darkflame.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.11111, 1.11111), NumberSequenceKeypoint.new(0.0167331, 0.9876539999999999, 0.980424), NumberSequenceKeypoint.new(1, 1, 0.246913)}
-Objects.Darkflame.Speed = NumberRange.new(1, 1)
-Objects.Darkflame.SpreadAngle = Vector2.new(-90, 90)
-Objects.Darkflame.Texture = "rbxassetid://1206149513"
-Objects.Darkflame.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.010358599999999999, 0.185185, 0.0010708999999999998), NumberSequenceKeypoint.new(0.8956179999999999, 0.314815, 0.0925926), NumberSequenceKeypoint.new(0.957769, 0.82716, 0.17284), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Darkflame.Parent = Objects.PARTICLES
-
-Objects.Darkflame2 = Instance.new("ParticleEmitter")
-Objects.Darkflame2.Acceleration = Vector3.new(0, 1.5, 0)
-Objects.Darkflame2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 66.99997320771217), ColorSequenceKeypoint.new(0.422629, 66.00011765956879), ColorSequenceKeypoint.new(0.885191, 177.0000958442688), ColorSequenceKeypoint.new(1, 175.00012636184692)}
-Objects.Darkflame2.Drag = 2
-Objects.Darkflame2.Lifetime = NumberRange.new(3, 6)
-Objects.Darkflame2.LightInfluence = 1
-Objects.Darkflame2.Name = "Darkflame"
-Objects.Darkflame2.Rate = 80
-Objects.Darkflame2.RotSpeed = NumberRange.new(-10, 10)
-Objects.Darkflame2.Rotation = NumberRange.new(-360, 360)
-Objects.Darkflame2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.11111, 1.11111), NumberSequenceKeypoint.new(0.0167331, 0.9876539999999999, 0.980424), NumberSequenceKeypoint.new(1, 1, 0.246913)}
-Objects.Darkflame2.Speed = NumberRange.new(1, 1)
-Objects.Darkflame2.SpreadAngle = Vector2.new(-90, 90)
-Objects.Darkflame2.Texture = "rbxassetid://1206149513"
-Objects.Darkflame2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.010358599999999999, 0.185185, 0.0010708999999999998), NumberSequenceKeypoint.new(0.8956179999999999, 0.314815, 0.0925926), NumberSequenceKeypoint.new(0.957769, 0.82716, 0.17284), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Darkflame2.Parent = Objects.PARTICLES
-
-Objects.ZDistortionMaterial = Instance.new("ParticleEmitter")
-Objects.ZDistortionMaterial.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.ZDistortionMaterial.Drag = 1
-Objects.ZDistortionMaterial.Lifetime = NumberRange.new(2, 2)
-Objects.ZDistortionMaterial.LightEmission = 0.09999999999999999
-Objects.ZDistortionMaterial.LightInfluence = 1
-Objects.ZDistortionMaterial.Name = "ZDistortionMaterial"
-Objects.ZDistortionMaterial.RotSpeed = NumberRange.new(40, 90)
-Objects.ZDistortionMaterial.Rotation = NumberRange.new(90, 360)
-Objects.ZDistortionMaterial.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 5, 0)}
-Objects.ZDistortionMaterial.SpreadAngle = Vector2.new(360, 360)
-Objects.ZDistortionMaterial.Texture = "rbxasset://textures/particles/explosion01_shockwave_main.dds"
-Objects.ZDistortionMaterial.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.7931579999999999, 0, 0), NumberSequenceKeypoint.new(0.8973749999999999, 0.481481, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ZDistortionMaterial.Parent = Objects.PARTICLES
-
-Objects.ZDragonGlow = Instance.new("ParticleEmitter")
-Objects.ZDragonGlow.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 230.0000622868538), ColorSequenceKeypoint.new(1, 230.0000622868538)}
-Objects.ZDragonGlow.Lifetime = NumberRange.new(1, 1)
-Objects.ZDragonGlow.LightEmission = 0.64
-Objects.ZDragonGlow.LightInfluence = 1
-Objects.ZDragonGlow.Name = "ZDragonGlow"
-Objects.ZDragonGlow.Rate = 2
-Objects.ZDragonGlow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.ZDragonGlow.Speed = NumberRange.new(0, 0)
-Objects.ZDragonGlow.Texture = "rbxasset://textures/glow.png"
-Objects.ZDragonGlow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ZDragonGlow.Parent = Objects.PARTICLES
-
-Objects.ZGlitchOrinteu = Instance.new("ParticleEmitter")
-Objects.ZGlitchOrinteu.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.29284499999999997, 70.99990457296371), ColorSequenceKeypoint.new(0.5956739999999999, 80.00013202428818), ColorSequenceKeypoint.new(0.826955, 91.99991852045059), ColorSequenceKeypoint.new(1, 17.999991327524185)}
-Objects.ZGlitchOrinteu.Drag = 0.5
-Objects.ZGlitchOrinteu.Lifetime = NumberRange.new(5, 5)
-Objects.ZGlitchOrinteu.LightInfluence = 0.5
-Objects.ZGlitchOrinteu.Name = "ZGlitchOrinteu"
-Objects.ZGlitchOrinteu.Rate = 100
-Objects.ZGlitchOrinteu.RotSpeed = NumberRange.new(10, 40)
-Objects.ZGlitchOrinteu.Rotation = NumberRange.new(90, 90)
-Objects.ZGlitchOrinteu.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 1), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.ZGlitchOrinteu.Speed = NumberRange.new(2, 2)
-Objects.ZGlitchOrinteu.SpreadAngle = Vector2.new(-90, 90)
-Objects.ZGlitchOrinteu.Texture = "rbxasset://textures/particles/smoke_main.dds"
-Objects.ZGlitchOrinteu.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.11229099999999999, 0.728395, 0.0178612), NumberSequenceKeypoint.new(0.796662, 0.6234569999999999, 0.123457), NumberSequenceKeypoint.new(0.898331, 0.87037, 0.12963), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ZGlitchOrinteu.Parent = Objects.PARTICLES
-
-Objects.Explosion = Instance.new("ParticleEmitter")
-Objects.Explosion.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Explosion.Drag = 1
-Objects.Explosion.Lifetime = NumberRange.new(1, 1)
-Objects.Explosion.LightInfluence = 1
-Objects.Explosion.Name = "Explosion"
-Objects.Explosion.Rate = 100
-Objects.Explosion.RotSpeed = NumberRange.new(-90, 90)
-Objects.Explosion.Rotation = NumberRange.new(-360, 360)
-Objects.Explosion.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 10, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Explosion.Speed = NumberRange.new(10, 10)
-Objects.Explosion.SpreadAngle = Vector2.new(-360, 360)
-Objects.Explosion.Texture = "rbxassetid://1208118894"
-Objects.Explosion.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.0988048, 0.9567899999999999, 0), NumberSequenceKeypoint.new(0.19999999999999998, 0.932099, 0), NumberSequenceKeypoint.new(0.8015939999999999, 0.932099, 0), NumberSequenceKeypoint.new(0.897233, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Explosion.Parent = Objects.PARTICLES
-
-Objects.ZGlitch = Instance.new("ParticleEmitter")
-Objects.ZGlitch.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.29284499999999997, 70.99990457296371), ColorSequenceKeypoint.new(0.5956739999999999, 80.00013202428818), ColorSequenceKeypoint.new(0.826955, 91.99991852045059), ColorSequenceKeypoint.new(1, 17.999991327524185)}
-Objects.ZGlitch.Drag = 0.5
-Objects.ZGlitch.Lifetime = NumberRange.new(5, 5)
-Objects.ZGlitch.LightInfluence = 0.5
-Objects.ZGlitch.Name = "ZGlitch"
-Objects.ZGlitch.Rate = 100
-Objects.ZGlitch.RotSpeed = NumberRange.new(10, 40)
-Objects.ZGlitch.Rotation = NumberRange.new(-360, 360)
-Objects.ZGlitch.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 1), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.ZGlitch.Speed = NumberRange.new(2, 2)
-Objects.ZGlitch.SpreadAngle = Vector2.new(-360, 360)
-Objects.ZGlitch.Texture = "rbxasset://textures/particles/smoke_main.dds"
-Objects.ZGlitch.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.11229099999999999, 0.728395, 0.0178612), NumberSequenceKeypoint.new(0.796662, 0.6234569999999999, 0.123457), NumberSequenceKeypoint.new(0.898331, 0.87037, 0.12963), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ZGlitch.Parent = Objects.PARTICLES
-
-Objects.endParticle = Instance.new("Part")
-Objects.endParticle.Anchored = true
-Objects.endParticle.BottomSurface = Enum.SurfaceType.Smooth
-Objects.endParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
-Objects.endParticle.Name = "endParticle"
-Objects.endParticle.Size = Vector3.new(1, 1, 1)
-Objects.endParticle.TopSurface = Enum.SurfaceType.Smooth
-Objects.endParticle.Transparency = 1
-Objects.endParticle.Parent = Objects.PARTICLES
-
-Objects.BlackGlow = Instance.new("ParticleEmitter")
-Objects.BlackGlow.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.BlackGlow.Drag = 1
-Objects.BlackGlow.Lifetime = NumberRange.new(1, 2)
-Objects.BlackGlow.LightInfluence = 1
-Objects.BlackGlow.Name = "BlackGlow"
-Objects.BlackGlow.Rate = 80
-Objects.BlackGlow.RotSpeed = NumberRange.new(-90, 90)
-Objects.BlackGlow.Rotation = NumberRange.new(-360, 360)
-Objects.BlackGlow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 0.37037, 0)}
-Objects.BlackGlow.Speed = NumberRange.new(0.5, 0.5)
-Objects.BlackGlow.SpreadAngle = Vector2.new(-360, 360)
-Objects.BlackGlow.Texture = "rbxassetid://463021019"
-Objects.BlackGlow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.132016, 0.7160489999999999, 0), NumberSequenceKeypoint.new(0.174704, 0.524691, 0), NumberSequenceKeypoint.new(0.283794, 0.37037, 0), NumberSequenceKeypoint.new(0.788142, 0.32716, 0), NumberSequenceKeypoint.new(0.905138, 0.635803, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.BlackGlow.Parent = Objects.PARTICLES
-
-Objects.SquareParticles = Instance.new("ParticleEmitter")
-Objects.SquareParticles.Drag = 1
-Objects.SquareParticles.EmissionDirection = Enum.NormalId.Front
-Objects.SquareParticles.LightEmission = 1
-Objects.SquareParticles.LightInfluence = 1
-Objects.SquareParticles.Name = "SquareParticles"
-Objects.SquareParticles.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(0.30424799999999996, 0.4374999, 0), NumberSequenceKeypoint.new(0.7267509, 0.3125, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.SquareParticles.Speed = NumberRange.new(7, 7)
-Objects.SquareParticles.SpreadAngle = Vector2.new(0, 180)
-Objects.SquareParticles.Texture = "rbxassetid://1520511685"
-Objects.SquareParticles.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.SquareParticles.Parent = Objects.PARTICLES
-
-Objects.SquareGlow = Instance.new("ParticleEmitter")
-Objects.SquareGlow.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.342762, 100.00003203749657), ColorSequenceKeypoint.new(0.735441, 191.00009500980377), ColorSequenceKeypoint.new(1, 0)}
-Objects.SquareGlow.Lifetime = NumberRange.new(0.25, 0.25)
-Objects.SquareGlow.LightInfluence = 1
-Objects.SquareGlow.Name = "SquareGlow"
-Objects.SquareGlow.Rate = 150
-Objects.SquareGlow.RotSpeed = NumberRange.new(-90, 90)
-Objects.SquareGlow.Rotation = NumberRange.new(-360, 360)
-Objects.SquareGlow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
-Objects.SquareGlow.SpreadAngle = Vector2.new(-360, 360)
-Objects.SquareGlow.Texture = "rbxassetid://1208118894"
-Objects.SquareGlow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.132777, 0.444444, 0), NumberSequenceKeypoint.new(0.17374799999999999, 0.271605, 0), NumberSequenceKeypoint.new(0.29135099999999997, 0, 0), NumberSequenceKeypoint.new(0.7890739999999999, 0, 0), NumberSequenceKeypoint.new(0.913505, 0.265432, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.SquareGlow.Parent = Objects.PARTICLES
-
-Objects.BlastGlowEffect = Instance.new("Part")
-Objects.BlastGlowEffect.Anchored = true
-Objects.BlastGlowEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.BlastGlowEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.BlastGlowEffect.Name = "BlastGlowEffect"
-Objects.BlastGlowEffect.Size = Vector3.new(1, 1, 1)
-Objects.BlastGlowEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.BlastGlowEffect.Transparency = 1
-Objects.BlastGlowEffect.Parent = Objects.PARTICLES
-
-Objects.ChargingEffect = Instance.new("Part")
-Objects.ChargingEffect.Anchored = true
-Objects.ChargingEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.ChargingEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.ChargingEffect.Name = "ChargingEffect"
-Objects.ChargingEffect.Size = Vector3.new(1, 1, 1)
-Objects.ChargingEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.ChargingEffect.Transparency = 1
-Objects.ChargingEffect.Parent = Objects.PARTICLES
-
-Objects.ElectricBubble = Instance.new("Part")
-Objects.ElectricBubble.Anchored = true
-Objects.ElectricBubble.BottomSurface = Enum.SurfaceType.Smooth
-Objects.ElectricBubble.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.ElectricBubble.Name = "ElectricBubble"
-Objects.ElectricBubble.Size = Vector3.new(1, 1, 1)
-Objects.ElectricBubble.TopSurface = Enum.SurfaceType.Smooth
-Objects.ElectricBubble.Transparency = 1
-Objects.ElectricBubble.Parent = Objects.PARTICLES
-
-Objects.VacuumEffect = Instance.new("Part")
-Objects.VacuumEffect.Anchored = true
-Objects.VacuumEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.VacuumEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.VacuumEffect.Name = "VacuumEffect"
-Objects.VacuumEffect.Size = Vector3.new(1, 1, 1)
-Objects.VacuumEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.VacuumEffect.Transparency = 1
-Objects.VacuumEffect.Parent = Objects.PARTICLES
-
-Objects.BladeSpark = Instance.new("ParticleEmitter")
-Objects.BladeSpark.Drag = 1
-Objects.BladeSpark.EmissionDirection = Enum.NormalId.Bottom
-Objects.BladeSpark.Lifetime = NumberRange.new(1, 1)
-Objects.BladeSpark.LightInfluence = 1
-Objects.BladeSpark.Name = "BladeSpark"
-Objects.BladeSpark.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.625, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.BladeSpark.Parent = Objects.PARTICLES
-
-Objects.HealingBurst = Instance.new("Part")
-Objects.HealingBurst.Anchored = true
-Objects.HealingBurst.BottomSurface = Enum.SurfaceType.Smooth
-Objects.HealingBurst.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.HealingBurst.Name = "HealingBurst"
-Objects.HealingBurst.Size = Vector3.new(1, 1, 1)
-Objects.HealingBurst.TopSurface = Enum.SurfaceType.Smooth
-Objects.HealingBurst.Transparency = 1
-Objects.HealingBurst.Parent = Objects.PARTICLES
-
-Objects.HealthLowEffect = Instance.new("Part")
-Objects.HealthLowEffect.Anchored = true
-Objects.HealthLowEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.HealthLowEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.HealthLowEffect.Name = "HealthLowEffect"
-Objects.HealthLowEffect.Size = Vector3.new(1, 1, 1)
-Objects.HealthLowEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.HealthLowEffect.Transparency = 1
-Objects.HealthLowEffect.Parent = Objects.PARTICLES
-
-Objects.ImpactEffect = Instance.new("Part")
-Objects.ImpactEffect.Anchored = true
-Objects.ImpactEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.ImpactEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.ImpactEffect.Name = "ImpactEffect"
-Objects.ImpactEffect.Size = Vector3.new(1, 1, 1)
-Objects.ImpactEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.ImpactEffect.Transparency = 1
-Objects.ImpactEffect.Parent = Objects.PARTICLES
-
-Objects.LightEffect = Instance.new("Part")
-Objects.LightEffect.Anchored = true
-Objects.LightEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.LightEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.LightEffect.Name = "LightEffect"
-Objects.LightEffect.Size = Vector3.new(1, 1, 1)
-Objects.LightEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.LightEffect.Transparency = 1
-Objects.LightEffect.Parent = Objects.PARTICLES
-
-Objects.PartyEffect = Instance.new("Part")
-Objects.PartyEffect.Anchored = true
-Objects.PartyEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.PartyEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.PartyEffect.Name = "PartyEffect"
-Objects.PartyEffect.Size = Vector3.new(1, 1, 1)
-Objects.PartyEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.PartyEffect.Transparency = 1
-Objects.PartyEffect.Parent = Objects.PARTICLES
-
-Objects.RadiantEffect = Instance.new("Part")
-Objects.RadiantEffect.Anchored = true
-Objects.RadiantEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.RadiantEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.RadiantEffect.Name = "RadiantEffect"
-Objects.RadiantEffect.Size = Vector3.new(1, 1, 1)
-Objects.RadiantEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.RadiantEffect.Transparency = 1
-Objects.RadiantEffect.Parent = Objects.PARTICLES
-
-Objects.RechargedEffect = Instance.new("Part")
-Objects.RechargedEffect.Anchored = true
-Objects.RechargedEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.RechargedEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.RechargedEffect.Name = "RechargedEffect"
-Objects.RechargedEffect.Size = Vector3.new(1, 1, 1)
-Objects.RechargedEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.RechargedEffect.Transparency = 1
-Objects.RechargedEffect.Parent = Objects.PARTICLES
-
-Objects.ShiningEffect = Instance.new("Part")
-Objects.ShiningEffect.Anchored = true
-Objects.ShiningEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.ShiningEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.ShiningEffect.Name = "ShiningEffect"
-Objects.ShiningEffect.Size = Vector3.new(1, 1, 1)
-Objects.ShiningEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.ShiningEffect.Transparency = 1
-Objects.ShiningEffect.Parent = Objects.PARTICLES
-
-Objects.ElectroBall = Instance.new("Part")
-Objects.ElectroBall.Anchored = true
-Objects.ElectroBall.BottomSurface = Enum.SurfaceType.Smooth
-Objects.ElectroBall.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.ElectroBall.Name = "ElectroBall"
-Objects.ElectroBall.Size = Vector3.new(1, 1, 1)
-Objects.ElectroBall.TopSurface = Enum.SurfaceType.Smooth
-Objects.ElectroBall.Transparency = 1
-Objects.ElectroBall.Parent = Objects.PARTICLES
-
-Objects.FlashEffect = Instance.new("Part")
-Objects.FlashEffect.Anchored = true
-Objects.FlashEffect.BottomSurface = Enum.SurfaceType.Smooth
-Objects.FlashEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.FlashEffect.Name = "FlashEffect"
-Objects.FlashEffect.Size = Vector3.new(1, 1, 1)
-Objects.FlashEffect.TopSurface = Enum.SurfaceType.Smooth
-Objects.FlashEffect.Transparency = 1
-Objects.FlashEffect.Parent = Objects.PARTICLES
-
-Objects.FlashEffect2 = Instance.new("Part")
-Objects.FlashEffect2.Anchored = true
-Objects.FlashEffect2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.FlashEffect2.CFrame = CFrame.new(48.337, -381.498, 205.026)
-Objects.FlashEffect2.Name = "FlashEffect"
-Objects.FlashEffect2.Size = Vector3.new(1, 1, 1)
-Objects.FlashEffect2.TopSurface = Enum.SurfaceType.Smooth
-Objects.FlashEffect2.Transparency = 1
-Objects.FlashEffect2.Parent = Objects.PARTICLES
-
-Objects.defParticle = Instance.new("Part")
-Objects.defParticle.Anchored = true
-Objects.defParticle.BottomSurface = Enum.SurfaceType.Smooth
-Objects.defParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
-Objects.defParticle.Name = "defParticle"
-Objects.defParticle.Size = Vector3.new(1, 1, 1)
-Objects.defParticle.TopSurface = Enum.SurfaceType.Smooth
-Objects.defParticle.Transparency = 1
-Objects.defParticle.Parent = Objects.PARTICLES
-
-Objects.spdParticle = Instance.new("Part")
-Objects.spdParticle.Anchored = true
-Objects.spdParticle.BottomSurface = Enum.SurfaceType.Smooth
-Objects.spdParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
-Objects.spdParticle.Name = "spdParticle"
-Objects.spdParticle.Size = Vector3.new(1, 1, 1)
-Objects.spdParticle.TopSurface = Enum.SurfaceType.Smooth
-Objects.spdParticle.Transparency = 1
-Objects.spdParticle.Parent = Objects.PARTICLES
-
-Objects.atkParticle = Instance.new("Part")
-Objects.atkParticle.Anchored = true
-Objects.atkParticle.BottomSurface = Enum.SurfaceType.Smooth
-Objects.atkParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
-Objects.atkParticle.Name = "atkParticle"
-Objects.atkParticle.Size = Vector3.new(1, 1, 1)
-Objects.atkParticle.TopSurface = Enum.SurfaceType.Smooth
-Objects.atkParticle.Transparency = 1
-Objects.atkParticle.Parent = Objects.PARTICLES
-
-Objects.ZVero = Instance.new("ParticleEmitter")
-Objects.ZVero.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.ZVero.Drag = 1
-Objects.ZVero.Lifetime = NumberRange.new(1, 1)
-Objects.ZVero.LightEmission = 0.09999999999999999
-Objects.ZVero.LightInfluence = 1
-Objects.ZVero.Name = "ZVero"
-Objects.ZVero.Rate = 50
-Objects.ZVero.RotSpeed = NumberRange.new(40, 90)
-Objects.ZVero.Rotation = NumberRange.new(90, 360)
-Objects.ZVero.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 2.16049, 0)}
-Objects.ZVero.Speed = NumberRange.new(1, 1)
-Objects.ZVero.SpreadAngle = Vector2.new(360, 360)
-Objects.ZVero.Texture = "rbxasset://textures/particles/explosion01_shockwave_main.dds"
-Objects.ZVero.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.0735178, 0.271605, 0), NumberSequenceKeypoint.new(0.788933, 0.24074099999999998, 0), NumberSequenceKeypoint.new(0.8973749999999999, 0.481481, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ZVero.Parent = Objects.PARTICLES
-
-Objects.Attachment11 = Instance.new("Attachment")
-Objects.Attachment11.Position = Vector3.new(-0.462, 0, 0)
-Objects.Attachment11.Parent = Objects.TrailSpiral
-
-Objects.Attachment12 = Instance.new("Attachment")
-Objects.Attachment12.Position = Vector3.new(0.428, 0, 0)
-Objects.Attachment12.Parent = Objects.TrailSpiral
-
-Objects.Trail5 = Instance.new("Trail")
-Objects.Trail5.Attachment0 = Objects.Attachment11
-Objects.Trail5.Attachment1 = Objects.Attachment12
-Objects.Trail5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail5.FaceCamera = true
-Objects.Trail5.Lifetime = 0.3
-Objects.Trail5.Texture = "rbxassetid://945758042"
-Objects.Trail5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail5.Parent = Objects.TrailSpiral
-
-Objects.MAGIC = Instance.new("Decal")
-Objects.MAGIC.Color3 = Color3.fromRGB(0, 0, 0)
-Objects.MAGIC.Face = Enum.NormalId.Top
-Objects.MAGIC.Name = "MAGIC"
-Objects.MAGIC.Texture = "rbxassetid://737395850"
-Objects.MAGIC.Parent = Objects.MAGICCIRCLE
-
-Objects.MAGIC2 = Instance.new("Decal")
-Objects.MAGIC2.Color3 = Color3.fromRGB(0, 0, 0)
-Objects.MAGIC2.Face = Enum.NormalId.Bottom
-Objects.MAGIC2.Name = "MAGIC"
-Objects.MAGIC2.Texture = "rbxassetid://737395850"
-Objects.MAGIC2.Parent = Objects.MAGICCIRCLE
-
-Objects.BodyPosition = Instance.new("BodyPosition")
-Objects.BodyPosition.MaxForce = Vector3.new(10000, 10000, 10000)
-Objects.BodyPosition.Parent = Objects.ParticleE1
-
-Objects.Attachment13 = Instance.new("Attachment")
-Objects.Attachment13.Position = Vector3.new(0, -0.45, 0)
-Objects.Attachment13.Parent = Objects.ParticleE1
-
-Objects.Attachment14 = Instance.new("Attachment")
-Objects.Attachment14.Position = Vector3.new(0, 0.334, 0)
-Objects.Attachment14.Parent = Objects.ParticleE1
-
-Objects.Trail6 = Instance.new("Trail")
-Objects.Trail6.Attachment0 = Objects.Attachment13
-Objects.Trail6.Attachment1 = Objects.Attachment14
-Objects.Trail6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail6.FaceCamera = true
-Objects.Trail6.Lifetime = 0.25
-Objects.Trail6.LightInfluence = 1
-Objects.Trail6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail6.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Trail6.Parent = Objects.ParticleE1
-
-Objects.MAGIC3 = Instance.new("Decal")
-Objects.MAGIC3.Color3 = Color3.fromRGB(39, 0, 124)
-Objects.MAGIC3.Face = Enum.NormalId.Top
-Objects.MAGIC3.Name = "MAGIC"
-Objects.MAGIC3.Texture = "rbxgameasset://Images/Universal_Fantasia_Logo"
-Objects.MAGIC3.Parent = Objects.MAGICCIRCLE2
-
-Objects.MAGIC4 = Instance.new("Decal")
-Objects.MAGIC4.Color3 = Color3.fromRGB(39, 0, 124)
-Objects.MAGIC4.Face = Enum.NormalId.Bottom
-Objects.MAGIC4.Name = "MAGIC"
-Objects.MAGIC4.Texture = "rbxgameasset://Images/Universal_Fantasia_Logo"
-Objects.MAGIC4.Parent = Objects.MAGICCIRCLE2
-
-Objects.MeshPart = Instance.new("MeshPart")
-Objects.MeshPart.BrickColor = BrickColor.new("Black")
-Objects.MeshPart.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(42.802, -381.475, 49.353)
-Objects.MeshPart.Color = Color3.fromRGB(27, 42, 53)
-Objects.MeshPart.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart.Orientation = Vector3.new(89.47, -154.47, 23.73)
-Objects.MeshPart.Position = Vector3.new(42.802, -381.475, 49.353)
-Objects.MeshPart.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart.Size = Vector3.new(2.689, 0.225, 0.107)
-Objects.MeshPart.Transparency = 1
-Objects.MeshPart.Parent = Objects.Black
-
-Objects.Part = Instance.new("Part")
-Objects.Part.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.099000000000004, -381.468, 49.336)
-Objects.Part.Color = Color3.fromRGB(22, 22, 22)
-Objects.Part.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part.Material = Enum.Material.SmoothPlastic
-Objects.Part.Shape = Enum.PartType.Cylinder
-Objects.Part.Size = Vector3.new(0.277, 0.59, 0.451)
-Objects.Part.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part.Transparency = 1
-Objects.Part.Parent = Objects.Black
-
-Objects.MeshPart2 = Instance.new("MeshPart")
-Objects.MeshPart2.BrickColor = BrickColor.new("Really black")
-Objects.MeshPart2.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(44.066, -381.484, 49.816)
-Objects.MeshPart2.Color = Color3.fromRGB(0, 0, 0)
-Objects.MeshPart2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart2.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart2.Orientation = Vector3.new(89.47, -154.47, 23.73)
-Objects.MeshPart2.Position = Vector3.new(44.066, -381.484, 49.816)
-Objects.MeshPart2.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart2.Size = Vector3.new(0.372, 0.709, 0.222)
-Objects.MeshPart2.Transparency = 1
-Objects.MeshPart2.Parent = Objects.Black
-
-Objects.MeshPart3 = Instance.new("MeshPart")
-Objects.MeshPart3.BrickColor = BrickColor.new("Black")
-Objects.MeshPart3.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(92), math.rad(-90)) + Vector3.new(43.092, -381.454, 49.315)
-Objects.MeshPart3.Color = Color3.fromRGB(27, 42, 53)
-Objects.MeshPart3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart3.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart3.Orientation = Vector3.new(0.21, 91.8, -89.51)
-Objects.MeshPart3.Position = Vector3.new(43.092, -381.454, 49.315)
-Objects.MeshPart3.Rotation = Vector3.new(173.24, 88.18, 97.24000000000001)
-Objects.MeshPart3.Size = Vector3.new(0.116, 0.34800000000000003, 2.761)
-Objects.MeshPart3.Transparency = 1
-Objects.MeshPart3.Parent = Objects.Black
-
-Objects.MeshPart4 = Instance.new("MeshPart")
-Objects.MeshPart4.BrickColor = BrickColor.new("Black")
-Objects.MeshPart4.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(45.191, -381.483, 49.162)
-Objects.MeshPart4.Color = Color3.fromRGB(27, 42, 53)
-Objects.MeshPart4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart4.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart4.Orientation = Vector3.new(89.47, -154.46, 23.740000000000002)
-Objects.MeshPart4.Position = Vector3.new(45.191, -381.483, 49.162)
-Objects.MeshPart4.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart4.Size = Vector3.new(2.068, 0.423, 0.258)
-Objects.MeshPart4.Transparency = 1
-Objects.MeshPart4.Parent = Objects.Black
-
-Objects.MeshPart5 = Instance.new("MeshPart")
-Objects.MeshPart5.BrickColor = BrickColor.new("Really black")
-Objects.MeshPart5.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(44.613, -381.481, 49.18)
-Objects.MeshPart5.Color = Color3.fromRGB(0, 0, 0)
-Objects.MeshPart5.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart5.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart5.Orientation = Vector3.new(89.47, -154.43, 23.77)
-Objects.MeshPart5.Position = Vector3.new(44.613, -381.481, 49.18)
-Objects.MeshPart5.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart5.Size = Vector3.new(0.6990000000000001, 0.263, 0.378)
-Objects.MeshPart5.Transparency = 1
-Objects.MeshPart5.Parent = Objects.Black
-
-Objects.MeshPart6 = Instance.new("MeshPart")
-Objects.MeshPart6.BrickColor = BrickColor.new("Really black")
-Objects.MeshPart6.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(43.802, -381.462, 48.778)
-Objects.MeshPart6.Color = Color3.fromRGB(0, 0, 0)
-Objects.MeshPart6.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart6.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart6.Orientation = Vector3.new(89.47, -154.47, 23.73)
-Objects.MeshPart6.Position = Vector3.new(43.802, -381.462, 48.778)
-Objects.MeshPart6.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart6.Size = Vector3.new(0.808, 0.807, 0.17200000000000001)
-Objects.MeshPart6.Transparency = 1
-Objects.MeshPart6.Parent = Objects.Black
-
-Objects.MeshPart7 = Instance.new("MeshPart")
-Objects.MeshPart7.BrickColor = BrickColor.new("Black")
-Objects.MeshPart7.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(44.066, -381.484, 49.809)
-Objects.MeshPart7.Color = Color3.fromRGB(27, 42, 53)
-Objects.MeshPart7.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart7.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart7.Orientation = Vector3.new(89.47, -154.47, 23.72)
-Objects.MeshPart7.Position = Vector3.new(44.066, -381.484, 49.809)
-Objects.MeshPart7.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart7.Size = Vector3.new(0.32, 0.6950000000000001, 0.23500000000000001)
-Objects.MeshPart7.Transparency = 1
-Objects.MeshPart7.Parent = Objects.Black
-
-Objects.MeshPart8 = Instance.new("MeshPart")
-Objects.MeshPart8.BrickColor = BrickColor.new("Black")
-Objects.MeshPart8.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(45.24, -381.486, 49.612)
-Objects.MeshPart8.Color = Color3.fromRGB(27, 42, 53)
-Objects.MeshPart8.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart8.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart8.Orientation = Vector3.new(89.47, -154.47, 23.73)
-Objects.MeshPart8.Position = Vector3.new(45.24, -381.486, 49.612)
-Objects.MeshPart8.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart8.Size = Vector3.new(2.049, 1.059, 0.268)
-Objects.MeshPart8.Transparency = 1
-Objects.MeshPart8.Parent = Objects.Black
-
-Objects.Part2 = Instance.new("Part")
-Objects.Part2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part2.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.099000000000004, -381.474, 49.336)
-Objects.Part2.Color = Color3.fromRGB(12, 19, 25)
-Objects.Part2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part2.Material = Enum.Material.Neon
-Objects.Part2.Shape = Enum.PartType.Cylinder
-Objects.Part2.Size = Vector3.new(0.358, 0.058, 0.058)
-Objects.Part2.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part2.Transparency = 1
-Objects.Part2.Parent = Objects.Black
-
-Objects.MeshPart9 = Instance.new("MeshPart")
-Objects.MeshPart9.BrickColor = BrickColor.new("Really black")
-Objects.MeshPart9.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(41.709, -381.47, 49.359)
-Objects.MeshPart9.Color = Color3.fromRGB(17, 17, 17)
-Objects.MeshPart9.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart9.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart9.Orientation = Vector3.new(89.47, -154.44, 23.76)
-Objects.MeshPart9.Position = Vector3.new(41.709, -381.47, 49.359)
-Objects.MeshPart9.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.MeshPart9.Size = Vector3.new(0.504, 0.329, 0.153)
-Objects.MeshPart9.Transparency = 1
-Objects.MeshPart9.Parent = Objects.Black
-
-Objects.MeshPart10 = Instance.new("MeshPart")
-Objects.MeshPart10.BrickColor = BrickColor.new("Black")
-Objects.MeshPart10.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(92), math.rad(90)) + Vector3.new(43.094, -381.46500000000003, 49.367000000000004)
-Objects.MeshPart10.Color = Color3.fromRGB(27, 42, 53)
-Objects.MeshPart10.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.MeshPart10.Material = Enum.Material.SmoothPlastic
-Objects.MeshPart10.Orientation = Vector3.new(0.21, 91.8, 90.49)
-Objects.MeshPart10.Position = Vector3.new(43.094, -381.46500000000003, 49.367000000000004)
-Objects.MeshPart10.Rotation = Vector3.new(173.24, 88.18, -82.76)
-Objects.MeshPart10.Size = Vector3.new(0.116, 0.336, 2.761)
-Objects.MeshPart10.Transparency = 1
-Objects.MeshPart10.Parent = Objects.Black
-
-Objects.Part3 = Instance.new("Part")
-Objects.Part3.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part3.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.111000000000004, -381.48, 49.336)
-Objects.Part3.Color = Color3.fromRGB(27, 42, 53)
-Objects.Part3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part3.Material = Enum.Material.SmoothPlastic
-Objects.Part3.Shape = Enum.PartType.Cylinder
-Objects.Part3.Size = Vector3.new(0.20800000000000002, 0.636, 0.52)
-Objects.Part3.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part3.Transparency = 1
-Objects.Part3.Parent = Objects.Black
-
-Objects.Part4 = Instance.new("Part")
-Objects.Part4.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part4.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.099000000000004, -381.468, 49.337)
-Objects.Part4.Color = Color3.fromRGB(0, 0, 0)
-Objects.Part4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part4.Material = Enum.Material.Neon
-Objects.Part4.Shape = Enum.PartType.Cylinder
-Objects.Part4.Size = Vector3.new(0.324, 0.358, 0.22)
-Objects.Part4.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part4.Transparency = 1
-Objects.Part4.Parent = Objects.Black
-
-Objects.Handle = Instance.new("Part")
-Objects.Handle.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Handle.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(2), math.rad(0)) + Vector3.new(42.566, -381.369, 49.336)
-Objects.Handle.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Handle.Name = "Handle"
-Objects.Handle.Size = Vector3.new(2.56, 1, 1.04)
-Objects.Handle.TopSurface = Enum.SurfaceType.Smooth
-Objects.Handle.Transparency = 1
-Objects.Handle.Parent = Objects.Black
-
-Objects.BladeHitbox = Instance.new("Part")
-Objects.BladeHitbox.BottomSurface = Enum.SurfaceType.Smooth
-Objects.BladeHitbox.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(2), math.rad(0)) + Vector3.new(48.843, -381.439, 49.034)
-Objects.BladeHitbox.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.BladeHitbox.Name = "BladeHitbox"
-Objects.BladeHitbox.Size = Vector3.new(8.72, 1, 2)
-Objects.BladeHitbox.TopSurface = Enum.SurfaceType.Smooth
-Objects.BladeHitbox.Transparency = 1
-Objects.BladeHitbox.Parent = Objects.Black
-
-Objects.Weld5 = Instance.new("Script")
-Objects.Weld5.Name = "Weld"
-Objects.Weld5.Parent = Objects.Black
-
-Objects.MWeld = Instance.new("Weld")
-Objects.MWeld.Name = "MWeld"
-Objects.MWeld.Part1 = Objects.Handle
-Objects.MWeld.Parent = Objects.Black
-
-Objects.Blade = Instance.new("MeshPart")
-Objects.Blade.BrickColor = BrickColor.new("Really black")
-Objects.Blade.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(48.425000000000004, -381.494, 49.003)
-Objects.Blade.Color = Color3.fromRGB(0, 0, 0)
-Objects.Blade.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Blade.Material = Enum.Material.Slate
-Objects.Blade.Name = "Blade"
-Objects.Blade.Orientation = Vector3.new(89.47, -154.43, 23.76)
-Objects.Blade.Position = Vector3.new(48.425000000000004, -381.494, 49.003)
-Objects.Blade.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
-Objects.Blade.Size = Vector3.new(9.292, 0.874, 0.122)
-Objects.Blade.Transparency = 1
-Objects.Blade.Parent = Objects.Black
-
-Objects.EnhancedCone = Instance.new("MeshPart")
-Objects.EnhancedCone.BrickColor = BrickColor.new("Really black")
-Objects.EnhancedCone.CFrame = CFrame.fromOrientation(math.rad(85), math.rad(-80), math.rad(-170)) + Vector3.new(50.405, -381.837, 87.93900000000001)
-Objects.EnhancedCone.Color = Color3.fromRGB(17, 17, 17)
-Objects.EnhancedCone.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.EnhancedCone.Material = Enum.Material.Metal
-Objects.EnhancedCone.Name = "EnhancedCone"
-Objects.EnhancedCone.Orientation = Vector3.new(84.94, -79.79, -169.54)
-Objects.EnhancedCone.Position = Vector3.new(50.405, -381.837, 87.93900000000001)
-Objects.EnhancedCone.Rotation = Vector3.new(89.10000000000001, -4.98, -89.79)
-Objects.EnhancedCone.Size = Vector3.new(0.218, 0.229, 0.218)
-Objects.EnhancedCone.Transparency = 1
-Objects.EnhancedCone.Parent = Objects.Outcasted
-
-Objects.Part5 = Instance.new("Part")
-Objects.Part5.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part5.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.515, -381.76, 87.935)
-Objects.Part5.Color = Color3.fromRGB(17, 17, 17)
-Objects.Part5.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part5.Material = Enum.Material.Metal
-Objects.Part5.Shape = Enum.PartType.Cylinder
-Objects.Part5.Size = Vector3.new(1.559, 0.218, 0.218)
-Objects.Part5.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part5.Transparency = 1
-Objects.Part5.Parent = Objects.Outcasted
-
-Objects.Part6 = Instance.new("Part")
-Objects.Part6.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part6.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.58, -381.765, 87.935)
-Objects.Part6.Color = Color3.fromRGB(89, 34, 89)
-Objects.Part6.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part6.Material = Enum.Material.Neon
-Objects.Part6.Shape = Enum.PartType.Cylinder
-Objects.Part6.Size = Vector3.new(0.065, 0.229, 0.229)
-Objects.Part6.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part6.Transparency = 1
-Objects.Part6.Parent = Objects.Outcasted
-
-Objects.Part7 = Instance.new("Part")
-Objects.Part7.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part7.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.014, -381.803, 87.937)
-Objects.Part7.Color = Color3.fromRGB(89, 34, 89)
-Objects.Part7.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part7.Material = Enum.Material.Neon
-Objects.Part7.Shape = Enum.PartType.Cylinder
-Objects.Part7.Size = Vector3.new(0.065, 0.229, 0.229)
-Objects.Part7.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part7.Transparency = 1
-Objects.Part7.Parent = Objects.Outcasted
-
-Objects.Part8 = Instance.new("Part")
-Objects.Part8.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part8.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.014, -381.80400000000003, 87.937)
-Objects.Part8.Color = Color3.fromRGB(27, 42, 53)
-Objects.Part8.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part8.Material = Enum.Material.Glass
-Objects.Part8.Shape = Enum.PartType.Cylinder
-Objects.Part8.Size = Vector3.new(0.05, 0.234, 0.234)
-Objects.Part8.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part8.Transparency = 1
-Objects.Part8.Parent = Objects.Outcasted
-
-Objects.Part9 = Instance.new("Part")
-Objects.Part9.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part9.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.58, -381.766, 87.935)
-Objects.Part9.Color = Color3.fromRGB(27, 42, 53)
-Objects.Part9.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part9.Material = Enum.Material.Glass
-Objects.Part9.Shape = Enum.PartType.Cylinder
-Objects.Part9.Size = Vector3.new(0.05, 0.234, 0.234)
-Objects.Part9.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part9.Transparency = 1
-Objects.Part9.Parent = Objects.Outcasted
-
-Objects.Part10 = Instance.new("Part")
-Objects.Part10.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part10.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(45.996, -381.43600000000004, 87.886)
-Objects.Part10.Color = Color3.fromRGB(98, 37, 209)
-Objects.Part10.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part10.Material = Enum.Material.Neon
-Objects.Part10.Size = Vector3.new(1.5130000000000001, 0.132, 0.099)
-Objects.Part10.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part10.Transparency = 1
-Objects.Part10.Parent = Objects.Outcasted
-
-Objects.Part11 = Instance.new("Part")
-Objects.Part11.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part11.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-165), math.rad(5)) + Vector3.new(47.107, -381.555, 88.128)
-Objects.Part11.Color = Color3.fromRGB(98, 37, 209)
-Objects.Part11.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part11.Material = Enum.Material.Glass
-Objects.Part11.Size = Vector3.new(0.234, 0.09, 0.546)
-Objects.Part11.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part11.Transparency = 1
-Objects.Part11.Parent = Objects.Outcasted
-
-Objects.Part12 = Instance.new("Part")
-Objects.Part12.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part12.CFrame = CFrame.fromOrientation(math.rad(2), math.rad(165), math.rad(5)) + Vector3.new(47.109, -381.562, 87.691)
-Objects.Part12.Color = Color3.fromRGB(98, 37, 209)
-Objects.Part12.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part12.Material = Enum.Material.Glass
-Objects.Part12.Size = Vector3.new(0.234, 0.09, 0.546)
-Objects.Part12.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part12.Transparency = 1
-Objects.Part12.Parent = Objects.Outcasted
-
-Objects.Part13 = Instance.new("Part")
-Objects.Part13.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part13.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.2, -381.732, 87.933)
-Objects.Part13.Color = Color3.fromRGB(89, 34, 89)
-Objects.Part13.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part13.Material = Enum.Material.Neon
-Objects.Part13.Shape = Enum.PartType.Cylinder
-Objects.Part13.Size = Vector3.new(0.065, 0.229, 0.229)
-Objects.Part13.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part13.Transparency = 1
-Objects.Part13.Parent = Objects.Outcasted
-
-Objects.Part14 = Instance.new("Part")
-Objects.Part14.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part14.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(45.996, -381.43600000000004, 87.886)
-Objects.Part14.Color = Color3.fromRGB(98, 37, 209)
-Objects.Part14.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part14.Material = Enum.Material.Neon
-Objects.Part14.Size = Vector3.new(1.5130000000000001, 0.066, 0.198)
-Objects.Part14.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part14.Transparency = 1
-Objects.Part14.Parent = Objects.Outcasted
-
-Objects.Part15 = Instance.new("Part")
-Objects.Part15.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Part15.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.2, -381.732, 87.933)
-Objects.Part15.Color = Color3.fromRGB(27, 42, 53)
-Objects.Part15.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Part15.Material = Enum.Material.Glass
-Objects.Part15.Shape = Enum.PartType.Cylinder
-Objects.Part15.Size = Vector3.new(0.05, 0.234, 0.234)
-Objects.Part15.TopSurface = Enum.SurfaceType.Smooth
-Objects.Part15.Transparency = 1
-Objects.Part15.Parent = Objects.Outcasted
-
-Objects.Union = Instance.new("UnionOperation")
-Objects.Union.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(48.057, -381.531, 87.628)
-Objects.Union.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union.Material = Enum.Material.Glass
-Objects.Union.Size = Vector3.new(1.188, 0.05, 0.272)
-Objects.Union.Transparency = 1
-Objects.Union.UsePartColor = true
-Objects.Union.Parent = Objects.Outcasted
-
-Objects.Union2 = Instance.new("UnionOperation")
-Objects.Union2.CFrame = CFrame.fromOrientation(math.rad(-4), math.rad(-125), math.rad(-176)) + Vector3.new(47.09, -381.58, 86.857)
-Objects.Union2.Color = Color3.fromRGB(61, 21, 133)
-Objects.Union2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union2.Material = Enum.Material.Neon
-Objects.Union2.Size = Vector3.new(0.293, 0.22, 0.653)
-Objects.Union2.Transparency = 1
-Objects.Union2.UsePartColor = true
-Objects.Union2.Parent = Objects.Outcasted
-
-Objects.Union3 = Instance.new("UnionOperation")
-Objects.Union3.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(48.137, -381.577, 87.917)
-Objects.Union3.Color = Color3.fromRGB(17, 17, 17)
-Objects.Union3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union3.Material = Enum.Material.Metal
-Objects.Union3.Size = Vector3.new(1.468, 0.05, 1.147)
-Objects.Union3.Transparency = 1
-Objects.Union3.UsePartColor = true
-Objects.Union3.Parent = Objects.Outcasted
-
-Objects.Union4 = Instance.new("UnionOperation")
-Objects.Union4.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(48.446, -381.555, 87.924)
-Objects.Union4.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union4.Material = Enum.Material.Metal
-Objects.Union4.Size = Vector3.new(0.934, 0.12, 0.48)
-Objects.Union4.Transparency = 1
-Objects.Union4.UsePartColor = true
-Objects.Union4.Parent = Objects.Outcasted
-
-Objects.Union5 = Instance.new("UnionOperation")
-Objects.Union5.CFrame = CFrame.fromOrientation(math.rad(4), math.rad(55), math.rad(-4)) + Vector3.new(47.222, -381.557, 89.068)
-Objects.Union5.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union5.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union5.Material = Enum.Material.DiamondPlate
-Objects.Union5.Size = Vector3.new(1.057, 0.224, 0.46)
-Objects.Union5.Transparency = 1
-Objects.Union5.UsePartColor = true
-Objects.Union5.Parent = Objects.Outcasted
-
-Objects.Union6 = Instance.new("UnionOperation")
-Objects.Union6.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(179), math.rad(5)) + Vector3.new(49.531, -381.702, 87.706)
-Objects.Union6.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union6.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union6.Material = Enum.Material.SmoothPlastic
-Objects.Union6.Size = Vector3.new(1.593, 0.05, 0.28)
-Objects.Union6.Transparency = 1
-Objects.Union6.UsePartColor = true
-Objects.Union6.Parent = Objects.Outcasted
-
-Objects.Union7 = Instance.new("UnionOperation")
-Objects.Union7.CFrame = CFrame.fromOrientation(math.rad(-4), math.rad(-125), math.rad(-176)) + Vector3.new(47.013, -381.574, 86.804)
-Objects.Union7.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union7.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union7.Material = Enum.Material.Glass
-Objects.Union7.Size = Vector3.new(0.243, 0.182, 0.542)
-Objects.Union7.Transparency = 1
-Objects.Union7.UsePartColor = true
-Objects.Union7.Parent = Objects.Outcasted
-
-Objects.Union8 = Instance.new("UnionOperation")
-Objects.Union8.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(46.729, -381.511, 87.879)
-Objects.Union8.Color = Color3.fromRGB(17, 17, 17)
-Objects.Union8.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union8.Material = Enum.Material.Metal
-Objects.Union8.Size = Vector3.new(0.84, 0.252, 0.997)
-Objects.Union8.Transparency = 1
-Objects.Union8.UsePartColor = true
-Objects.Union8.Parent = Objects.Outcasted
-
-Objects.Union9 = Instance.new("UnionOperation")
-Objects.Union9.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.072, -381.545, 88.994)
-Objects.Union9.Color = Color3.fromRGB(61, 21, 133)
-Objects.Union9.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union9.Material = Enum.Material.Neon
-Objects.Union9.Size = Vector3.new(0.293, 0.22, 0.653)
-Objects.Union9.Transparency = 1
-Objects.Union9.UsePartColor = true
-Objects.Union9.Parent = Objects.Outcasted
-
-Objects.Union10 = Instance.new("UnionOperation")
-Objects.Union10.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(48.126, -381.702, 87.919)
-Objects.Union10.Color = Color3.fromRGB(17, 17, 17)
-Objects.Union10.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union10.Size = Vector3.new(1.468, 0.05, 1.147)
-Objects.Union10.Transparency = 1
-Objects.Union10.UsePartColor = true
-Objects.Union10.Parent = Objects.Outcasted
-
-Objects.Union11 = Instance.new("UnionOperation")
-Objects.Union11.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(47.779, -381.52, 87.918)
-Objects.Union11.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union11.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union11.Material = Enum.Material.Glass
-Objects.Union11.Size = Vector3.new(0.661, 0.158, 0.3)
-Objects.Union11.Transparency = 1
-Objects.Union11.UsePartColor = true
-Objects.Union11.Parent = Objects.Outcasted
-
-Objects.Union12 = Instance.new("UnionOperation")
-Objects.Union12.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(15), math.rad(-5)) + Vector3.new(45.689, -381.409, 87.953)
-Objects.Union12.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union12.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union12.Material = Enum.Material.Metal
-Objects.Union12.Size = Vector3.new(2.458, 0.168, 0.905)
-Objects.Union12.Transparency = 1
-Objects.Union12.UsePartColor = true
-Objects.Union12.Parent = Objects.Outcasted
-
-Objects.Union13 = Instance.new("UnionOperation")
-Objects.Union13.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(47.508, -381.496, 87.917)
-Objects.Union13.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union13.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union13.Material = Enum.Material.Glass
-Objects.Union13.Size = Vector3.new(0.661, 0.158, 0.3)
-Objects.Union13.Transparency = 1
-Objects.Union13.UsePartColor = true
-Objects.Union13.Parent = Objects.Outcasted
-
-Objects.Union14 = Instance.new("UnionOperation")
-Objects.Union14.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(15), math.rad(-5)) + Vector3.new(47.312, -381.577, 87.871)
-Objects.Union14.Color = Color3.fromRGB(17, 17, 17)
-Objects.Union14.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union14.Material = Enum.Material.Metal
-Objects.Union14.Size = Vector3.new(0.788, 0.15, 1.68)
-Objects.Union14.Transparency = 1
-Objects.Union14.UsePartColor = true
-Objects.Union14.Parent = Objects.Outcasted
-
-Objects.Union15 = Instance.new("UnionOperation")
-Objects.Union15.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(47.602000000000004, -381.593, 87.915)
-Objects.Union15.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union15.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union15.Material = Enum.Material.SmoothPlastic
-Objects.Union15.Size = Vector3.new(1.212, 0.107, 0.9470000000000001)
-Objects.Union15.Transparency = 1
-Objects.Union15.UsePartColor = true
-Objects.Union15.Parent = Objects.Outcasted
-
-Objects.Union16 = Instance.new("UnionOperation")
-Objects.Union16.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(45.975, -381.434, 87.886)
-Objects.Union16.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union16.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union16.Material = Enum.Material.Marble
-Objects.Union16.Size = Vector3.new(1.627, 0.14200000000000002, 0.213)
-Objects.Union16.Transparency = 1
-Objects.Union16.UsePartColor = true
-Objects.Union16.Parent = Objects.Outcasted
-
-Objects.Union17 = Instance.new("UnionOperation")
-Objects.Union17.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.023, -381.54, 89.025)
-Objects.Union17.Color = Color3.fromRGB(51, 88, 130)
-Objects.Union17.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union17.Material = Enum.Material.Metal
-Objects.Union17.Size = Vector3.new(0.275, 0.20600000000000002, 0.612)
-Objects.Union17.Transparency = 1
-Objects.Union17.UsePartColor = true
-Objects.Union17.Parent = Objects.Outcasted
-
-Objects.Union18 = Instance.new("UnionOperation")
-Objects.Union18.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(48.036, -381.733, 88.20700000000001)
-Objects.Union18.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union18.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union18.Material = Enum.Material.Glass
-Objects.Union18.Size = Vector3.new(1.188, 0.05, 0.272)
-Objects.Union18.Transparency = 1
-Objects.Union18.UsePartColor = true
-Objects.Union18.Parent = Objects.Outcasted
-
-Objects.Union19 = Instance.new("UnionOperation")
-Objects.Union19.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.19, -381.819, 87.938)
-Objects.Union19.Color = Color3.fromRGB(17, 17, 17)
-Objects.Union19.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union19.Material = Enum.Material.Glass
-Objects.Union19.Size = Vector3.new(5.589, 0.093, 1.554)
-Objects.Union19.Transparency = 1
-Objects.Union19.UsePartColor = true
-Objects.Union19.Parent = Objects.Outcasted
-
-Objects.Union20 = Instance.new("UnionOperation")
-Objects.Union20.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(48.427, -381.778, 87.915)
-Objects.Union20.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union20.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union20.Material = Enum.Material.Metal
-Objects.Union20.Size = Vector3.new(0.934, 0.12, 0.48)
-Objects.Union20.Transparency = 1
-Objects.Union20.UsePartColor = true
-Objects.Union20.Parent = Objects.Outcasted
-
-Objects.Union21 = Instance.new("UnionOperation")
-Objects.Union21.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(51.024, -381.894, 87.95100000000001)
-Objects.Union21.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union21.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union21.Material = Enum.Material.Metal
-Objects.Union21.Size = Vector3.new(5.306, 0.082, 1.562)
-Objects.Union21.Transparency = 1
-Objects.Union21.UsePartColor = true
-Objects.Union21.Parent = Objects.Outcasted
-
-Objects.Union22 = Instance.new("UnionOperation")
-Objects.Union22.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(47.492000000000004, -381.673, 87.913)
-Objects.Union22.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union22.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union22.Material = Enum.Material.Glass
-Objects.Union22.Size = Vector3.new(0.661, 0.158, 0.3)
-Objects.Union22.Transparency = 1
-Objects.Union22.UsePartColor = true
-Objects.Union22.Parent = Objects.Outcasted
-
-Objects.Union23 = Instance.new("UnionOperation")
-Objects.Union23.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(1), math.rad(175)) + Vector3.new(49.508, -381.819, 88.163)
-Objects.Union23.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union23.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union23.Material = Enum.Material.SmoothPlastic
-Objects.Union23.Size = Vector3.new(1.593, 0.05, 0.28)
-Objects.Union23.Transparency = 1
-Objects.Union23.UsePartColor = true
-Objects.Union23.Parent = Objects.Outcasted
-
-Objects.Union24 = Instance.new("UnionOperation")
-Objects.Union24.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(-179), math.rad(-175)) + Vector3.new(49.504, -381.826, 87.718)
-Objects.Union24.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union24.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union24.Material = Enum.Material.SmoothPlastic
-Objects.Union24.Size = Vector3.new(1.593, 0.05, 0.28)
-Objects.Union24.Transparency = 1
-Objects.Union24.UsePartColor = true
-Objects.Union24.Parent = Objects.Outcasted
-
-Objects.Union25 = Instance.new("UnionOperation")
-Objects.Union25.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(48.462, -381.559, 87.924)
-Objects.Union25.Color = Color3.fromRGB(61, 21, 133)
-Objects.Union25.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union25.Material = Enum.Material.Neon
-Objects.Union25.Size = Vector3.new(0.891, 0.114, 0.458)
-Objects.Union25.Transparency = 1
-Objects.Union25.UsePartColor = true
-Objects.Union25.Parent = Objects.Outcasted
-
-Objects.Union26 = Instance.new("UnionOperation")
-Objects.Union26.CFrame = CFrame.fromOrientation(math.rad(5), math.rad(125), math.rad(-178)) + Vector3.new(47.241, -381.594, 86.784)
-Objects.Union26.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union26.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union26.Material = Enum.Material.DiamondPlate
-Objects.Union26.Size = Vector3.new(1.057, 0.224, 0.46)
-Objects.Union26.Transparency = 1
-Objects.Union26.UsePartColor = true
-Objects.Union26.Parent = Objects.Outcasted
-
-Objects.Union27 = Instance.new("UnionOperation")
-Objects.Union27.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(48.443, -381.776, 87.915)
-Objects.Union27.Color = Color3.fromRGB(61, 21, 133)
-Objects.Union27.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union27.Material = Enum.Material.Neon
-Objects.Union27.Size = Vector3.new(0.891, 0.114, 0.458)
-Objects.Union27.Transparency = 1
-Objects.Union27.UsePartColor = true
-Objects.Union27.Parent = Objects.Outcasted
-
-Objects.Union28 = Instance.new("UnionOperation")
-Objects.Union28.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(48.055, -381.522, 88.2)
-Objects.Union28.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union28.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union28.Material = Enum.Material.Glass
-Objects.Union28.Size = Vector3.new(1.188, 0.05, 0.272)
-Objects.Union28.Transparency = 1
-Objects.Union28.UsePartColor = true
-Objects.Union28.Parent = Objects.Outcasted
-
-Objects.Union29 = Instance.new("UnionOperation")
-Objects.Union29.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.003, -381.538, 89.039)
-Objects.Union29.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union29.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union29.Material = Enum.Material.Glass
-Objects.Union29.Size = Vector3.new(0.253, 0.19, 0.5630000000000001)
-Objects.Union29.Transparency = 1
-Objects.Union29.UsePartColor = true
-Objects.Union29.Parent = Objects.Outcasted
-
-Objects.Union30 = Instance.new("UnionOperation")
-Objects.Union30.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-1), math.rad(-5)) + Vector3.new(49.513, -381.694, 88.151)
-Objects.Union30.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union30.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union30.Material = Enum.Material.SmoothPlastic
-Objects.Union30.Size = Vector3.new(1.593, 0.05, 0.28)
-Objects.Union30.Transparency = 1
-Objects.Union30.UsePartColor = true
-Objects.Union30.Parent = Objects.Outcasted
-
-Objects.Union31 = Instance.new("UnionOperation")
-Objects.Union31.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(48.131, -381.639, 87.918)
-Objects.Union31.Color = Color3.fromRGB(163, 162, 165)
-Objects.Union31.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union31.Size = Vector3.new(1.468, 0.05, 1.147)
-Objects.Union31.Transparency = 1
-Objects.Union31.UsePartColor = true
-Objects.Union31.Parent = Objects.Outcasted
-
-Objects.Union32 = Instance.new("UnionOperation")
-Objects.Union32.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(47.764, -381.697, 87.914)
-Objects.Union32.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union32.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union32.Material = Enum.Material.Glass
-Objects.Union32.Size = Vector3.new(0.661, 0.158, 0.3)
-Objects.Union32.Transparency = 1
-Objects.Union32.UsePartColor = true
-Objects.Union32.Parent = Objects.Outcasted
-
-Objects.Union33 = Instance.new("UnionOperation")
-Objects.Union33.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(48.038000000000004, -381.743, 87.635)
-Objects.Union33.Color = Color3.fromRGB(98, 37, 209)
-Objects.Union33.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union33.Material = Enum.Material.Glass
-Objects.Union33.Size = Vector3.new(1.188, 0.05, 0.272)
-Objects.Union33.Transparency = 1
-Objects.Union33.UsePartColor = true
-Objects.Union33.Parent = Objects.Outcasted
-
-Objects.Union34 = Instance.new("UnionOperation")
-Objects.Union34.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.725, -381.868, 87.95)
-Objects.Union34.Color = Color3.fromRGB(107, 50, 124)
-Objects.Union34.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union34.Material = Enum.Material.Neon
-Objects.Union34.Size = Vector3.new(4.707, 0.073, 1.3860000000000001)
-Objects.Union34.Transparency = 1
-Objects.Union34.UsePartColor = true
-Objects.Union34.Parent = Objects.Outcasted
-
-Objects.Union35 = Instance.new("UnionOperation")
-Objects.Union35.CFrame = CFrame.fromOrientation(math.rad(-4), math.rad(-125), math.rad(-176)) + Vector3.new(47.042, -381.576, 86.825)
-Objects.Union35.Color = Color3.fromRGB(51, 88, 130)
-Objects.Union35.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union35.Material = Enum.Material.Metal
-Objects.Union35.Size = Vector3.new(0.275, 0.20600000000000002, 0.612)
-Objects.Union35.Transparency = 1
-Objects.Union35.UsePartColor = true
-Objects.Union35.Parent = Objects.Outcasted
-
-Objects.Union36 = Instance.new("UnionOperation")
-Objects.Union36.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.213, -381.563, 88.933)
-Objects.Union36.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union36.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union36.Material = Enum.Material.Metal
-Objects.Union36.Size = Vector3.new(0.293, 0.22, 0.653)
-Objects.Union36.Transparency = 1
-Objects.Union36.UsePartColor = true
-Objects.Union36.Parent = Objects.Outcasted
-
-Objects.Wedge = Instance.new("WedgePart")
-Objects.Wedge.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Wedge.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(45.992000000000004, -381.487, 87.813)
-Objects.Wedge.Color = Color3.fromRGB(98, 37, 209)
-Objects.Wedge.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Wedge.Material = Enum.Material.Neon
-Objects.Wedge.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
-Objects.Wedge.Transparency = 1
-Objects.Wedge.Parent = Objects.Outcasted
-
-Objects.Wedge2 = Instance.new("WedgePart")
-Objects.Wedge2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Wedge2.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(46, -381.386, 87.96000000000001)
-Objects.Wedge2.Color = Color3.fromRGB(98, 37, 209)
-Objects.Wedge2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Wedge2.Material = Enum.Material.Neon
-Objects.Wedge2.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
-Objects.Wedge2.Transparency = 1
-Objects.Wedge2.Parent = Objects.Outcasted
-
-Objects.Wedge3 = Instance.new("WedgePart")
-Objects.Wedge3.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Wedge3.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(45.992000000000004, -381.484, 87.961)
-Objects.Wedge3.Color = Color3.fromRGB(98, 37, 209)
-Objects.Wedge3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Wedge3.Material = Enum.Material.Neon
-Objects.Wedge3.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
-Objects.Wedge3.Transparency = 1
-Objects.Wedge3.Parent = Objects.Outcasted
-
-Objects.Wedge4 = Instance.new("WedgePart")
-Objects.Wedge4.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Wedge4.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(46.001, -381.38800000000003, 87.811)
-Objects.Wedge4.Color = Color3.fromRGB(98, 37, 209)
-Objects.Wedge4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Wedge4.Material = Enum.Material.Neon
-Objects.Wedge4.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
-Objects.Wedge4.Transparency = 1
-Objects.Wedge4.Parent = Objects.Outcasted
-
-Objects.Handle2 = Instance.new("Part")
-Objects.Handle2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Handle2.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(45.556000000000004, -381.363, 87.82900000000001)
-Objects.Handle2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Handle2.Name = "Handle"
-Objects.Handle2.Size = Vector3.new(2.6390000000000002, 0.66, 1.32)
-Objects.Handle2.TopSurface = Enum.SurfaceType.Smooth
-Objects.Handle2.Transparency = 1
-Objects.Handle2.Parent = Objects.Outcasted
-
-Objects.BladeHitbox2 = Instance.new("Part")
-Objects.BladeHitbox2.BottomSurface = Enum.SurfaceType.Smooth
-Objects.BladeHitbox2.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.737, -381.814, 87.855)
-Objects.BladeHitbox2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.BladeHitbox2.Name = "BladeHitbox"
-Objects.BladeHitbox2.Size = Vector3.new(6.354, 0.66, 2.257)
-Objects.BladeHitbox2.TopSurface = Enum.SurfaceType.Smooth
-Objects.BladeHitbox2.Transparency = 1
-Objects.BladeHitbox2.Parent = Objects.Outcasted
-
-Objects.MWeld2 = Instance.new("Weld")
-Objects.MWeld2.Name = "MWeld"
-Objects.MWeld2.Part1 = Objects.Handle2
-Objects.MWeld2.Parent = Objects.Outcasted
-
-Objects.Weld6 = Instance.new("Script")
-Objects.Weld6.Name = "Weld"
-Objects.Weld6.Parent = Objects.Outcasted
-
-Objects.Union37 = Instance.new("UnionOperation")
-Objects.Union37.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(48.907000000000004, -381.54, 96.961)
-Objects.Union37.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union37.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union37.Material = Enum.Material.Metal
-Objects.Union37.Size = Vector3.new(2.062, 0.05, 0.467)
-Objects.Union37.UsePartColor = true
-Objects.Union37.Parent = Objects.Knife
-
-Objects.Union38 = Instance.new("UnionOperation")
-Objects.Union38.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(46.997, -381.528, 97.025)
-Objects.Union38.Color = Color3.fromRGB(91, 93, 105)
-Objects.Union38.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union38.Material = Enum.Material.Metal
-Objects.Union38.Size = Vector3.new(0.964, 0.145, 0.218)
-Objects.Union38.Parent = Objects.Knife
-
-Objects.Union39 = Instance.new("UnionOperation")
-Objects.Union39.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(-180)) + Vector3.new(47.046, -381.529, 97.024)
-Objects.Union39.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union39.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union39.Material = Enum.Material.Metal
-Objects.Union39.Size = Vector3.new(0.864, 0.14200000000000002, 0.213)
-Objects.Union39.Parent = Objects.Knife
-
-Objects.Union40 = Instance.new("UnionOperation")
-Objects.Union40.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(47.943, -381.536, 97.246)
-Objects.Union40.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union40.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union40.Material = Enum.Material.Metal
-Objects.Union40.Size = Vector3.new(0.907, 0.05, 0.396)
-Objects.Union40.UsePartColor = true
-Objects.Union40.Parent = Objects.Knife
-
-Objects.Union41 = Instance.new("UnionOperation")
-Objects.Union41.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-58), math.rad(179)) + Vector3.new(47.794000000000004, -381.534, 97.128)
-Objects.Union41.Color = Color3.fromRGB(110, 153, 202)
-Objects.Union41.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union41.Material = Enum.Material.Neon
-Objects.Union41.Size = Vector3.new(0.05, 0.083, 0.054)
-Objects.Union41.Parent = Objects.Knife
-
-Objects.Union42 = Instance.new("UnionOperation")
-Objects.Union42.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(47.547000000000004, -381.531, 97.002)
-Objects.Union42.Color = Color3.fromRGB(110, 153, 202)
-Objects.Union42.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union42.Material = Enum.Material.Neon
-Objects.Union42.Size = Vector3.new(0.05, 0.083, 0.054)
-Objects.Union42.Parent = Objects.Knife
-
-Objects.Union43 = Instance.new("UnionOperation")
-Objects.Union43.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(147), math.rad(-179)) + Vector3.new(49.515, -381.544, 96.911)
-Objects.Union43.Color = Color3.fromRGB(180, 128, 255)
-Objects.Union43.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union43.Material = Enum.Material.Neon
-Objects.Union43.Size = Vector3.new(0.095, 0.05, 0.05)
-Objects.Union43.UsePartColor = true
-Objects.Union43.Parent = Objects.Knife
-
-Objects.Union44 = Instance.new("UnionOperation")
-Objects.Union44.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(46.54, -381.52500000000003, 97.042)
-Objects.Union44.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union44.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union44.Material = Enum.Material.Metal
-Objects.Union44.Size = Vector3.new(0.064, 0.187, 0.281)
-Objects.Union44.Parent = Objects.Knife
-
-Objects.Union45 = Instance.new("UnionOperation")
-Objects.Union45.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(0)) + Vector3.new(47.678000000000004, -381.532, 96.997)
-Objects.Union45.Color = Color3.fromRGB(159, 161, 172)
-Objects.Union45.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union45.Material = Enum.Material.Metal
-Objects.Union45.Size = Vector3.new(0.334, 0.079, 0.377)
-Objects.Union45.Parent = Objects.Knife
-
-Objects.Union46 = Instance.new("UnionOperation")
-Objects.Union46.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(47.926, -381.531, 96.742)
-Objects.Union46.Color = Color3.fromRGB(27, 42, 53)
-Objects.Union46.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union46.Material = Enum.Material.Metal
-Objects.Union46.Size = Vector3.new(0.904, 0.05, 0.391)
-Objects.Union46.UsePartColor = true
-Objects.Union46.Parent = Objects.Knife
-
-Objects.Union47 = Instance.new("UnionOperation")
-Objects.Union47.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(-180)) + Vector3.new(47.475, -381.53000000000003, 97.009)
-Objects.Union47.Color = Color3.fromRGB(17, 17, 17)
-Objects.Union47.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union47.Material = Enum.Material.Metal
-Objects.Union47.Size = Vector3.new(0.151, 0.158, 0.76)
-Objects.Union47.Parent = Objects.Knife
-
-Objects.Union48 = Instance.new("UnionOperation")
-Objects.Union48.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-118), math.rad(0)) + Vector3.new(47.785000000000004, -381.531, 96.858)
-Objects.Union48.Color = Color3.fromRGB(110, 153, 202)
-Objects.Union48.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union48.Material = Enum.Material.Neon
-Objects.Union48.Size = Vector3.new(0.05, 0.083, 0.054)
-Objects.Union48.Parent = Objects.Knife
-
-Objects.Union49 = Instance.new("UnionOperation")
-Objects.Union49.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(0)) + Vector3.new(48.616, -381.538, 96.928)
-Objects.Union49.Color = Color3.fromRGB(180, 128, 255)
-Objects.Union49.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union49.Material = Enum.Material.Neon
-Objects.Union49.Size = Vector3.new(1.861, 0.05, 0.05)
-Objects.Union49.UsePartColor = true
-Objects.Union49.Parent = Objects.Knife
-
-Objects.Union50 = Instance.new("UnionOperation")
-Objects.Union50.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(37), math.rad(0)) + Vector3.new(49.523, -381.545, 96.956)
-Objects.Union50.Color = Color3.fromRGB(180, 128, 255)
-Objects.Union50.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union50.Material = Enum.Material.Neon
-Objects.Union50.Size = Vector3.new(0.095, 0.05, 0.05)
-Objects.Union50.UsePartColor = true
-Objects.Union50.Parent = Objects.Knife
-
-Objects.Union51 = Instance.new("UnionOperation")
-Objects.Union51.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(48.618, -381.539, 97.008)
-Objects.Union51.Color = Color3.fromRGB(180, 128, 255)
-Objects.Union51.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Union51.Material = Enum.Material.Neon
-Objects.Union51.Size = Vector3.new(1.861, 0.05, 0.05)
-Objects.Union51.UsePartColor = true
-Objects.Union51.Parent = Objects.Knife
-
-Objects.Weld7 = Instance.new("Script")
-Objects.Weld7.Name = "Weld"
-Objects.Weld7.Parent = Objects.Knife
-
-Objects.Handle3 = Instance.new("Part")
-Objects.Handle3.BottomSurface = Enum.SurfaceType.Smooth
-Objects.Handle3.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(46.954, -381.482, 97.025)
-Objects.Handle3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
-Objects.Handle3.Name = "Handle"
-Objects.Handle3.Size = Vector3.new(1.0030000000000001, 0.373, 0.47400000000000003)
-Objects.Handle3.TopSurface = Enum.SurfaceType.Smooth
-Objects.Handle3.Transparency = 1
-Objects.Handle3.Parent = Objects.Knife
-
-Objects.MWeld3 = Instance.new("Weld")
-Objects.MWeld3.Name = "MWeld"
-Objects.MWeld3.Part1 = Objects.Handle3
-Objects.MWeld3.Parent = Objects.Knife
-
-Objects.ParticleEmitter = Instance.new("ParticleEmitter")
-Objects.ParticleEmitter.Acceleration = Vector3.new(0, 20, 0)
-Objects.ParticleEmitter.EmissionDirection = Enum.NormalId.Front
-Objects.ParticleEmitter.Lifetime = NumberRange.new(2.5, 2.5)
-Objects.ParticleEmitter.LightEmission = 1
-Objects.ParticleEmitter.LightInfluence = 1
-Objects.ParticleEmitter.Rate = 25
-Objects.ParticleEmitter.RotSpeed = NumberRange.new(-100, 100)
-Objects.ParticleEmitter.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 5.5, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.ParticleEmitter.Speed = NumberRange.new(0, 0)
-Objects.ParticleEmitter.SpreadAngle = Vector2.new(2, 2)
-Objects.ParticleEmitter.Texture = "rbxassetid://7216850580"
-Objects.ParticleEmitter.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.3, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ParticleEmitter.ZOffset = -1
-Objects.ParticleEmitter.Parent = Objects.Attachment
-
-Objects.ParticleEmitter2 = Instance.new("ParticleEmitter")
-Objects.ParticleEmitter2.Acceleration = Vector3.new(0, 20, 0)
-Objects.ParticleEmitter2.Drag = 0.25
-Objects.ParticleEmitter2.EmissionDirection = Enum.NormalId.Front
-Objects.ParticleEmitter2.Lifetime = NumberRange.new(2, 2.5)
-Objects.ParticleEmitter2.LightEmission = 1
-Objects.ParticleEmitter2.LightInfluence = 1
-Objects.ParticleEmitter2.RotSpeed = NumberRange.new(-300, 300)
-Objects.ParticleEmitter2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2.6875, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.ParticleEmitter2.Speed = NumberRange.new(0, 0)
-Objects.ParticleEmitter2.SpreadAngle = Vector2.new(4, 4)
-Objects.ParticleEmitter2.Texture = "rbxassetid://8214516993"
-Objects.ParticleEmitter2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.39999999999999997, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ParticleEmitter2.ZOffset = -1
-Objects.ParticleEmitter2.Parent = Objects.Attachment
-
-Objects.ParticleEmitter3 = Instance.new("ParticleEmitter")
-Objects.ParticleEmitter3.Lifetime = NumberRange.new(3, 3)
-Objects.ParticleEmitter3.LightEmission = 1
-Objects.ParticleEmitter3.LightInfluence = 1
-Objects.ParticleEmitter3.LockedToPart = true
-Objects.ParticleEmitter3.Rate = 2
-Objects.ParticleEmitter3.RotSpeed = NumberRange.new(200, 300)
-Objects.ParticleEmitter3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4.0999999, 0), NumberSequenceKeypoint.new(1, 4.0999999, 0)}
-Objects.ParticleEmitter3.Speed = NumberRange.new(0.001, 0.001)
-Objects.ParticleEmitter3.SpreadAngle = Vector2.new(35, 35)
-Objects.ParticleEmitter3.Texture = "rbxassetid://8214569944"
-Objects.ParticleEmitter3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.19999999999999998, 0, 0), NumberSequenceKeypoint.new(0.7996500999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ParticleEmitter3.Parent = Objects.Attachment
-
-Objects.ParticleEmitter4 = Instance.new("ParticleEmitter")
-Objects.ParticleEmitter4.Lifetime = NumberRange.new(1, 1)
-Objects.ParticleEmitter4.LightEmission = 1
-Objects.ParticleEmitter4.LightInfluence = 1
-Objects.ParticleEmitter4.LockedToPart = true
-Objects.ParticleEmitter4.Rate = 4.5
-Objects.ParticleEmitter4.RotSpeed = NumberRange.new(300, 300)
-Objects.ParticleEmitter4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 6.3125, 0)}
-Objects.ParticleEmitter4.Speed = NumberRange.new(0.001, 0.001)
-Objects.ParticleEmitter4.Texture = "rbxassetid://7216856158"
-Objects.ParticleEmitter4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.20035, 0, 0), NumberSequenceKeypoint.new(0.49956259999999997, 0, 0), NumberSequenceKeypoint.new(0.7996500999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ParticleEmitter4.Parent = Objects.Attachment2
-
-Objects.ParticleEmitter5 = Instance.new("ParticleEmitter")
-Objects.ParticleEmitter5.Acceleration = Vector3.new(0, 1, 0)
-Objects.ParticleEmitter5.EmissionDirection = Enum.NormalId.Front
-Objects.ParticleEmitter5.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.ParticleEmitter5.LightEmission = 1
-Objects.ParticleEmitter5.LightInfluence = 1
-Objects.ParticleEmitter5.LockedToPart = true
-Objects.ParticleEmitter5.Rate = 100
-Objects.ParticleEmitter5.Rotation = NumberRange.new(90, 90)
-Objects.ParticleEmitter5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0.5), NumberSequenceKeypoint.new(1, 1, 0.5)}
-Objects.ParticleEmitter5.SpreadAngle = Vector2.new(0, 360)
-Objects.ParticleEmitter5.Texture = "rbxassetid://7216848149"
-Objects.ParticleEmitter5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.8999999999999999, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.ParticleEmitter5.Parent = Objects.Attachment2
-
-Objects.TEXT = Instance.new("TextLabel")
-Objects.TEXT.BackgroundTransparency = 1
-Objects.TEXT.Font = Enum.Font.SciFi
-Objects.TEXT.Name = "TEXT"
-Objects.TEXT.Size = UDim2.new(0, 1, 0, 1)
-Objects.TEXT.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-Objects.TEXT.TextColor3 = Color3.fromRGB(107, 40, 20)
-Objects.TEXT.TextSize = 36
-Objects.TEXT.TextStrokeColor3 = Color3.fromRGB(144, 5, 5)
-Objects.TEXT.TextStrokeTransparency = 0
-Objects.TEXT.ZIndex = 5
-Objects.TEXT.Parent = Objects.BGUI
-
-Objects.TEXT2 = Instance.new("TextLabel")
-Objects.TEXT2.BackgroundTransparency = 1
-Objects.TEXT2.Font = Enum.Font.SciFi
-Objects.TEXT2.Name = "TEXT"
-Objects.TEXT2.Size = UDim2.new(0, 1, 0, 1)
-Objects.TEXT2.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-Objects.TEXT2.TextColor3 = Color3.fromRGB(182, 182, 182)
-Objects.TEXT2.TextSize = 32
-Objects.TEXT2.TextStrokeTransparency = 0
-Objects.TEXT2.ZIndex = 5
-Objects.TEXT2.Parent = Objects.BGUI2
-
-Objects.TEXT3 = Instance.new("TextLabel")
-Objects.TEXT3.BackgroundTransparency = 1
-Objects.TEXT3.Font = Enum.Font.SciFi
-Objects.TEXT3.Name = "TEXT"
-Objects.TEXT3.Size = UDim2.new(0, 1, 0, 1)
-Objects.TEXT3.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-Objects.TEXT3.TextColor3 = Color3.fromRGB(170, 177, 121)
-Objects.TEXT3.TextSize = 34
-Objects.TEXT3.TextStrokeColor3 = Color3.fromRGB(144, 5, 5)
-Objects.TEXT3.TextStrokeTransparency = 0
-Objects.TEXT3.ZIndex = 5
-Objects.TEXT3.Parent = Objects.BGUI3
-
-Objects.T1 = Instance.new("ImageLabel")
-Objects.T1.Active = true
-Objects.T1.BackgroundTransparency = 1
-Objects.T1.Image = "rbxassetid://737395850"
-Objects.T1.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Objects.T1.Name = "T1"
-Objects.T1.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
-Objects.T1.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
-Objects.T1.Parent = Objects.TARGETGUI2
-
-Objects.HITSVALUE = Instance.new("NumberValue")
-Objects.HITSVALUE.Name = "HITSVALUE"
-Objects.HITSVALUE.Parent = Objects.HITSLabel
-
-Objects.Script2 = Instance.new("LocalScript")
-Objects.Script2.Disabled = true
-Objects.Script2.Name = "Script"
-Objects.Script2.Parent = Objects.HITSLabel
-
-Objects.T12 = Instance.new("ImageLabel")
-Objects.T12.Active = true
-Objects.T12.BackgroundTransparency = 1
-Objects.T12.Image = "rbxassetid://737395850"
-Objects.T12.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Objects.T12.ImageTransparency = 0.6
-Objects.T12.Name = "T1"
-Objects.T12.Position = UDim2.new(0.0775, 0, -0.27999999999999997, 0)
-Objects.T12.Size = UDim2.new(0.845, 0, 3.26, 0)
-Objects.T12.ZIndex = 0
-Objects.T12.Parent = Objects.HITSLabel
-
-Objects.BACKGROUNDBar = Instance.new("TextLabel")
-Objects.BACKGROUNDBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Objects.BACKGROUNDBar.BackgroundTransparency = 0.5
-Objects.BACKGROUNDBar.Font = Enum.Font.SourceSans
-Objects.BACKGROUNDBar.Name = "BACKGROUNDBar"
-Objects.BACKGROUNDBar.Position = UDim2.new(0.2227099, 0, 1.3527536, 0)
-Objects.BACKGROUNDBar.Size = UDim2.new(0, 110, 0, 14)
-Objects.BACKGROUNDBar.Text = ""
-Objects.BACKGROUNDBar.TextSize = 14
-Objects.BACKGROUNDBar.Parent = Objects.HITSLabel
-
-Objects.DMGLabel = Instance.new("TextLabel")
-Objects.DMGLabel.BackgroundTransparency = 1
-Objects.DMGLabel.Font = Enum.Font.SciFi
-Objects.DMGLabel.Name = "DMGLabel"
-Objects.DMGLabel.Position = UDim2.new(0.18762089999999998, 0, 0.8201449, 0)
-Objects.DMGLabel.Size = UDim2.new(0, 124, 0, 27)
-Objects.DMGLabel.Text = "0"
-Objects.DMGLabel.TextColor3 = Color3.fromRGB(39, 0, 124)
-Objects.DMGLabel.TextScaled = true
-Objects.DMGLabel.TextSize = 14
-Objects.DMGLabel.TextStrokeTransparency = 0.5
-Objects.DMGLabel.TextWrapped = true
-Objects.DMGLabel.Parent = Objects.HITSLabel
-
-Objects.RATINGLabel = Instance.new("TextLabel")
-Objects.RATINGLabel.BackgroundTransparency = 1
-Objects.RATINGLabel.Font = Enum.Font.SciFi
-Objects.RATINGLabel.Name = "RATINGLabel"
-Objects.RATINGLabel.Position = UDim2.new(0.0955343, 0, 1.8569080999999998, 0)
-Objects.RATINGLabel.Rotation = -10
-Objects.RATINGLabel.Size = UDim2.new(0, 162, 0, 25)
-Objects.RATINGLabel.Text = "?????"
-Objects.RATINGLabel.TextColor3 = Color3.fromRGB(39, 0, 124)
-Objects.RATINGLabel.TextScaled = true
-Objects.RATINGLabel.TextSize = 14
-Objects.RATINGLabel.TextStrokeTransparency = 0.5
-Objects.RATINGLabel.TextWrapped = true
-Objects.RATINGLabel.Parent = Objects.HITSLabel
-
-Objects.TIMEBar = Instance.new("TextLabel")
-Objects.TIMEBar.BackgroundColor3 = Color3.fromRGB(39, 0, 124)
-Objects.TIMEBar.BackgroundTransparency = 0.5
-Objects.TIMEBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Objects.TIMEBar.BorderSizePixel = 2
-Objects.TIMEBar.Font = Enum.Font.SourceSans
-Objects.TIMEBar.Name = "TIMEBar"
-Objects.TIMEBar.Position = UDim2.new(0.2503698, 0, 1.4167321, 0)
-Objects.TIMEBar.Size = UDim2.new(0, 100, 0, 8)
-Objects.TIMEBar.Text = ""
-Objects.TIMEBar.TextColor3 = Color3.fromRGB(39, 0, 124)
-Objects.TIMEBar.TextSize = 14
-Objects.TIMEBar.Parent = Objects.HITSLabel
-
-Objects.ATKRUNE = Instance.new("ImageLabel")
-Objects.ATKRUNE.BackgroundTransparency = 1
-Objects.ATKRUNE.Image = "rbxgameasset://Images/trueAttackRune omg there's a lot of these"
-Objects.ATKRUNE.ImageColor3 = Color3.fromRGB(255, 0, 0)
-Objects.ATKRUNE.ImageTransparency = 1
-Objects.ATKRUNE.Name = "ATKRUNE"
-Objects.ATKRUNE.Position = UDim2.new(0.09206349999999999, 0, 0.1219512, 0)
-Objects.ATKRUNE.Size = UDim2.new(0, 101, 0, 93)
-Objects.ATKRUNE.ZIndex = 2
-Objects.ATKRUNE.Parent = Objects.Frame
-
-Objects.DEFRUNE = Instance.new("ImageLabel")
-Objects.DEFRUNE.BackgroundTransparency = 1
-Objects.DEFRUNE.Image = "rbxgameasset://Images/defRune"
-Objects.DEFRUNE.ImageColor3 = Color3.fromRGB(85, 255, 0)
-Objects.DEFRUNE.ImageTransparency = 1
-Objects.DEFRUNE.Name = "DEFRUNE"
-Objects.DEFRUNE.Position = UDim2.new(0.1444445, 0, 0.17073159999999998, 0)
-Objects.DEFRUNE.Size = UDim2.new(0, 82, 0, 88)
-Objects.DEFRUNE.ZIndex = 2
-Objects.DEFRUNE.Parent = Objects.Frame
-
-Objects.SPDRUNE = Instance.new("ImageLabel")
-Objects.SPDRUNE.BackgroundTransparency = 1
-Objects.SPDRUNE.Image = "rbxgameasset://Images/spdRune"
-Objects.SPDRUNE.ImageColor3 = Color3.fromRGB(0, 0, 255)
-Objects.SPDRUNE.ImageTransparency = 1
-Objects.SPDRUNE.Name = "SPDRUNE"
-Objects.SPDRUNE.Position = UDim2.new(0.09682539999999999, 0, 0.13821139999999998, 0)
-Objects.SPDRUNE.Size = UDim2.new(0, 101, 0, 93)
-Objects.SPDRUNE.ZIndex = 2
-Objects.SPDRUNE.Parent = Objects.Frame
-
-Objects.ENDRUNE = Instance.new("ImageLabel")
-Objects.ENDRUNE.BackgroundTransparency = 1
-Objects.ENDRUNE.Image = "rbxgameasset://Images/ENDRUNE"
-Objects.ENDRUNE.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Objects.ENDRUNE.ImageTransparency = 1
-Objects.ENDRUNE.Name = "ENDRUNE"
-Objects.ENDRUNE.Position = UDim2.new(0.09682539999999999, 0, 0.13821139999999998, 0)
-Objects.ENDRUNE.Size = UDim2.new(0, 101, 0, 93)
-Objects.ENDRUNE.ZIndex = 2
-Objects.ENDRUNE.Parent = Objects.Frame
-
-Objects.Script3 = Instance.new("Script")
-Objects.Script3.Disabled = true
-Objects.Script3.Parent = Objects.Back
-
-Objects.Object12 = Instance.new("TextLabel")
-Objects.Object12.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object12.BackgroundTransparency = 1
-Objects.Object12.Font = Enum.Font.SciFi
-Objects.Object12.Name = "1"
-Objects.Object12.Position = UDim2.new(-0.0240153, 0, 0.0806452, 0)
-Objects.Object12.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object12.Text = "A"
-Objects.Object12.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object12.TextScaled = true
-Objects.Object12.TextSize = 14
-Objects.Object12.TextWrapped = true
-Objects.Object12.Parent = Objects.KEYSTROKE
-
-Objects.Object2 = Instance.new("TextLabel")
-Objects.Object2.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object2.BackgroundTransparency = 1
-Objects.Object2.Font = Enum.Font.SciFi
-Objects.Object2.Name = "2"
-Objects.Object2.Position = UDim2.new(0.0934523, 0, 0.0806452, 0)
-Objects.Object2.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object2.Text = "A"
-Objects.Object2.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object2.TextScaled = true
-Objects.Object2.TextSize = 14
-Objects.Object2.TextWrapped = true
-Objects.Object2.Parent = Objects.KEYSTROKE
-
-Objects.Object3 = Instance.new("TextLabel")
-Objects.Object3.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object3.BackgroundTransparency = 1
-Objects.Object3.Font = Enum.Font.SciFi
-Objects.Object3.Name = "3"
-Objects.Object3.Position = UDim2.new(0.6984203999999999, 0, 0.0806452, 0)
-Objects.Object3.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object3.Text = "A"
-Objects.Object3.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object3.TextScaled = true
-Objects.Object3.TextSize = 14
-Objects.Object3.TextWrapped = true
-Objects.Object3.Parent = Objects.KEYSTROKE
-
-Objects.Object4 = Instance.new("TextLabel")
-Objects.Object4.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object4.BackgroundTransparency = 1
-Objects.Object4.Font = Enum.Font.SciFi
-Objects.Object4.Name = "4"
-Objects.Object4.Position = UDim2.new(0.5657052, 0, 0.34893779999999996, 0)
-Objects.Object4.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object4.Text = "A"
-Objects.Object4.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object4.TextScaled = true
-Objects.Object4.TextSize = 14
-Objects.Object4.TextWrapped = true
-Objects.Object4.Parent = Objects.KEYSTROKE
-
-Objects.Object5 = Instance.new("TextLabel")
-Objects.Object5.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object5.BackgroundTransparency = 1
-Objects.Object5.Font = Enum.Font.SciFi
-Objects.Object5.Name = "5"
-Objects.Object5.Position = UDim2.new(0.5868692, 0, 0.0806452, 0)
-Objects.Object5.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object5.Text = "A"
-Objects.Object5.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object5.TextScaled = true
-Objects.Object5.TextSize = 14
-Objects.Object5.TextWrapped = true
-Objects.Object5.Parent = Objects.KEYSTROKE
-
-Objects.Object6 = Instance.new("TextLabel")
-Objects.Object6.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object6.BackgroundTransparency = 1
-Objects.Object6.Font = Enum.Font.SciFi
-Objects.Object6.Name = "6"
-Objects.Object6.Position = UDim2.new(0.47746289999999997, 0, 0.0806452, 0)
-Objects.Object6.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object6.Text = "A"
-Objects.Object6.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object6.TextScaled = true
-Objects.Object6.TextSize = 14
-Objects.Object6.TextWrapped = true
-Objects.Object6.Parent = Objects.KEYSTROKE
-
-Objects.Object7 = Instance.new("TextLabel")
-Objects.Object7.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
-Objects.Object7.BackgroundTransparency = 1
-Objects.Object7.Font = Enum.Font.SciFi
-Objects.Object7.Name = "7"
-Objects.Object7.Position = UDim2.new(0.8914226, 0, 0.0806451, 0)
-Objects.Object7.Size = UDim2.new(0, 33, 0, 41)
-Objects.Object7.Text = "A"
-Objects.Object7.TextColor3 = Color3.fromRGB(85, 0, 255)
-Objects.Object7.TextScaled = true
-Objects.Object7.TextSize = 14
-Objects.Object7.TextWrapped = true
-Objects.Object7.Parent = Objects.KEYSTROKE
-
-Objects.UIListLayout2 = Instance.new("UIListLayout")
-Objects.UIListLayout2.FillDirection = Enum.FillDirection.Horizontal
-Objects.UIListLayout2.Padding = UDim.new(0, -3)
-Objects.UIListLayout2.Parent = Objects.KEYSTROKE
-
-Objects.ML = Instance.new("TextLabel")
-Objects.ML.BackgroundTransparency = 1
-Objects.ML.Font = Enum.Font.Fantasy
-Objects.ML.Name = "ML"
-Objects.ML.Position = UDim2.new(0, 0, 0.03, 0)
-Objects.ML.Size = UDim2.new(0.8999999999999999, 0, 0.03, 0)
-Objects.ML.Text = "SAX                                                                                            ADQ                                                                                     WADQ"
-Objects.ML.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML.TextScaled = true
-Objects.ML.TextSize = 14
-Objects.ML.TextStrokeTransparency = 0
-Objects.ML.TextWrapped = true
-Objects.ML.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML.Parent = Objects.M
-
-Objects.ML2 = Instance.new("TextLabel")
-Objects.ML2.BackgroundTransparency = 1
-Objects.ML2.Font = Enum.Font.Fantasy
-Objects.ML2.Name = "ML2"
-Objects.ML2.Position = UDim2.new(0, 0, 0.06, 0)
-Objects.ML2.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
-Objects.ML2.Text = "WW/SS"
-Objects.ML2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML2.TextScaled = true
-Objects.ML2.TextSize = 14
-Objects.ML2.TextStrokeTransparency = 0
-Objects.ML2.TextWrapped = true
-Objects.ML2.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML2.Parent = Objects.M
-
-Objects.ML5 = Instance.new("TextLabel")
-Objects.ML5.BackgroundTransparency = 1
-Objects.ML5.Font = Enum.Font.Fantasy
-Objects.ML5.Name = "ML5"
-Objects.ML5.Position = UDim2.new(0, 0, 0.09999999999999999, 0)
-Objects.ML5.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
-Objects.ML5.Text = "DASE"
-Objects.ML5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML5.TextScaled = true
-Objects.ML5.TextSize = 14
-Objects.ML5.TextStrokeTransparency = 0
-Objects.ML5.TextWrapped = true
-Objects.ML5.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML5.Parent = Objects.M
-
-Objects.ML4 = Instance.new("TextLabel")
-Objects.ML4.BackgroundTransparency = 1
-Objects.ML4.Font = Enum.Font.Fantasy
-Objects.ML4.Name = "ML4"
-Objects.ML4.Position = UDim2.new(0, 0, 0.08, 0)
-Objects.ML4.Size = UDim2.new(0.8999999999999999, 0, 0.02, 0)
-Objects.ML4.Text = " ASQ                                                                                                                                          ASDQ"
-Objects.ML4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML4.TextScaled = true
-Objects.ML4.TextSize = 14
-Objects.ML4.TextStrokeTransparency = 0
-Objects.ML4.TextWrapped = true
-Objects.ML4.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML4.Parent = Objects.M
-
-Objects.ML3 = Instance.new("TextLabel")
-Objects.ML3.BackgroundTransparency = 1
-Objects.ML3.Font = Enum.Font.Fantasy
-Objects.ML3.Name = "ML3"
-Objects.ML3.Position = UDim2.new(0, 0, 0.06999999999999999, 0)
-Objects.ML3.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
-Objects.ML3.Text = "SDQ"
-Objects.ML3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML3.TextScaled = true
-Objects.ML3.TextSize = 14
-Objects.ML3.TextStrokeTransparency = 0
-Objects.ML3.TextWrapped = true
-Objects.ML3.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML3.Parent = Objects.M
-
-Objects.ML6 = Instance.new("TextLabel")
-Objects.ML6.BackgroundTransparency = 1
-Objects.ML6.Font = Enum.Font.Fantasy
-Objects.ML6.Name = "ML6"
-Objects.ML6.Position = UDim2.new(0, 0, 0.11, 0)
-Objects.ML6.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
-Objects.ML6.Text = "ASDASDW"
-Objects.ML6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML6.TextScaled = true
-Objects.ML6.TextSize = 14
-Objects.ML6.TextStrokeTransparency = 0
-Objects.ML6.TextWrapped = true
-Objects.ML6.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML6.Parent = Objects.M
-
-Objects.E = Instance.new("TextLabel")
-Objects.E.BackgroundTransparency = 1
-Objects.E.Font = Enum.Font.Fantasy
-Objects.E.Name = "E"
-Objects.E.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
-Objects.E.Text = "Z / X / C"
-Objects.E.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.E.TextScaled = true
-Objects.E.TextSize = 14
-Objects.E.TextStrokeTransparency = 0
-Objects.E.TextWrapped = true
-Objects.E.TextXAlignment = Enum.TextXAlignment.Left
-Objects.E.Parent = Objects.M
-
-Objects.C = Instance.new("TextLabel")
-Objects.C.BackgroundTransparency = 1
-Objects.C.Font = Enum.Font.Fantasy
-Objects.C.Name = "C"
-Objects.C.Position = UDim2.new(0, 0, 0.01, 0)
-Objects.C.Size = UDim2.new(0.8999999999999999, 0, 0.02, 0)
-Objects.C.Text = "SC / SAQ (AIR ONLY)"
-Objects.C.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.C.TextScaled = true
-Objects.C.TextSize = 14
-Objects.C.TextStrokeTransparency = 0
-Objects.C.TextWrapped = true
-Objects.C.TextXAlignment = Enum.TextXAlignment.Left
-Objects.C.Parent = Objects.M
-
-Objects.ML7 = Instance.new("TextLabel")
-Objects.ML7.BackgroundTransparency = 1
-Objects.ML7.Font = Enum.Font.Fantasy
-Objects.ML7.Name = "ML7"
-Objects.ML7.Position = UDim2.new(0, 0, 0.12, 0)
-Objects.ML7.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
-Objects.ML7.Text = "ADADADQ"
-Objects.ML7.TextColor3 = Color3.fromRGB(255, 255, 255)
-Objects.ML7.TextScaled = true
-Objects.ML7.TextSize = 14
-Objects.ML7.TextStrokeTransparency = 0
-Objects.ML7.TextWrapped = true
-Objects.ML7.TextXAlignment = Enum.TextXAlignment.Left
-Objects.ML7.Parent = Objects.M
-
-Objects.Attachment15 = Instance.new("Attachment")
-Objects.Attachment15.Position = Vector3.new(0.317, 0, 0.47600000000000003)
-Objects.Attachment15.Parent = Objects.DebrisPart
-
-Objects.Attachment16 = Instance.new("Attachment")
-Objects.Attachment16.Position = Vector3.new(-0.343, 0, -0.297)
-Objects.Attachment16.Parent = Objects.DebrisPart
-
-Objects.Trail7 = Instance.new("Trail")
-Objects.Trail7.Attachment0 = Objects.Attachment15
-Objects.Trail7.Attachment1 = Objects.Attachment16
-Objects.Trail7.Lifetime = 0.5
-Objects.Trail7.LightInfluence = 1
-Objects.Trail7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail7.Parent = Objects.DebrisPart
-
-Objects.BillBoardGui = Instance.new("BillboardGui")
-Objects.BillBoardGui.Active = true
-Objects.BillBoardGui.Name = "BillBoardGui"
-Objects.BillBoardGui.Size = UDim2.new(2, 0, 2, 0)
-Objects.BillBoardGui.StudsOffset = Vector3.new(0.15, -0.7000000000000001, 0)
-Objects.BillBoardGui.Parent = Objects.BlastOrb
-
-Objects.Attachment17 = Instance.new("Attachment")
-Objects.Attachment17.Position = Vector3.new(0.169, -0.059000000000000004, 0)
-Objects.Attachment17.Parent = Objects.BlastOrb
-
-Objects.Attachment18 = Instance.new("Attachment")
-Objects.Attachment18.Position = Vector3.new(-0.507, -0.888, 0)
-Objects.Attachment18.Parent = Objects.BlastOrb
-
-Objects.Trail8 = Instance.new("Trail")
-Objects.Trail8.Attachment0 = Objects.Attachment17
-Objects.Trail8.Attachment1 = Objects.Attachment18
-Objects.Trail8.FaceCamera = true
-Objects.Trail8.Lifetime = 0.25
-Objects.Trail8.LightInfluence = 1
-Objects.Trail8.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail8.Parent = Objects.BlastOrb
-
-Objects.BillBoardGui2 = Instance.new("BillboardGui")
-Objects.BillBoardGui2.Active = true
-Objects.BillBoardGui2.Name = "BillBoardGui"
-Objects.BillBoardGui2.Size = UDim2.new(2, 0, 2, 0)
-Objects.BillBoardGui2.StudsOffset = Vector3.new(0.15, -0.7000000000000001, 0)
-Objects.BillBoardGui2.Parent = Objects.HealthOrb
-
-Objects.Attachment19 = Instance.new("Attachment")
-Objects.Attachment19.Position = Vector3.new(0.169, -0.059000000000000004, 0)
-Objects.Attachment19.Parent = Objects.HealthOrb
-
-Objects.Attachment20 = Instance.new("Attachment")
-Objects.Attachment20.Position = Vector3.new(-0.507, -0.888, 0)
-Objects.Attachment20.Parent = Objects.HealthOrb
-
-Objects.Trail9 = Instance.new("Trail")
-Objects.Trail9.Attachment0 = Objects.Attachment19
-Objects.Trail9.Attachment1 = Objects.Attachment20
-Objects.Trail9.FaceCamera = true
-Objects.Trail9.Lifetime = 0.25
-Objects.Trail9.LightInfluence = 1
-Objects.Trail9.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail9.Parent = Objects.HealthOrb
-
-Objects.Trail10 = Instance.new("Trail")
-Objects.Trail10.Attachment0 = Objects.Attachment22
-Objects.Trail10.Attachment1 = Objects.Attachment21
-Objects.Trail10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Trail10.FaceCamera = true
-Objects.Trail10.Lifetime = 0.25
-Objects.Trail10.LightInfluence = 1
-Objects.Trail10.Texture = "rbxassetid://1196657065"
-Objects.Trail10.TextureMode = Enum.TextureMode.Static
-Objects.Trail10.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Trail10.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Trail10.Parent = Objects.Burst
-
-Objects.Attachment21 = Instance.new("Attachment")
-Objects.Attachment21.Position = Vector3.new(-0.217, -0.35000000000000003, 0)
-Objects.Attachment21.Parent = Objects.Burst
-
-Objects.Attachment22 = Instance.new("Attachment")
-Objects.Attachment22.Position = Vector3.new(0.17400000000000002, 0.356, 0)
-Objects.Attachment22.Parent = Objects.Burst
-
-Objects.GUI = Instance.new("BillboardGui")
-Objects.GUI.Active = true
-Objects.GUI.Name = "GUI"
-Objects.GUI.Size = UDim2.new(10, 0, 10, 0)
-Objects.GUI.StudsOffset = Vector3.new(0, -0.5, 0)
-Objects.GUI.Parent = Objects.ENERGYORB
-
-Objects.Weld8 = Instance.new("Weld")
-Objects.Weld8.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-1, 1, 0.5)
-Objects.Weld8.C1 = CFrame.fromOrientation(math.rad(-90), math.rad(0), math.rad(0)) + Vector3.new(0.849, -2.379, -2.315)
-Objects.Weld8.Part1 = Objects.Claw1
-Objects.Weld8.Parent = Objects.Claw1
-
-Objects.Particle1 = Instance.new("ParticleEmitter")
-Objects.Particle1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.9816971, 255), ColorSequenceKeypoint.new(1, 0)}
-Objects.Particle1.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle1.LightEmission = 1
-Objects.Particle1.LockedToPart = true
-Objects.Particle1.Name = "Particle1"
-Objects.Particle1.Rate = 0.25
-Objects.Particle1.Rotation = NumberRange.new(1.73, 1.73)
-Objects.Particle1.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle1.Speed = NumberRange.new(0, 0)
-Objects.Particle1.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle1.Texture = "rbxgameasset://Images/ENDRUNE"
-Objects.Particle1.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle1.ZOffset = 0.5
-Objects.Particle1.Parent = Objects.endParticle
-
-Objects.Particle2 = Instance.new("ParticleEmitter")
-Objects.Particle2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.9900165999999999, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Particle2.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle2.LightEmission = 1
-Objects.Particle2.LockedToPart = true
-Objects.Particle2.Name = "Particle2"
-Objects.Particle2.Rate = 0.25
-Objects.Particle2.RotSpeed = NumberRange.new(50, 50)
-Objects.Particle2.Rotation = NumberRange.new(0, 50)
-Objects.Particle2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle2.Speed = NumberRange.new(0, 0)
-Objects.Particle2.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle2.Texture = "http://www.roblox.com/asset/?ID=133820006"
-Objects.Particle2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle2.ZOffset = 0.5
-Objects.Particle2.Parent = Objects.endParticle
-
-Objects.Attachment23 = Instance.new("Attachment")
-Objects.Attachment23.Parent = Objects.BlastGlowEffect
-
-Objects.Attachment24 = Instance.new("Attachment")
-Objects.Attachment24.Parent = Objects.ChargingEffect
-
-Objects.ElectricBubble2 = Instance.new("Attachment")
-Objects.ElectricBubble2.Name = "ElectricBubble"
-Objects.ElectricBubble2.Parent = Objects.ElectricBubble
-
-Objects.Attachment25 = Instance.new("Attachment")
-Objects.Attachment25.Parent = Objects.VacuumEffect
-
-Objects.Attachment26 = Instance.new("Attachment")
-Objects.Attachment26.Parent = Objects.HealingBurst
-
-Objects.Attachment27 = Instance.new("Attachment")
-Objects.Attachment27.Parent = Objects.HealthLowEffect
-
-Objects.Attachment28 = Instance.new("Attachment")
-Objects.Attachment28.Parent = Objects.ImpactEffect
-
-Objects.Attachment29 = Instance.new("Attachment")
-Objects.Attachment29.Parent = Objects.LightEffect
-
-Objects.Attachment30 = Instance.new("Attachment")
-Objects.Attachment30.Parent = Objects.PartyEffect
-
-Objects.Sparkles = Instance.new("ParticleEmitter")
-Objects.Sparkles.Lifetime = NumberRange.new(3, 3)
-Objects.Sparkles.LightEmission = 1
-Objects.Sparkles.LockedToPart = true
-Objects.Sparkles.Name = "Sparkles"
-Objects.Sparkles.Rate = 2
-Objects.Sparkles.RotSpeed = NumberRange.new(-10, 10)
-Objects.Sparkles.Rotation = NumberRange.new(-180, 180)
-Objects.Sparkles.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0.39999999999999997, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Sparkles.Speed = NumberRange.new(0.3, 0.3)
-Objects.Sparkles.Texture = "rbxassetid://1053546634"
-Objects.Sparkles.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.7999999999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Sparkles.Parent = Objects.RadiantEffect
-
-Objects.Glow = Instance.new("ParticleEmitter")
-Objects.Glow.Lifetime = NumberRange.new(1, 1)
-Objects.Glow.LightEmission = 1
-Objects.Glow.LockedToPart = true
-Objects.Glow.Name = "Glow"
-Objects.Glow.Rate = 4
-Objects.Glow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Glow.Speed = NumberRange.new(0, 0)
-Objects.Glow.Texture = "rbxassetid://867619398"
-Objects.Glow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Glow.Parent = Objects.RadiantEffect
-
-Objects.Rays = Instance.new("ParticleEmitter")
-Objects.Rays.Lifetime = NumberRange.new(1, 1)
-Objects.Rays.LightEmission = 1
-Objects.Rays.LockedToPart = true
-Objects.Rays.Name = "Rays"
-Objects.Rays.Rate = 4
-Objects.Rays.RotSpeed = NumberRange.new(-50, 50)
-Objects.Rays.Rotation = NumberRange.new(-180, 180)
-Objects.Rays.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 1.2418007, 0), NumberSequenceKeypoint.new(0.111, 2.2236207, 0), NumberSequenceKeypoint.new(0.16649999999999998, 2.9886019, 0), NumberSequenceKeypoint.new(0.222, 3.5748257999999997, 0), NumberSequenceKeypoint.new(0.27749999999999997, 4.0156279, 0), NumberSequenceKeypoint.new(0.33299999999999996, 4.3399162, 0), NumberSequenceKeypoint.new(0.38849999999999996, 4.572484, 0), NumberSequenceKeypoint.new(0.444, 4.7343291999999995, 0), NumberSequenceKeypoint.new(0.4995, 4.842967, 0), NumberSequenceKeypoint.new(0.5549999999999999, 4.9127493, 0), NumberSequenceKeypoint.new(0.6104999999999999, 4.9551764, 0), NumberSequenceKeypoint.new(0.6659999999999999, 4.9792171, 0), NumberSequenceKeypoint.new(0.7214999999999999, 4.991622899999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 4.9972425, 0), NumberSequenceKeypoint.new(0.8325, 4.9993405, 0), NumberSequenceKeypoint.new(0.888, 4.9999118, 0), NumberSequenceKeypoint.new(0.9435, 4.9999971, 0), NumberSequenceKeypoint.new(0.999, 5, 0), NumberSequenceKeypoint.new(1, 5, 0)}
-Objects.Rays.Speed = NumberRange.new(0, 0)
-Objects.Rays.Texture = "rbxassetid://1084975295"
-Objects.Rays.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays.Parent = Objects.RadiantEffect
-
-Objects.Rays2 = Instance.new("ParticleEmitter")
-Objects.Rays2.Lifetime = NumberRange.new(1, 1)
-Objects.Rays2.LightEmission = 1
-Objects.Rays2.LockedToPart = true
-Objects.Rays2.Name = "Rays"
-Objects.Rays2.Rate = 4
-Objects.Rays2.RotSpeed = NumberRange.new(-15, 15)
-Objects.Rays2.Rotation = NumberRange.new(120, 240)
-Objects.Rays2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 5.4999994999999995, 0)}
-Objects.Rays2.Speed = NumberRange.new(0, 0)
-Objects.Rays2.Texture = "rbxassetid://1053548563"
-Objects.Rays2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 5.e-07, 0), NumberSequenceKeypoint.new(0.111, 0.0000169, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.000128, 0), NumberSequenceKeypoint.new(0.222, 0.0005392, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.0016455999999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.0040947, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.008850199999999999, 0), NumberSequenceKeypoint.new(0.444, 0.017255, 0), NumberSequenceKeypoint.new(0.4995, 0.0310941, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.0526581, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.0848063, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.13103009999999998, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.1955157, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.2832077, 0), NumberSequenceKeypoint.new(0.8325, 0.39987219999999996, 0), NumberSequenceKeypoint.new(0.888, 0.5521598, 0), NumberSequenceKeypoint.new(0.9435, 0.7476693, 0), NumberSequenceKeypoint.new(0.999, 0.99501, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays2.Parent = Objects.RadiantEffect
-
-Objects.Attachment31 = Instance.new("Attachment")
-Objects.Attachment31.Parent = Objects.RechargedEffect
-
-Objects.Attachment32 = Instance.new("Attachment")
-Objects.Attachment32.Parent = Objects.ShiningEffect
-
-Objects.Attachment33 = Instance.new("Attachment")
-Objects.Attachment33.Parent = Objects.ElectroBall
-
-Objects.Attachment34 = Instance.new("Attachment")
-Objects.Attachment34.Parent = Objects.FlashEffect
-
-Objects.Attachment35 = Instance.new("Attachment")
-Objects.Attachment35.Parent = Objects.FlashEffect2
-
-Objects.Particle12 = Instance.new("ParticleEmitter")
-Objects.Particle12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 85.0000025331974), ColorSequenceKeypoint.new(1, 9.000000413507223)}
-Objects.Particle12.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle12.LightEmission = 1
-Objects.Particle12.LockedToPart = true
-Objects.Particle12.Name = "Particle1"
-Objects.Particle12.Rate = 0.25
-Objects.Particle12.Rotation = NumberRange.new(1.73, 1.73)
-Objects.Particle12.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle12.Speed = NumberRange.new(0, 0)
-Objects.Particle12.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle12.Texture = "rbxgameasset://Images/defRune"
-Objects.Particle12.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle12.ZOffset = 0.5
-Objects.Particle12.Parent = Objects.defParticle
-
-Objects.Particle22 = Instance.new("ParticleEmitter")
-Objects.Particle22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 85.0000025331974), ColorSequenceKeypoint.new(1, 255)}
-Objects.Particle22.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle22.LightEmission = 1
-Objects.Particle22.LockedToPart = true
-Objects.Particle22.Name = "Particle2"
-Objects.Particle22.Rate = 0.25
-Objects.Particle22.RotSpeed = NumberRange.new(50, 50)
-Objects.Particle22.Rotation = NumberRange.new(0, 50)
-Objects.Particle22.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle22.Speed = NumberRange.new(0, 0)
-Objects.Particle22.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle22.Texture = "http://www.roblox.com/asset/?ID=133820006"
-Objects.Particle22.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle22.ZOffset = 0.5
-Objects.Particle22.Parent = Objects.defParticle
-
-Objects.Particle13 = Instance.new("ParticleEmitter")
-Objects.Particle13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 9.000000413507223)}
-Objects.Particle13.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle13.LightEmission = 1
-Objects.Particle13.LockedToPart = true
-Objects.Particle13.Name = "Particle1"
-Objects.Particle13.Rate = 0.25
-Objects.Particle13.Rotation = NumberRange.new(1.73, 1.73)
-Objects.Particle13.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle13.Speed = NumberRange.new(0, 0)
-Objects.Particle13.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle13.Texture = "rbxgameasset://Images/spdRune"
-Objects.Particle13.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle13.ZOffset = 0.5
-Objects.Particle13.Parent = Objects.spdParticle
-
-Objects.Particle23 = Instance.new("ParticleEmitter")
-Objects.Particle23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 255)}
-Objects.Particle23.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle23.LightEmission = 1
-Objects.Particle23.LockedToPart = true
-Objects.Particle23.Name = "Particle2"
-Objects.Particle23.Rate = 0.25
-Objects.Particle23.RotSpeed = NumberRange.new(50, 50)
-Objects.Particle23.Rotation = NumberRange.new(0, 50)
-Objects.Particle23.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle23.Speed = NumberRange.new(0, 0)
-Objects.Particle23.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle23.Texture = "http://www.roblox.com/asset/?ID=133820006"
-Objects.Particle23.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle23.ZOffset = 0.5
-Objects.Particle23.Parent = Objects.spdParticle
-
-Objects.Particle14 = Instance.new("ParticleEmitter")
-Objects.Particle14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(1, 9.000000413507223)}
-Objects.Particle14.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle14.LightEmission = 1
-Objects.Particle14.LockedToPart = true
-Objects.Particle14.Name = "Particle1"
-Objects.Particle14.Rate = 0.25
-Objects.Particle14.Rotation = NumberRange.new(1.73, 1.73)
-Objects.Particle14.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle14.Speed = NumberRange.new(0, 0)
-Objects.Particle14.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle14.Texture = "rbxgameasset://Images/trueAttackRune omg there's a lot of these"
-Objects.Particle14.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle14.ZOffset = 0.5
-Objects.Particle14.Parent = Objects.atkParticle
-
-Objects.Particle24 = Instance.new("ParticleEmitter")
-Objects.Particle24.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Particle24.LightEmission = 1
-Objects.Particle24.LockedToPart = true
-Objects.Particle24.Name = "Particle2"
-Objects.Particle24.Rate = 0.25
-Objects.Particle24.RotSpeed = NumberRange.new(50, 50)
-Objects.Particle24.Rotation = NumberRange.new(0, 50)
-Objects.Particle24.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Particle24.Speed = NumberRange.new(0, 0)
-Objects.Particle24.SpreadAngle = Vector2.new(100, 100)
-Objects.Particle24.Texture = "http://www.roblox.com/asset/?ID=133820006"
-Objects.Particle24.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Particle24.ZOffset = 0.5
-Objects.Particle24.Parent = Objects.atkParticle
-
-Objects.ManualWeld = Instance.new("ManualWeld")
-Objects.ManualWeld.Parent = Objects.Handle
-
-Objects.ManualWeld2 = Instance.new("ManualWeld")
-Objects.ManualWeld2.Parent = Objects.Handle
-
-Objects.ManualWeld3 = Instance.new("ManualWeld")
-Objects.ManualWeld3.Parent = Objects.Handle
-
-Objects.ManualWeld4 = Instance.new("ManualWeld")
-Objects.ManualWeld4.Parent = Objects.Handle
-
-Objects.ManualWeld5 = Instance.new("ManualWeld")
-Objects.ManualWeld5.Parent = Objects.Handle
-
-Objects.ManualWeld6 = Instance.new("ManualWeld")
-Objects.ManualWeld6.Parent = Objects.Handle
-
-Objects.ManualWeld7 = Instance.new("ManualWeld")
-Objects.ManualWeld7.Parent = Objects.Handle
-
-Objects.ManualWeld8 = Instance.new("ManualWeld")
-Objects.ManualWeld8.Parent = Objects.Handle
-
-Objects.ManualWeld9 = Instance.new("ManualWeld")
-Objects.ManualWeld9.Parent = Objects.Handle
-
-Objects.ManualWeld10 = Instance.new("ManualWeld")
-Objects.ManualWeld10.Parent = Objects.Handle
-
-Objects.ManualWeld11 = Instance.new("ManualWeld")
-Objects.ManualWeld11.Parent = Objects.Handle
-
-Objects.ManualWeld12 = Instance.new("ManualWeld")
-Objects.ManualWeld12.Parent = Objects.Handle
-
-Objects.ManualWeld13 = Instance.new("ManualWeld")
-Objects.ManualWeld13.Parent = Objects.Handle
-
-Objects.ManualWeld14 = Instance.new("ManualWeld")
-Objects.ManualWeld14.Parent = Objects.Handle
-
-Objects.ManualWeld15 = Instance.new("ManualWeld")
-Objects.ManualWeld15.Parent = Objects.Handle
-
-Objects.ManualWeld16 = Instance.new("ManualWeld")
-Objects.ManualWeld16.Parent = Objects.Handle
-
-Objects.Mesh = Instance.new("SpecialMesh")
-Objects.Mesh.MeshType = Enum.MeshType.Cylinder
-Objects.Mesh.Scale = Vector3.new(0.763, 1, 1)
-Objects.Mesh.Parent = Objects.Part8
-
-Objects.Mesh2 = Instance.new("SpecialMesh")
-Objects.Mesh2.MeshType = Enum.MeshType.Cylinder
-Objects.Mesh2.Scale = Vector3.new(0.763, 1, 1)
-Objects.Mesh2.Parent = Objects.Part9
-
-Objects.Mesh3 = Instance.new("SpecialMesh")
-Objects.Mesh3.MeshType = Enum.MeshType.Cylinder
-Objects.Mesh3.Scale = Vector3.new(0.763, 1, 1)
-Objects.Mesh3.Parent = Objects.Part15
-
-Objects.Mesh4 = Instance.new("SpecialMesh")
-Objects.Mesh4.MeshType = Enum.MeshType.Wedge
-Objects.Mesh4.Scale = Vector3.new(1, 0.66, 0.99)
-Objects.Mesh4.Parent = Objects.Wedge
-
-Objects.Mesh5 = Instance.new("SpecialMesh")
-Objects.Mesh5.MeshType = Enum.MeshType.Wedge
-Objects.Mesh5.Scale = Vector3.new(1, 0.66, 0.99)
-Objects.Mesh5.Parent = Objects.Wedge2
-
-Objects.Mesh6 = Instance.new("SpecialMesh")
-Objects.Mesh6.MeshType = Enum.MeshType.Wedge
-Objects.Mesh6.Scale = Vector3.new(1, 0.66, 0.99)
-Objects.Mesh6.Parent = Objects.Wedge3
-
-Objects.Mesh7 = Instance.new("SpecialMesh")
-Objects.Mesh7.MeshType = Enum.MeshType.Wedge
-Objects.Mesh7.Scale = Vector3.new(1, 0.66, 0.99)
-Objects.Mesh7.Parent = Objects.Wedge4
-
-Objects.ManualWeld17 = Instance.new("ManualWeld")
-Objects.ManualWeld17.Parent = Objects.Handle2
-
-Objects.ManualWeld18 = Instance.new("ManualWeld")
-Objects.ManualWeld18.Parent = Objects.Handle2
-
-Objects.ManualWeld19 = Instance.new("ManualWeld")
-Objects.ManualWeld19.Parent = Objects.Handle2
-
-Objects.ManualWeld20 = Instance.new("ManualWeld")
-Objects.ManualWeld20.Parent = Objects.Handle2
-
-Objects.ManualWeld21 = Instance.new("ManualWeld")
-Objects.ManualWeld21.Parent = Objects.Handle2
-
-Objects.ManualWeld22 = Instance.new("ManualWeld")
-Objects.ManualWeld22.Parent = Objects.Handle2
-
-Objects.ManualWeld23 = Instance.new("ManualWeld")
-Objects.ManualWeld23.Parent = Objects.Handle2
-
-Objects.ManualWeld24 = Instance.new("ManualWeld")
-Objects.ManualWeld24.Parent = Objects.Handle2
-
-Objects.ManualWeld25 = Instance.new("ManualWeld")
-Objects.ManualWeld25.Parent = Objects.Handle2
-
-Objects.ManualWeld26 = Instance.new("ManualWeld")
-Objects.ManualWeld26.Parent = Objects.Handle2
-
-Objects.ManualWeld27 = Instance.new("ManualWeld")
-Objects.ManualWeld27.Parent = Objects.Handle2
-
-Objects.ManualWeld28 = Instance.new("ManualWeld")
-Objects.ManualWeld28.Parent = Objects.Handle2
-
-Objects.ManualWeld29 = Instance.new("ManualWeld")
-Objects.ManualWeld29.Parent = Objects.Handle2
-
-Objects.ManualWeld30 = Instance.new("ManualWeld")
-Objects.ManualWeld30.Parent = Objects.Handle2
-
-Objects.ManualWeld31 = Instance.new("ManualWeld")
-Objects.ManualWeld31.Parent = Objects.Handle2
-
-Objects.ManualWeld32 = Instance.new("ManualWeld")
-Objects.ManualWeld32.Parent = Objects.Handle2
-
-Objects.ManualWeld33 = Instance.new("ManualWeld")
-Objects.ManualWeld33.Parent = Objects.Handle2
-
-Objects.ManualWeld34 = Instance.new("ManualWeld")
-Objects.ManualWeld34.Parent = Objects.Handle2
-
-Objects.ManualWeld35 = Instance.new("ManualWeld")
-Objects.ManualWeld35.Parent = Objects.Handle2
-
-Objects.ManualWeld36 = Instance.new("ManualWeld")
-Objects.ManualWeld36.Parent = Objects.Handle2
-
-Objects.ManualWeld37 = Instance.new("ManualWeld")
-Objects.ManualWeld37.Parent = Objects.Handle2
-
-Objects.ManualWeld38 = Instance.new("ManualWeld")
-Objects.ManualWeld38.Parent = Objects.Handle2
-
-Objects.ManualWeld39 = Instance.new("ManualWeld")
-Objects.ManualWeld39.Parent = Objects.Handle2
-
-Objects.ManualWeld40 = Instance.new("ManualWeld")
-Objects.ManualWeld40.Parent = Objects.Handle2
-
-Objects.ManualWeld41 = Instance.new("ManualWeld")
-Objects.ManualWeld41.Parent = Objects.Handle2
-
-Objects.ManualWeld42 = Instance.new("ManualWeld")
-Objects.ManualWeld42.Parent = Objects.Handle2
-
-Objects.ManualWeld43 = Instance.new("ManualWeld")
-Objects.ManualWeld43.Parent = Objects.Handle2
-
-Objects.ManualWeld44 = Instance.new("ManualWeld")
-Objects.ManualWeld44.Parent = Objects.Handle2
-
-Objects.ManualWeld45 = Instance.new("ManualWeld")
-Objects.ManualWeld45.Parent = Objects.Handle2
-
-Objects.ManualWeld46 = Instance.new("ManualWeld")
-Objects.ManualWeld46.Parent = Objects.Handle2
-
-Objects.ManualWeld47 = Instance.new("ManualWeld")
-Objects.ManualWeld47.Parent = Objects.Handle2
-
-Objects.ManualWeld48 = Instance.new("ManualWeld")
-Objects.ManualWeld48.Parent = Objects.Handle2
-
-Objects.ManualWeld49 = Instance.new("ManualWeld")
-Objects.ManualWeld49.Parent = Objects.Handle2
-
-Objects.ManualWeld50 = Instance.new("ManualWeld")
-Objects.ManualWeld50.Parent = Objects.Handle2
-
-Objects.ManualWeld51 = Instance.new("ManualWeld")
-Objects.ManualWeld51.Parent = Objects.Handle2
-
-Objects.ManualWeld52 = Instance.new("ManualWeld")
-Objects.ManualWeld52.Parent = Objects.Handle2
-
-Objects.ManualWeld53 = Instance.new("ManualWeld")
-Objects.ManualWeld53.Parent = Objects.Handle2
-
-Objects.ManualWeld54 = Instance.new("ManualWeld")
-Objects.ManualWeld54.Parent = Objects.Handle2
-
-Objects.ManualWeld55 = Instance.new("ManualWeld")
-Objects.ManualWeld55.Parent = Objects.Handle2
-
-Objects.ManualWeld56 = Instance.new("ManualWeld")
-Objects.ManualWeld56.Parent = Objects.Handle2
-
-Objects.ManualWeld57 = Instance.new("ManualWeld")
-Objects.ManualWeld57.Parent = Objects.Handle2
-
-Objects.ManualWeld58 = Instance.new("ManualWeld")
-Objects.ManualWeld58.Parent = Objects.Handle2
-
-Objects.ManualWeld59 = Instance.new("ManualWeld")
-Objects.ManualWeld59.Parent = Objects.Handle2
-
-Objects.ManualWeld60 = Instance.new("ManualWeld")
-Objects.ManualWeld60.Parent = Objects.Handle2
-
-Objects.ManualWeld61 = Instance.new("ManualWeld")
-Objects.ManualWeld61.Parent = Objects.Handle2
-
-Objects.ManualWeld62 = Instance.new("ManualWeld")
-Objects.ManualWeld62.Parent = Objects.Handle2
-
-Objects.ManualWeld63 = Instance.new("ManualWeld")
-Objects.ManualWeld63.Parent = Objects.Handle2
-
-Objects.ManualWeld64 = Instance.new("ManualWeld")
-Objects.ManualWeld64.Parent = Objects.Handle2
-
-Objects.ManualWeld65 = Instance.new("ManualWeld")
-Objects.ManualWeld65.Parent = Objects.Handle2
-
-Objects.ManualWeld66 = Instance.new("ManualWeld")
-Objects.ManualWeld66.Parent = Objects.Handle2
-
-Objects.ManualWeld67 = Instance.new("ManualWeld")
-Objects.ManualWeld67.Parent = Objects.Handle2
-
-Objects.ManualWeld68 = Instance.new("ManualWeld")
-Objects.ManualWeld68.Parent = Objects.Handle2
-
-Objects.ManualWeld69 = Instance.new("ManualWeld")
-Objects.ManualWeld69.Parent = Objects.Handle2
-
-Objects.ManualWeld70 = Instance.new("ManualWeld")
-Objects.ManualWeld70.Parent = Objects.Handle3
-
-Objects.ManualWeld71 = Instance.new("ManualWeld")
-Objects.ManualWeld71.Parent = Objects.Handle3
-
-Objects.ManualWeld72 = Instance.new("ManualWeld")
-Objects.ManualWeld72.Parent = Objects.Handle3
-
-Objects.ManualWeld73 = Instance.new("ManualWeld")
-Objects.ManualWeld73.Parent = Objects.Handle3
-
-Objects.ManualWeld74 = Instance.new("ManualWeld")
-Objects.ManualWeld74.Parent = Objects.Handle3
-
-Objects.ManualWeld75 = Instance.new("ManualWeld")
-Objects.ManualWeld75.Parent = Objects.Handle3
-
-Objects.ManualWeld76 = Instance.new("ManualWeld")
-Objects.ManualWeld76.Parent = Objects.Handle3
-
-Objects.ManualWeld77 = Instance.new("ManualWeld")
-Objects.ManualWeld77.Parent = Objects.Handle3
-
-Objects.ManualWeld78 = Instance.new("ManualWeld")
-Objects.ManualWeld78.Parent = Objects.Handle3
-
-Objects.ManualWeld79 = Instance.new("ManualWeld")
-Objects.ManualWeld79.Parent = Objects.Handle3
-
-Objects.ManualWeld80 = Instance.new("ManualWeld")
-Objects.ManualWeld80.Parent = Objects.Handle3
-
-Objects.ManualWeld81 = Instance.new("ManualWeld")
-Objects.ManualWeld81.Parent = Objects.Handle3
-
-Objects.ManualWeld82 = Instance.new("ManualWeld")
-Objects.ManualWeld82.Parent = Objects.Handle3
-
-Objects.ManualWeld83 = Instance.new("ManualWeld")
-Objects.ManualWeld83.Parent = Objects.Handle3
-
-Objects.ManualWeld84 = Instance.new("ManualWeld")
-Objects.ManualWeld84.Parent = Objects.Handle3
-
-Objects.Script4 = Instance.new("Script")
-Objects.Script4.Disabled = true
-Objects.Script4.Parent = Objects.TEXT
-
-Objects.Script5 = Instance.new("Script")
-Objects.Script5.Disabled = true
-Objects.Script5.Parent = Objects.TEXT3
-
-Objects.Script6 = Instance.new("Script")
-Objects.Script6.Disabled = true
-Objects.Script6.Parent = Objects.T1
-
-Objects.DMGVALUE = Instance.new("IntValue")
-Objects.DMGVALUE.Name = "DMGVALUE"
-Objects.DMGVALUE.Parent = Objects.DMGLabel
-
-Objects.RATESTRING = Instance.new("StringValue")
-Objects.RATESTRING.Name = "RATESTRING"
-Objects.RATESTRING.Value = "RATING"
-Objects.RATESTRING.Parent = Objects.RATINGLabel
-
-Objects.TIMEVALUE = Instance.new("NumberValue")
-Objects.TIMEVALUE.Name = "TIMEVALUE"
-Objects.TIMEVALUE.Value = 100
-Objects.TIMEVALUE.Parent = Objects.TIMEBar
-
-Objects.ImageLabel = Instance.new("ImageLabel")
-Objects.ImageLabel.Active = true
-Objects.ImageLabel.BackgroundTransparency = 1
-Objects.ImageLabel.Image = "rbxassetid://436792038"
-Objects.ImageLabel.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
-Objects.ImageLabel.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
-Objects.ImageLabel.Parent = Objects.BillBoardGui
-
-Objects.ImageLabel2 = Instance.new("ImageLabel")
-Objects.ImageLabel2.Active = true
-Objects.ImageLabel2.BackgroundTransparency = 1
-Objects.ImageLabel2.Image = "rbxassetid://678216607"
-Objects.ImageLabel2.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
-Objects.ImageLabel2.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
-Objects.ImageLabel2.Parent = Objects.BillBoardGui
-
-Objects.ImageLabel3 = Instance.new("ImageLabel")
-Objects.ImageLabel3.Active = true
-Objects.ImageLabel3.BackgroundTransparency = 1
-Objects.ImageLabel3.Image = "rbxassetid://642882626"
-Objects.ImageLabel3.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
-Objects.ImageLabel3.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
-Objects.ImageLabel3.Parent = Objects.BillBoardGui2
-
-Objects.ImageLabel4 = Instance.new("ImageLabel")
-Objects.ImageLabel4.Active = true
-Objects.ImageLabel4.BackgroundTransparency = 1
-Objects.ImageLabel4.Image = "rbxassetid://678216607"
-Objects.ImageLabel4.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
-Objects.ImageLabel4.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
-Objects.ImageLabel4.Parent = Objects.BillBoardGui2
-
-Objects.ImageLabel5 = Instance.new("ImageLabel")
-Objects.ImageLabel5.Active = true
-Objects.ImageLabel5.BackgroundTransparency = 1
-Objects.ImageLabel5.Image = "rbxgameasset://Images/wotda"
-Objects.ImageLabel5.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
-Objects.ImageLabel5.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
-Objects.ImageLabel5.Parent = Objects.GUI
-
-Objects.Rays3 = Instance.new("ParticleEmitter")
-Objects.Rays3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
-Objects.Rays3.Lifetime = NumberRange.new(1, 1)
-Objects.Rays3.LightEmission = 1
-Objects.Rays3.LockedToPart = true
-Objects.Rays3.Name = "Rays"
-Objects.Rays3.Rate = 4
-Objects.Rays3.RotSpeed = NumberRange.new(60, 60)
-Objects.Rays3.Rotation = NumberRange.new(-180, 180)
-Objects.Rays3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Rays3.Speed = NumberRange.new(0, 0)
-Objects.Rays3.Texture = "rbxassetid://1084975295"
-Objects.Rays3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays3.ZOffset = -0.001
-Objects.Rays3.Parent = Objects.Attachment23
-
-Objects.Wave = Instance.new("ParticleEmitter")
-Objects.Wave.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 200.00001847743988), ColorSequenceKeypoint.new(1, 200.00001847743988)}
-Objects.Wave.Lifetime = NumberRange.new(1, 1)
-Objects.Wave.LightEmission = 1
-Objects.Wave.LockedToPart = true
-Objects.Wave.Name = "Wave"
-Objects.Wave.Rate = 3
-Objects.Wave.RotSpeed = NumberRange.new(-100, 100)
-Objects.Wave.Rotation = NumberRange.new(-180, 180)
-Objects.Wave.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8999999999999999, 0), NumberSequenceKeypoint.new(0.0555, 0.9957756999999999, 0), NumberSequenceKeypoint.new(0.111, 1.0908239, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.1844227, 0), NumberSequenceKeypoint.new(0.222, 1.2758612999999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.3644451, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.4495012, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.5303836, 0), NumberSequenceKeypoint.new(0.444, 1.6064779999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.6772063, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.7420316, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.8004612, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.8520515, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.8964105999999998, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.9332014, 0), NumberSequenceKeypoint.new(0.8325, 1.9621449, 0), NumberSequenceKeypoint.new(0.888, 1.9830207999999998, 0), NumberSequenceKeypoint.new(0.9435, 1.9956707, 0), NumberSequenceKeypoint.new(0.999, 1.9999987, 0), NumberSequenceKeypoint.new(1, 2, 0)}
-Objects.Wave.Speed = NumberRange.new(0, 0)
-Objects.Wave.Texture = "rbxassetid://1084977655"
-Objects.Wave.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave.ZOffset = -0.001
-Objects.Wave.Parent = Objects.Attachment23
-
-Objects.Vortex_Bits = Instance.new("ParticleEmitter")
-Objects.Vortex_Bits.Lifetime = NumberRange.new(0.6, 1)
-Objects.Vortex_Bits.LightEmission = 1
-Objects.Vortex_Bits.LockedToPart = true
-Objects.Vortex_Bits.Name = "Vortex_Bits"
-Objects.Vortex_Bits.Rate = 4
-Objects.Vortex_Bits.Rotation = NumberRange.new(-180, 180)
-Objects.Vortex_Bits.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(0.0555, 2.2549194999999997, 0), NumberSequenceKeypoint.new(0.111, 1.6658275999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.2068387999999999, 0), NumberSequenceKeypoint.new(0.222, 0.8551046, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.5906232, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.39605039999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.2565096, 0), NumberSequenceKeypoint.new(0.444, 0.1594025, 0), NumberSequenceKeypoint.new(0.4995, 0.09421969999999999, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.0523506, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.0268942, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.012469599999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.0050263, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.0016543999999999999, 0), NumberSequenceKeypoint.new(0.8325, 0.00039549999999999996, 0), NumberSequenceKeypoint.new(0.888, 0.0000529, 0), NumberSequenceKeypoint.new(0.9435, 0.0000016999999999999998, 0), NumberSequenceKeypoint.new(0.999, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Vortex_Bits.Speed = NumberRange.new(0, 0)
-Objects.Vortex_Bits.Texture = "rbxassetid://1084969783"
-Objects.Vortex_Bits.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.19999999999999998, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
-Objects.Vortex_Bits.Parent = Objects.Attachment24
-
-Objects.Glow2 = Instance.new("ParticleEmitter")
-Objects.Glow2.Lifetime = NumberRange.new(1, 1)
-Objects.Glow2.LightEmission = 1
-Objects.Glow2.LockedToPart = true
-Objects.Glow2.Name = "Glow"
-Objects.Glow2.Rate = 3
-Objects.Glow2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(1, 0.3, 0)}
-Objects.Glow2.Speed = NumberRange.new(0, 0)
-Objects.Glow2.Texture = "rbxassetid://867619398"
-Objects.Glow2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Glow2.Parent = Objects.Attachment24
-
-Objects.Rays4 = Instance.new("ParticleEmitter")
-Objects.Rays4.Lifetime = NumberRange.new(1, 1.5)
-Objects.Rays4.LightEmission = 1
-Objects.Rays4.LockedToPart = true
-Objects.Rays4.Name = "Rays"
-Objects.Rays4.Rate = 5
-Objects.Rays4.Rotation = NumberRange.new(-180, 180)
-Objects.Rays4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.0075953999999999995, 0), NumberSequenceKeypoint.new(0.111, 0.030323899999999997, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.0680129, 0), NumberSequenceKeypoint.new(0.222, 0.1203761, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.18701579999999998, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.2674258, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.36099549999999997, 0), NumberSequenceKeypoint.new(0.444, 0.467014, 0), NumberSequenceKeypoint.new(0.4995, 0.5846760999999999, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7130883, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.851275, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9981867999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.1527077, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.3136641, 0), NumberSequenceKeypoint.new(0.8325, 1.4798335999999999, 0), NumberSequenceKeypoint.new(0.888, 1.6499538, 0), NumberSequenceKeypoint.new(0.9435, 1.8227328999999999, 0), NumberSequenceKeypoint.new(0.999, 1.9968583999999998, 0), NumberSequenceKeypoint.new(1, 2, 0)}
-Objects.Rays4.Speed = NumberRange.new(0, 0)
-Objects.Rays4.Texture = "rbxassetid://1053548563"
-Objects.Rays4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.7, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays4.Parent = Objects.Attachment24
-
-Objects.Vortex = Instance.new("ParticleEmitter")
-Objects.Vortex.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.15397919999999998, 255), ColorSequenceKeypoint.new(1, 255)}
-Objects.Vortex.Lifetime = NumberRange.new(4, 4)
-Objects.Vortex.LightEmission = 1
-Objects.Vortex.LockedToPart = true
-Objects.Vortex.Name = "Vortex"
-Objects.Vortex.Rate = 3
-Objects.Vortex.RotSpeed = NumberRange.new(360, 360)
-Objects.Vortex.Rotation = NumberRange.new(-180, 180)
-Objects.Vortex.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.5, 0), NumberSequenceKeypoint.new(0.0555, 1.1274598, 0), NumberSequenceKeypoint.new(0.111, 0.8329137999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.6034193999999999, 0), NumberSequenceKeypoint.new(0.222, 0.4275523, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.2953116, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.19802519999999998, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.1282548, 0), NumberSequenceKeypoint.new(0.444, 0.0797013, 0), NumberSequenceKeypoint.new(0.4995, 0.0471098, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.0261753, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.0134471, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.0062347999999999995, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.0025131, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.0008271999999999999, 0), NumberSequenceKeypoint.new(0.8325, 0.00019779999999999998, 0), NumberSequenceKeypoint.new(0.888, 0.000026399999999999998, 0), NumberSequenceKeypoint.new(0.9435, 9.e-07, 0), NumberSequenceKeypoint.new(0.999, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Vortex.Speed = NumberRange.new(0, 0)
-Objects.Vortex.Texture = "rbxassetid://1084969997"
-Objects.Vortex.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.3, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
-Objects.Vortex.Parent = Objects.Attachment24
-
-Objects.Bolts = Instance.new("ParticleEmitter")
-Objects.Bolts.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.5, 255), ColorSequenceKeypoint.new(1, 255)}
-Objects.Bolts.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
-Objects.Bolts.LightEmission = 1
-Objects.Bolts.LockedToPart = true
-Objects.Bolts.Name = "Bolts"
-Objects.Bolts.Rate = 12
-Objects.Bolts.Rotation = NumberRange.new(-180, 180)
-Objects.Bolts.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4.8000001999999995, 0.39999999999999997), NumberSequenceKeypoint.new(1, 4.8000001999999995, 0.39999999999999997)}
-Objects.Bolts.Speed = NumberRange.new(0, 0)
-Objects.Bolts.Texture = "rbxassetid://1084955012"
-Objects.Bolts.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Bolts.Parent = Objects.ElectricBubble2
-
-Objects.Bubble = Instance.new("ParticleEmitter")
-Objects.Bubble.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.49480969999999996, 255), ColorSequenceKeypoint.new(1, 255)}
-Objects.Bubble.Lifetime = NumberRange.new(1, 1)
-Objects.Bubble.LightEmission = 1
-Objects.Bubble.LockedToPart = true
-Objects.Bubble.Name = "Bubble"
-Objects.Bubble.Rate = 6
-Objects.Bubble.Rotation = NumberRange.new(-180, 180)
-Objects.Bubble.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(1, 4, 0)}
-Objects.Bubble.Speed = NumberRange.new(0, 0)
-Objects.Bubble.Texture = "rbxassetid://1084955488"
-Objects.Bubble.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Bubble.ZOffset = 3
-Objects.Bubble.Parent = Objects.ElectricBubble2
-
-Objects.Bits = Instance.new("ParticleEmitter")
-Objects.Bits.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 85.0000025331974), ColorSequenceKeypoint.new(1, 85.0000025331974)}
-Objects.Bits.Lifetime = NumberRange.new(0.5, 1)
-Objects.Bits.LightEmission = 1
-Objects.Bits.LockedToPart = true
-Objects.Bits.Name = "Bits"
-Objects.Bits.Rate = 100
-Objects.Bits.Rotation = NumberRange.new(-180, 180)
-Objects.Bits.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Bits.Speed = NumberRange.new(0, 0)
-Objects.Bits.Texture = "rbxassetid://1084996976"
-Objects.Bits.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.25, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Bits.Parent = Objects.Attachment25
-
-Objects.Wave2 = Instance.new("ParticleEmitter")
-Objects.Wave2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 200.00001847743988), ColorSequenceKeypoint.new(1, 200.00001847743988)}
-Objects.Wave2.Lifetime = NumberRange.new(1, 1.5)
-Objects.Wave2.LightEmission = 1
-Objects.Wave2.LockedToPart = true
-Objects.Wave2.Name = "Wave"
-Objects.Wave2.Rate = 3
-Objects.Wave2.RotSpeed = NumberRange.new(250, 500)
-Objects.Wave2.Rotation = NumberRange.new(-180, 180)
-Objects.Wave2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Wave2.Speed = NumberRange.new(0, 0)
-Objects.Wave2.Texture = "rbxassetid://1084996536"
-Objects.Wave2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.39999999999999997, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave2.Parent = Objects.Attachment25
-
-Objects.Smoke = Instance.new("ParticleEmitter")
-Objects.Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 100.00000923871994), ColorSequenceKeypoint.new(1, 100.00000923871994)}
-Objects.Smoke.Drag = 10
-Objects.Smoke.Lifetime = NumberRange.new(1, 1)
-Objects.Smoke.LightEmission = 1
-Objects.Smoke.Name = "Smoke"
-Objects.Smoke.Rate = 15
-Objects.Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Smoke.Speed = NumberRange.new(50, 50)
-Objects.Smoke.SpreadAngle = Vector2.new(90, 90)
-Objects.Smoke.Texture = "rbxassetid://867619398"
-Objects.Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.75, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Smoke.ZOffset = 1.5
-Objects.Smoke.Parent = Objects.Attachment26
-
-Objects.Icon = Instance.new("ParticleEmitter")
-Objects.Icon.Acceleration = Vector3.new(0, 10, 0)
-Objects.Icon.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 50.00000461935997), ColorSequenceKeypoint.new(1, 50.00000461935997)}
-Objects.Icon.Drag = 10
-Objects.Icon.Lifetime = NumberRange.new(0.7, 1)
-Objects.Icon.LightEmission = 1
-Objects.Icon.Name = "Icon"
-Objects.Icon.Rate = 8
-Objects.Icon.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0.5), NumberSequenceKeypoint.new(1, 1, 0.5)}
-Objects.Icon.Speed = NumberRange.new(50, 50)
-Objects.Icon.SpreadAngle = Vector2.new(90, 90)
-Objects.Icon.Texture = "rbxassetid://1084979589"
-Objects.Icon.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Icon.Parent = Objects.Attachment26
-
-Objects.Shockwave = Instance.new("ParticleEmitter")
-Objects.Shockwave.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 50.00000461935997), ColorSequenceKeypoint.new(1, 50.00000461935997)}
-Objects.Shockwave.Lifetime = NumberRange.new(0.6, 0.6)
-Objects.Shockwave.LightEmission = 1
-Objects.Shockwave.Name = "Shockwave"
-Objects.Shockwave.Rate = 1
-Objects.Shockwave.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 4.0838566, 0), NumberSequenceKeypoint.new(0.111, 7.5078545, 0), NumberSequenceKeypoint.new(0.16649999999999998, 10.3472195, 0), NumberSequenceKeypoint.new(0.222, 12.672625499999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 14.550189999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 16.0414753, 0), NumberSequenceKeypoint.new(0.38849999999999996, 17.2034931, 0), NumberSequenceKeypoint.new(0.444, 18.0886993, 0), NumberSequenceKeypoint.new(0.4995, 18.7449932, 0), NumberSequenceKeypoint.new(0.5549999999999999, 19.2157211, 0), NumberSequenceKeypoint.new(0.6104999999999999, 19.5396805, 0), NumberSequenceKeypoint.new(0.6659999999999999, 19.7511044, 0), NumberSequenceKeypoint.new(0.7214999999999999, 19.879682499999998, 0), NumberSequenceKeypoint.new(0.7769999999999999, 19.9505405, 0), NumberSequenceKeypoint.new(0.8325, 19.9842567, 0), NumberSequenceKeypoint.new(0.888, 19.9968529, 0), NumberSequenceKeypoint.new(0.9435, 19.9997959, 0), NumberSequenceKeypoint.new(0.999, 20, 0), NumberSequenceKeypoint.new(1, 20, 0)}
-Objects.Shockwave.Speed = NumberRange.new(0, 0)
-Objects.Shockwave.Texture = "rbxassetid://1084965356"
-Objects.Shockwave.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(0.75, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Shockwave.Parent = Objects.Attachment26
-
-Objects.Flare = Instance.new("ParticleEmitter")
-Objects.Flare.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 150.0000062584877), ColorSequenceKeypoint.new(1, 150.0000062584877)}
-Objects.Flare.Lifetime = NumberRange.new(1, 1)
-Objects.Flare.LightEmission = 1
-Objects.Flare.Name = "Flare"
-Objects.Flare.Rate = 1
-Objects.Flare.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 13, 0), NumberSequenceKeypoint.new(1, 13, 0)}
-Objects.Flare.Speed = NumberRange.new(0, 0)
-Objects.Flare.Texture = "rbxassetid://867619398"
-Objects.Flare.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare.ZOffset = 5
-Objects.Flare.Parent = Objects.Attachment26
-
-Objects.Icon2 = Instance.new("ParticleEmitter")
-Objects.Icon2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
-Objects.Icon2.Lifetime = NumberRange.new(1, 1)
-Objects.Icon2.LockedToPart = true
-Objects.Icon2.Name = "Icon"
-Objects.Icon2.Rate = 0.5
-Objects.Icon2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(0.0555, 3.3874215999999997, 0), NumberSequenceKeypoint.new(0.111, 2.8738216999999997, 0), NumberSequenceKeypoint.new(0.16649999999999998, 2.447917, 0), NumberSequenceKeypoint.new(0.222, 2.0991060999999998, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.8174716, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.5937785999999998, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.419476, 0), NumberSequenceKeypoint.new(0.444, 1.2866952, 0), NumberSequenceKeypoint.new(0.4995, 1.1882511, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.1176416999999998, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.069048, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.0373341999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.0180476999999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.0074189, 0), NumberSequenceKeypoint.new(0.8325, 1.0023613999999998, 0), NumberSequenceKeypoint.new(0.888, 1.0004720999999999, 0), NumberSequenceKeypoint.new(0.9435, 1.0000305, 0), NumberSequenceKeypoint.new(0.999, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Icon2.Speed = NumberRange.new(0, 0)
-Objects.Icon2.Texture = "rbxassetid://1084966670"
-Objects.Icon2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Icon2.ZOffset = 3
-Objects.Icon2.Parent = Objects.Attachment27
-
-Objects.Wave3 = Instance.new("ParticleEmitter")
-Objects.Wave3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
-Objects.Wave3.Lifetime = NumberRange.new(2, 2)
-Objects.Wave3.LightEmission = 1
-Objects.Wave3.LockedToPart = true
-Objects.Wave3.Name = "Wave"
-Objects.Wave3.Rate = 0.5
-Objects.Wave3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555556, 0, 0), NumberSequenceKeypoint.new(0.11111109999999999, 0, 0), NumberSequenceKeypoint.new(0.1666667, 0, 0), NumberSequenceKeypoint.new(0.22222219999999998, 0, 0), NumberSequenceKeypoint.new(0.27777779999999996, 0, 0), NumberSequenceKeypoint.new(0.3333333, 0, 0), NumberSequenceKeypoint.new(0.3888889, 0, 0), NumberSequenceKeypoint.new(0.44444439999999996, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(0.5555555999999999, 2.6879985, 0), NumberSequenceKeypoint.new(0.6111111, 3.9323734999999997, 0), NumberSequenceKeypoint.new(0.6666667, 4.5084409999999995, 0), NumberSequenceKeypoint.new(0.7222221999999999, 4.7751244999999995, 0), NumberSequenceKeypoint.new(0.7777778, 4.898582, 0), NumberSequenceKeypoint.new(0.8333332999999999, 4.9557351999999995, 0), NumberSequenceKeypoint.new(0.8888889, 4.9821935, 0), NumberSequenceKeypoint.new(0.9444444, 4.994441999999999, 0), NumberSequenceKeypoint.new(1, 5, 0)}
-Objects.Wave3.Speed = NumberRange.new(0, 0)
-Objects.Wave3.Texture = "rbxassetid://1084965356"
-Objects.Wave3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave3.ZOffset = 3
-Objects.Wave3.Parent = Objects.Attachment27
-
-Objects.Glow3 = Instance.new("ParticleEmitter")
-Objects.Glow3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
-Objects.Glow3.Lifetime = NumberRange.new(2, 2)
-Objects.Glow3.LightEmission = 1
-Objects.Glow3.LockedToPart = true
-Objects.Glow3.Name = "Glow"
-Objects.Glow3.Rate = 0.5
-Objects.Glow3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Glow3.Speed = NumberRange.new(0, 0)
-Objects.Glow3.Texture = "rbxassetid://867619398"
-Objects.Glow3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(0.5, 0.3, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Glow3.ZOffset = 3
-Objects.Glow3.Parent = Objects.Attachment27
-
-Objects.Puff = Instance.new("ParticleEmitter")
-Objects.Puff.Acceleration = Vector3.new(0, 2, 0)
-Objects.Puff.Drag = 15
-Objects.Puff.Lifetime = NumberRange.new(0.19999999999999998, 0.6)
-Objects.Puff.Name = "Puff"
-Objects.Puff.Rate = 8
-Objects.Puff.Rotation = NumberRange.new(-180, 180)
-Objects.Puff.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0.19999999999999998), NumberSequenceKeypoint.new(1, 0.5, 0.19999999999999998)}
-Objects.Puff.Speed = NumberRange.new(20, 20)
-Objects.Puff.SpreadAngle = Vector2.new(90, 90)
-Objects.Puff.Texture = "rbxassetid://1084987899"
-Objects.Puff.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.7, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Puff.Parent = Objects.Attachment28
-
-Objects.Shockwave2 = Instance.new("ParticleEmitter")
-Objects.Shockwave2.Lifetime = NumberRange.new(0.3, 0.3)
-Objects.Shockwave2.LightEmission = 1
-Objects.Shockwave2.Name = "Shockwave"
-Objects.Shockwave2.Rate = 1
-Objects.Shockwave2.Rotation = NumberRange.new(-180, 180)
-Objects.Shockwave2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.3777191, 0), NumberSequenceKeypoint.new(0.111, 0.7338764999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.0684721, 0), NumberSequenceKeypoint.new(0.222, 1.381506, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.6729782, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.9428885, 0), NumberSequenceKeypoint.new(0.38849999999999996, 2.1912371999999998, 0), NumberSequenceKeypoint.new(0.444, 2.4180241, 0), NumberSequenceKeypoint.new(0.4995, 2.6232491, 0), NumberSequenceKeypoint.new(0.5549999999999999, 2.8069124, 0), NumberSequenceKeypoint.new(0.6104999999999999, 2.9690141999999997, 0), NumberSequenceKeypoint.new(0.6659999999999999, 3.1095541, 0), NumberSequenceKeypoint.new(0.7214999999999999, 3.2285321, 0), NumberSequenceKeypoint.new(0.7769999999999999, 3.3259485, 0), NumberSequenceKeypoint.new(0.8325, 3.4018029999999997, 0), NumberSequenceKeypoint.new(0.888, 3.4560958999999998, 0), NumberSequenceKeypoint.new(0.9435, 3.4888272, 0), NumberSequenceKeypoint.new(0.999, 3.4999963999999997, 0), NumberSequenceKeypoint.new(1, 3.5, 0)}
-Objects.Shockwave2.Speed = NumberRange.new(0, 0)
-Objects.Shockwave2.Texture = "rbxassetid://1084991215"
-Objects.Shockwave2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.39999999999999997, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Shockwave2.Parent = Objects.Attachment28
-
-Objects.Puff2 = Instance.new("ParticleEmitter")
-Objects.Puff2.Acceleration = Vector3.new(0, 2, 0)
-Objects.Puff2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 200.00001847743988), ColorSequenceKeypoint.new(1, 200.00001847743988)}
-Objects.Puff2.Drag = 8
-Objects.Puff2.Lifetime = NumberRange.new(0.3, 0.7)
-Objects.Puff2.Name = "Puff"
-Objects.Puff2.Rate = 4
-Objects.Puff2.Rotation = NumberRange.new(-180, 180)
-Objects.Puff2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(1, 0.3, 0)}
-Objects.Puff2.Speed = NumberRange.new(20, 20)
-Objects.Puff2.SpreadAngle = Vector2.new(90, 90)
-Objects.Puff2.Texture = "rbxassetid://1084987899"
-Objects.Puff2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Puff2.ZOffset = -0.001
-Objects.Puff2.Parent = Objects.Attachment28
-
-Objects.Wave4 = Instance.new("ParticleEmitter")
-Objects.Wave4.Lifetime = NumberRange.new(1, 1)
-Objects.Wave4.LockedToPart = true
-Objects.Wave4.Name = "Wave"
-Objects.Wave4.Rate = 2
-Objects.Wave4.Rotation = NumberRange.new(90, 90)
-Objects.Wave4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.2612064, 0), NumberSequenceKeypoint.new(0.111, 0.5204289, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.7756985, 0), NumberSequenceKeypoint.new(0.222, 1.0250763, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.2666682999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.4986395, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.7192277999999999, 0), NumberSequenceKeypoint.new(0.444, 1.9267579, 0), NumberSequenceKeypoint.new(0.4995, 2.1196536999999998, 0), NumberSequenceKeypoint.new(0.5549999999999999, 2.2964496999999997, 0), NumberSequenceKeypoint.new(0.6104999999999999, 2.4558032, 0), NumberSequenceKeypoint.new(0.6659999999999999, 2.596504, 0), NumberSequenceKeypoint.new(0.7214999999999999, 2.7174833, 0), NumberSequenceKeypoint.new(0.7769999999999999, 2.8178221999999997, 0), NumberSequenceKeypoint.new(0.8325, 2.8967586, 0), NumberSequenceKeypoint.new(0.888, 2.9536929, 0), NumberSequenceKeypoint.new(0.9435, 2.9881927999999998, 0), NumberSequenceKeypoint.new(0.999, 2.9999962, 0), NumberSequenceKeypoint.new(1, 3, 0)}
-Objects.Wave4.Speed = NumberRange.new(0, 0)
-Objects.Wave4.Texture = "rbxassetid://1084963972"
-Objects.Wave4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave4.Parent = Objects.Attachment29
-
-Objects.Core = Instance.new("ParticleEmitter")
-Objects.Core.Lifetime = NumberRange.new(1, 1)
-Objects.Core.LightEmission = 1
-Objects.Core.LockedToPart = true
-Objects.Core.Name = "Core"
-Objects.Core.Rate = 3
-Objects.Core.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.75, 0), NumberSequenceKeypoint.new(1, 0.75, 0)}
-Objects.Core.Speed = NumberRange.new(0, 0)
-Objects.Core.Texture = "rbxassetid://1084962479"
-Objects.Core.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Core.ZOffset = 0.001
-Objects.Core.Parent = Objects.Attachment29
-
-Objects.Rays_Thin = Instance.new("ParticleEmitter")
-Objects.Rays_Thin.Lifetime = NumberRange.new(1, 2)
-Objects.Rays_Thin.LightEmission = 1
-Objects.Rays_Thin.LockedToPart = true
-Objects.Rays_Thin.Name = "Rays_Thin"
-Objects.Rays_Thin.Rate = 2.5
-Objects.Rays_Thin.RotSpeed = NumberRange.new(-75, 75)
-Objects.Rays_Thin.Rotation = NumberRange.new(-180, 180)
-Objects.Rays_Thin.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.43534399999999995, 0), NumberSequenceKeypoint.new(0.111, 0.8673814999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.2928308, 0), NumberSequenceKeypoint.new(0.222, 1.7084606, 0), NumberSequenceKeypoint.new(0.27749999999999997, 2.1111138, 0), NumberSequenceKeypoint.new(0.33299999999999996, 2.4977324, 0), NumberSequenceKeypoint.new(0.38849999999999996, 2.8653796, 0), NumberSequenceKeypoint.new(0.444, 3.2112632, 0), NumberSequenceKeypoint.new(0.4995, 3.5327561, 0), NumberSequenceKeypoint.new(0.5549999999999999, 3.8274162, 0), NumberSequenceKeypoint.new(0.6104999999999999, 4.0930051999999995, 0), NumberSequenceKeypoint.new(0.6659999999999999, 4.3275065, 0), NumberSequenceKeypoint.new(0.7214999999999999, 4.5291386, 0), NumberSequenceKeypoint.new(0.7769999999999999, 4.6963701, 0), NumberSequenceKeypoint.new(0.8325, 4.8279309, 0), NumberSequenceKeypoint.new(0.888, 4.9228214999999995, 0), NumberSequenceKeypoint.new(0.9435, 4.980321399999999, 0), NumberSequenceKeypoint.new(0.999, 4.9999937999999995, 0), NumberSequenceKeypoint.new(1, 5, 0)}
-Objects.Rays_Thin.Speed = NumberRange.new(0, 0)
-Objects.Rays_Thin.Texture = "rbxassetid://1084961641"
-Objects.Rays_Thin.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays_Thin.Parent = Objects.Attachment29
-
-Objects.Rays_Thick = Instance.new("ParticleEmitter")
-Objects.Rays_Thick.Lifetime = NumberRange.new(1, 2)
-Objects.Rays_Thick.LightEmission = 1
-Objects.Rays_Thick.LockedToPart = true
-Objects.Rays_Thick.Name = "Rays_Thick"
-Objects.Rays_Thick.Rate = 2.5
-Objects.Rays_Thick.RotSpeed = NumberRange.new(-75, 75)
-Objects.Rays_Thick.Rotation = NumberRange.new(-180, 180)
-Objects.Rays_Thick.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.43534399999999995, 0), NumberSequenceKeypoint.new(0.111, 0.8673814999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.2928308, 0), NumberSequenceKeypoint.new(0.222, 1.7084606, 0), NumberSequenceKeypoint.new(0.27749999999999997, 2.1111138, 0), NumberSequenceKeypoint.new(0.33299999999999996, 2.4977324, 0), NumberSequenceKeypoint.new(0.38849999999999996, 2.8653796, 0), NumberSequenceKeypoint.new(0.444, 3.2112632, 0), NumberSequenceKeypoint.new(0.4995, 3.5327561, 0), NumberSequenceKeypoint.new(0.5549999999999999, 3.8274162, 0), NumberSequenceKeypoint.new(0.6104999999999999, 4.0930051999999995, 0), NumberSequenceKeypoint.new(0.6659999999999999, 4.3275065, 0), NumberSequenceKeypoint.new(0.7214999999999999, 4.5291386, 0), NumberSequenceKeypoint.new(0.7769999999999999, 4.6963701, 0), NumberSequenceKeypoint.new(0.8325, 4.8279309, 0), NumberSequenceKeypoint.new(0.888, 4.9228214999999995, 0), NumberSequenceKeypoint.new(0.9435, 4.980321399999999, 0), NumberSequenceKeypoint.new(0.999, 4.9999937999999995, 0), NumberSequenceKeypoint.new(1, 5, 0)}
-Objects.Rays_Thick.Speed = NumberRange.new(0, 0)
-Objects.Rays_Thick.Texture = "rbxassetid://1053548563"
-Objects.Rays_Thick.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays_Thick.Parent = Objects.Attachment29
-
-Objects.Rays5 = Instance.new("ParticleEmitter")
-Objects.Rays5.Lifetime = NumberRange.new(1, 1)
-Objects.Rays5.LightEmission = 1
-Objects.Rays5.LockedToPart = true
-Objects.Rays5.Name = "Rays"
-Objects.Rays5.Rate = 8
-Objects.Rays5.Rotation = NumberRange.new(90, 270)
-Objects.Rays5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 2.4836012999999997, 0), NumberSequenceKeypoint.new(0.111, 4.4472413, 0), NumberSequenceKeypoint.new(0.16649999999999998, 5.9772038, 0), NumberSequenceKeypoint.new(0.222, 7.1496515, 0), NumberSequenceKeypoint.new(0.27749999999999997, 8.031255699999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 8.6798325, 0), NumberSequenceKeypoint.new(0.38849999999999996, 9.144968, 0), NumberSequenceKeypoint.new(0.444, 9.468658399999999, 0), NumberSequenceKeypoint.new(0.4995, 9.685934099999999, 0), NumberSequenceKeypoint.new(0.5549999999999999, 9.8254986, 0), NumberSequenceKeypoint.new(0.6104999999999999, 9.910352699999999, 0), NumberSequenceKeypoint.new(0.6659999999999999, 9.9584341, 0), NumberSequenceKeypoint.new(0.7214999999999999, 9.983245799999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 9.9944849, 0), NumberSequenceKeypoint.new(0.8325, 9.998681099999999, 0), NumberSequenceKeypoint.new(0.888, 9.9998236, 0), NumberSequenceKeypoint.new(0.9435, 9.9999943, 0), NumberSequenceKeypoint.new(0.999, 10, 0), NumberSequenceKeypoint.new(1, 10, 0)}
-Objects.Rays5.Speed = NumberRange.new(0, 0)
-Objects.Rays5.Texture = "rbxassetid://1053548563"
-Objects.Rays5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.39999999999999997, 0.3), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays5.Parent = Objects.Attachment30
-
-Objects.Rays6 = Instance.new("ParticleEmitter")
-Objects.Rays6.Lifetime = NumberRange.new(1.5, 1.5)
-Objects.Rays6.LightEmission = 1
-Objects.Rays6.LockedToPart = true
-Objects.Rays6.Name = "Rays"
-Objects.Rays6.Rate = 1
-Objects.Rays6.RotSpeed = NumberRange.new(22.5, 22.5)
-Objects.Rays6.Rotation = NumberRange.new(-180, 180)
-Objects.Rays6.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.09999999999999999, 9, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Rays6.Speed = NumberRange.new(0, 0)
-Objects.Rays6.Texture = "rbxassetid://1084975295"
-Objects.Rays6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(0.75, 0.3, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays6.Parent = Objects.Attachment30
-
-Objects.Flare2 = Instance.new("ParticleEmitter")
-Objects.Flare2.Lifetime = NumberRange.new(1, 1)
-Objects.Flare2.LightEmission = 1
-Objects.Flare2.LockedToPart = true
-Objects.Flare2.Name = "Flare"
-Objects.Flare2.Rate = 1
-Objects.Flare2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 7, 0), NumberSequenceKeypoint.new(1, 7, 0)}
-Objects.Flare2.Speed = NumberRange.new(0, 0)
-Objects.Flare2.Texture = "rbxassetid://867619398"
-Objects.Flare2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare2.ZOffset = 4
-Objects.Flare2.Parent = Objects.Attachment30
-
-Objects.Circles = Instance.new("ParticleEmitter")
-Objects.Circles.Drag = 8
-Objects.Circles.Lifetime = NumberRange.new(1.0999999999999999, 1.0999999999999999)
-Objects.Circles.LightEmission = 1
-Objects.Circles.Name = "Circles"
-Objects.Circles.Rate = 8
-Objects.Circles.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0.19999999999999998), NumberSequenceKeypoint.new(1, 0.3, 0.19999999999999998)}
-Objects.Circles.Speed = NumberRange.new(20, 20)
-Objects.Circles.SpreadAngle = Vector2.new(90, 90)
-Objects.Circles.Texture = "rbxassetid://1084982817"
-Objects.Circles.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Circles.Parent = Objects.Attachment30
-
-Objects.Wave5 = Instance.new("ParticleEmitter")
-Objects.Wave5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Wave5.Lifetime = NumberRange.new(0.5, 1)
-Objects.Wave5.LightEmission = 1
-Objects.Wave5.LockedToPart = true
-Objects.Wave5.Name = "Wave"
-Objects.Wave5.Rate = 3
-Objects.Wave5.RotSpeed = NumberRange.new(-200, 200)
-Objects.Wave5.Rotation = NumberRange.new(-180, 180)
-Objects.Wave5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.6, 0), NumberSequenceKeypoint.new(0.0555, 0.7079198, 0), NumberSequenceKeypoint.new(0.111, 0.8096789999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.9052777, 0), NumberSequenceKeypoint.new(0.222, 0.9947159999999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.0779938, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.155111, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.2260678, 0), NumberSequenceKeypoint.new(0.444, 1.290864, 0), NumberSequenceKeypoint.new(0.4995, 1.3494997, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.401975, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.4482898, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.4884439999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.5224377, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.550271, 0), NumberSequenceKeypoint.new(0.8325, 1.5719438, 0), NumberSequenceKeypoint.new(0.888, 1.587456, 0), NumberSequenceKeypoint.new(0.9435, 1.5968076999999998, 0), NumberSequenceKeypoint.new(0.999, 1.599999, 0), NumberSequenceKeypoint.new(1, 1.5999999999999999, 0)}
-Objects.Wave5.Speed = NumberRange.new(0, 0)
-Objects.Wave5.Texture = "rbxassetid://1084963972"
-Objects.Wave5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.1079198, 0), NumberSequenceKeypoint.new(0.111, 0.209679, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3052778, 0), NumberSequenceKeypoint.new(0.222, 0.39471599999999996, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.47799379999999997, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.555111, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.6260678, 0), NumberSequenceKeypoint.new(0.444, 0.6908639999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.7494997, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.801975, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8482896999999999, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.888444, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.9224376999999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.950271, 0), NumberSequenceKeypoint.new(0.8325, 0.9719437, 0), NumberSequenceKeypoint.new(0.888, 0.987456, 0), NumberSequenceKeypoint.new(0.9435, 0.9968077999999999, 0), NumberSequenceKeypoint.new(0.999, 0.999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave5.Parent = Objects.Attachment31
-
-Objects.Flare3 = Instance.new("ParticleEmitter")
-Objects.Flare3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Flare3.Lifetime = NumberRange.new(0.5, 1)
-Objects.Flare3.LightEmission = 1
-Objects.Flare3.LockedToPart = true
-Objects.Flare3.Name = "Flare"
-Objects.Flare3.Rate = 1
-Objects.Flare3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2, 0), NumberSequenceKeypoint.new(0.0555, 1.8920803, 0), NumberSequenceKeypoint.new(0.111, 1.7903209999999998, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.6947223, 0), NumberSequenceKeypoint.new(0.222, 1.605284, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.5220063, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.4448889, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.3739322, 0), NumberSequenceKeypoint.new(0.444, 1.3091359999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.2505001999999998, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.198025, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.1517103, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.1115561, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.0775622, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.049729, 0), NumberSequenceKeypoint.new(0.8325, 1.0280563, 0), NumberSequenceKeypoint.new(0.888, 1.0125439999999999, 0), NumberSequenceKeypoint.new(0.9435, 1.0031923, 0), NumberSequenceKeypoint.new(0.999, 1.000001, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare3.Speed = NumberRange.new(0, 0)
-Objects.Flare3.Texture = "rbxassetid://867619398"
-Objects.Flare3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.25, 0), NumberSequenceKeypoint.new(0.0555, 0.3309398, 0), NumberSequenceKeypoint.new(0.111, 0.4072593, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.4789583, 0), NumberSequenceKeypoint.new(0.222, 0.546037, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.6084953, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.6663333, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.7195507999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7681479999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.8121248, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.8514813, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8862173, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.916333, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.9418283, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.9627032, 0), NumberSequenceKeypoint.new(0.8325, 0.9789578, 0), NumberSequenceKeypoint.new(0.888, 0.9905919999999999, 0), NumberSequenceKeypoint.new(0.9435, 0.9976058, 0), NumberSequenceKeypoint.new(0.999, 0.9999992, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare3.Parent = Objects.Attachment31
-
-Objects.Circles2 = Instance.new("ParticleEmitter")
-Objects.Circles2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
-Objects.Circles2.Drag = 8
-Objects.Circles2.Lifetime = NumberRange.new(0.5, 1)
-Objects.Circles2.LightEmission = 1
-Objects.Circles2.LockedToPart = true
-Objects.Circles2.Name = "Circles"
-Objects.Circles2.Rate = 8
-Objects.Circles2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.19999999999999998, 0), NumberSequenceKeypoint.new(1, 0.19999999999999998, 0)}
-Objects.Circles2.Speed = NumberRange.new(10, 15)
-Objects.Circles2.SpreadAngle = Vector2.new(180, 180)
-Objects.Circles2.Texture = "rbxassetid://1084982817"
-Objects.Circles2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(0.0555, 0.5539598, 0), NumberSequenceKeypoint.new(0.111, 0.6048395, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.6526389, 0), NumberSequenceKeypoint.new(0.222, 0.6973579999999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.7389969, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.7775555, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.8130339, 0), NumberSequenceKeypoint.new(0.444, 0.845432, 0), NumberSequenceKeypoint.new(0.4995, 0.8747499, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.9009874999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.9241448999999999, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.944222, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.9612189, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.9751354999999999, 0), NumberSequenceKeypoint.new(0.8325, 0.9859718999999999, 0), NumberSequenceKeypoint.new(0.888, 0.993728, 0), NumberSequenceKeypoint.new(0.9435, 0.9984038, 0), NumberSequenceKeypoint.new(0.999, 0.9999994999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Circles2.Parent = Objects.Attachment31
-
-Objects.Core2 = Instance.new("ParticleEmitter")
-Objects.Core2.Lifetime = NumberRange.new(1, 1)
-Objects.Core2.LightEmission = 1
-Objects.Core2.LockedToPart = true
-Objects.Core2.Name = "Core"
-Objects.Core2.Rate = 2
-Objects.Core2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
-Objects.Core2.Speed = NumberRange.new(0, 0)
-Objects.Core2.Texture = "rbxassetid://1084962479"
-Objects.Core2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Core2.Parent = Objects.Attachment32
-
-Objects.Flare4 = Instance.new("ParticleEmitter")
-Objects.Flare4.Lifetime = NumberRange.new(2, 2)
-Objects.Flare4.LightEmission = 1
-Objects.Flare4.LockedToPart = true
-Objects.Flare4.Name = "Flare"
-Objects.Flare4.Rate = 2
-Objects.Flare4.RotSpeed = NumberRange.new(-10, 10)
-Objects.Flare4.Rotation = NumberRange.new(-180, 180)
-Objects.Flare4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 5, 0), NumberSequenceKeypoint.new(1, 5, 0)}
-Objects.Flare4.Speed = NumberRange.new(0, 0)
-Objects.Flare4.Texture = "rbxassetid://1085001473"
-Objects.Flare4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.85, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare4.Parent = Objects.Attachment32
-
-Objects.Rays7 = Instance.new("ParticleEmitter")
-Objects.Rays7.Lifetime = NumberRange.new(5, 5)
-Objects.Rays7.LightEmission = 1
-Objects.Rays7.LockedToPart = true
-Objects.Rays7.Name = "Rays"
-Objects.Rays7.Rate = 0.5
-Objects.Rays7.RotSpeed = NumberRange.new(-10, 10)
-Objects.Rays7.Rotation = NumberRange.new(-180, 180)
-Objects.Rays7.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.5, 0), NumberSequenceKeypoint.new(1, 1.5, 0)}
-Objects.Rays7.Speed = NumberRange.new(0, 0)
-Objects.Rays7.Texture = "rbxassetid://1084975295"
-Objects.Rays7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Rays7.Parent = Objects.Attachment32
-
-Objects.Glow4 = Instance.new("ParticleEmitter")
-Objects.Glow4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 249.00000035762787), ColorSequenceKeypoint.new(1, 249.00000035762787)}
-Objects.Glow4.Lifetime = NumberRange.new(1, 1)
-Objects.Glow4.LightEmission = 1
-Objects.Glow4.LockedToPart = true
-Objects.Glow4.Name = "Glow"
-Objects.Glow4.Rate = 3
-Objects.Glow4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.2, 0), NumberSequenceKeypoint.new(1, 1.2, 0)}
-Objects.Glow4.Speed = NumberRange.new(0, 0)
-Objects.Glow4.Texture = "rbxassetid://867619398"
-Objects.Glow4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.49742709999999996, 0.71875, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Glow4.Parent = Objects.Attachment33
-
-Objects.Bolts2 = Instance.new("ParticleEmitter")
-Objects.Bolts2.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
-Objects.Bolts2.LightEmission = 1
-Objects.Bolts2.LockedToPart = true
-Objects.Bolts2.Name = "Bolts"
-Objects.Bolts2.Rate = 6
-Objects.Bolts2.Rotation = NumberRange.new(-180, 180)
-Objects.Bolts2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.7, 0.3), NumberSequenceKeypoint.new(1, 0.7, 0.3)}
-Objects.Bolts2.Speed = NumberRange.new(0, 0)
-Objects.Bolts2.Texture = "rbxassetid://1084959583"
-Objects.Bolts2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Bolts2.Parent = Objects.Attachment33
-
-Objects.Core3 = Instance.new("ParticleEmitter")
-Objects.Core3.Lifetime = NumberRange.new(1, 1)
-Objects.Core3.LightEmission = 1
-Objects.Core3.LockedToPart = true
-Objects.Core3.Name = "Core"
-Objects.Core3.Rate = 3
-Objects.Core3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
-Objects.Core3.Speed = NumberRange.new(0, 0)
-Objects.Core3.Texture = "rbxassetid://867619398"
-Objects.Core3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Core3.Parent = Objects.Attachment33
-
-Objects.Bolts3 = Instance.new("ParticleEmitter")
-Objects.Bolts3.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
-Objects.Bolts3.LightEmission = 1
-Objects.Bolts3.LockedToPart = true
-Objects.Bolts3.Name = "Bolts"
-Objects.Bolts3.Rate = 6
-Objects.Bolts3.Rotation = NumberRange.new(-180, 180)
-Objects.Bolts3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0.19999999999999998), NumberSequenceKeypoint.new(1, 1, 0.19999999999999998)}
-Objects.Bolts3.Speed = NumberRange.new(0, 0)
-Objects.Bolts3.Texture = "rbxassetid://1084959312"
-Objects.Bolts3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Bolts3.Parent = Objects.Attachment33
-
-Objects.Bolts4 = Instance.new("ParticleEmitter")
-Objects.Bolts4.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
-Objects.Bolts4.LightEmission = 1
-Objects.Bolts4.LockedToPart = true
-Objects.Bolts4.Name = "Bolts"
-Objects.Bolts4.Rate = 6
-Objects.Bolts4.Rotation = NumberRange.new(-180, 180)
-Objects.Bolts4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.25, 0.19999999999999998), NumberSequenceKeypoint.new(1, 1.25, 0.19999999999999998)}
-Objects.Bolts4.Speed = NumberRange.new(0, 0)
-Objects.Bolts4.Texture = "rbxassetid://1084959112"
-Objects.Bolts4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Bolts4.Parent = Objects.Attachment33
-
-Objects.Flare5 = Instance.new("ParticleEmitter")
-Objects.Flare5.Drag = 5
-Objects.Flare5.Lifetime = NumberRange.new(0.5, 0.5)
-Objects.Flare5.LightEmission = 1
-Objects.Flare5.LockedToPart = true
-Objects.Flare5.Name = "Flare"
-Objects.Flare5.Rate = 1
-Objects.Flare5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2, 0), NumberSequenceKeypoint.new(1, 2, 0)}
-Objects.Flare5.Speed = NumberRange.new(0, 0)
-Objects.Flare5.Texture = "rbxassetid://867619398"
-Objects.Flare5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare5.Parent = Objects.Attachment34
-
-Objects.Sparkle = Instance.new("ParticleEmitter")
-Objects.Sparkle.Lifetime = NumberRange.new(0.5, 0.5)
-Objects.Sparkle.LightEmission = 1
-Objects.Sparkle.LockedToPart = true
-Objects.Sparkle.Name = "Sparkle"
-Objects.Sparkle.Rate = 1
-Objects.Sparkle.RotSpeed = NumberRange.new(300, 300)
-Objects.Sparkle.Rotation = NumberRange.new(-180, 180)
-Objects.Sparkle.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Sparkle.Speed = NumberRange.new(0, 0)
-Objects.Sparkle.Texture = "rbxassetid://1053546634"
-Objects.Sparkle.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Sparkle.Parent = Objects.Attachment34
-
-Objects.Wave6 = Instance.new("ParticleEmitter")
-Objects.Wave6.EmissionDirection = Enum.NormalId.Right
-Objects.Wave6.Lifetime = NumberRange.new(0.39999999999999997, 0.39999999999999997)
-Objects.Wave6.LockedToPart = true
-Objects.Wave6.Name = "Wave"
-Objects.Wave6.Rate = 1
-Objects.Wave6.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.16187959999999998, 0), NumberSequenceKeypoint.new(0.111, 0.3145185, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.4579166, 0), NumberSequenceKeypoint.new(0.222, 0.592074, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.7169905999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.8326665, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.9391016, 0), NumberSequenceKeypoint.new(0.444, 1.0362959999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.1242496, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.2029625, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.2724346, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.332666, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.3836566, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.4254065, 0), NumberSequenceKeypoint.new(0.8325, 1.4579157, 0), NumberSequenceKeypoint.new(0.888, 1.4811839999999998, 0), NumberSequenceKeypoint.new(0.9435, 1.4952116, 0), NumberSequenceKeypoint.new(0.999, 1.4999985, 0), NumberSequenceKeypoint.new(1, 1.5, 0)}
-Objects.Wave6.Speed = NumberRange.new(0, 0)
-Objects.Wave6.Texture = "rbxassetid://1084952073"
-Objects.Wave6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave6.Parent = Objects.Attachment34
-
-Objects.Flare6 = Instance.new("ParticleEmitter")
-Objects.Flare6.Drag = 5
-Objects.Flare6.Lifetime = NumberRange.new(0.5, 0.5)
-Objects.Flare6.LightEmission = 1
-Objects.Flare6.LockedToPart = true
-Objects.Flare6.Name = "Flare"
-Objects.Flare6.Rate = 1
-Objects.Flare6.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2, 0), NumberSequenceKeypoint.new(1, 2, 0)}
-Objects.Flare6.Speed = NumberRange.new(0, 0)
-Objects.Flare6.Texture = "rbxassetid://867619398"
-Objects.Flare6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Flare6.Parent = Objects.Attachment35
-
-Objects.Sparkle2 = Instance.new("ParticleEmitter")
-Objects.Sparkle2.Lifetime = NumberRange.new(0.5, 0.5)
-Objects.Sparkle2.LightEmission = 1
-Objects.Sparkle2.LockedToPart = true
-Objects.Sparkle2.Name = "Sparkle"
-Objects.Sparkle2.Rate = 1
-Objects.Sparkle2.RotSpeed = NumberRange.new(300, 300)
-Objects.Sparkle2.Rotation = NumberRange.new(-180, 180)
-Objects.Sparkle2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
-Objects.Sparkle2.Speed = NumberRange.new(0, 0)
-Objects.Sparkle2.Texture = "rbxassetid://1053546634"
-Objects.Sparkle2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Sparkle2.Parent = Objects.Attachment35
-
-Objects.Wave7 = Instance.new("ParticleEmitter")
-Objects.Wave7.EmissionDirection = Enum.NormalId.Right
-Objects.Wave7.Lifetime = NumberRange.new(0.39999999999999997, 0.39999999999999997)
-Objects.Wave7.LockedToPart = true
-Objects.Wave7.Name = "Wave"
-Objects.Wave7.Rate = 1
-Objects.Wave7.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.16187959999999998, 0), NumberSequenceKeypoint.new(0.111, 0.3145185, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.4579166, 0), NumberSequenceKeypoint.new(0.222, 0.592074, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.7169905999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.8326665, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.9391016, 0), NumberSequenceKeypoint.new(0.444, 1.0362959999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.1242496, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.2029625, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.2724346, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.332666, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.3836566, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.4254065, 0), NumberSequenceKeypoint.new(0.8325, 1.4579157, 0), NumberSequenceKeypoint.new(0.888, 1.4811839999999998, 0), NumberSequenceKeypoint.new(0.9435, 1.4952116, 0), NumberSequenceKeypoint.new(0.999, 1.4999985, 0), NumberSequenceKeypoint.new(1, 1.5, 0)}
-Objects.Wave7.Speed = NumberRange.new(0, 0)
-Objects.Wave7.Texture = "rbxassetid://1084952073"
-Objects.Wave7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
-Objects.Wave7.Parent = Objects.Attachment35
-
-Objects.Script7 = Instance.new("Script")
-Objects.Script7.Disabled = true
-Objects.Script7.Parent = Objects.ImageLabel5
+local Objects = {} do
+
+	local ColorSequence = {
+		new = function()
+			return ColorSequence.new(Color3.fromRGB(255, 255, 255))
+		end
+	}
+	local ColorSequenceKeypoint = {
+		new = function()
+
+		end,
+	}
+
+	Objects.script = script
+
+	Objects.Outcast = Instance.new("Folder")
+	Objects.Outcast.Name = "Outcast"
+	Objects.Outcast.Parent = Objects.script
+
+	Objects.TRAILS = Instance.new("Folder")
+	Objects.TRAILS.Name = "TRAILS"
+	Objects.TRAILS.Parent = Objects.script
+
+	Objects.VALUEINSTANCES = Instance.new("Folder")
+	Objects.VALUEINSTANCES.Name = "VALUEINSTANCES"
+	Objects.VALUEINSTANCES.Parent = Objects.script
+
+	Objects.WELDS = Instance.new("Folder")
+	Objects.WELDS.Name = "WELDS"
+	Objects.WELDS.Parent = Objects.script
+
+	Objects.Effect = Instance.new("Part")
+	Objects.Effect.Anchored = true
+	Objects.Effect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Effect.CFrame = CFrame.new(-47.862, -265.13100000000003, -242.918)
+	Objects.Effect.Name = "Effect"
+	Objects.Effect.Size = Vector3.new(2.142, 2.403, 0.9400000000000001)
+	Objects.Effect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Effect.Transparency = 1
+	Objects.Effect.Parent = Objects.script
+
+	Objects.HIGHPRIORITY = Instance.new("Part")
+	Objects.HIGHPRIORITY.Anchored = true
+	Objects.HIGHPRIORITY.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.HIGHPRIORITY.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.HIGHPRIORITY.CFrame = CFrame.new(48.337, -381.498, 103.026)
+	Objects.HIGHPRIORITY.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.HIGHPRIORITY.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.HIGHPRIORITY.Material = Enum.Material.SmoothPlastic
+	Objects.HIGHPRIORITY.Name = "HIGHPRIORITY"
+	Objects.HIGHPRIORITY.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.HIGHPRIORITY.Size = Vector3.new(0.1, 0.1, 0.1)
+	Objects.HIGHPRIORITY.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.HIGHPRIORITY.Transparency = 1
+	Objects.HIGHPRIORITY.Parent = Objects.script
+
+	Objects.LOWPRIORITY = Instance.new("Part")
+	Objects.LOWPRIORITY.Anchored = true
+	Objects.LOWPRIORITY.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.LOWPRIORITY.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.LOWPRIORITY.CFrame = CFrame.new(48.337, -381.498, 103.026)
+	Objects.LOWPRIORITY.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.LOWPRIORITY.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.LOWPRIORITY.Material = Enum.Material.SmoothPlastic
+	Objects.LOWPRIORITY.Name = "LOWPRIORITY"
+	Objects.LOWPRIORITY.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.LOWPRIORITY.Size = Vector3.new(0.1, 0.1, 0.1)
+	Objects.LOWPRIORITY.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.LOWPRIORITY.Transparency = 1
+	Objects.LOWPRIORITY.Parent = Objects.script
+
+	Objects.MEDPRIORITY = Instance.new("Part")
+	Objects.MEDPRIORITY.Anchored = true
+	Objects.MEDPRIORITY.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.MEDPRIORITY.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.MEDPRIORITY.CFrame = CFrame.new(48.337, -381.498, 103.026)
+	Objects.MEDPRIORITY.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.MEDPRIORITY.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.MEDPRIORITY.Material = Enum.Material.SmoothPlastic
+	Objects.MEDPRIORITY.Name = "MEDPRIORITY"
+	Objects.MEDPRIORITY.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.MEDPRIORITY.Size = Vector3.new(0.1, 0.1, 0.1)
+	Objects.MEDPRIORITY.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.MEDPRIORITY.Transparency = 1
+	Objects.MEDPRIORITY.Parent = Objects.script
+
+	Objects.TARGETGUI = Instance.new("Part")
+	Objects.TARGETGUI.Anchored = true
+	Objects.TARGETGUI.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.TARGETGUI.CFrame = CFrame.new(48.337, -381.498, 185.026)
+	Objects.TARGETGUI.Name = "TARGETGUI"
+	Objects.TARGETGUI.Size = Vector3.new(0.05, 0.05, 0.05)
+	Objects.TARGETGUI.TopSurface = Enum.SurfaceType.Smooth
+	Objects.TARGETGUI.Transparency = 1
+	Objects.TARGETGUI.Parent = Objects.script
+
+	Objects.p1 = Instance.new("Part")
+	Objects.p1.Anchored = true
+	Objects.p1.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.p1.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
+	Objects.p1.Material = Enum.Material.Neon
+	Objects.p1.Name = "p1"
+	Objects.p1.Shape = Enum.PartType.Cylinder
+	Objects.p1.Size = Vector3.new(1, 500, 1)
+	Objects.p1.TopSurface = Enum.SurfaceType.Smooth
+	Objects.p1.Parent = Objects.script
+
+	Objects.p2 = Instance.new("Part")
+	Objects.p2.Anchored = true
+	Objects.p2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.p2.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
+	Objects.p2.Material = Enum.Material.Neon
+	Objects.p2.Name = "p2"
+	Objects.p2.Shape = Enum.PartType.Cylinder
+	Objects.p2.Size = Vector3.new(1, 500, 1)
+	Objects.p2.TopSurface = Enum.SurfaceType.Smooth
+	Objects.p2.Parent = Objects.script
+
+	Objects.p3 = Instance.new("Part")
+	Objects.p3.Anchored = true
+	Objects.p3.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.p3.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
+	Objects.p3.Material = Enum.Material.Neon
+	Objects.p3.Name = "p3"
+	Objects.p3.Shape = Enum.PartType.Cylinder
+	Objects.p3.Size = Vector3.new(1, 500, 1)
+	Objects.p3.TopSurface = Enum.SurfaceType.Smooth
+	Objects.p3.Parent = Objects.script
+
+	Objects.p4 = Instance.new("Part")
+	Objects.p4.Anchored = true
+	Objects.p4.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.p4.CFrame = CFrame.new(48.337, 136.50300000000001, 111.026)
+	Objects.p4.Material = Enum.Material.Neon
+	Objects.p4.Name = "p4"
+	Objects.p4.Shape = Enum.PartType.Cylinder
+	Objects.p4.Size = Vector3.new(1, 500, 1)
+	Objects.p4.TopSurface = Enum.SurfaceType.Smooth
+	Objects.p4.Parent = Objects.script
+
+	Objects.BARS = Instance.new("ScreenGui")
+	Objects.BARS.Name = "BARS"
+	Objects.BARS.Parent = Objects.script
+
+	Objects.COOLDOWNS = Instance.new("ScreenGui")
+	Objects.COOLDOWNS.Name = "COOLDOWNS"
+	Objects.COOLDOWNS.Parent = Objects.script
+
+	Objects.HITS = Instance.new("ScreenGui")
+	Objects.HITS.Name = "HITS"
+	Objects.HITS.Parent = Objects.script
+
+	Objects.RUNEGUI = Instance.new("ScreenGui")
+	Objects.RUNEGUI.Name = "RUNEGUI"
+	Objects.RUNEGUI.Parent = Objects.script
+
+	Objects.SCREENBLANK = Instance.new("ScreenGui")
+	Objects.SCREENBLANK.Name = "SCREENBLANK"
+	Objects.SCREENBLANK.Parent = Objects.script
+
+	Objects.SpecialText = Instance.new("ScreenGui")
+	Objects.SpecialText.Name = "SpecialText"
+	Objects.SpecialText.Parent = Objects.script
+
+	Objects.movelist = Instance.new("ScreenGui")
+	Objects.movelist.Name = "movelist"
+	Objects.movelist.Parent = Objects.script
+
+	Objects.MOVECOOLDOWN = Instance.new("Frame")
+	Objects.MOVECOOLDOWN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.MOVECOOLDOWN.Name = "MOVECOOLDOWN"
+	Objects.MOVECOOLDOWN.Position = UDim2.new(0.5094162, 0, 0.1445313, 0)
+	Objects.MOVECOOLDOWN.Size = UDim2.new(0, 100, 0, 60)
+	Objects.MOVECOOLDOWN.Style = Enum.FrameStyle.DropShadow
+	Objects.MOVECOOLDOWN.Parent = Objects.script
+
+	Objects.PARTEFFECTS = Instance.new("Folder")
+	Objects.PARTEFFECTS.Name = "PARTEFFECTS"
+	Objects.PARTEFFECTS.Parent = Objects.Outcast
+
+	Objects.MESHES = Instance.new("Folder")
+	Objects.MESHES.Name = "MESHES"
+	Objects.MESHES.Parent = Objects.Outcast
+
+	Objects.PARTICLES = Instance.new("Folder")
+	Objects.PARTICLES.Name = "PARTICLES"
+	Objects.PARTICLES.Parent = Objects.Outcast
+
+	Objects.ChainBeam = Instance.new("Beam")
+	Objects.ChainBeam.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, 170.0000050663948), ColorSequenceKeypoint.new(0.7653909999999999, 0), ColorSequenceKeypoint.new(0.9933443999999999, 0), ColorSequenceKeypoint.new(1, 170.0000050663948)})
+	Objects.ChainBeam.FaceCamera = true
+	Objects.ChainBeam.LightEmission = 0.25
+	Objects.ChainBeam.LightInfluence = 0.5
+	Objects.ChainBeam.Name = "ChainBeam"
+	Objects.ChainBeam.Texture = "rbxassetid://1286761149"
+	Objects.ChainBeam.TextureMode = Enum.TextureMode.Wrap
+	Objects.ChainBeam.TextureSpeed = 10
+	Objects.ChainBeam.Parent = Objects.TRAILS
+
+	Objects.TrailSpiral = Instance.new("Part")
+	Objects.TrailSpiral.Anchored = true
+	Objects.TrailSpiral.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.TrailSpiral.CFrame = CFrame.new(48.337, -381.498, 165.026)
+	Objects.TrailSpiral.Name = "TrailSpiral"
+	Objects.TrailSpiral.Size = Vector3.new(1, 1, 1)
+	Objects.TrailSpiral.TopSurface = Enum.SurfaceType.Smooth
+	Objects.TrailSpiral.Transparency = 1
+	Objects.TrailSpiral.Parent = Objects.TRAILS
+
+	Objects.Stunned = Instance.new("BoolValue")
+	Objects.Stunned.Name = "Stunned"
+	Objects.Stunned.Parent = Objects.VALUEINSTANCES
+
+	Objects.MAGICCIRCLE = Instance.new("Part")
+	Objects.MAGICCIRCLE.Anchored = true
+	Objects.MAGICCIRCLE.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.MAGICCIRCLE.CFrame = CFrame.new(48.337, -381.498, 83.026)
+	Objects.MAGICCIRCLE.Name = "MAGICCIRCLE"
+	Objects.MAGICCIRCLE.Size = Vector3.new(8, 0.05, 8)
+	Objects.MAGICCIRCLE.TopSurface = Enum.SurfaceType.Smooth
+	Objects.MAGICCIRCLE.Transparency = 1
+	Objects.MAGICCIRCLE.Parent = Objects.WELDS
+
+	Objects.ParticleE1 = Instance.new("Part")
+	Objects.ParticleE1.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.ParticleE1.CFrame = CFrame.new(48.337, -381.498, 63.026)
+	Objects.ParticleE1.Color = Color3.fromRGB(17, 17, 17)
+	Objects.ParticleE1.Name = "ParticleE1"
+	Objects.ParticleE1.Size = Vector3.new(0.05, 0.05, 0.05)
+	Objects.ParticleE1.TopSurface = Enum.SurfaceType.Smooth
+	Objects.ParticleE1.Transparency = 1
+	Objects.ParticleE1.Parent = Objects.WELDS
+
+	Objects.MAGICCIRCLE2 = Instance.new("Part")
+	Objects.MAGICCIRCLE2.Anchored = true
+	Objects.MAGICCIRCLE2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.MAGICCIRCLE2.CFrame = CFrame.new(48.337, -381.498, 83.026)
+	Objects.MAGICCIRCLE2.Color = Color3.fromRGB(105, 102, 92)
+	Objects.MAGICCIRCLE2.Name = "MAGICCIRCLE2"
+	Objects.MAGICCIRCLE2.Size = Vector3.new(9, 0.05, 9)
+	Objects.MAGICCIRCLE2.TopSurface = Enum.SurfaceType.Smooth
+	Objects.MAGICCIRCLE2.Transparency = 1
+	Objects.MAGICCIRCLE2.Parent = Objects.WELDS
+
+	Objects.Black = Instance.new("Model")
+	Objects.Black.Name = "Black"
+	Objects.Black.Parent = Objects.WELDS
+
+	Objects.Outcasted = Instance.new("Model")
+	Objects.Outcasted.Name = "Outcasted"
+	Objects.Outcasted.Parent = Objects.WELDS
+
+	Objects.Knife = Instance.new("Model")
+	Objects.Knife.Name = "Knife"
+	Objects.Knife.Parent = Objects.WELDS
+
+	Objects.Attachment = Instance.new("Attachment")
+	Objects.Attachment.Parent = Objects.Effect
+
+	Objects.Attachment2 = Instance.new("Attachment")
+	Objects.Attachment2.Position = Vector3.new(0, -3.3040000000000003, 0)
+	Objects.Attachment2.Parent = Objects.Effect
+
+	Objects.PointLight = Instance.new("PointLight")
+	Objects.PointLight.Brightness = 7
+	Objects.PointLight.Color = Color3.fromRGB(255, 0, 0)
+	Objects.PointLight.Range = 5
+	Objects.PointLight.Parent = Objects.Effect
+
+	Objects.Script = Instance.new("Script")
+	Objects.Script.Parent = Objects.Effect
+
+	Objects.BGUI = Instance.new("BillboardGui")
+	Objects.BGUI.AlwaysOnTop = true
+	Objects.BGUI.LightInfluence = 1
+	Objects.BGUI.MaxDistance = 100
+	Objects.BGUI.Name = "BGUI"
+	Objects.BGUI.Size = UDim2.new(0, 5, 0, 5)
+	Objects.BGUI.Parent = Objects.HIGHPRIORITY
+
+	Objects.BGUI2 = Instance.new("BillboardGui")
+	Objects.BGUI2.AlwaysOnTop = true
+	Objects.BGUI2.LightInfluence = 1
+	Objects.BGUI2.MaxDistance = 100
+	Objects.BGUI2.Name = "BGUI"
+	Objects.BGUI2.Size = UDim2.new(0, 5, 0, 5)
+	Objects.BGUI2.Parent = Objects.LOWPRIORITY
+
+	Objects.BGUI3 = Instance.new("BillboardGui")
+	Objects.BGUI3.AlwaysOnTop = true
+	Objects.BGUI3.LightInfluence = 1
+	Objects.BGUI3.MaxDistance = 100
+	Objects.BGUI3.Name = "BGUI"
+	Objects.BGUI3.Size = UDim2.new(0, 5, 0, 5)
+	Objects.BGUI3.Parent = Objects.MEDPRIORITY
+
+	Objects.TARGETGUI2 = Instance.new("BillboardGui")
+	Objects.TARGETGUI2.Active = true
+	Objects.TARGETGUI2.Name = "TARGETGUI"
+	Objects.TARGETGUI2.Size = UDim2.new(10, 0, 10, 0)
+	Objects.TARGETGUI2.StudsOffset = Vector3.new(0, -1, 0)
+	Objects.TARGETGUI2.Parent = Objects.TARGETGUI
+
+	Objects.Attachment3 = Instance.new("Attachment")
+	Objects.Attachment3.Position = Vector3.new(0, -0.45, 0)
+	Objects.Attachment3.Parent = Objects.p1
+
+	Objects.Attachment4 = Instance.new("Attachment")
+	Objects.Attachment4.Position = Vector3.new(0, 0.334, 0)
+	Objects.Attachment4.Parent = Objects.p1
+
+	Objects.Trail = Instance.new("Trail")
+	Objects.Trail.Attachment0 = Objects.Attachment3
+	Objects.Trail.Attachment1 = Objects.Attachment4
+	Objects.Trail.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail.FaceCamera = true
+	Objects.Trail.Lifetime = 0.25
+	Objects.Trail.LightInfluence = 1
+	Objects.Trail.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Trail.Parent = Objects.p1
+
+	Objects.Weld = Instance.new("Weld")
+	Objects.Weld.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
+	Objects.Weld.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
+	Objects.Weld.Part1 = Objects.p1
+	Objects.Weld.Parent = Objects.p1
+
+	Objects.Attachment5 = Instance.new("Attachment")
+	Objects.Attachment5.Position = Vector3.new(0, -0.45, 0)
+	Objects.Attachment5.Parent = Objects.p2
+
+	Objects.Attachment6 = Instance.new("Attachment")
+	Objects.Attachment6.Position = Vector3.new(0, 0.334, 0)
+	Objects.Attachment6.Parent = Objects.p2
+
+	Objects.Trail2 = Instance.new("Trail")
+	Objects.Trail2.Attachment0 = Objects.Attachment5
+	Objects.Trail2.Attachment1 = Objects.Attachment6
+	Objects.Trail2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail2.FaceCamera = true
+	Objects.Trail2.Lifetime = 0.25
+	Objects.Trail2.LightInfluence = 1
+	Objects.Trail2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail2.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Trail2.Parent = Objects.p2
+
+	Objects.Weld2 = Instance.new("Weld")
+	Objects.Weld2.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
+	Objects.Weld2.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
+	Objects.Weld2.Part1 = Objects.p2
+	Objects.Weld2.Parent = Objects.p2
+
+	Objects.Attachment7 = Instance.new("Attachment")
+	Objects.Attachment7.Position = Vector3.new(0, -0.45, 0)
+	Objects.Attachment7.Parent = Objects.p3
+
+	Objects.Attachment8 = Instance.new("Attachment")
+	Objects.Attachment8.Position = Vector3.new(0, 0.334, 0)
+	Objects.Attachment8.Parent = Objects.p3
+
+	Objects.Trail3 = Instance.new("Trail")
+	Objects.Trail3.Attachment0 = Objects.Attachment7
+	Objects.Trail3.Attachment1 = Objects.Attachment8
+	Objects.Trail3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail3.FaceCamera = true
+	Objects.Trail3.Lifetime = 0.25
+	Objects.Trail3.LightInfluence = 1
+	Objects.Trail3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail3.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Trail3.Parent = Objects.p3
+
+	Objects.Weld3 = Instance.new("Weld")
+	Objects.Weld3.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
+	Objects.Weld3.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
+	Objects.Weld3.Part1 = Objects.p3
+	Objects.Weld3.Parent = Objects.p3
+
+	Objects.Attachment9 = Instance.new("Attachment")
+	Objects.Attachment9.Position = Vector3.new(0, -0.45, 0)
+	Objects.Attachment9.Parent = Objects.p4
+
+	Objects.Attachment10 = Instance.new("Attachment")
+	Objects.Attachment10.Position = Vector3.new(0, 0.334, 0)
+	Objects.Attachment10.Parent = Objects.p4
+
+	Objects.Trail4 = Instance.new("Trail")
+	Objects.Trail4.Attachment0 = Objects.Attachment9
+	Objects.Trail4.Attachment1 = Objects.Attachment10
+	Objects.Trail4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail4.FaceCamera = true
+	Objects.Trail4.Lifetime = 0.25
+	Objects.Trail4.LightInfluence = 1
+	Objects.Trail4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail4.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Trail4.Parent = Objects.p4
+
+	Objects.Weld4 = Instance.new("Weld")
+	Objects.Weld4.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-256, 10, 256)
+	Objects.Weld4.C1 = CFrame.fromOrientation(math.rad(0), math.rad(90), math.rad(0)) + Vector3.new(-250, 271.47700000000003, -240.451)
+	Objects.Weld4.Part1 = Objects.p4
+	Objects.Weld4.Parent = Objects.p4
+
+	Objects.TopBar = Instance.new("Frame")
+	Objects.TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.TopBar.BorderSizePixel = 0
+	Objects.TopBar.Name = "TopBar"
+	Objects.TopBar.Position = UDim2.new(0, 0, 0, -115)
+	Objects.TopBar.Size = UDim2.new(1, 0, 0.128, 0)
+	Objects.TopBar.ZIndex = 10
+	Objects.TopBar.Parent = Objects.BARS
+
+	Objects.BottomBar = Instance.new("Frame")
+	Objects.BottomBar.AnchorPoint = Vector2.new(0, 1)
+	Objects.BottomBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.BottomBar.BorderSizePixel = 0
+	Objects.BottomBar.Name = "BottomBar"
+	Objects.BottomBar.Position = UDim2.new(-0.008883199999999999, 0, 1.1364733999999999, 0)
+	Objects.BottomBar.Size = UDim2.new(2, 0, 0.128, 0)
+	Objects.BottomBar.ZIndex = 10
+	Objects.BottomBar.Parent = Objects.BARS
+
+	Objects.UIListLayout = Instance.new("UIListLayout")
+	Objects.UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+	Objects.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+	Objects.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+	Objects.UIListLayout.Parent = Objects.COOLDOWNS
+
+	Objects.HITSLabel = Instance.new("TextLabel")
+	Objects.HITSLabel.BackgroundTransparency = 1
+	Objects.HITSLabel.Font = Enum.Font.SciFi
+	Objects.HITSLabel.Name = "HITSLabel"
+	Objects.HITSLabel.Position = UDim2.new(-0.19999999999999998, 0, 0.47, 0)
+	Objects.HITSLabel.Size = UDim2.new(0, 200, 0, 50)
+	Objects.HITSLabel.Text = "0"
+	Objects.HITSLabel.TextColor3 = Color3.fromRGB(39, 0, 124)
+	Objects.HITSLabel.TextScaled = true
+	Objects.HITSLabel.TextSize = 14
+	Objects.HITSLabel.TextStrokeTransparency = 0.5
+	Objects.HITSLabel.TextWrapped = true
+	Objects.HITSLabel.Parent = Objects.HITS
+
+	Objects.Frame = Instance.new("Frame")
+	Objects.Frame.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Objects.Frame.BackgroundTransparency = 0.39999999999999997
+	Objects.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.Frame.BorderSizePixel = 5
+	Objects.Frame.Position = UDim2.new(0.0227165, 0, 0.8030107999999999, 0)
+	Objects.Frame.Rotation = 45
+	Objects.Frame.Size = UDim2.new(0, 126, 0, 123)
+	Objects.Frame.Parent = Objects.RUNEGUI
+
+	Objects.Back = Instance.new("Frame")
+	Objects.Back.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+	Objects.Back.BackgroundTransparency = 0.39999999999999997
+	Objects.Back.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.Back.BorderSizePixel = 5
+	Objects.Back.Name = "Back"
+	Objects.Back.Position = UDim2.new(0.0227165, 0, 0.8030107999999999, 0)
+	Objects.Back.Rotation = 90
+	Objects.Back.Size = UDim2.new(0, 126, 0, 123)
+	Objects.Back.ZIndex = 0
+	Objects.Back.Parent = Objects.RUNEGUI
+
+	Objects.KEYSTROKE = Instance.new("Frame")
+	Objects.KEYSTROKE.BackgroundColor3 = Color3.fromRGB(39, 0, 59)
+	Objects.KEYSTROKE.BackgroundTransparency = 0.5
+	Objects.KEYSTROKE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.KEYSTROKE.BorderSizePixel = 5
+	Objects.KEYSTROKE.Name = "KEYSTROKE"
+	Objects.KEYSTROKE.Position = UDim2.new(0, 0, 0.6735437, 0)
+	Objects.KEYSTROKE.Size = UDim2.new(0, 218, 0, 41)
+	Objects.KEYSTROKE.Parent = Objects.RUNEGUI
+
+	Objects.Blank = Instance.new("Frame")
+	Objects.Blank.BackgroundTransparency = 1
+	Objects.Blank.Name = "Blank"
+	Objects.Blank.Size = UDim2.new(0, 3000, 0, 3000)
+	Objects.Blank.Parent = Objects.SCREENBLANK
+
+	Objects.SpecialText2 = Instance.new("TextLabel")
+	Objects.SpecialText2.BackgroundTransparency = 1
+	Objects.SpecialText2.Font = Enum.Font.SourceSansBold
+	Objects.SpecialText2.Name = "SpecialText"
+	Objects.SpecialText2.Position = UDim2.new(0.173, 0, 3, 0)
+	Objects.SpecialText2.Rotation = -5
+	Objects.SpecialText2.Size = UDim2.new(0, 1054, 0, 50)
+	Objects.SpecialText2.Text = "SPECIAL"
+	Objects.SpecialText2.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.SpecialText2.TextScaled = true
+	Objects.SpecialText2.TextSize = 14
+	Objects.SpecialText2.TextStrokeTransparency = 0
+	Objects.SpecialText2.TextWrapped = true
+	Objects.SpecialText2.Parent = Objects.SpecialText
+
+	Objects.M = Instance.new("ScrollingFrame")
+	Objects.M.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.M.BackgroundTransparency = 0.6
+	Objects.M.BorderSizePixel = 0
+	Objects.M.CanvasSize = UDim2.new(0, 0, 3, 0)
+	Objects.M.Name = "M"
+	Objects.M.Position = UDim2.new(0.84, 0, 0.6, 0)
+	Objects.M.ScrollBarThickness = 14
+	Objects.M.Size = UDim2.new(0.16, 0, 0.39999999999999997, 0)
+	Objects.M.Parent = Objects.movelist
+
+	Objects.MOVENAME = Instance.new("TextLabel")
+	Objects.MOVENAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.MOVENAME.BackgroundTransparency = 1
+	Objects.MOVENAME.Font = Enum.Font.SciFi
+	Objects.MOVENAME.Name = "MOVENAME"
+	Objects.MOVENAME.Position = UDim2.new(-0.06, 0, 0.0166667, 0)
+	Objects.MOVENAME.Size = UDim2.new(0, 93, 0, 20)
+	Objects.MOVENAME.Text = "SDQ"
+	Objects.MOVENAME.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.MOVENAME.TextScaled = true
+	Objects.MOVENAME.TextSize = 14
+	Objects.MOVENAME.TextWrapped = true
+	Objects.MOVENAME.Parent = Objects.MOVECOOLDOWN
+
+	Objects.BACKBAR = Instance.new("TextLabel")
+	Objects.BACKBAR.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.BACKBAR.BackgroundTransparency = 0.7999999999999999
+	Objects.BACKBAR.Font = Enum.Font.SourceSans
+	Objects.BACKBAR.Name = "BACKBAR"
+	Objects.BACKBAR.Position = UDim2.new(-0.0099998, 0, 0.6666667, 0)
+	Objects.BACKBAR.Size = UDim2.new(0, 85, 0, 15)
+	Objects.BACKBAR.Text = ""
+	Objects.BACKBAR.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.BACKBAR.TextSize = 14
+	Objects.BACKBAR.Parent = Objects.MOVECOOLDOWN
+
+	Objects.TIMEBAR = Instance.new("TextLabel")
+	Objects.TIMEBAR.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+	Objects.TIMEBAR.Font = Enum.Font.SourceSans
+	Objects.TIMEBAR.Name = "TIMEBAR"
+	Objects.TIMEBAR.Position = UDim2.new(0.0200001, 0, 0.6999999, 0)
+	Objects.TIMEBAR.Size = UDim2.new(0, 80, 0, 10)
+	Objects.TIMEBAR.Text = ""
+	Objects.TIMEBAR.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.TIMEBAR.TextSize = 14
+	Objects.TIMEBAR.Parent = Objects.MOVECOOLDOWN
+
+	Objects.DURATION = Instance.new("TextLabel")
+	Objects.DURATION.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.DURATION.BackgroundTransparency = 0.7999999999999999
+	Objects.DURATION.BorderColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.DURATION.Font = Enum.Font.SciFi
+	Objects.DURATION.Name = "DURATION"
+	Objects.DURATION.Position = UDim2.new(0.38, 0, 1.0999999, 0)
+	Objects.DURATION.Size = UDim2.new(0, 21, 0, 20)
+	Objects.DURATION.Text = "1"
+	Objects.DURATION.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.DURATION.TextScaled = true
+	Objects.DURATION.TextSize = 14
+	Objects.DURATION.TextWrapped = true
+	Objects.DURATION.Parent = Objects.MOVECOOLDOWN
+
+	Objects.DebrisPart = Instance.new("Part")
+	Objects.DebrisPart.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.DebrisPart.CFrame = CFrame.new(48.337, -381.498, 125.026)
+	Objects.DebrisPart.Color = Color3.fromRGB(124, 92, 70)
+	Objects.DebrisPart.Material = Enum.Material.Slate
+	Objects.DebrisPart.Name = "DebrisPart"
+	Objects.DebrisPart.Size = Vector3.new(4, 4, 4)
+	Objects.DebrisPart.TopSurface = Enum.SurfaceType.Smooth
+	Objects.DebrisPart.Parent = Objects.PARTEFFECTS
+
+	Objects.BlastOrb = Instance.new("Part")
+	Objects.BlastOrb.Anchored = true
+	Objects.BlastOrb.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.BlastOrb.CFrame = CFrame.new(48.337, -381.498, 87.026)
+	Objects.BlastOrb.Material = Enum.Material.Neon
+	Objects.BlastOrb.Name = "BlastOrb"
+	Objects.BlastOrb.Shape = Enum.PartType.Ball
+	Objects.BlastOrb.Size = Vector3.new(1.75, 1.75, 1.75)
+	Objects.BlastOrb.TopSurface = Enum.SurfaceType.Smooth
+	Objects.BlastOrb.Transparency = 1
+	Objects.BlastOrb.Parent = Objects.PARTEFFECTS
+
+	Objects.HealthOrb = Instance.new("Part")
+	Objects.HealthOrb.Anchored = true
+	Objects.HealthOrb.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.HealthOrb.CFrame = CFrame.new(48.337, -381.498, 87.026)
+	Objects.HealthOrb.Material = Enum.Material.Neon
+	Objects.HealthOrb.Name = "HealthOrb"
+	Objects.HealthOrb.Shape = Enum.PartType.Ball
+	Objects.HealthOrb.Size = Vector3.new(1.75, 1.75, 1.75)
+	Objects.HealthOrb.TopSurface = Enum.SurfaceType.Smooth
+	Objects.HealthOrb.Transparency = 1
+	Objects.HealthOrb.Parent = Objects.PARTEFFECTS
+
+	Objects.Burst = Instance.new("Part")
+	Objects.Burst.Anchored = true
+	Objects.Burst.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Burst.CFrame = CFrame.new(48.337, -381.498, 189.026)
+	Objects.Burst.Color = Color3.fromRGB(61, 21, 133)
+	Objects.Burst.Material = Enum.Material.Neon
+	Objects.Burst.Name = "Burst"
+	Objects.Burst.Shape = Enum.PartType.Ball
+	Objects.Burst.Size = Vector3.new(1, 1, 1)
+	Objects.Burst.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Burst.Parent = Objects.PARTEFFECTS
+
+	Objects.ENERGYORB = Instance.new("Part")
+	Objects.ENERGYORB.Anchored = true
+	Objects.ENERGYORB.CFrame = CFrame.new(48.337, -381.498, 139.026)
+	Objects.ENERGYORB.Name = "ENERGYORB"
+	Objects.ENERGYORB.Size = Vector3.new(1, 1.03, 1)
+	Objects.ENERGYORB.Transparency = 1
+	Objects.ENERGYORB.Parent = Objects.PARTEFFECTS
+
+	Objects.BlastMesh = Instance.new("MeshPart")
+	Objects.BlastMesh.Anchored = true
+	Objects.BlastMesh.CFrame = CFrame.new(48.337, -381.498, 67.026)
+	Objects.BlastMesh.Material = Enum.Material.Neon
+	Objects.BlastMesh.Name = "BlastMesh"
+	Objects.BlastMesh.Position = Vector3.new(48.337, -381.498, 67.026)
+	Objects.BlastMesh.Size = Vector3.new(1.866, 0.05, 2.1550000000000002)
+	Objects.BlastMesh.Parent = Objects.MESHES
+
+	Objects.Claw1 = Instance.new("MeshPart")
+	Objects.Claw1.Anchored = true
+	Objects.Claw1.BrickColor = BrickColor.new("Really black")
+	Objects.Claw1.CFrame = CFrame.new(48.337, -381.498, 125.026)
+	Objects.Claw1.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Claw1.Material = Enum.Material.Granite
+	Objects.Claw1.Name = "Claw1"
+	Objects.Claw1.Position = Vector3.new(48.337, -381.498, 125.026)
+	Objects.Claw1.Size = Vector3.new(3.866, 4.757, 30.325)
+	Objects.Claw1.Transparency = 0.5
+	Objects.Claw1.Parent = Objects.MESHES
+
+	Objects.CrystalMesh = Instance.new("MeshPart")
+	Objects.CrystalMesh.Anchored = true
+	Objects.CrystalMesh.BrickColor = BrickColor.new("Royal purple")
+	Objects.CrystalMesh.CFrame = CFrame.new(48.337, -381.498, 91.026)
+	Objects.CrystalMesh.Color = Color3.fromRGB(98, 37, 209)
+	Objects.CrystalMesh.Material = Enum.Material.Neon
+	Objects.CrystalMesh.Name = "CrystalMesh"
+	Objects.CrystalMesh.Position = Vector3.new(48.337, -381.498, 91.026)
+	Objects.CrystalMesh.Size = Vector3.new(0.43, 0.47000000000000003, 0.35000000000000003)
+	Objects.CrystalMesh.Parent = Objects.MESHES
+
+	Objects.DoubleBlastMesh = Instance.new("MeshPart")
+	Objects.DoubleBlastMesh.Anchored = true
+	Objects.DoubleBlastMesh.CFrame = CFrame.new(48.337, -381.498, 63.026)
+	Objects.DoubleBlastMesh.Name = "DoubleBlastMesh"
+	Objects.DoubleBlastMesh.Position = Vector3.new(48.337, -381.498, 63.026)
+	Objects.DoubleBlastMesh.Size = Vector3.new(1, 1, 1)
+	Objects.DoubleBlastMesh.Parent = Objects.MESHES
+
+	Objects.DragonMesh = Instance.new("MeshPart")
+	Objects.DragonMesh.Anchored = true
+	Objects.DragonMesh.BrickColor = BrickColor.new("Really black")
+	Objects.DragonMesh.CFrame = CFrame.new(48.337, -381.498, 101.026)
+	Objects.DragonMesh.Color = Color3.fromRGB(17, 17, 17)
+	Objects.DragonMesh.Material = Enum.Material.Neon
+	Objects.DragonMesh.Name = "DragonMesh"
+	Objects.DragonMesh.Position = Vector3.new(48.337, -381.498, 101.026)
+	Objects.DragonMesh.Size = Vector3.new(1.485, 1.266, 3.2720000000000002)
+	Objects.DragonMesh.Parent = Objects.MESHES
+
+	Objects.PlantMesh = Instance.new("MeshPart")
+	Objects.PlantMesh.Anchored = true
+	Objects.PlantMesh.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(0), math.rad(180)) + Vector3.new(48.337, -381.498, 99.026)
+	Objects.PlantMesh.Name = "PlantMesh"
+	Objects.PlantMesh.Orientation = Vector3.new(0, 0, 180)
+	Objects.PlantMesh.Position = Vector3.new(48.337, -381.498, 99.026)
+	Objects.PlantMesh.Rotation = Vector3.new(0, 0, -180)
+	Objects.PlantMesh.Size = Vector3.new(1.27, 0.47700000000000004, 1.297)
+	Objects.PlantMesh.Parent = Objects.MESHES
+
+	Objects.ScratchLines = Instance.new("MeshPart")
+	Objects.ScratchLines.Anchored = true
+	Objects.ScratchLines.BrickColor = BrickColor.new("Institutional white")
+	Objects.ScratchLines.CFrame = CFrame.new(48.337, -79.5, 135.026)
+	Objects.ScratchLines.Color = Color3.fromRGB(255, 255, 255)
+	Objects.ScratchLines.Material = Enum.Material.Neon
+	Objects.ScratchLines.Name = "ScratchLines"
+	Objects.ScratchLines.Position = Vector3.new(48.337, -79.5, 135.026)
+	Objects.ScratchLines.Size = Vector3.new(10, 0.15, 0.15)
+	Objects.ScratchLines.Parent = Objects.MESHES
+
+	Objects.ShockHit = Instance.new("MeshPart")
+	Objects.ShockHit.Anchored = true
+	Objects.ShockHit.BrickColor = BrickColor.new("Really black")
+	Objects.ShockHit.CFrame = CFrame.new(48.337, -381.498, 101.026)
+	Objects.ShockHit.Color = Color3.fromRGB(17, 17, 17)
+	Objects.ShockHit.Material = Enum.Material.Neon
+	Objects.ShockHit.Name = "ShockHit"
+	Objects.ShockHit.Orientation = Vector3.new(90, 0, 0)
+	Objects.ShockHit.Position = Vector3.new(48.337, -381.498, 101.026)
+	Objects.ShockHit.Rotation = Vector3.new(90, 0, 0)
+	Objects.ShockHit.Size = Vector3.new(1.16, 0.05, 1.16)
+	Objects.ShockHit.Parent = Objects.MESHES
+
+	Objects.SingleSpikeMesh = Instance.new("MeshPart")
+	Objects.SingleSpikeMesh.Anchored = true
+	Objects.SingleSpikeMesh.BrickColor = BrickColor.new("Really black")
+	Objects.SingleSpikeMesh.CFrame = CFrame.new(48.337, -381.498, 63.026)
+	Objects.SingleSpikeMesh.Color = Color3.fromRGB(17, 17, 17)
+	Objects.SingleSpikeMesh.Material = Enum.Material.Neon
+	Objects.SingleSpikeMesh.Name = "SingleSpikeMesh"
+	Objects.SingleSpikeMesh.Position = Vector3.new(48.337, -381.498, 63.026)
+	Objects.SingleSpikeMesh.Size = Vector3.new(2.009, 10.01, 2.009)
+	Objects.SingleSpikeMesh.Parent = Objects.MESHES
+
+	Objects.SliceMesh = Instance.new("MeshPart")
+	Objects.SliceMesh.Anchored = true
+	Objects.SliceMesh.CFrame = CFrame.new(48.337, -381.498, 235.026)
+	Objects.SliceMesh.Material = Enum.Material.Neon
+	Objects.SliceMesh.Name = "SliceMesh"
+	Objects.SliceMesh.Position = Vector3.new(48.337, -381.498, 235.026)
+	Objects.SliceMesh.Size = Vector3.new(13.46, 0.05, 12.620000000000001)
+	Objects.SliceMesh.Parent = Objects.MESHES
+
+	Objects.SpikeBallMesh = Instance.new("MeshPart")
+	Objects.SpikeBallMesh.Anchored = true
+	Objects.SpikeBallMesh.CFrame = CFrame.new(48.337, -381.498, 99.026)
+	Objects.SpikeBallMesh.Name = "SpikeBallMesh"
+	Objects.SpikeBallMesh.Position = Vector3.new(48.337, -381.498, 99.026)
+	Objects.SpikeBallMesh.Size = Vector3.new(1, 1, 1)
+	Objects.SpikeBallMesh.Parent = Objects.MESHES
+
+	Objects.SpikeMesh = Instance.new("MeshPart")
+	Objects.SpikeMesh.Anchored = true
+	Objects.SpikeMesh.BrickColor = BrickColor.new("Really black")
+	Objects.SpikeMesh.CFrame = CFrame.new(48.337, -381.498, 149.026)
+	Objects.SpikeMesh.Color = Color3.fromRGB(0, 0, 0)
+	Objects.SpikeMesh.Name = "SpikeMesh"
+	Objects.SpikeMesh.Position = Vector3.new(48.337, -381.498, 149.026)
+	Objects.SpikeMesh.Size = Vector3.new(2.05, 1.67, 1.9100000000000001)
+	Objects.SpikeMesh.Parent = Objects.MESHES
+
+	Objects.VBLASTMESH1 = Instance.new("MeshPart")
+	Objects.VBLASTMESH1.Anchored = true
+	Objects.VBLASTMESH1.CFrame = CFrame.new(48.337, -381.498, 245.026)
+	Objects.VBLASTMESH1.Name = "VBLASTMESH1"
+	Objects.VBLASTMESH1.Position = Vector3.new(48.337, -381.498, 245.026)
+	Objects.VBLASTMESH1.Size = Vector3.new(20, 3.14, 20)
+	Objects.VBLASTMESH1.TextureID = "rbxassetid://1370489482"
+	Objects.VBLASTMESH1.Parent = Objects.MESHES
+
+	Objects.VBLASTMESH2 = Instance.new("MeshPart")
+	Objects.VBLASTMESH2.Anchored = true
+	Objects.VBLASTMESH2.CFrame = CFrame.new(48.337, -381.498, 245.026)
+	Objects.VBLASTMESH2.Name = "VBLASTMESH2"
+	Objects.VBLASTMESH2.Position = Vector3.new(48.337, -381.498, 245.026)
+	Objects.VBLASTMESH2.Size = Vector3.new(20, 2.74, 20)
+	Objects.VBLASTMESH2.TextureID = "rbxassetid://643064975"
+	Objects.VBLASTMESH2.Transparency = 0.049999999999999996
+	Objects.VBLASTMESH2.Parent = Objects.MESHES
+
+	Objects.Spiked10BlastMesh = Instance.new("MeshPart")
+	Objects.Spiked10BlastMesh.Anchored = true
+	Objects.Spiked10BlastMesh.BrickColor = BrickColor.new("Institutional white")
+	Objects.Spiked10BlastMesh.CFrame = CFrame.new(48.337, -381.498, 57.026)
+	Objects.Spiked10BlastMesh.Color = Color3.fromRGB(255, 255, 255)
+	Objects.Spiked10BlastMesh.Material = Enum.Material.Neon
+	Objects.Spiked10BlastMesh.Name = "Spiked10BlastMesh"
+	Objects.Spiked10BlastMesh.Position = Vector3.new(48.337, -381.498, 57.026)
+	Objects.Spiked10BlastMesh.Size = Vector3.new(2.378, 0.504, 2.5)
+	Objects.Spiked10BlastMesh.Parent = Objects.MESHES
+
+	Objects.MagiMesh = Instance.new("MeshPart")
+	Objects.MagiMesh.Anchored = true
+	Objects.MagiMesh.CFrame = CFrame.new(48.337, -381.498, 47.026)
+	Objects.MagiMesh.Name = "MagiMesh"
+	Objects.MagiMesh.Position = Vector3.new(48.337, -381.498, 47.026)
+	Objects.MagiMesh.Size = Vector3.new(1, 0.05, 1)
+	Objects.MagiMesh.Parent = Objects.MESHES
+
+	Objects.SwirlMesh = Instance.new("MeshPart")
+	Objects.SwirlMesh.Anchored = true
+	Objects.SwirlMesh.BrickColor = BrickColor.new("Royal purple")
+	Objects.SwirlMesh.CFrame = CFrame.new(48.337, -381.498, -6.974)
+	Objects.SwirlMesh.Color = Color3.fromRGB(98, 37, 209)
+	Objects.SwirlMesh.Material = Enum.Material.SmoothPlastic
+	Objects.SwirlMesh.Name = "SwirlMesh"
+	Objects.SwirlMesh.Position = Vector3.new(48.337, -381.498, -6.974)
+	Objects.SwirlMesh.Size = Vector3.new(1.407, 1.16, 1.341)
+	Objects.SwirlMesh.Parent = Objects.MESHES
+
+	Objects.SmallRing = Instance.new("MeshPart")
+	Objects.SmallRing.Anchored = true
+	Objects.SmallRing.BrickColor = BrickColor.new("Really black")
+	Objects.SmallRing.CFrame = CFrame.new(48.337, -381.498, 107.026)
+	Objects.SmallRing.Color = Color3.fromRGB(17, 17, 17)
+	Objects.SmallRing.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.SmallRing.Material = Enum.Material.Grass
+	Objects.SmallRing.Name = "SmallRing"
+	Objects.SmallRing.Position = Vector3.new(48.337, -381.498, 107.026)
+	Objects.SmallRing.Size = Vector3.new(7.994, 0.065, 7.994)
+	Objects.SmallRing.Parent = Objects.MESHES
+
+	Objects.RingSpinEffect = Instance.new("MeshPart")
+	Objects.RingSpinEffect.Anchored = true
+	Objects.RingSpinEffect.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.RingSpinEffect.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.RingSpinEffect.BrickColor = BrickColor.new("Pastel violet")
+	Objects.RingSpinEffect.CFrame = CFrame.new(48.337, -381.498, 145.026)
+	Objects.RingSpinEffect.Color = Color3.fromRGB(177, 167, 255)
+	Objects.RingSpinEffect.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.RingSpinEffect.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.RingSpinEffect.Material = Enum.Material.Neon
+	Objects.RingSpinEffect.Name = "RingSpinEffect"
+	Objects.RingSpinEffect.Orientation = Vector3.new(90, 90, 0)
+	Objects.RingSpinEffect.Position = Vector3.new(48.337, -381.498, 145.026)
+	Objects.RingSpinEffect.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.RingSpinEffect.Rotation = Vector3.new(90, 0, -90)
+	Objects.RingSpinEffect.Size = Vector3.new(9.43, 0.05, 8.57)
+	Objects.RingSpinEffect.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+	Objects.RingSpinEffect.Parent = Objects.MESHES
+
+	Objects.Object1 = Instance.new("ParticleEmitter")
+	Objects.Object1.Acceleration = Vector3.new(0, 1.5, 0)
+	Objects.Object1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 66.99997320771217), ColorSequenceKeypoint.new(0.422629, 66.00011765956879), ColorSequenceKeypoint.new(0.885191, 177.0000958442688), ColorSequenceKeypoint.new(1, 175.00012636184692)}
+	Objects.Object1.Drag = 2
+	Objects.Object1.Lifetime = NumberRange.new(3, 6)
+	Objects.Object1.LightInfluence = 1
+	Objects.Object1.Name = "1"
+	Objects.Object1.Rate = 80
+	Objects.Object1.RotSpeed = NumberRange.new(-10, 10)
+	Objects.Object1.Rotation = NumberRange.new(-360, 360)
+	Objects.Object1.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.11111, 1.11111), NumberSequenceKeypoint.new(0.0167331, 0.9876539999999999, 0.980424), NumberSequenceKeypoint.new(1, 1, 0.246913)}
+	Objects.Object1.Speed = NumberRange.new(1, 1)
+	Objects.Object1.SpreadAngle = Vector2.new(-90, 90)
+	Objects.Object1.Texture = "rbxassetid://1206149513"
+	Objects.Object1.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.010358599999999999, 0.185185, 0.0010708999999999998), NumberSequenceKeypoint.new(0.8956179999999999, 0.314815, 0.0925926), NumberSequenceKeypoint.new(0.957769, 0.82716, 0.17284), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Object1.Parent = Objects.PARTICLES
+
+	Objects.Darkflame = Instance.new("ParticleEmitter")
+	Objects.Darkflame.Acceleration = Vector3.new(0, 1.5, 0)
+	Objects.Darkflame.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 66.99997320771217), ColorSequenceKeypoint.new(0.422629, 66.00011765956879), ColorSequenceKeypoint.new(0.885191, 177.0000958442688), ColorSequenceKeypoint.new(1, 175.00012636184692)}
+	Objects.Darkflame.Drag = 2
+	Objects.Darkflame.Lifetime = NumberRange.new(3, 6)
+	Objects.Darkflame.LightInfluence = 1
+	Objects.Darkflame.Name = "Darkflame"
+	Objects.Darkflame.Rate = 80
+	Objects.Darkflame.RotSpeed = NumberRange.new(-10, 10)
+	Objects.Darkflame.Rotation = NumberRange.new(-360, 360)
+	Objects.Darkflame.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.11111, 1.11111), NumberSequenceKeypoint.new(0.0167331, 0.9876539999999999, 0.980424), NumberSequenceKeypoint.new(1, 1, 0.246913)}
+	Objects.Darkflame.Speed = NumberRange.new(1, 1)
+	Objects.Darkflame.SpreadAngle = Vector2.new(-90, 90)
+	Objects.Darkflame.Texture = "rbxassetid://1206149513"
+	Objects.Darkflame.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.010358599999999999, 0.185185, 0.0010708999999999998), NumberSequenceKeypoint.new(0.8956179999999999, 0.314815, 0.0925926), NumberSequenceKeypoint.new(0.957769, 0.82716, 0.17284), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Darkflame.Parent = Objects.PARTICLES
+
+	Objects.Darkflame2 = Instance.new("ParticleEmitter")
+	Objects.Darkflame2.Acceleration = Vector3.new(0, 1.5, 0)
+	Objects.Darkflame2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 66.99997320771217), ColorSequenceKeypoint.new(0.422629, 66.00011765956879), ColorSequenceKeypoint.new(0.885191, 177.0000958442688), ColorSequenceKeypoint.new(1, 175.00012636184692)}
+	Objects.Darkflame2.Drag = 2
+	Objects.Darkflame2.Lifetime = NumberRange.new(3, 6)
+	Objects.Darkflame2.LightInfluence = 1
+	Objects.Darkflame2.Name = "Darkflame"
+	Objects.Darkflame2.Rate = 80
+	Objects.Darkflame2.RotSpeed = NumberRange.new(-10, 10)
+	Objects.Darkflame2.Rotation = NumberRange.new(-360, 360)
+	Objects.Darkflame2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.11111, 1.11111), NumberSequenceKeypoint.new(0.0167331, 0.9876539999999999, 0.980424), NumberSequenceKeypoint.new(1, 1, 0.246913)}
+	Objects.Darkflame2.Speed = NumberRange.new(1, 1)
+	Objects.Darkflame2.SpreadAngle = Vector2.new(-90, 90)
+	Objects.Darkflame2.Texture = "rbxassetid://1206149513"
+	Objects.Darkflame2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.010358599999999999, 0.185185, 0.0010708999999999998), NumberSequenceKeypoint.new(0.8956179999999999, 0.314815, 0.0925926), NumberSequenceKeypoint.new(0.957769, 0.82716, 0.17284), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Darkflame2.Parent = Objects.PARTICLES
+
+	Objects.ZDistortionMaterial = Instance.new("ParticleEmitter")
+	Objects.ZDistortionMaterial.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.ZDistortionMaterial.Drag = 1
+	Objects.ZDistortionMaterial.Lifetime = NumberRange.new(2, 2)
+	Objects.ZDistortionMaterial.LightEmission = 0.09999999999999999
+	Objects.ZDistortionMaterial.LightInfluence = 1
+	Objects.ZDistortionMaterial.Name = "ZDistortionMaterial"
+	Objects.ZDistortionMaterial.RotSpeed = NumberRange.new(40, 90)
+	Objects.ZDistortionMaterial.Rotation = NumberRange.new(90, 360)
+	Objects.ZDistortionMaterial.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 5, 0)}
+	Objects.ZDistortionMaterial.SpreadAngle = Vector2.new(360, 360)
+	Objects.ZDistortionMaterial.Texture = "rbxasset://textures/particles/explosion01_shockwave_main.dds"
+	Objects.ZDistortionMaterial.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.7931579999999999, 0, 0), NumberSequenceKeypoint.new(0.8973749999999999, 0.481481, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ZDistortionMaterial.Parent = Objects.PARTICLES
+
+	Objects.ZDragonGlow = Instance.new("ParticleEmitter")
+	Objects.ZDragonGlow.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 230.0000622868538), ColorSequenceKeypoint.new(1, 230.0000622868538)}
+	Objects.ZDragonGlow.Lifetime = NumberRange.new(1, 1)
+	Objects.ZDragonGlow.LightEmission = 0.64
+	Objects.ZDragonGlow.LightInfluence = 1
+	Objects.ZDragonGlow.Name = "ZDragonGlow"
+	Objects.ZDragonGlow.Rate = 2
+	Objects.ZDragonGlow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.ZDragonGlow.Speed = NumberRange.new(0, 0)
+	Objects.ZDragonGlow.Texture = "rbxasset://textures/glow.png"
+	Objects.ZDragonGlow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ZDragonGlow.Parent = Objects.PARTICLES
+
+	Objects.ZGlitchOrinteu = Instance.new("ParticleEmitter")
+	Objects.ZGlitchOrinteu.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.29284499999999997, 70.99990457296371), ColorSequenceKeypoint.new(0.5956739999999999, 80.00013202428818), ColorSequenceKeypoint.new(0.826955, 91.99991852045059), ColorSequenceKeypoint.new(1, 17.999991327524185)}
+	Objects.ZGlitchOrinteu.Drag = 0.5
+	Objects.ZGlitchOrinteu.Lifetime = NumberRange.new(5, 5)
+	Objects.ZGlitchOrinteu.LightInfluence = 0.5
+	Objects.ZGlitchOrinteu.Name = "ZGlitchOrinteu"
+	Objects.ZGlitchOrinteu.Rate = 100
+	Objects.ZGlitchOrinteu.RotSpeed = NumberRange.new(10, 40)
+	Objects.ZGlitchOrinteu.Rotation = NumberRange.new(90, 90)
+	Objects.ZGlitchOrinteu.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 1), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.ZGlitchOrinteu.Speed = NumberRange.new(2, 2)
+	Objects.ZGlitchOrinteu.SpreadAngle = Vector2.new(-90, 90)
+	Objects.ZGlitchOrinteu.Texture = "rbxasset://textures/particles/smoke_main.dds"
+	Objects.ZGlitchOrinteu.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.11229099999999999, 0.728395, 0.0178612), NumberSequenceKeypoint.new(0.796662, 0.6234569999999999, 0.123457), NumberSequenceKeypoint.new(0.898331, 0.87037, 0.12963), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ZGlitchOrinteu.Parent = Objects.PARTICLES
+
+	Objects.Explosion = Instance.new("ParticleEmitter")
+	Objects.Explosion.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Explosion.Drag = 1
+	Objects.Explosion.Lifetime = NumberRange.new(1, 1)
+	Objects.Explosion.LightInfluence = 1
+	Objects.Explosion.Name = "Explosion"
+	Objects.Explosion.Rate = 100
+	Objects.Explosion.RotSpeed = NumberRange.new(-90, 90)
+	Objects.Explosion.Rotation = NumberRange.new(-360, 360)
+	Objects.Explosion.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 10, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Explosion.Speed = NumberRange.new(10, 10)
+	Objects.Explosion.SpreadAngle = Vector2.new(-360, 360)
+	Objects.Explosion.Texture = "rbxassetid://1208118894"
+	Objects.Explosion.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.0988048, 0.9567899999999999, 0), NumberSequenceKeypoint.new(0.19999999999999998, 0.932099, 0), NumberSequenceKeypoint.new(0.8015939999999999, 0.932099, 0), NumberSequenceKeypoint.new(0.897233, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Explosion.Parent = Objects.PARTICLES
+
+	Objects.ZGlitch = Instance.new("ParticleEmitter")
+	Objects.ZGlitch.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.29284499999999997, 70.99990457296371), ColorSequenceKeypoint.new(0.5956739999999999, 80.00013202428818), ColorSequenceKeypoint.new(0.826955, 91.99991852045059), ColorSequenceKeypoint.new(1, 17.999991327524185)}
+	Objects.ZGlitch.Drag = 0.5
+	Objects.ZGlitch.Lifetime = NumberRange.new(5, 5)
+	Objects.ZGlitch.LightInfluence = 0.5
+	Objects.ZGlitch.Name = "ZGlitch"
+	Objects.ZGlitch.Rate = 100
+	Objects.ZGlitch.RotSpeed = NumberRange.new(10, 40)
+	Objects.ZGlitch.Rotation = NumberRange.new(-360, 360)
+	Objects.ZGlitch.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 1), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.ZGlitch.Speed = NumberRange.new(2, 2)
+	Objects.ZGlitch.SpreadAngle = Vector2.new(-360, 360)
+	Objects.ZGlitch.Texture = "rbxasset://textures/particles/smoke_main.dds"
+	Objects.ZGlitch.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.11229099999999999, 0.728395, 0.0178612), NumberSequenceKeypoint.new(0.796662, 0.6234569999999999, 0.123457), NumberSequenceKeypoint.new(0.898331, 0.87037, 0.12963), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ZGlitch.Parent = Objects.PARTICLES
+
+	Objects.endParticle = Instance.new("Part")
+	Objects.endParticle.Anchored = true
+	Objects.endParticle.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.endParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
+	Objects.endParticle.Name = "endParticle"
+	Objects.endParticle.Size = Vector3.new(1, 1, 1)
+	Objects.endParticle.TopSurface = Enum.SurfaceType.Smooth
+	Objects.endParticle.Transparency = 1
+	Objects.endParticle.Parent = Objects.PARTICLES
+
+	Objects.BlackGlow = Instance.new("ParticleEmitter")
+	Objects.BlackGlow.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.BlackGlow.Drag = 1
+	Objects.BlackGlow.Lifetime = NumberRange.new(1, 2)
+	Objects.BlackGlow.LightInfluence = 1
+	Objects.BlackGlow.Name = "BlackGlow"
+	Objects.BlackGlow.Rate = 80
+	Objects.BlackGlow.RotSpeed = NumberRange.new(-90, 90)
+	Objects.BlackGlow.Rotation = NumberRange.new(-360, 360)
+	Objects.BlackGlow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 0.37037, 0)}
+	Objects.BlackGlow.Speed = NumberRange.new(0.5, 0.5)
+	Objects.BlackGlow.SpreadAngle = Vector2.new(-360, 360)
+	Objects.BlackGlow.Texture = "rbxassetid://463021019"
+	Objects.BlackGlow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.132016, 0.7160489999999999, 0), NumberSequenceKeypoint.new(0.174704, 0.524691, 0), NumberSequenceKeypoint.new(0.283794, 0.37037, 0), NumberSequenceKeypoint.new(0.788142, 0.32716, 0), NumberSequenceKeypoint.new(0.905138, 0.635803, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.BlackGlow.Parent = Objects.PARTICLES
+
+	Objects.SquareParticles = Instance.new("ParticleEmitter")
+	Objects.SquareParticles.Drag = 1
+	Objects.SquareParticles.EmissionDirection = Enum.NormalId.Front
+	Objects.SquareParticles.LightEmission = 1
+	Objects.SquareParticles.LightInfluence = 1
+	Objects.SquareParticles.Name = "SquareParticles"
+	Objects.SquareParticles.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(0.30424799999999996, 0.4374999, 0), NumberSequenceKeypoint.new(0.7267509, 0.3125, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.SquareParticles.Speed = NumberRange.new(7, 7)
+	Objects.SquareParticles.SpreadAngle = Vector2.new(0, 180)
+	Objects.SquareParticles.Texture = "rbxassetid://1520511685"
+	Objects.SquareParticles.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.SquareParticles.Parent = Objects.PARTICLES
+
+	Objects.SquareGlow = Instance.new("ParticleEmitter")
+	Objects.SquareGlow.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.342762, 100.00003203749657), ColorSequenceKeypoint.new(0.735441, 191.00009500980377), ColorSequenceKeypoint.new(1, 0)}
+	Objects.SquareGlow.Lifetime = NumberRange.new(0.25, 0.25)
+	Objects.SquareGlow.LightInfluence = 1
+	Objects.SquareGlow.Name = "SquareGlow"
+	Objects.SquareGlow.Rate = 150
+	Objects.SquareGlow.RotSpeed = NumberRange.new(-90, 90)
+	Objects.SquareGlow.Rotation = NumberRange.new(-360, 360)
+	Objects.SquareGlow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
+	Objects.SquareGlow.SpreadAngle = Vector2.new(-360, 360)
+	Objects.SquareGlow.Texture = "rbxassetid://1208118894"
+	Objects.SquareGlow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.132777, 0.444444, 0), NumberSequenceKeypoint.new(0.17374799999999999, 0.271605, 0), NumberSequenceKeypoint.new(0.29135099999999997, 0, 0), NumberSequenceKeypoint.new(0.7890739999999999, 0, 0), NumberSequenceKeypoint.new(0.913505, 0.265432, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.SquareGlow.Parent = Objects.PARTICLES
+
+	Objects.BlastGlowEffect = Instance.new("Part")
+	Objects.BlastGlowEffect.Anchored = true
+	Objects.BlastGlowEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.BlastGlowEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.BlastGlowEffect.Name = "BlastGlowEffect"
+	Objects.BlastGlowEffect.Size = Vector3.new(1, 1, 1)
+	Objects.BlastGlowEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.BlastGlowEffect.Transparency = 1
+	Objects.BlastGlowEffect.Parent = Objects.PARTICLES
+
+	Objects.ChargingEffect = Instance.new("Part")
+	Objects.ChargingEffect.Anchored = true
+	Objects.ChargingEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.ChargingEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.ChargingEffect.Name = "ChargingEffect"
+	Objects.ChargingEffect.Size = Vector3.new(1, 1, 1)
+	Objects.ChargingEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.ChargingEffect.Transparency = 1
+	Objects.ChargingEffect.Parent = Objects.PARTICLES
+
+	Objects.ElectricBubble = Instance.new("Part")
+	Objects.ElectricBubble.Anchored = true
+	Objects.ElectricBubble.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.ElectricBubble.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.ElectricBubble.Name = "ElectricBubble"
+	Objects.ElectricBubble.Size = Vector3.new(1, 1, 1)
+	Objects.ElectricBubble.TopSurface = Enum.SurfaceType.Smooth
+	Objects.ElectricBubble.Transparency = 1
+	Objects.ElectricBubble.Parent = Objects.PARTICLES
+
+	Objects.VacuumEffect = Instance.new("Part")
+	Objects.VacuumEffect.Anchored = true
+	Objects.VacuumEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.VacuumEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.VacuumEffect.Name = "VacuumEffect"
+	Objects.VacuumEffect.Size = Vector3.new(1, 1, 1)
+	Objects.VacuumEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.VacuumEffect.Transparency = 1
+	Objects.VacuumEffect.Parent = Objects.PARTICLES
+
+	Objects.BladeSpark = Instance.new("ParticleEmitter")
+	Objects.BladeSpark.Drag = 1
+	Objects.BladeSpark.EmissionDirection = Enum.NormalId.Bottom
+	Objects.BladeSpark.Lifetime = NumberRange.new(1, 1)
+	Objects.BladeSpark.LightInfluence = 1
+	Objects.BladeSpark.Name = "BladeSpark"
+	Objects.BladeSpark.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.625, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.BladeSpark.Parent = Objects.PARTICLES
+
+	Objects.HealingBurst = Instance.new("Part")
+	Objects.HealingBurst.Anchored = true
+	Objects.HealingBurst.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.HealingBurst.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.HealingBurst.Name = "HealingBurst"
+	Objects.HealingBurst.Size = Vector3.new(1, 1, 1)
+	Objects.HealingBurst.TopSurface = Enum.SurfaceType.Smooth
+	Objects.HealingBurst.Transparency = 1
+	Objects.HealingBurst.Parent = Objects.PARTICLES
+
+	Objects.HealthLowEffect = Instance.new("Part")
+	Objects.HealthLowEffect.Anchored = true
+	Objects.HealthLowEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.HealthLowEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.HealthLowEffect.Name = "HealthLowEffect"
+	Objects.HealthLowEffect.Size = Vector3.new(1, 1, 1)
+	Objects.HealthLowEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.HealthLowEffect.Transparency = 1
+	Objects.HealthLowEffect.Parent = Objects.PARTICLES
+
+	Objects.ImpactEffect = Instance.new("Part")
+	Objects.ImpactEffect.Anchored = true
+	Objects.ImpactEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.ImpactEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.ImpactEffect.Name = "ImpactEffect"
+	Objects.ImpactEffect.Size = Vector3.new(1, 1, 1)
+	Objects.ImpactEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.ImpactEffect.Transparency = 1
+	Objects.ImpactEffect.Parent = Objects.PARTICLES
+
+	Objects.LightEffect = Instance.new("Part")
+	Objects.LightEffect.Anchored = true
+	Objects.LightEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.LightEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.LightEffect.Name = "LightEffect"
+	Objects.LightEffect.Size = Vector3.new(1, 1, 1)
+	Objects.LightEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.LightEffect.Transparency = 1
+	Objects.LightEffect.Parent = Objects.PARTICLES
+
+	Objects.PartyEffect = Instance.new("Part")
+	Objects.PartyEffect.Anchored = true
+	Objects.PartyEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.PartyEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.PartyEffect.Name = "PartyEffect"
+	Objects.PartyEffect.Size = Vector3.new(1, 1, 1)
+	Objects.PartyEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.PartyEffect.Transparency = 1
+	Objects.PartyEffect.Parent = Objects.PARTICLES
+
+	Objects.RadiantEffect = Instance.new("Part")
+	Objects.RadiantEffect.Anchored = true
+	Objects.RadiantEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.RadiantEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.RadiantEffect.Name = "RadiantEffect"
+	Objects.RadiantEffect.Size = Vector3.new(1, 1, 1)
+	Objects.RadiantEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.RadiantEffect.Transparency = 1
+	Objects.RadiantEffect.Parent = Objects.PARTICLES
+
+	Objects.RechargedEffect = Instance.new("Part")
+	Objects.RechargedEffect.Anchored = true
+	Objects.RechargedEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.RechargedEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.RechargedEffect.Name = "RechargedEffect"
+	Objects.RechargedEffect.Size = Vector3.new(1, 1, 1)
+	Objects.RechargedEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.RechargedEffect.Transparency = 1
+	Objects.RechargedEffect.Parent = Objects.PARTICLES
+
+	Objects.ShiningEffect = Instance.new("Part")
+	Objects.ShiningEffect.Anchored = true
+	Objects.ShiningEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.ShiningEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.ShiningEffect.Name = "ShiningEffect"
+	Objects.ShiningEffect.Size = Vector3.new(1, 1, 1)
+	Objects.ShiningEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.ShiningEffect.Transparency = 1
+	Objects.ShiningEffect.Parent = Objects.PARTICLES
+
+	Objects.ElectroBall = Instance.new("Part")
+	Objects.ElectroBall.Anchored = true
+	Objects.ElectroBall.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.ElectroBall.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.ElectroBall.Name = "ElectroBall"
+	Objects.ElectroBall.Size = Vector3.new(1, 1, 1)
+	Objects.ElectroBall.TopSurface = Enum.SurfaceType.Smooth
+	Objects.ElectroBall.Transparency = 1
+	Objects.ElectroBall.Parent = Objects.PARTICLES
+
+	Objects.FlashEffect = Instance.new("Part")
+	Objects.FlashEffect.Anchored = true
+	Objects.FlashEffect.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.FlashEffect.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.FlashEffect.Name = "FlashEffect"
+	Objects.FlashEffect.Size = Vector3.new(1, 1, 1)
+	Objects.FlashEffect.TopSurface = Enum.SurfaceType.Smooth
+	Objects.FlashEffect.Transparency = 1
+	Objects.FlashEffect.Parent = Objects.PARTICLES
+
+	Objects.FlashEffect2 = Instance.new("Part")
+	Objects.FlashEffect2.Anchored = true
+	Objects.FlashEffect2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.FlashEffect2.CFrame = CFrame.new(48.337, -381.498, 205.026)
+	Objects.FlashEffect2.Name = "FlashEffect"
+	Objects.FlashEffect2.Size = Vector3.new(1, 1, 1)
+	Objects.FlashEffect2.TopSurface = Enum.SurfaceType.Smooth
+	Objects.FlashEffect2.Transparency = 1
+	Objects.FlashEffect2.Parent = Objects.PARTICLES
+
+	Objects.defParticle = Instance.new("Part")
+	Objects.defParticle.Anchored = true
+	Objects.defParticle.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.defParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
+	Objects.defParticle.Name = "defParticle"
+	Objects.defParticle.Size = Vector3.new(1, 1, 1)
+	Objects.defParticle.TopSurface = Enum.SurfaceType.Smooth
+	Objects.defParticle.Transparency = 1
+	Objects.defParticle.Parent = Objects.PARTICLES
+
+	Objects.spdParticle = Instance.new("Part")
+	Objects.spdParticle.Anchored = true
+	Objects.spdParticle.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.spdParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
+	Objects.spdParticle.Name = "spdParticle"
+	Objects.spdParticle.Size = Vector3.new(1, 1, 1)
+	Objects.spdParticle.TopSurface = Enum.SurfaceType.Smooth
+	Objects.spdParticle.Transparency = 1
+	Objects.spdParticle.Parent = Objects.PARTICLES
+
+	Objects.atkParticle = Instance.new("Part")
+	Objects.atkParticle.Anchored = true
+	Objects.atkParticle.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.atkParticle.CFrame = CFrame.new(48.337, -381.498, 79.026)
+	Objects.atkParticle.Name = "atkParticle"
+	Objects.atkParticle.Size = Vector3.new(1, 1, 1)
+	Objects.atkParticle.TopSurface = Enum.SurfaceType.Smooth
+	Objects.atkParticle.Transparency = 1
+	Objects.atkParticle.Parent = Objects.PARTICLES
+
+	Objects.ZVero = Instance.new("ParticleEmitter")
+	Objects.ZVero.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.ZVero.Drag = 1
+	Objects.ZVero.Lifetime = NumberRange.new(1, 1)
+	Objects.ZVero.LightEmission = 0.09999999999999999
+	Objects.ZVero.LightInfluence = 1
+	Objects.ZVero.Name = "ZVero"
+	Objects.ZVero.Rate = 50
+	Objects.ZVero.RotSpeed = NumberRange.new(40, 90)
+	Objects.ZVero.Rotation = NumberRange.new(90, 360)
+	Objects.ZVero.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 2.16049, 0)}
+	Objects.ZVero.Speed = NumberRange.new(1, 1)
+	Objects.ZVero.SpreadAngle = Vector2.new(360, 360)
+	Objects.ZVero.Texture = "rbxasset://textures/particles/explosion01_shockwave_main.dds"
+	Objects.ZVero.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.0735178, 0.271605, 0), NumberSequenceKeypoint.new(0.788933, 0.24074099999999998, 0), NumberSequenceKeypoint.new(0.8973749999999999, 0.481481, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ZVero.Parent = Objects.PARTICLES
+
+	Objects.Attachment11 = Instance.new("Attachment")
+	Objects.Attachment11.Position = Vector3.new(-0.462, 0, 0)
+	Objects.Attachment11.Parent = Objects.TrailSpiral
+
+	Objects.Attachment12 = Instance.new("Attachment")
+	Objects.Attachment12.Position = Vector3.new(0.428, 0, 0)
+	Objects.Attachment12.Parent = Objects.TrailSpiral
+
+	Objects.Trail5 = Instance.new("Trail")
+	Objects.Trail5.Attachment0 = Objects.Attachment11
+	Objects.Trail5.Attachment1 = Objects.Attachment12
+	Objects.Trail5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail5.FaceCamera = true
+	Objects.Trail5.Lifetime = 0.3
+	Objects.Trail5.Texture = "rbxassetid://945758042"
+	Objects.Trail5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail5.Parent = Objects.TrailSpiral
+
+	Objects.MAGIC = Instance.new("Decal")
+	Objects.MAGIC.Color3 = Color3.fromRGB(0, 0, 0)
+	Objects.MAGIC.Face = Enum.NormalId.Top
+	Objects.MAGIC.Name = "MAGIC"
+	Objects.MAGIC.Texture = "rbxassetid://737395850"
+	Objects.MAGIC.Parent = Objects.MAGICCIRCLE
+
+	Objects.MAGIC2 = Instance.new("Decal")
+	Objects.MAGIC2.Color3 = Color3.fromRGB(0, 0, 0)
+	Objects.MAGIC2.Face = Enum.NormalId.Bottom
+	Objects.MAGIC2.Name = "MAGIC"
+	Objects.MAGIC2.Texture = "rbxassetid://737395850"
+	Objects.MAGIC2.Parent = Objects.MAGICCIRCLE
+
+	Objects.BodyPosition = Instance.new("BodyPosition")
+	Objects.BodyPosition.MaxForce = Vector3.new(10000, 10000, 10000)
+	Objects.BodyPosition.Parent = Objects.ParticleE1
+
+	Objects.Attachment13 = Instance.new("Attachment")
+	Objects.Attachment13.Position = Vector3.new(0, -0.45, 0)
+	Objects.Attachment13.Parent = Objects.ParticleE1
+
+	Objects.Attachment14 = Instance.new("Attachment")
+	Objects.Attachment14.Position = Vector3.new(0, 0.334, 0)
+	Objects.Attachment14.Parent = Objects.ParticleE1
+
+	Objects.Trail6 = Instance.new("Trail")
+	Objects.Trail6.Attachment0 = Objects.Attachment13
+	Objects.Trail6.Attachment1 = Objects.Attachment14
+	Objects.Trail6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail6.FaceCamera = true
+	Objects.Trail6.Lifetime = 0.25
+	Objects.Trail6.LightInfluence = 1
+	Objects.Trail6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail6.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Trail6.Parent = Objects.ParticleE1
+
+	Objects.MAGIC3 = Instance.new("Decal")
+	Objects.MAGIC3.Color3 = Color3.fromRGB(39, 0, 124)
+	Objects.MAGIC3.Face = Enum.NormalId.Top
+	Objects.MAGIC3.Name = "MAGIC"
+	Objects.MAGIC3.Texture = "rbxgameasset://Images/Universal_Fantasia_Logo"
+	Objects.MAGIC3.Parent = Objects.MAGICCIRCLE2
+
+	Objects.MAGIC4 = Instance.new("Decal")
+	Objects.MAGIC4.Color3 = Color3.fromRGB(39, 0, 124)
+	Objects.MAGIC4.Face = Enum.NormalId.Bottom
+	Objects.MAGIC4.Name = "MAGIC"
+	Objects.MAGIC4.Texture = "rbxgameasset://Images/Universal_Fantasia_Logo"
+	Objects.MAGIC4.Parent = Objects.MAGICCIRCLE2
+
+	Objects.MeshPart = Instance.new("MeshPart")
+	Objects.MeshPart.BrickColor = BrickColor.new("Black")
+	Objects.MeshPart.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(42.802, -381.475, 49.353)
+	Objects.MeshPart.Color = Color3.fromRGB(27, 42, 53)
+	Objects.MeshPart.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart.Orientation = Vector3.new(89.47, -154.47, 23.73)
+	Objects.MeshPart.Position = Vector3.new(42.802, -381.475, 49.353)
+	Objects.MeshPart.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart.Size = Vector3.new(2.689, 0.225, 0.107)
+	Objects.MeshPart.Transparency = 1
+	Objects.MeshPart.Parent = Objects.Black
+
+	Objects.Part = Instance.new("Part")
+	Objects.Part.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.099000000000004, -381.468, 49.336)
+	Objects.Part.Color = Color3.fromRGB(22, 22, 22)
+	Objects.Part.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part.Material = Enum.Material.SmoothPlastic
+	Objects.Part.Shape = Enum.PartType.Cylinder
+	Objects.Part.Size = Vector3.new(0.277, 0.59, 0.451)
+	Objects.Part.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part.Transparency = 1
+	Objects.Part.Parent = Objects.Black
+
+	Objects.MeshPart2 = Instance.new("MeshPart")
+	Objects.MeshPart2.BrickColor = BrickColor.new("Really black")
+	Objects.MeshPart2.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(44.066, -381.484, 49.816)
+	Objects.MeshPart2.Color = Color3.fromRGB(0, 0, 0)
+	Objects.MeshPart2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart2.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart2.Orientation = Vector3.new(89.47, -154.47, 23.73)
+	Objects.MeshPart2.Position = Vector3.new(44.066, -381.484, 49.816)
+	Objects.MeshPart2.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart2.Size = Vector3.new(0.372, 0.709, 0.222)
+	Objects.MeshPart2.Transparency = 1
+	Objects.MeshPart2.Parent = Objects.Black
+
+	Objects.MeshPart3 = Instance.new("MeshPart")
+	Objects.MeshPart3.BrickColor = BrickColor.new("Black")
+	Objects.MeshPart3.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(92), math.rad(-90)) + Vector3.new(43.092, -381.454, 49.315)
+	Objects.MeshPart3.Color = Color3.fromRGB(27, 42, 53)
+	Objects.MeshPart3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart3.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart3.Orientation = Vector3.new(0.21, 91.8, -89.51)
+	Objects.MeshPart3.Position = Vector3.new(43.092, -381.454, 49.315)
+	Objects.MeshPart3.Rotation = Vector3.new(173.24, 88.18, 97.24000000000001)
+	Objects.MeshPart3.Size = Vector3.new(0.116, 0.34800000000000003, 2.761)
+	Objects.MeshPart3.Transparency = 1
+	Objects.MeshPart3.Parent = Objects.Black
+
+	Objects.MeshPart4 = Instance.new("MeshPart")
+	Objects.MeshPart4.BrickColor = BrickColor.new("Black")
+	Objects.MeshPart4.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(45.191, -381.483, 49.162)
+	Objects.MeshPart4.Color = Color3.fromRGB(27, 42, 53)
+	Objects.MeshPart4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart4.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart4.Orientation = Vector3.new(89.47, -154.46, 23.740000000000002)
+	Objects.MeshPart4.Position = Vector3.new(45.191, -381.483, 49.162)
+	Objects.MeshPart4.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart4.Size = Vector3.new(2.068, 0.423, 0.258)
+	Objects.MeshPart4.Transparency = 1
+	Objects.MeshPart4.Parent = Objects.Black
+
+	Objects.MeshPart5 = Instance.new("MeshPart")
+	Objects.MeshPart5.BrickColor = BrickColor.new("Really black")
+	Objects.MeshPart5.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(44.613, -381.481, 49.18)
+	Objects.MeshPart5.Color = Color3.fromRGB(0, 0, 0)
+	Objects.MeshPart5.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart5.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart5.Orientation = Vector3.new(89.47, -154.43, 23.77)
+	Objects.MeshPart5.Position = Vector3.new(44.613, -381.481, 49.18)
+	Objects.MeshPart5.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart5.Size = Vector3.new(0.6990000000000001, 0.263, 0.378)
+	Objects.MeshPart5.Transparency = 1
+	Objects.MeshPart5.Parent = Objects.Black
+
+	Objects.MeshPart6 = Instance.new("MeshPart")
+	Objects.MeshPart6.BrickColor = BrickColor.new("Really black")
+	Objects.MeshPart6.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(43.802, -381.462, 48.778)
+	Objects.MeshPart6.Color = Color3.fromRGB(0, 0, 0)
+	Objects.MeshPart6.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart6.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart6.Orientation = Vector3.new(89.47, -154.47, 23.73)
+	Objects.MeshPart6.Position = Vector3.new(43.802, -381.462, 48.778)
+	Objects.MeshPart6.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart6.Size = Vector3.new(0.808, 0.807, 0.17200000000000001)
+	Objects.MeshPart6.Transparency = 1
+	Objects.MeshPart6.Parent = Objects.Black
+
+	Objects.MeshPart7 = Instance.new("MeshPart")
+	Objects.MeshPart7.BrickColor = BrickColor.new("Black")
+	Objects.MeshPart7.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(44.066, -381.484, 49.809)
+	Objects.MeshPart7.Color = Color3.fromRGB(27, 42, 53)
+	Objects.MeshPart7.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart7.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart7.Orientation = Vector3.new(89.47, -154.47, 23.72)
+	Objects.MeshPart7.Position = Vector3.new(44.066, -381.484, 49.809)
+	Objects.MeshPart7.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart7.Size = Vector3.new(0.32, 0.6950000000000001, 0.23500000000000001)
+	Objects.MeshPart7.Transparency = 1
+	Objects.MeshPart7.Parent = Objects.Black
+
+	Objects.MeshPart8 = Instance.new("MeshPart")
+	Objects.MeshPart8.BrickColor = BrickColor.new("Black")
+	Objects.MeshPart8.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(45.24, -381.486, 49.612)
+	Objects.MeshPart8.Color = Color3.fromRGB(27, 42, 53)
+	Objects.MeshPart8.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart8.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart8.Orientation = Vector3.new(89.47, -154.47, 23.73)
+	Objects.MeshPart8.Position = Vector3.new(45.24, -381.486, 49.612)
+	Objects.MeshPart8.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart8.Size = Vector3.new(2.049, 1.059, 0.268)
+	Objects.MeshPart8.Transparency = 1
+	Objects.MeshPart8.Parent = Objects.Black
+
+	Objects.Part2 = Instance.new("Part")
+	Objects.Part2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part2.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.099000000000004, -381.474, 49.336)
+	Objects.Part2.Color = Color3.fromRGB(12, 19, 25)
+	Objects.Part2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part2.Material = Enum.Material.Neon
+	Objects.Part2.Shape = Enum.PartType.Cylinder
+	Objects.Part2.Size = Vector3.new(0.358, 0.058, 0.058)
+	Objects.Part2.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part2.Transparency = 1
+	Objects.Part2.Parent = Objects.Black
+
+	Objects.MeshPart9 = Instance.new("MeshPart")
+	Objects.MeshPart9.BrickColor = BrickColor.new("Really black")
+	Objects.MeshPart9.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(41.709, -381.47, 49.359)
+	Objects.MeshPart9.Color = Color3.fromRGB(17, 17, 17)
+	Objects.MeshPart9.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart9.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart9.Orientation = Vector3.new(89.47, -154.44, 23.76)
+	Objects.MeshPart9.Position = Vector3.new(41.709, -381.47, 49.359)
+	Objects.MeshPart9.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.MeshPart9.Size = Vector3.new(0.504, 0.329, 0.153)
+	Objects.MeshPart9.Transparency = 1
+	Objects.MeshPart9.Parent = Objects.Black
+
+	Objects.MeshPart10 = Instance.new("MeshPart")
+	Objects.MeshPart10.BrickColor = BrickColor.new("Black")
+	Objects.MeshPart10.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(92), math.rad(90)) + Vector3.new(43.094, -381.46500000000003, 49.367000000000004)
+	Objects.MeshPart10.Color = Color3.fromRGB(27, 42, 53)
+	Objects.MeshPart10.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.MeshPart10.Material = Enum.Material.SmoothPlastic
+	Objects.MeshPart10.Orientation = Vector3.new(0.21, 91.8, 90.49)
+	Objects.MeshPart10.Position = Vector3.new(43.094, -381.46500000000003, 49.367000000000004)
+	Objects.MeshPart10.Rotation = Vector3.new(173.24, 88.18, -82.76)
+	Objects.MeshPart10.Size = Vector3.new(0.116, 0.336, 2.761)
+	Objects.MeshPart10.Transparency = 1
+	Objects.MeshPart10.Parent = Objects.Black
+
+	Objects.Part3 = Instance.new("Part")
+	Objects.Part3.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part3.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.111000000000004, -381.48, 49.336)
+	Objects.Part3.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Part3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part3.Material = Enum.Material.SmoothPlastic
+	Objects.Part3.Shape = Enum.PartType.Cylinder
+	Objects.Part3.Size = Vector3.new(0.20800000000000002, 0.636, 0.52)
+	Objects.Part3.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part3.Transparency = 1
+	Objects.Part3.Parent = Objects.Black
+
+	Objects.Part4 = Instance.new("Part")
+	Objects.Part4.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part4.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-88), math.rad(90)) + Vector3.new(44.099000000000004, -381.468, 49.337)
+	Objects.Part4.Color = Color3.fromRGB(0, 0, 0)
+	Objects.Part4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part4.Material = Enum.Material.Neon
+	Objects.Part4.Shape = Enum.PartType.Cylinder
+	Objects.Part4.Size = Vector3.new(0.324, 0.358, 0.22)
+	Objects.Part4.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part4.Transparency = 1
+	Objects.Part4.Parent = Objects.Black
+
+	Objects.Handle = Instance.new("Part")
+	Objects.Handle.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Handle.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(2), math.rad(0)) + Vector3.new(42.566, -381.369, 49.336)
+	Objects.Handle.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Handle.Name = "Handle"
+	Objects.Handle.Size = Vector3.new(2.56, 1, 1.04)
+	Objects.Handle.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Handle.Transparency = 1
+	Objects.Handle.Parent = Objects.Black
+
+	Objects.BladeHitbox = Instance.new("Part")
+	Objects.BladeHitbox.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.BladeHitbox.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(2), math.rad(0)) + Vector3.new(48.843, -381.439, 49.034)
+	Objects.BladeHitbox.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.BladeHitbox.Name = "BladeHitbox"
+	Objects.BladeHitbox.Size = Vector3.new(8.72, 1, 2)
+	Objects.BladeHitbox.TopSurface = Enum.SurfaceType.Smooth
+	Objects.BladeHitbox.Transparency = 1
+	Objects.BladeHitbox.Parent = Objects.Black
+
+	Objects.Weld5 = Instance.new("Script")
+	Objects.Weld5.Name = "Weld"
+	Objects.Weld5.Parent = Objects.Black
+
+	Objects.MWeld = Instance.new("Weld")
+	Objects.MWeld.Name = "MWeld"
+	Objects.MWeld.Part1 = Objects.Handle
+	Objects.MWeld.Parent = Objects.Black
+
+	Objects.Blade = Instance.new("MeshPart")
+	Objects.Blade.BrickColor = BrickColor.new("Really black")
+	Objects.Blade.CFrame = CFrame.fromOrientation(math.rad(89), math.rad(-154), math.rad(24)) + Vector3.new(48.425000000000004, -381.494, 49.003)
+	Objects.Blade.Color = Color3.fromRGB(0, 0, 0)
+	Objects.Blade.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Blade.Material = Enum.Material.Slate
+	Objects.Blade.Name = "Blade"
+	Objects.Blade.Orientation = Vector3.new(89.47, -154.43, 23.76)
+	Objects.Blade.Position = Vector3.new(48.425000000000004, -381.494, 49.003)
+	Objects.Blade.Rotation = Vector3.new(90.48, -0.23, 178.20000000000002)
+	Objects.Blade.Size = Vector3.new(9.292, 0.874, 0.122)
+	Objects.Blade.Transparency = 1
+	Objects.Blade.Parent = Objects.Black
+
+	Objects.EnhancedCone = Instance.new("MeshPart")
+	Objects.EnhancedCone.BrickColor = BrickColor.new("Really black")
+	Objects.EnhancedCone.CFrame = CFrame.fromOrientation(math.rad(85), math.rad(-80), math.rad(-170)) + Vector3.new(50.405, -381.837, 87.93900000000001)
+	Objects.EnhancedCone.Color = Color3.fromRGB(17, 17, 17)
+	Objects.EnhancedCone.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.EnhancedCone.Material = Enum.Material.Metal
+	Objects.EnhancedCone.Name = "EnhancedCone"
+	Objects.EnhancedCone.Orientation = Vector3.new(84.94, -79.79, -169.54)
+	Objects.EnhancedCone.Position = Vector3.new(50.405, -381.837, 87.93900000000001)
+	Objects.EnhancedCone.Rotation = Vector3.new(89.10000000000001, -4.98, -89.79)
+	Objects.EnhancedCone.Size = Vector3.new(0.218, 0.229, 0.218)
+	Objects.EnhancedCone.Transparency = 1
+	Objects.EnhancedCone.Parent = Objects.Outcasted
+
+	Objects.Part5 = Instance.new("Part")
+	Objects.Part5.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part5.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.515, -381.76, 87.935)
+	Objects.Part5.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Part5.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part5.Material = Enum.Material.Metal
+	Objects.Part5.Shape = Enum.PartType.Cylinder
+	Objects.Part5.Size = Vector3.new(1.559, 0.218, 0.218)
+	Objects.Part5.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part5.Transparency = 1
+	Objects.Part5.Parent = Objects.Outcasted
+
+	Objects.Part6 = Instance.new("Part")
+	Objects.Part6.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part6.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.58, -381.765, 87.935)
+	Objects.Part6.Color = Color3.fromRGB(89, 34, 89)
+	Objects.Part6.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part6.Material = Enum.Material.Neon
+	Objects.Part6.Shape = Enum.PartType.Cylinder
+	Objects.Part6.Size = Vector3.new(0.065, 0.229, 0.229)
+	Objects.Part6.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part6.Transparency = 1
+	Objects.Part6.Parent = Objects.Outcasted
+
+	Objects.Part7 = Instance.new("Part")
+	Objects.Part7.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part7.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.014, -381.803, 87.937)
+	Objects.Part7.Color = Color3.fromRGB(89, 34, 89)
+	Objects.Part7.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part7.Material = Enum.Material.Neon
+	Objects.Part7.Shape = Enum.PartType.Cylinder
+	Objects.Part7.Size = Vector3.new(0.065, 0.229, 0.229)
+	Objects.Part7.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part7.Transparency = 1
+	Objects.Part7.Parent = Objects.Outcasted
+
+	Objects.Part8 = Instance.new("Part")
+	Objects.Part8.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part8.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.014, -381.80400000000003, 87.937)
+	Objects.Part8.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Part8.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part8.Material = Enum.Material.Glass
+	Objects.Part8.Shape = Enum.PartType.Cylinder
+	Objects.Part8.Size = Vector3.new(0.05, 0.234, 0.234)
+	Objects.Part8.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part8.Transparency = 1
+	Objects.Part8.Parent = Objects.Outcasted
+
+	Objects.Part9 = Instance.new("Part")
+	Objects.Part9.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part9.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.58, -381.766, 87.935)
+	Objects.Part9.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Part9.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part9.Material = Enum.Material.Glass
+	Objects.Part9.Shape = Enum.PartType.Cylinder
+	Objects.Part9.Size = Vector3.new(0.05, 0.234, 0.234)
+	Objects.Part9.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part9.Transparency = 1
+	Objects.Part9.Parent = Objects.Outcasted
+
+	Objects.Part10 = Instance.new("Part")
+	Objects.Part10.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part10.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(45.996, -381.43600000000004, 87.886)
+	Objects.Part10.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Part10.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part10.Material = Enum.Material.Neon
+	Objects.Part10.Size = Vector3.new(1.5130000000000001, 0.132, 0.099)
+	Objects.Part10.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part10.Transparency = 1
+	Objects.Part10.Parent = Objects.Outcasted
+
+	Objects.Part11 = Instance.new("Part")
+	Objects.Part11.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part11.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-165), math.rad(5)) + Vector3.new(47.107, -381.555, 88.128)
+	Objects.Part11.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Part11.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part11.Material = Enum.Material.Glass
+	Objects.Part11.Size = Vector3.new(0.234, 0.09, 0.546)
+	Objects.Part11.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part11.Transparency = 1
+	Objects.Part11.Parent = Objects.Outcasted
+
+	Objects.Part12 = Instance.new("Part")
+	Objects.Part12.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part12.CFrame = CFrame.fromOrientation(math.rad(2), math.rad(165), math.rad(5)) + Vector3.new(47.109, -381.562, 87.691)
+	Objects.Part12.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Part12.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part12.Material = Enum.Material.Glass
+	Objects.Part12.Size = Vector3.new(0.234, 0.09, 0.546)
+	Objects.Part12.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part12.Transparency = 1
+	Objects.Part12.Parent = Objects.Outcasted
+
+	Objects.Part13 = Instance.new("Part")
+	Objects.Part13.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part13.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.2, -381.732, 87.933)
+	Objects.Part13.Color = Color3.fromRGB(89, 34, 89)
+	Objects.Part13.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part13.Material = Enum.Material.Neon
+	Objects.Part13.Shape = Enum.PartType.Cylinder
+	Objects.Part13.Size = Vector3.new(0.065, 0.229, 0.229)
+	Objects.Part13.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part13.Transparency = 1
+	Objects.Part13.Parent = Objects.Outcasted
+
+	Objects.Part14 = Instance.new("Part")
+	Objects.Part14.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part14.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(45.996, -381.43600000000004, 87.886)
+	Objects.Part14.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Part14.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part14.Material = Enum.Material.Neon
+	Objects.Part14.Size = Vector3.new(1.5130000000000001, 0.066, 0.198)
+	Objects.Part14.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part14.Transparency = 1
+	Objects.Part14.Parent = Objects.Outcasted
+
+	Objects.Part15 = Instance.new("Part")
+	Objects.Part15.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Part15.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(49.2, -381.732, 87.933)
+	Objects.Part15.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Part15.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Part15.Material = Enum.Material.Glass
+	Objects.Part15.Shape = Enum.PartType.Cylinder
+	Objects.Part15.Size = Vector3.new(0.05, 0.234, 0.234)
+	Objects.Part15.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Part15.Transparency = 1
+	Objects.Part15.Parent = Objects.Outcasted
+
+	Objects.Union = Instance.new("UnionOperation")
+	Objects.Union.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(48.057, -381.531, 87.628)
+	Objects.Union.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union.Material = Enum.Material.Glass
+	Objects.Union.Size = Vector3.new(1.188, 0.05, 0.272)
+	Objects.Union.Transparency = 1
+	Objects.Union.UsePartColor = true
+	Objects.Union.Parent = Objects.Outcasted
+
+	Objects.Union2 = Instance.new("UnionOperation")
+	Objects.Union2.CFrame = CFrame.fromOrientation(math.rad(-4), math.rad(-125), math.rad(-176)) + Vector3.new(47.09, -381.58, 86.857)
+	Objects.Union2.Color = Color3.fromRGB(61, 21, 133)
+	Objects.Union2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union2.Material = Enum.Material.Neon
+	Objects.Union2.Size = Vector3.new(0.293, 0.22, 0.653)
+	Objects.Union2.Transparency = 1
+	Objects.Union2.UsePartColor = true
+	Objects.Union2.Parent = Objects.Outcasted
+
+	Objects.Union3 = Instance.new("UnionOperation")
+	Objects.Union3.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(48.137, -381.577, 87.917)
+	Objects.Union3.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Union3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union3.Material = Enum.Material.Metal
+	Objects.Union3.Size = Vector3.new(1.468, 0.05, 1.147)
+	Objects.Union3.Transparency = 1
+	Objects.Union3.UsePartColor = true
+	Objects.Union3.Parent = Objects.Outcasted
+
+	Objects.Union4 = Instance.new("UnionOperation")
+	Objects.Union4.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(48.446, -381.555, 87.924)
+	Objects.Union4.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union4.Material = Enum.Material.Metal
+	Objects.Union4.Size = Vector3.new(0.934, 0.12, 0.48)
+	Objects.Union4.Transparency = 1
+	Objects.Union4.UsePartColor = true
+	Objects.Union4.Parent = Objects.Outcasted
+
+	Objects.Union5 = Instance.new("UnionOperation")
+	Objects.Union5.CFrame = CFrame.fromOrientation(math.rad(4), math.rad(55), math.rad(-4)) + Vector3.new(47.222, -381.557, 89.068)
+	Objects.Union5.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union5.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union5.Material = Enum.Material.DiamondPlate
+	Objects.Union5.Size = Vector3.new(1.057, 0.224, 0.46)
+	Objects.Union5.Transparency = 1
+	Objects.Union5.UsePartColor = true
+	Objects.Union5.Parent = Objects.Outcasted
+
+	Objects.Union6 = Instance.new("UnionOperation")
+	Objects.Union6.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(179), math.rad(5)) + Vector3.new(49.531, -381.702, 87.706)
+	Objects.Union6.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union6.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union6.Material = Enum.Material.SmoothPlastic
+	Objects.Union6.Size = Vector3.new(1.593, 0.05, 0.28)
+	Objects.Union6.Transparency = 1
+	Objects.Union6.UsePartColor = true
+	Objects.Union6.Parent = Objects.Outcasted
+
+	Objects.Union7 = Instance.new("UnionOperation")
+	Objects.Union7.CFrame = CFrame.fromOrientation(math.rad(-4), math.rad(-125), math.rad(-176)) + Vector3.new(47.013, -381.574, 86.804)
+	Objects.Union7.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union7.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union7.Material = Enum.Material.Glass
+	Objects.Union7.Size = Vector3.new(0.243, 0.182, 0.542)
+	Objects.Union7.Transparency = 1
+	Objects.Union7.UsePartColor = true
+	Objects.Union7.Parent = Objects.Outcasted
+
+	Objects.Union8 = Instance.new("UnionOperation")
+	Objects.Union8.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(46.729, -381.511, 87.879)
+	Objects.Union8.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Union8.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union8.Material = Enum.Material.Metal
+	Objects.Union8.Size = Vector3.new(0.84, 0.252, 0.997)
+	Objects.Union8.Transparency = 1
+	Objects.Union8.UsePartColor = true
+	Objects.Union8.Parent = Objects.Outcasted
+
+	Objects.Union9 = Instance.new("UnionOperation")
+	Objects.Union9.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.072, -381.545, 88.994)
+	Objects.Union9.Color = Color3.fromRGB(61, 21, 133)
+	Objects.Union9.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union9.Material = Enum.Material.Neon
+	Objects.Union9.Size = Vector3.new(0.293, 0.22, 0.653)
+	Objects.Union9.Transparency = 1
+	Objects.Union9.UsePartColor = true
+	Objects.Union9.Parent = Objects.Outcasted
+
+	Objects.Union10 = Instance.new("UnionOperation")
+	Objects.Union10.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(48.126, -381.702, 87.919)
+	Objects.Union10.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Union10.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union10.Size = Vector3.new(1.468, 0.05, 1.147)
+	Objects.Union10.Transparency = 1
+	Objects.Union10.UsePartColor = true
+	Objects.Union10.Parent = Objects.Outcasted
+
+	Objects.Union11 = Instance.new("UnionOperation")
+	Objects.Union11.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(47.779, -381.52, 87.918)
+	Objects.Union11.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union11.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union11.Material = Enum.Material.Glass
+	Objects.Union11.Size = Vector3.new(0.661, 0.158, 0.3)
+	Objects.Union11.Transparency = 1
+	Objects.Union11.UsePartColor = true
+	Objects.Union11.Parent = Objects.Outcasted
+
+	Objects.Union12 = Instance.new("UnionOperation")
+	Objects.Union12.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(15), math.rad(-5)) + Vector3.new(45.689, -381.409, 87.953)
+	Objects.Union12.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union12.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union12.Material = Enum.Material.Metal
+	Objects.Union12.Size = Vector3.new(2.458, 0.168, 0.905)
+	Objects.Union12.Transparency = 1
+	Objects.Union12.UsePartColor = true
+	Objects.Union12.Parent = Objects.Outcasted
+
+	Objects.Union13 = Instance.new("UnionOperation")
+	Objects.Union13.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(47.508, -381.496, 87.917)
+	Objects.Union13.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union13.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union13.Material = Enum.Material.Glass
+	Objects.Union13.Size = Vector3.new(0.661, 0.158, 0.3)
+	Objects.Union13.Transparency = 1
+	Objects.Union13.UsePartColor = true
+	Objects.Union13.Parent = Objects.Outcasted
+
+	Objects.Union14 = Instance.new("UnionOperation")
+	Objects.Union14.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(15), math.rad(-5)) + Vector3.new(47.312, -381.577, 87.871)
+	Objects.Union14.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Union14.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union14.Material = Enum.Material.Metal
+	Objects.Union14.Size = Vector3.new(0.788, 0.15, 1.68)
+	Objects.Union14.Transparency = 1
+	Objects.Union14.UsePartColor = true
+	Objects.Union14.Parent = Objects.Outcasted
+
+	Objects.Union15 = Instance.new("UnionOperation")
+	Objects.Union15.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(47.602000000000004, -381.593, 87.915)
+	Objects.Union15.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union15.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union15.Material = Enum.Material.SmoothPlastic
+	Objects.Union15.Size = Vector3.new(1.212, 0.107, 0.9470000000000001)
+	Objects.Union15.Transparency = 1
+	Objects.Union15.UsePartColor = true
+	Objects.Union15.Parent = Objects.Outcasted
+
+	Objects.Union16 = Instance.new("UnionOperation")
+	Objects.Union16.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(45.975, -381.434, 87.886)
+	Objects.Union16.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union16.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union16.Material = Enum.Material.Marble
+	Objects.Union16.Size = Vector3.new(1.627, 0.14200000000000002, 0.213)
+	Objects.Union16.Transparency = 1
+	Objects.Union16.UsePartColor = true
+	Objects.Union16.Parent = Objects.Outcasted
+
+	Objects.Union17 = Instance.new("UnionOperation")
+	Objects.Union17.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.023, -381.54, 89.025)
+	Objects.Union17.Color = Color3.fromRGB(51, 88, 130)
+	Objects.Union17.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union17.Material = Enum.Material.Metal
+	Objects.Union17.Size = Vector3.new(0.275, 0.20600000000000002, 0.612)
+	Objects.Union17.Transparency = 1
+	Objects.Union17.UsePartColor = true
+	Objects.Union17.Parent = Objects.Outcasted
+
+	Objects.Union18 = Instance.new("UnionOperation")
+	Objects.Union18.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(48.036, -381.733, 88.20700000000001)
+	Objects.Union18.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union18.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union18.Material = Enum.Material.Glass
+	Objects.Union18.Size = Vector3.new(1.188, 0.05, 0.272)
+	Objects.Union18.Transparency = 1
+	Objects.Union18.UsePartColor = true
+	Objects.Union18.Parent = Objects.Outcasted
+
+	Objects.Union19 = Instance.new("UnionOperation")
+	Objects.Union19.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.19, -381.819, 87.938)
+	Objects.Union19.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Union19.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union19.Material = Enum.Material.Glass
+	Objects.Union19.Size = Vector3.new(5.589, 0.093, 1.554)
+	Objects.Union19.Transparency = 1
+	Objects.Union19.UsePartColor = true
+	Objects.Union19.Parent = Objects.Outcasted
+
+	Objects.Union20 = Instance.new("UnionOperation")
+	Objects.Union20.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(48.427, -381.778, 87.915)
+	Objects.Union20.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union20.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union20.Material = Enum.Material.Metal
+	Objects.Union20.Size = Vector3.new(0.934, 0.12, 0.48)
+	Objects.Union20.Transparency = 1
+	Objects.Union20.UsePartColor = true
+	Objects.Union20.Parent = Objects.Outcasted
+
+	Objects.Union21 = Instance.new("UnionOperation")
+	Objects.Union21.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(51.024, -381.894, 87.95100000000001)
+	Objects.Union21.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union21.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union21.Material = Enum.Material.Metal
+	Objects.Union21.Size = Vector3.new(5.306, 0.082, 1.562)
+	Objects.Union21.Transparency = 1
+	Objects.Union21.UsePartColor = true
+	Objects.Union21.Parent = Objects.Outcasted
+
+	Objects.Union22 = Instance.new("UnionOperation")
+	Objects.Union22.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(47.492000000000004, -381.673, 87.913)
+	Objects.Union22.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union22.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union22.Material = Enum.Material.Glass
+	Objects.Union22.Size = Vector3.new(0.661, 0.158, 0.3)
+	Objects.Union22.Transparency = 1
+	Objects.Union22.UsePartColor = true
+	Objects.Union22.Parent = Objects.Outcasted
+
+	Objects.Union23 = Instance.new("UnionOperation")
+	Objects.Union23.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(1), math.rad(175)) + Vector3.new(49.508, -381.819, 88.163)
+	Objects.Union23.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union23.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union23.Material = Enum.Material.SmoothPlastic
+	Objects.Union23.Size = Vector3.new(1.593, 0.05, 0.28)
+	Objects.Union23.Transparency = 1
+	Objects.Union23.UsePartColor = true
+	Objects.Union23.Parent = Objects.Outcasted
+
+	Objects.Union24 = Instance.new("UnionOperation")
+	Objects.Union24.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(-179), math.rad(-175)) + Vector3.new(49.504, -381.826, 87.718)
+	Objects.Union24.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union24.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union24.Material = Enum.Material.SmoothPlastic
+	Objects.Union24.Size = Vector3.new(1.593, 0.05, 0.28)
+	Objects.Union24.Transparency = 1
+	Objects.Union24.UsePartColor = true
+	Objects.Union24.Parent = Objects.Outcasted
+
+	Objects.Union25 = Instance.new("UnionOperation")
+	Objects.Union25.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(48.462, -381.559, 87.924)
+	Objects.Union25.Color = Color3.fromRGB(61, 21, 133)
+	Objects.Union25.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union25.Material = Enum.Material.Neon
+	Objects.Union25.Size = Vector3.new(0.891, 0.114, 0.458)
+	Objects.Union25.Transparency = 1
+	Objects.Union25.UsePartColor = true
+	Objects.Union25.Parent = Objects.Outcasted
+
+	Objects.Union26 = Instance.new("UnionOperation")
+	Objects.Union26.CFrame = CFrame.fromOrientation(math.rad(5), math.rad(125), math.rad(-178)) + Vector3.new(47.241, -381.594, 86.784)
+	Objects.Union26.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union26.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union26.Material = Enum.Material.DiamondPlate
+	Objects.Union26.Size = Vector3.new(1.057, 0.224, 0.46)
+	Objects.Union26.Transparency = 1
+	Objects.Union26.UsePartColor = true
+	Objects.Union26.Parent = Objects.Outcasted
+
+	Objects.Union27 = Instance.new("UnionOperation")
+	Objects.Union27.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(48.443, -381.776, 87.915)
+	Objects.Union27.Color = Color3.fromRGB(61, 21, 133)
+	Objects.Union27.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union27.Material = Enum.Material.Neon
+	Objects.Union27.Size = Vector3.new(0.891, 0.114, 0.458)
+	Objects.Union27.Transparency = 1
+	Objects.Union27.UsePartColor = true
+	Objects.Union27.Parent = Objects.Outcasted
+
+	Objects.Union28 = Instance.new("UnionOperation")
+	Objects.Union28.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(48.055, -381.522, 88.2)
+	Objects.Union28.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union28.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union28.Material = Enum.Material.Glass
+	Objects.Union28.Size = Vector3.new(1.188, 0.05, 0.272)
+	Objects.Union28.Transparency = 1
+	Objects.Union28.UsePartColor = true
+	Objects.Union28.Parent = Objects.Outcasted
+
+	Objects.Union29 = Instance.new("UnionOperation")
+	Objects.Union29.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.003, -381.538, 89.039)
+	Objects.Union29.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union29.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union29.Material = Enum.Material.Glass
+	Objects.Union29.Size = Vector3.new(0.253, 0.19, 0.5630000000000001)
+	Objects.Union29.Transparency = 1
+	Objects.Union29.UsePartColor = true
+	Objects.Union29.Parent = Objects.Outcasted
+
+	Objects.Union30 = Instance.new("UnionOperation")
+	Objects.Union30.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-1), math.rad(-5)) + Vector3.new(49.513, -381.694, 88.151)
+	Objects.Union30.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union30.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union30.Material = Enum.Material.SmoothPlastic
+	Objects.Union30.Size = Vector3.new(1.593, 0.05, 0.28)
+	Objects.Union30.Transparency = 1
+	Objects.Union30.UsePartColor = true
+	Objects.Union30.Parent = Objects.Outcasted
+
+	Objects.Union31 = Instance.new("UnionOperation")
+	Objects.Union31.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(48.131, -381.639, 87.918)
+	Objects.Union31.Color = Color3.fromRGB(163, 162, 165)
+	Objects.Union31.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union31.Size = Vector3.new(1.468, 0.05, 1.147)
+	Objects.Union31.Transparency = 1
+	Objects.Union31.UsePartColor = true
+	Objects.Union31.Parent = Objects.Outcasted
+
+	Objects.Union32 = Instance.new("UnionOperation")
+	Objects.Union32.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(47.764, -381.697, 87.914)
+	Objects.Union32.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union32.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union32.Material = Enum.Material.Glass
+	Objects.Union32.Size = Vector3.new(0.661, 0.158, 0.3)
+	Objects.Union32.Transparency = 1
+	Objects.Union32.UsePartColor = true
+	Objects.Union32.Parent = Objects.Outcasted
+
+	Objects.Union33 = Instance.new("UnionOperation")
+	Objects.Union33.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(48.038000000000004, -381.743, 87.635)
+	Objects.Union33.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Union33.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union33.Material = Enum.Material.Glass
+	Objects.Union33.Size = Vector3.new(1.188, 0.05, 0.272)
+	Objects.Union33.Transparency = 1
+	Objects.Union33.UsePartColor = true
+	Objects.Union33.Parent = Objects.Outcasted
+
+	Objects.Union34 = Instance.new("UnionOperation")
+	Objects.Union34.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.725, -381.868, 87.95)
+	Objects.Union34.Color = Color3.fromRGB(107, 50, 124)
+	Objects.Union34.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union34.Material = Enum.Material.Neon
+	Objects.Union34.Size = Vector3.new(4.707, 0.073, 1.3860000000000001)
+	Objects.Union34.Transparency = 1
+	Objects.Union34.UsePartColor = true
+	Objects.Union34.Parent = Objects.Outcasted
+
+	Objects.Union35 = Instance.new("UnionOperation")
+	Objects.Union35.CFrame = CFrame.fromOrientation(math.rad(-4), math.rad(-125), math.rad(-176)) + Vector3.new(47.042, -381.576, 86.825)
+	Objects.Union35.Color = Color3.fromRGB(51, 88, 130)
+	Objects.Union35.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union35.Material = Enum.Material.Metal
+	Objects.Union35.Size = Vector3.new(0.275, 0.20600000000000002, 0.612)
+	Objects.Union35.Transparency = 1
+	Objects.Union35.UsePartColor = true
+	Objects.Union35.Parent = Objects.Outcasted
+
+	Objects.Union36 = Instance.new("UnionOperation")
+	Objects.Union36.CFrame = CFrame.fromOrientation(math.rad(-5), math.rad(-55), math.rad(-2)) + Vector3.new(47.213, -381.563, 88.933)
+	Objects.Union36.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union36.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union36.Material = Enum.Material.Metal
+	Objects.Union36.Size = Vector3.new(0.293, 0.22, 0.653)
+	Objects.Union36.Transparency = 1
+	Objects.Union36.UsePartColor = true
+	Objects.Union36.Parent = Objects.Outcasted
+
+	Objects.Wedge = Instance.new("WedgePart")
+	Objects.Wedge.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Wedge.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(175)) + Vector3.new(45.992000000000004, -381.487, 87.813)
+	Objects.Wedge.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Wedge.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Wedge.Material = Enum.Material.Neon
+	Objects.Wedge.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
+	Objects.Wedge.Transparency = 1
+	Objects.Wedge.Parent = Objects.Outcasted
+
+	Objects.Wedge2 = Instance.new("WedgePart")
+	Objects.Wedge2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Wedge2.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(5)) + Vector3.new(46, -381.386, 87.96000000000001)
+	Objects.Wedge2.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Wedge2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Wedge2.Material = Enum.Material.Neon
+	Objects.Wedge2.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
+	Objects.Wedge2.Transparency = 1
+	Objects.Wedge2.Parent = Objects.Outcasted
+
+	Objects.Wedge3 = Instance.new("WedgePart")
+	Objects.Wedge3.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Wedge3.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(180), math.rad(-175)) + Vector3.new(45.992000000000004, -381.484, 87.961)
+	Objects.Wedge3.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Wedge3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Wedge3.Material = Enum.Material.Neon
+	Objects.Wedge3.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
+	Objects.Wedge3.Transparency = 1
+	Objects.Wedge3.Parent = Objects.Outcasted
+
+	Objects.Wedge4 = Instance.new("WedgePart")
+	Objects.Wedge4.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Wedge4.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(46.001, -381.38800000000003, 87.811)
+	Objects.Wedge4.Color = Color3.fromRGB(98, 37, 209)
+	Objects.Wedge4.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Wedge4.Material = Enum.Material.Neon
+	Objects.Wedge4.Size = Vector3.new(1.5130000000000001, 0.05, 0.05)
+	Objects.Wedge4.Transparency = 1
+	Objects.Wedge4.Parent = Objects.Outcasted
+
+	Objects.Handle2 = Instance.new("Part")
+	Objects.Handle2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Handle2.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(45.556000000000004, -381.363, 87.82900000000001)
+	Objects.Handle2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Handle2.Name = "Handle"
+	Objects.Handle2.Size = Vector3.new(2.6390000000000002, 0.66, 1.32)
+	Objects.Handle2.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Handle2.Transparency = 1
+	Objects.Handle2.Parent = Objects.Outcasted
+
+	Objects.BladeHitbox2 = Instance.new("Part")
+	Objects.BladeHitbox2.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.BladeHitbox2.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(0), math.rad(-5)) + Vector3.new(50.737, -381.814, 87.855)
+	Objects.BladeHitbox2.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.BladeHitbox2.Name = "BladeHitbox"
+	Objects.BladeHitbox2.Size = Vector3.new(6.354, 0.66, 2.257)
+	Objects.BladeHitbox2.TopSurface = Enum.SurfaceType.Smooth
+	Objects.BladeHitbox2.Transparency = 1
+	Objects.BladeHitbox2.Parent = Objects.Outcasted
+
+	Objects.MWeld2 = Instance.new("Weld")
+	Objects.MWeld2.Name = "MWeld"
+	Objects.MWeld2.Part1 = Objects.Handle2
+	Objects.MWeld2.Parent = Objects.Outcasted
+
+	Objects.Weld6 = Instance.new("Script")
+	Objects.Weld6.Name = "Weld"
+	Objects.Weld6.Parent = Objects.Outcasted
+
+	Objects.Union37 = Instance.new("UnionOperation")
+	Objects.Union37.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(48.907000000000004, -381.54, 96.961)
+	Objects.Union37.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union37.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union37.Material = Enum.Material.Metal
+	Objects.Union37.Size = Vector3.new(2.062, 0.05, 0.467)
+	Objects.Union37.UsePartColor = true
+	Objects.Union37.Parent = Objects.Knife
+
+	Objects.Union38 = Instance.new("UnionOperation")
+	Objects.Union38.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(46.997, -381.528, 97.025)
+	Objects.Union38.Color = Color3.fromRGB(91, 93, 105)
+	Objects.Union38.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union38.Material = Enum.Material.Metal
+	Objects.Union38.Size = Vector3.new(0.964, 0.145, 0.218)
+	Objects.Union38.Parent = Objects.Knife
+
+	Objects.Union39 = Instance.new("UnionOperation")
+	Objects.Union39.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(-180)) + Vector3.new(47.046, -381.529, 97.024)
+	Objects.Union39.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union39.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union39.Material = Enum.Material.Metal
+	Objects.Union39.Size = Vector3.new(0.864, 0.14200000000000002, 0.213)
+	Objects.Union39.Parent = Objects.Knife
+
+	Objects.Union40 = Instance.new("UnionOperation")
+	Objects.Union40.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(47.943, -381.536, 97.246)
+	Objects.Union40.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union40.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union40.Material = Enum.Material.Metal
+	Objects.Union40.Size = Vector3.new(0.907, 0.05, 0.396)
+	Objects.Union40.UsePartColor = true
+	Objects.Union40.Parent = Objects.Knife
+
+	Objects.Union41 = Instance.new("UnionOperation")
+	Objects.Union41.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(-58), math.rad(179)) + Vector3.new(47.794000000000004, -381.534, 97.128)
+	Objects.Union41.Color = Color3.fromRGB(110, 153, 202)
+	Objects.Union41.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union41.Material = Enum.Material.Neon
+	Objects.Union41.Size = Vector3.new(0.05, 0.083, 0.054)
+	Objects.Union41.Parent = Objects.Knife
+
+	Objects.Union42 = Instance.new("UnionOperation")
+	Objects.Union42.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(47.547000000000004, -381.531, 97.002)
+	Objects.Union42.Color = Color3.fromRGB(110, 153, 202)
+	Objects.Union42.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union42.Material = Enum.Material.Neon
+	Objects.Union42.Size = Vector3.new(0.05, 0.083, 0.054)
+	Objects.Union42.Parent = Objects.Knife
+
+	Objects.Union43 = Instance.new("UnionOperation")
+	Objects.Union43.CFrame = CFrame.fromOrientation(math.rad(0), math.rad(147), math.rad(-179)) + Vector3.new(49.515, -381.544, 96.911)
+	Objects.Union43.Color = Color3.fromRGB(180, 128, 255)
+	Objects.Union43.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union43.Material = Enum.Material.Neon
+	Objects.Union43.Size = Vector3.new(0.095, 0.05, 0.05)
+	Objects.Union43.UsePartColor = true
+	Objects.Union43.Parent = Objects.Knife
+
+	Objects.Union44 = Instance.new("UnionOperation")
+	Objects.Union44.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(46.54, -381.52500000000003, 97.042)
+	Objects.Union44.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union44.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union44.Material = Enum.Material.Metal
+	Objects.Union44.Size = Vector3.new(0.064, 0.187, 0.281)
+	Objects.Union44.Parent = Objects.Knife
+
+	Objects.Union45 = Instance.new("UnionOperation")
+	Objects.Union45.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(0)) + Vector3.new(47.678000000000004, -381.532, 96.997)
+	Objects.Union45.Color = Color3.fromRGB(159, 161, 172)
+	Objects.Union45.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union45.Material = Enum.Material.Metal
+	Objects.Union45.Size = Vector3.new(0.334, 0.079, 0.377)
+	Objects.Union45.Parent = Objects.Knife
+
+	Objects.Union46 = Instance.new("UnionOperation")
+	Objects.Union46.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(47.926, -381.531, 96.742)
+	Objects.Union46.Color = Color3.fromRGB(27, 42, 53)
+	Objects.Union46.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union46.Material = Enum.Material.Metal
+	Objects.Union46.Size = Vector3.new(0.904, 0.05, 0.391)
+	Objects.Union46.UsePartColor = true
+	Objects.Union46.Parent = Objects.Knife
+
+	Objects.Union47 = Instance.new("UnionOperation")
+	Objects.Union47.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(-180)) + Vector3.new(47.475, -381.53000000000003, 97.009)
+	Objects.Union47.Color = Color3.fromRGB(17, 17, 17)
+	Objects.Union47.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union47.Material = Enum.Material.Metal
+	Objects.Union47.Size = Vector3.new(0.151, 0.158, 0.76)
+	Objects.Union47.Parent = Objects.Knife
+
+	Objects.Union48 = Instance.new("UnionOperation")
+	Objects.Union48.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-118), math.rad(0)) + Vector3.new(47.785000000000004, -381.531, 96.858)
+	Objects.Union48.Color = Color3.fromRGB(110, 153, 202)
+	Objects.Union48.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union48.Material = Enum.Material.Neon
+	Objects.Union48.Size = Vector3.new(0.05, 0.083, 0.054)
+	Objects.Union48.Parent = Objects.Knife
+
+	Objects.Union49 = Instance.new("UnionOperation")
+	Objects.Union49.CFrame = CFrame.fromOrientation(math.rad(-1), math.rad(-178), math.rad(0)) + Vector3.new(48.616, -381.538, 96.928)
+	Objects.Union49.Color = Color3.fromRGB(180, 128, 255)
+	Objects.Union49.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union49.Material = Enum.Material.Neon
+	Objects.Union49.Size = Vector3.new(1.861, 0.05, 0.05)
+	Objects.Union49.UsePartColor = true
+	Objects.Union49.Parent = Objects.Knife
+
+	Objects.Union50 = Instance.new("UnionOperation")
+	Objects.Union50.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(37), math.rad(0)) + Vector3.new(49.523, -381.545, 96.956)
+	Objects.Union50.Color = Color3.fromRGB(180, 128, 255)
+	Objects.Union50.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union50.Material = Enum.Material.Neon
+	Objects.Union50.Size = Vector3.new(0.095, 0.05, 0.05)
+	Objects.Union50.UsePartColor = true
+	Objects.Union50.Parent = Objects.Knife
+
+	Objects.Union51 = Instance.new("UnionOperation")
+	Objects.Union51.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(48.618, -381.539, 97.008)
+	Objects.Union51.Color = Color3.fromRGB(180, 128, 255)
+	Objects.Union51.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Union51.Material = Enum.Material.Neon
+	Objects.Union51.Size = Vector3.new(1.861, 0.05, 0.05)
+	Objects.Union51.UsePartColor = true
+	Objects.Union51.Parent = Objects.Knife
+
+	Objects.Weld7 = Instance.new("Script")
+	Objects.Weld7.Name = "Weld"
+	Objects.Weld7.Parent = Objects.Knife
+
+	Objects.Handle3 = Instance.new("Part")
+	Objects.Handle3.BottomSurface = Enum.SurfaceType.Smooth
+	Objects.Handle3.CFrame = CFrame.fromOrientation(math.rad(1), math.rad(2), math.rad(0)) + Vector3.new(46.954, -381.482, 97.025)
+	Objects.Handle3.CustomPhysicalProperties = PhysicalProperties.new(0.00999999978, 0, 0, 0, 0)
+	Objects.Handle3.Name = "Handle"
+	Objects.Handle3.Size = Vector3.new(1.0030000000000001, 0.373, 0.47400000000000003)
+	Objects.Handle3.TopSurface = Enum.SurfaceType.Smooth
+	Objects.Handle3.Transparency = 1
+	Objects.Handle3.Parent = Objects.Knife
+
+	Objects.MWeld3 = Instance.new("Weld")
+	Objects.MWeld3.Name = "MWeld"
+	Objects.MWeld3.Part1 = Objects.Handle3
+	Objects.MWeld3.Parent = Objects.Knife
+
+	Objects.ParticleEmitter = Instance.new("ParticleEmitter")
+	Objects.ParticleEmitter.Acceleration = Vector3.new(0, 20, 0)
+	Objects.ParticleEmitter.EmissionDirection = Enum.NormalId.Front
+	Objects.ParticleEmitter.Lifetime = NumberRange.new(2.5, 2.5)
+	Objects.ParticleEmitter.LightEmission = 1
+	Objects.ParticleEmitter.LightInfluence = 1
+	Objects.ParticleEmitter.Rate = 25
+	Objects.ParticleEmitter.RotSpeed = NumberRange.new(-100, 100)
+	Objects.ParticleEmitter.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 5.5, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.ParticleEmitter.Speed = NumberRange.new(0, 0)
+	Objects.ParticleEmitter.SpreadAngle = Vector2.new(2, 2)
+	Objects.ParticleEmitter.Texture = "rbxassetid://7216850580"
+	Objects.ParticleEmitter.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.3, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ParticleEmitter.ZOffset = -1
+	Objects.ParticleEmitter.Parent = Objects.Attachment
+
+	Objects.ParticleEmitter2 = Instance.new("ParticleEmitter")
+	Objects.ParticleEmitter2.Acceleration = Vector3.new(0, 20, 0)
+	Objects.ParticleEmitter2.Drag = 0.25
+	Objects.ParticleEmitter2.EmissionDirection = Enum.NormalId.Front
+	Objects.ParticleEmitter2.Lifetime = NumberRange.new(2, 2.5)
+	Objects.ParticleEmitter2.LightEmission = 1
+	Objects.ParticleEmitter2.LightInfluence = 1
+	Objects.ParticleEmitter2.RotSpeed = NumberRange.new(-300, 300)
+	Objects.ParticleEmitter2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2.6875, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.ParticleEmitter2.Speed = NumberRange.new(0, 0)
+	Objects.ParticleEmitter2.SpreadAngle = Vector2.new(4, 4)
+	Objects.ParticleEmitter2.Texture = "rbxassetid://8214516993"
+	Objects.ParticleEmitter2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.39999999999999997, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ParticleEmitter2.ZOffset = -1
+	Objects.ParticleEmitter2.Parent = Objects.Attachment
+
+	Objects.ParticleEmitter3 = Instance.new("ParticleEmitter")
+	Objects.ParticleEmitter3.Lifetime = NumberRange.new(3, 3)
+	Objects.ParticleEmitter3.LightEmission = 1
+	Objects.ParticleEmitter3.LightInfluence = 1
+	Objects.ParticleEmitter3.LockedToPart = true
+	Objects.ParticleEmitter3.Rate = 2
+	Objects.ParticleEmitter3.RotSpeed = NumberRange.new(200, 300)
+	Objects.ParticleEmitter3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4.0999999, 0), NumberSequenceKeypoint.new(1, 4.0999999, 0)}
+	Objects.ParticleEmitter3.Speed = NumberRange.new(0.001, 0.001)
+	Objects.ParticleEmitter3.SpreadAngle = Vector2.new(35, 35)
+	Objects.ParticleEmitter3.Texture = "rbxassetid://8214569944"
+	Objects.ParticleEmitter3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.19999999999999998, 0, 0), NumberSequenceKeypoint.new(0.7996500999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ParticleEmitter3.Parent = Objects.Attachment
+
+	Objects.ParticleEmitter4 = Instance.new("ParticleEmitter")
+	Objects.ParticleEmitter4.Lifetime = NumberRange.new(1, 1)
+	Objects.ParticleEmitter4.LightEmission = 1
+	Objects.ParticleEmitter4.LightInfluence = 1
+	Objects.ParticleEmitter4.LockedToPart = true
+	Objects.ParticleEmitter4.Rate = 4.5
+	Objects.ParticleEmitter4.RotSpeed = NumberRange.new(300, 300)
+	Objects.ParticleEmitter4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 6.3125, 0)}
+	Objects.ParticleEmitter4.Speed = NumberRange.new(0.001, 0.001)
+	Objects.ParticleEmitter4.Texture = "rbxassetid://7216856158"
+	Objects.ParticleEmitter4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.20035, 0, 0), NumberSequenceKeypoint.new(0.49956259999999997, 0, 0), NumberSequenceKeypoint.new(0.7996500999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ParticleEmitter4.Parent = Objects.Attachment2
+
+	Objects.ParticleEmitter5 = Instance.new("ParticleEmitter")
+	Objects.ParticleEmitter5.Acceleration = Vector3.new(0, 1, 0)
+	Objects.ParticleEmitter5.EmissionDirection = Enum.NormalId.Front
+	Objects.ParticleEmitter5.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.ParticleEmitter5.LightEmission = 1
+	Objects.ParticleEmitter5.LightInfluence = 1
+	Objects.ParticleEmitter5.LockedToPart = true
+	Objects.ParticleEmitter5.Rate = 100
+	Objects.ParticleEmitter5.Rotation = NumberRange.new(90, 90)
+	Objects.ParticleEmitter5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0.5), NumberSequenceKeypoint.new(1, 1, 0.5)}
+	Objects.ParticleEmitter5.SpreadAngle = Vector2.new(0, 360)
+	Objects.ParticleEmitter5.Texture = "rbxassetid://7216848149"
+	Objects.ParticleEmitter5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.8999999999999999, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.ParticleEmitter5.Parent = Objects.Attachment2
+
+	Objects.TEXT = Instance.new("TextLabel")
+	Objects.TEXT.BackgroundTransparency = 1
+	Objects.TEXT.Font = Enum.Font.SciFi
+	Objects.TEXT.Name = "TEXT"
+	Objects.TEXT.Size = UDim2.new(0, 1, 0, 1)
+	Objects.TEXT.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+	Objects.TEXT.TextColor3 = Color3.fromRGB(107, 40, 20)
+	Objects.TEXT.TextSize = 36
+	Objects.TEXT.TextStrokeColor3 = Color3.fromRGB(144, 5, 5)
+	Objects.TEXT.TextStrokeTransparency = 0
+	Objects.TEXT.ZIndex = 5
+	Objects.TEXT.Parent = Objects.BGUI
+
+	Objects.TEXT2 = Instance.new("TextLabel")
+	Objects.TEXT2.BackgroundTransparency = 1
+	Objects.TEXT2.Font = Enum.Font.SciFi
+	Objects.TEXT2.Name = "TEXT"
+	Objects.TEXT2.Size = UDim2.new(0, 1, 0, 1)
+	Objects.TEXT2.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+	Objects.TEXT2.TextColor3 = Color3.fromRGB(182, 182, 182)
+	Objects.TEXT2.TextSize = 32
+	Objects.TEXT2.TextStrokeTransparency = 0
+	Objects.TEXT2.ZIndex = 5
+	Objects.TEXT2.Parent = Objects.BGUI2
+
+	Objects.TEXT3 = Instance.new("TextLabel")
+	Objects.TEXT3.BackgroundTransparency = 1
+	Objects.TEXT3.Font = Enum.Font.SciFi
+	Objects.TEXT3.Name = "TEXT"
+	Objects.TEXT3.Size = UDim2.new(0, 1, 0, 1)
+	Objects.TEXT3.Text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+	Objects.TEXT3.TextColor3 = Color3.fromRGB(170, 177, 121)
+	Objects.TEXT3.TextSize = 34
+	Objects.TEXT3.TextStrokeColor3 = Color3.fromRGB(144, 5, 5)
+	Objects.TEXT3.TextStrokeTransparency = 0
+	Objects.TEXT3.ZIndex = 5
+	Objects.TEXT3.Parent = Objects.BGUI3
+
+	Objects.T1 = Instance.new("ImageLabel")
+	Objects.T1.Active = true
+	Objects.T1.BackgroundTransparency = 1
+	Objects.T1.Image = "rbxassetid://737395850"
+	Objects.T1.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.T1.Name = "T1"
+	Objects.T1.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
+	Objects.T1.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
+	Objects.T1.Parent = Objects.TARGETGUI2
+
+	Objects.HITSVALUE = Instance.new("NumberValue")
+	Objects.HITSVALUE.Name = "HITSVALUE"
+	Objects.HITSVALUE.Parent = Objects.HITSLabel
+
+	Objects.Script2 = Instance.new("LocalScript")
+	Objects.Script2.Disabled = true
+	Objects.Script2.Name = "Script"
+	Objects.Script2.Parent = Objects.HITSLabel
+
+	Objects.T12 = Instance.new("ImageLabel")
+	Objects.T12.Active = true
+	Objects.T12.BackgroundTransparency = 1
+	Objects.T12.Image = "rbxassetid://737395850"
+	Objects.T12.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.T12.ImageTransparency = 0.6
+	Objects.T12.Name = "T1"
+	Objects.T12.Position = UDim2.new(0.0775, 0, -0.27999999999999997, 0)
+	Objects.T12.Size = UDim2.new(0.845, 0, 3.26, 0)
+	Objects.T12.ZIndex = 0
+	Objects.T12.Parent = Objects.HITSLabel
+
+	Objects.BACKGROUNDBar = Instance.new("TextLabel")
+	Objects.BACKGROUNDBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.BACKGROUNDBar.BackgroundTransparency = 0.5
+	Objects.BACKGROUNDBar.Font = Enum.Font.SourceSans
+	Objects.BACKGROUNDBar.Name = "BACKGROUNDBar"
+	Objects.BACKGROUNDBar.Position = UDim2.new(0.2227099, 0, 1.3527536, 0)
+	Objects.BACKGROUNDBar.Size = UDim2.new(0, 110, 0, 14)
+	Objects.BACKGROUNDBar.Text = ""
+	Objects.BACKGROUNDBar.TextSize = 14
+	Objects.BACKGROUNDBar.Parent = Objects.HITSLabel
+
+	Objects.DMGLabel = Instance.new("TextLabel")
+	Objects.DMGLabel.BackgroundTransparency = 1
+	Objects.DMGLabel.Font = Enum.Font.SciFi
+	Objects.DMGLabel.Name = "DMGLabel"
+	Objects.DMGLabel.Position = UDim2.new(0.18762089999999998, 0, 0.8201449, 0)
+	Objects.DMGLabel.Size = UDim2.new(0, 124, 0, 27)
+	Objects.DMGLabel.Text = "0"
+	Objects.DMGLabel.TextColor3 = Color3.fromRGB(39, 0, 124)
+	Objects.DMGLabel.TextScaled = true
+	Objects.DMGLabel.TextSize = 14
+	Objects.DMGLabel.TextStrokeTransparency = 0.5
+	Objects.DMGLabel.TextWrapped = true
+	Objects.DMGLabel.Parent = Objects.HITSLabel
+
+	Objects.RATINGLabel = Instance.new("TextLabel")
+	Objects.RATINGLabel.BackgroundTransparency = 1
+	Objects.RATINGLabel.Font = Enum.Font.SciFi
+	Objects.RATINGLabel.Name = "RATINGLabel"
+	Objects.RATINGLabel.Position = UDim2.new(0.0955343, 0, 1.8569080999999998, 0)
+	Objects.RATINGLabel.Rotation = -10
+	Objects.RATINGLabel.Size = UDim2.new(0, 162, 0, 25)
+	Objects.RATINGLabel.Text = "?????"
+	Objects.RATINGLabel.TextColor3 = Color3.fromRGB(39, 0, 124)
+	Objects.RATINGLabel.TextScaled = true
+	Objects.RATINGLabel.TextSize = 14
+	Objects.RATINGLabel.TextStrokeTransparency = 0.5
+	Objects.RATINGLabel.TextWrapped = true
+	Objects.RATINGLabel.Parent = Objects.HITSLabel
+
+	Objects.TIMEBar = Instance.new("TextLabel")
+	Objects.TIMEBar.BackgroundColor3 = Color3.fromRGB(39, 0, 124)
+	Objects.TIMEBar.BackgroundTransparency = 0.5
+	Objects.TIMEBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.TIMEBar.BorderSizePixel = 2
+	Objects.TIMEBar.Font = Enum.Font.SourceSans
+	Objects.TIMEBar.Name = "TIMEBar"
+	Objects.TIMEBar.Position = UDim2.new(0.2503698, 0, 1.4167321, 0)
+	Objects.TIMEBar.Size = UDim2.new(0, 100, 0, 8)
+	Objects.TIMEBar.Text = ""
+	Objects.TIMEBar.TextColor3 = Color3.fromRGB(39, 0, 124)
+	Objects.TIMEBar.TextSize = 14
+	Objects.TIMEBar.Parent = Objects.HITSLabel
+
+	Objects.ATKRUNE = Instance.new("ImageLabel")
+	Objects.ATKRUNE.BackgroundTransparency = 1
+	Objects.ATKRUNE.Image = "rbxgameasset://Images/trueAttackRune omg there's a lot of these"
+	Objects.ATKRUNE.ImageColor3 = Color3.fromRGB(255, 0, 0)
+	Objects.ATKRUNE.ImageTransparency = 1
+	Objects.ATKRUNE.Name = "ATKRUNE"
+	Objects.ATKRUNE.Position = UDim2.new(0.09206349999999999, 0, 0.1219512, 0)
+	Objects.ATKRUNE.Size = UDim2.new(0, 101, 0, 93)
+	Objects.ATKRUNE.ZIndex = 2
+	Objects.ATKRUNE.Parent = Objects.Frame
+
+	Objects.DEFRUNE = Instance.new("ImageLabel")
+	Objects.DEFRUNE.BackgroundTransparency = 1
+	Objects.DEFRUNE.Image = "rbxgameasset://Images/defRune"
+	Objects.DEFRUNE.ImageColor3 = Color3.fromRGB(85, 255, 0)
+	Objects.DEFRUNE.ImageTransparency = 1
+	Objects.DEFRUNE.Name = "DEFRUNE"
+	Objects.DEFRUNE.Position = UDim2.new(0.1444445, 0, 0.17073159999999998, 0)
+	Objects.DEFRUNE.Size = UDim2.new(0, 82, 0, 88)
+	Objects.DEFRUNE.ZIndex = 2
+	Objects.DEFRUNE.Parent = Objects.Frame
+
+	Objects.SPDRUNE = Instance.new("ImageLabel")
+	Objects.SPDRUNE.BackgroundTransparency = 1
+	Objects.SPDRUNE.Image = "rbxgameasset://Images/spdRune"
+	Objects.SPDRUNE.ImageColor3 = Color3.fromRGB(0, 0, 255)
+	Objects.SPDRUNE.ImageTransparency = 1
+	Objects.SPDRUNE.Name = "SPDRUNE"
+	Objects.SPDRUNE.Position = UDim2.new(0.09682539999999999, 0, 0.13821139999999998, 0)
+	Objects.SPDRUNE.Size = UDim2.new(0, 101, 0, 93)
+	Objects.SPDRUNE.ZIndex = 2
+	Objects.SPDRUNE.Parent = Objects.Frame
+
+	Objects.ENDRUNE = Instance.new("ImageLabel")
+	Objects.ENDRUNE.BackgroundTransparency = 1
+	Objects.ENDRUNE.Image = "rbxgameasset://Images/ENDRUNE"
+	Objects.ENDRUNE.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	Objects.ENDRUNE.ImageTransparency = 1
+	Objects.ENDRUNE.Name = "ENDRUNE"
+	Objects.ENDRUNE.Position = UDim2.new(0.09682539999999999, 0, 0.13821139999999998, 0)
+	Objects.ENDRUNE.Size = UDim2.new(0, 101, 0, 93)
+	Objects.ENDRUNE.ZIndex = 2
+	Objects.ENDRUNE.Parent = Objects.Frame
+
+	Objects.Script3 = Instance.new("Script")
+	Objects.Script3.Disabled = true
+	Objects.Script3.Parent = Objects.Back
+
+	Objects.Object12 = Instance.new("TextLabel")
+	Objects.Object12.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object12.BackgroundTransparency = 1
+	Objects.Object12.Font = Enum.Font.SciFi
+	Objects.Object12.Name = "1"
+	Objects.Object12.Position = UDim2.new(-0.0240153, 0, 0.0806452, 0)
+	Objects.Object12.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object12.Text = "A"
+	Objects.Object12.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object12.TextScaled = true
+	Objects.Object12.TextSize = 14
+	Objects.Object12.TextWrapped = true
+	Objects.Object12.Parent = Objects.KEYSTROKE
+
+	Objects.Object2 = Instance.new("TextLabel")
+	Objects.Object2.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object2.BackgroundTransparency = 1
+	Objects.Object2.Font = Enum.Font.SciFi
+	Objects.Object2.Name = "2"
+	Objects.Object2.Position = UDim2.new(0.0934523, 0, 0.0806452, 0)
+	Objects.Object2.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object2.Text = "A"
+	Objects.Object2.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object2.TextScaled = true
+	Objects.Object2.TextSize = 14
+	Objects.Object2.TextWrapped = true
+	Objects.Object2.Parent = Objects.KEYSTROKE
+
+	Objects.Object3 = Instance.new("TextLabel")
+	Objects.Object3.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object3.BackgroundTransparency = 1
+	Objects.Object3.Font = Enum.Font.SciFi
+	Objects.Object3.Name = "3"
+	Objects.Object3.Position = UDim2.new(0.6984203999999999, 0, 0.0806452, 0)
+	Objects.Object3.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object3.Text = "A"
+	Objects.Object3.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object3.TextScaled = true
+	Objects.Object3.TextSize = 14
+	Objects.Object3.TextWrapped = true
+	Objects.Object3.Parent = Objects.KEYSTROKE
+
+	Objects.Object4 = Instance.new("TextLabel")
+	Objects.Object4.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object4.BackgroundTransparency = 1
+	Objects.Object4.Font = Enum.Font.SciFi
+	Objects.Object4.Name = "4"
+	Objects.Object4.Position = UDim2.new(0.5657052, 0, 0.34893779999999996, 0)
+	Objects.Object4.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object4.Text = "A"
+	Objects.Object4.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object4.TextScaled = true
+	Objects.Object4.TextSize = 14
+	Objects.Object4.TextWrapped = true
+	Objects.Object4.Parent = Objects.KEYSTROKE
+
+	Objects.Object5 = Instance.new("TextLabel")
+	Objects.Object5.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object5.BackgroundTransparency = 1
+	Objects.Object5.Font = Enum.Font.SciFi
+	Objects.Object5.Name = "5"
+	Objects.Object5.Position = UDim2.new(0.5868692, 0, 0.0806452, 0)
+	Objects.Object5.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object5.Text = "A"
+	Objects.Object5.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object5.TextScaled = true
+	Objects.Object5.TextSize = 14
+	Objects.Object5.TextWrapped = true
+	Objects.Object5.Parent = Objects.KEYSTROKE
+
+	Objects.Object6 = Instance.new("TextLabel")
+	Objects.Object6.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object6.BackgroundTransparency = 1
+	Objects.Object6.Font = Enum.Font.SciFi
+	Objects.Object6.Name = "6"
+	Objects.Object6.Position = UDim2.new(0.47746289999999997, 0, 0.0806452, 0)
+	Objects.Object6.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object6.Text = "A"
+	Objects.Object6.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object6.TextScaled = true
+	Objects.Object6.TextSize = 14
+	Objects.Object6.TextWrapped = true
+	Objects.Object6.Parent = Objects.KEYSTROKE
+
+	Objects.Object7 = Instance.new("TextLabel")
+	Objects.Object7.BackgroundColor3 = Color3.fromRGB(80, 255, 16)
+	Objects.Object7.BackgroundTransparency = 1
+	Objects.Object7.Font = Enum.Font.SciFi
+	Objects.Object7.Name = "7"
+	Objects.Object7.Position = UDim2.new(0.8914226, 0, 0.0806451, 0)
+	Objects.Object7.Size = UDim2.new(0, 33, 0, 41)
+	Objects.Object7.Text = "A"
+	Objects.Object7.TextColor3 = Color3.fromRGB(85, 0, 255)
+	Objects.Object7.TextScaled = true
+	Objects.Object7.TextSize = 14
+	Objects.Object7.TextWrapped = true
+	Objects.Object7.Parent = Objects.KEYSTROKE
+
+	Objects.UIListLayout2 = Instance.new("UIListLayout")
+	Objects.UIListLayout2.FillDirection = Enum.FillDirection.Horizontal
+	Objects.UIListLayout2.Padding = UDim.new(0, -3)
+	Objects.UIListLayout2.Parent = Objects.KEYSTROKE
+
+	Objects.ML = Instance.new("TextLabel")
+	Objects.ML.BackgroundTransparency = 1
+	Objects.ML.Font = Enum.Font.Fantasy
+	Objects.ML.Name = "ML"
+	Objects.ML.Position = UDim2.new(0, 0, 0.03, 0)
+	Objects.ML.Size = UDim2.new(0.8999999999999999, 0, 0.03, 0)
+	Objects.ML.Text = "SAX                                                                                            ADQ                                                                                     WADQ"
+	Objects.ML.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML.TextScaled = true
+	Objects.ML.TextSize = 14
+	Objects.ML.TextStrokeTransparency = 0
+	Objects.ML.TextWrapped = true
+	Objects.ML.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML.Parent = Objects.M
+
+	Objects.ML2 = Instance.new("TextLabel")
+	Objects.ML2.BackgroundTransparency = 1
+	Objects.ML2.Font = Enum.Font.Fantasy
+	Objects.ML2.Name = "ML2"
+	Objects.ML2.Position = UDim2.new(0, 0, 0.06, 0)
+	Objects.ML2.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
+	Objects.ML2.Text = "WW/SS"
+	Objects.ML2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML2.TextScaled = true
+	Objects.ML2.TextSize = 14
+	Objects.ML2.TextStrokeTransparency = 0
+	Objects.ML2.TextWrapped = true
+	Objects.ML2.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML2.Parent = Objects.M
+
+	Objects.ML5 = Instance.new("TextLabel")
+	Objects.ML5.BackgroundTransparency = 1
+	Objects.ML5.Font = Enum.Font.Fantasy
+	Objects.ML5.Name = "ML5"
+	Objects.ML5.Position = UDim2.new(0, 0, 0.09999999999999999, 0)
+	Objects.ML5.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
+	Objects.ML5.Text = "DASE"
+	Objects.ML5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML5.TextScaled = true
+	Objects.ML5.TextSize = 14
+	Objects.ML5.TextStrokeTransparency = 0
+	Objects.ML5.TextWrapped = true
+	Objects.ML5.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML5.Parent = Objects.M
+
+	Objects.ML4 = Instance.new("TextLabel")
+	Objects.ML4.BackgroundTransparency = 1
+	Objects.ML4.Font = Enum.Font.Fantasy
+	Objects.ML4.Name = "ML4"
+	Objects.ML4.Position = UDim2.new(0, 0, 0.08, 0)
+	Objects.ML4.Size = UDim2.new(0.8999999999999999, 0, 0.02, 0)
+	Objects.ML4.Text = " ASQ                                                                                                                                          ASDQ"
+	Objects.ML4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML4.TextScaled = true
+	Objects.ML4.TextSize = 14
+	Objects.ML4.TextStrokeTransparency = 0
+	Objects.ML4.TextWrapped = true
+	Objects.ML4.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML4.Parent = Objects.M
+
+	Objects.ML3 = Instance.new("TextLabel")
+	Objects.ML3.BackgroundTransparency = 1
+	Objects.ML3.Font = Enum.Font.Fantasy
+	Objects.ML3.Name = "ML3"
+	Objects.ML3.Position = UDim2.new(0, 0, 0.06999999999999999, 0)
+	Objects.ML3.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
+	Objects.ML3.Text = "SDQ"
+	Objects.ML3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML3.TextScaled = true
+	Objects.ML3.TextSize = 14
+	Objects.ML3.TextStrokeTransparency = 0
+	Objects.ML3.TextWrapped = true
+	Objects.ML3.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML3.Parent = Objects.M
+
+	Objects.ML6 = Instance.new("TextLabel")
+	Objects.ML6.BackgroundTransparency = 1
+	Objects.ML6.Font = Enum.Font.Fantasy
+	Objects.ML6.Name = "ML6"
+	Objects.ML6.Position = UDim2.new(0, 0, 0.11, 0)
+	Objects.ML6.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
+	Objects.ML6.Text = "ASDASDW"
+	Objects.ML6.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML6.TextScaled = true
+	Objects.ML6.TextSize = 14
+	Objects.ML6.TextStrokeTransparency = 0
+	Objects.ML6.TextWrapped = true
+	Objects.ML6.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML6.Parent = Objects.M
+
+	Objects.E = Instance.new("TextLabel")
+	Objects.E.BackgroundTransparency = 1
+	Objects.E.Font = Enum.Font.Fantasy
+	Objects.E.Name = "E"
+	Objects.E.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
+	Objects.E.Text = "Z / X / C"
+	Objects.E.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.E.TextScaled = true
+	Objects.E.TextSize = 14
+	Objects.E.TextStrokeTransparency = 0
+	Objects.E.TextWrapped = true
+	Objects.E.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.E.Parent = Objects.M
+
+	Objects.C = Instance.new("TextLabel")
+	Objects.C.BackgroundTransparency = 1
+	Objects.C.Font = Enum.Font.Fantasy
+	Objects.C.Name = "C"
+	Objects.C.Position = UDim2.new(0, 0, 0.01, 0)
+	Objects.C.Size = UDim2.new(0.8999999999999999, 0, 0.02, 0)
+	Objects.C.Text = "SC / SAQ (AIR ONLY)"
+	Objects.C.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.C.TextScaled = true
+	Objects.C.TextSize = 14
+	Objects.C.TextStrokeTransparency = 0
+	Objects.C.TextWrapped = true
+	Objects.C.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.C.Parent = Objects.M
+
+	Objects.ML7 = Instance.new("TextLabel")
+	Objects.ML7.BackgroundTransparency = 1
+	Objects.ML7.Font = Enum.Font.Fantasy
+	Objects.ML7.Name = "ML7"
+	Objects.ML7.Position = UDim2.new(0, 0, 0.12, 0)
+	Objects.ML7.Size = UDim2.new(0.8999999999999999, 0, 0.01, 0)
+	Objects.ML7.Text = "ADADADQ"
+	Objects.ML7.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Objects.ML7.TextScaled = true
+	Objects.ML7.TextSize = 14
+	Objects.ML7.TextStrokeTransparency = 0
+	Objects.ML7.TextWrapped = true
+	Objects.ML7.TextXAlignment = Enum.TextXAlignment.Left
+	Objects.ML7.Parent = Objects.M
+
+	Objects.Attachment15 = Instance.new("Attachment")
+	Objects.Attachment15.Position = Vector3.new(0.317, 0, 0.47600000000000003)
+	Objects.Attachment15.Parent = Objects.DebrisPart
+
+	Objects.Attachment16 = Instance.new("Attachment")
+	Objects.Attachment16.Position = Vector3.new(-0.343, 0, -0.297)
+	Objects.Attachment16.Parent = Objects.DebrisPart
+
+	Objects.Trail7 = Instance.new("Trail")
+	Objects.Trail7.Attachment0 = Objects.Attachment15
+	Objects.Trail7.Attachment1 = Objects.Attachment16
+	Objects.Trail7.Lifetime = 0.5
+	Objects.Trail7.LightInfluence = 1
+	Objects.Trail7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail7.Parent = Objects.DebrisPart
+
+	Objects.BillBoardGui = Instance.new("BillboardGui")
+	Objects.BillBoardGui.Active = true
+	Objects.BillBoardGui.Name = "BillBoardGui"
+	Objects.BillBoardGui.Size = UDim2.new(2, 0, 2, 0)
+	Objects.BillBoardGui.StudsOffset = Vector3.new(0.15, -0.7000000000000001, 0)
+	Objects.BillBoardGui.Parent = Objects.BlastOrb
+
+	Objects.Attachment17 = Instance.new("Attachment")
+	Objects.Attachment17.Position = Vector3.new(0.169, -0.059000000000000004, 0)
+	Objects.Attachment17.Parent = Objects.BlastOrb
+
+	Objects.Attachment18 = Instance.new("Attachment")
+	Objects.Attachment18.Position = Vector3.new(-0.507, -0.888, 0)
+	Objects.Attachment18.Parent = Objects.BlastOrb
+
+	Objects.Trail8 = Instance.new("Trail")
+	Objects.Trail8.Attachment0 = Objects.Attachment17
+	Objects.Trail8.Attachment1 = Objects.Attachment18
+	Objects.Trail8.FaceCamera = true
+	Objects.Trail8.Lifetime = 0.25
+	Objects.Trail8.LightInfluence = 1
+	Objects.Trail8.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail8.Parent = Objects.BlastOrb
+
+	Objects.BillBoardGui2 = Instance.new("BillboardGui")
+	Objects.BillBoardGui2.Active = true
+	Objects.BillBoardGui2.Name = "BillBoardGui"
+	Objects.BillBoardGui2.Size = UDim2.new(2, 0, 2, 0)
+	Objects.BillBoardGui2.StudsOffset = Vector3.new(0.15, -0.7000000000000001, 0)
+	Objects.BillBoardGui2.Parent = Objects.HealthOrb
+
+	Objects.Attachment19 = Instance.new("Attachment")
+	Objects.Attachment19.Position = Vector3.new(0.169, -0.059000000000000004, 0)
+	Objects.Attachment19.Parent = Objects.HealthOrb
+
+	Objects.Attachment20 = Instance.new("Attachment")
+	Objects.Attachment20.Position = Vector3.new(-0.507, -0.888, 0)
+	Objects.Attachment20.Parent = Objects.HealthOrb
+
+	Objects.Trail9 = Instance.new("Trail")
+	Objects.Trail9.Attachment0 = Objects.Attachment19
+	Objects.Trail9.Attachment1 = Objects.Attachment20
+	Objects.Trail9.FaceCamera = true
+	Objects.Trail9.Lifetime = 0.25
+	Objects.Trail9.LightInfluence = 1
+	Objects.Trail9.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail9.Parent = Objects.HealthOrb
+
+	Objects.Trail10 = Instance.new("Trail")
+	Objects.Trail10.Attachment0 = Objects.Attachment22
+	Objects.Trail10.Attachment1 = Objects.Attachment21
+	Objects.Trail10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Trail10.FaceCamera = true
+	Objects.Trail10.Lifetime = 0.25
+	Objects.Trail10.LightInfluence = 1
+	Objects.Trail10.Texture = "rbxassetid://1196657065"
+	Objects.Trail10.TextureMode = Enum.TextureMode.Static
+	Objects.Trail10.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Trail10.WidthScale = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Trail10.Parent = Objects.Burst
+
+	Objects.Attachment21 = Instance.new("Attachment")
+	Objects.Attachment21.Position = Vector3.new(-0.217, -0.35000000000000003, 0)
+	Objects.Attachment21.Parent = Objects.Burst
+
+	Objects.Attachment22 = Instance.new("Attachment")
+	Objects.Attachment22.Position = Vector3.new(0.17400000000000002, 0.356, 0)
+	Objects.Attachment22.Parent = Objects.Burst
+
+	Objects.GUI = Instance.new("BillboardGui")
+	Objects.GUI.Active = true
+	Objects.GUI.Name = "GUI"
+	Objects.GUI.Size = UDim2.new(10, 0, 10, 0)
+	Objects.GUI.StudsOffset = Vector3.new(0, -0.5, 0)
+	Objects.GUI.Parent = Objects.ENERGYORB
+
+	Objects.Weld8 = Instance.new("Weld")
+	Objects.Weld8.C0 = CFrame.fromOrientation(math.rad(-90), math.rad(-180), math.rad(0)) + Vector3.new(-1, 1, 0.5)
+	Objects.Weld8.C1 = CFrame.fromOrientation(math.rad(-90), math.rad(0), math.rad(0)) + Vector3.new(0.849, -2.379, -2.315)
+	Objects.Weld8.Part1 = Objects.Claw1
+	Objects.Weld8.Parent = Objects.Claw1
+
+	Objects.Particle1 = Instance.new("ParticleEmitter")
+	Objects.Particle1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(0.9816971, 255), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Particle1.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle1.LightEmission = 1
+	Objects.Particle1.LockedToPart = true
+	Objects.Particle1.Name = "Particle1"
+	Objects.Particle1.Rate = 0.25
+	Objects.Particle1.Rotation = NumberRange.new(1.73, 1.73)
+	Objects.Particle1.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle1.Speed = NumberRange.new(0, 0)
+	Objects.Particle1.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle1.Texture = "rbxgameasset://Images/ENDRUNE"
+	Objects.Particle1.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle1.ZOffset = 0.5
+	Objects.Particle1.Parent = Objects.endParticle
+
+	Objects.Particle2 = Instance.new("ParticleEmitter")
+	Objects.Particle2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.9900165999999999, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Particle2.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle2.LightEmission = 1
+	Objects.Particle2.LockedToPart = true
+	Objects.Particle2.Name = "Particle2"
+	Objects.Particle2.Rate = 0.25
+	Objects.Particle2.RotSpeed = NumberRange.new(50, 50)
+	Objects.Particle2.Rotation = NumberRange.new(0, 50)
+	Objects.Particle2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle2.Speed = NumberRange.new(0, 0)
+	Objects.Particle2.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle2.Texture = "http://www.roblox.com/asset/?ID=133820006"
+	Objects.Particle2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle2.ZOffset = 0.5
+	Objects.Particle2.Parent = Objects.endParticle
+
+	Objects.Attachment23 = Instance.new("Attachment")
+	Objects.Attachment23.Parent = Objects.BlastGlowEffect
+
+	Objects.Attachment24 = Instance.new("Attachment")
+	Objects.Attachment24.Parent = Objects.ChargingEffect
+
+	Objects.ElectricBubble2 = Instance.new("Attachment")
+	Objects.ElectricBubble2.Name = "ElectricBubble"
+	Objects.ElectricBubble2.Parent = Objects.ElectricBubble
+
+	Objects.Attachment25 = Instance.new("Attachment")
+	Objects.Attachment25.Parent = Objects.VacuumEffect
+
+	Objects.Attachment26 = Instance.new("Attachment")
+	Objects.Attachment26.Parent = Objects.HealingBurst
+
+	Objects.Attachment27 = Instance.new("Attachment")
+	Objects.Attachment27.Parent = Objects.HealthLowEffect
+
+	Objects.Attachment28 = Instance.new("Attachment")
+	Objects.Attachment28.Parent = Objects.ImpactEffect
+
+	Objects.Attachment29 = Instance.new("Attachment")
+	Objects.Attachment29.Parent = Objects.LightEffect
+
+	Objects.Attachment30 = Instance.new("Attachment")
+	Objects.Attachment30.Parent = Objects.PartyEffect
+
+	Objects.Sparkles = Instance.new("ParticleEmitter")
+	Objects.Sparkles.Lifetime = NumberRange.new(3, 3)
+	Objects.Sparkles.LightEmission = 1
+	Objects.Sparkles.LockedToPart = true
+	Objects.Sparkles.Name = "Sparkles"
+	Objects.Sparkles.Rate = 2
+	Objects.Sparkles.RotSpeed = NumberRange.new(-10, 10)
+	Objects.Sparkles.Rotation = NumberRange.new(-180, 180)
+	Objects.Sparkles.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0.39999999999999997, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Sparkles.Speed = NumberRange.new(0.3, 0.3)
+	Objects.Sparkles.Texture = "rbxassetid://1053546634"
+	Objects.Sparkles.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.7999999999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Sparkles.Parent = Objects.RadiantEffect
+
+	Objects.Glow = Instance.new("ParticleEmitter")
+	Objects.Glow.Lifetime = NumberRange.new(1, 1)
+	Objects.Glow.LightEmission = 1
+	Objects.Glow.LockedToPart = true
+	Objects.Glow.Name = "Glow"
+	Objects.Glow.Rate = 4
+	Objects.Glow.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Glow.Speed = NumberRange.new(0, 0)
+	Objects.Glow.Texture = "rbxassetid://867619398"
+	Objects.Glow.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Glow.Parent = Objects.RadiantEffect
+
+	Objects.Rays = Instance.new("ParticleEmitter")
+	Objects.Rays.Lifetime = NumberRange.new(1, 1)
+	Objects.Rays.LightEmission = 1
+	Objects.Rays.LockedToPart = true
+	Objects.Rays.Name = "Rays"
+	Objects.Rays.Rate = 4
+	Objects.Rays.RotSpeed = NumberRange.new(-50, 50)
+	Objects.Rays.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 1.2418007, 0), NumberSequenceKeypoint.new(0.111, 2.2236207, 0), NumberSequenceKeypoint.new(0.16649999999999998, 2.9886019, 0), NumberSequenceKeypoint.new(0.222, 3.5748257999999997, 0), NumberSequenceKeypoint.new(0.27749999999999997, 4.0156279, 0), NumberSequenceKeypoint.new(0.33299999999999996, 4.3399162, 0), NumberSequenceKeypoint.new(0.38849999999999996, 4.572484, 0), NumberSequenceKeypoint.new(0.444, 4.7343291999999995, 0), NumberSequenceKeypoint.new(0.4995, 4.842967, 0), NumberSequenceKeypoint.new(0.5549999999999999, 4.9127493, 0), NumberSequenceKeypoint.new(0.6104999999999999, 4.9551764, 0), NumberSequenceKeypoint.new(0.6659999999999999, 4.9792171, 0), NumberSequenceKeypoint.new(0.7214999999999999, 4.991622899999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 4.9972425, 0), NumberSequenceKeypoint.new(0.8325, 4.9993405, 0), NumberSequenceKeypoint.new(0.888, 4.9999118, 0), NumberSequenceKeypoint.new(0.9435, 4.9999971, 0), NumberSequenceKeypoint.new(0.999, 5, 0), NumberSequenceKeypoint.new(1, 5, 0)}
+	Objects.Rays.Speed = NumberRange.new(0, 0)
+	Objects.Rays.Texture = "rbxassetid://1084975295"
+	Objects.Rays.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays.Parent = Objects.RadiantEffect
+
+	Objects.Rays2 = Instance.new("ParticleEmitter")
+	Objects.Rays2.Lifetime = NumberRange.new(1, 1)
+	Objects.Rays2.LightEmission = 1
+	Objects.Rays2.LockedToPart = true
+	Objects.Rays2.Name = "Rays"
+	Objects.Rays2.Rate = 4
+	Objects.Rays2.RotSpeed = NumberRange.new(-15, 15)
+	Objects.Rays2.Rotation = NumberRange.new(120, 240)
+	Objects.Rays2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 5.4999994999999995, 0)}
+	Objects.Rays2.Speed = NumberRange.new(0, 0)
+	Objects.Rays2.Texture = "rbxassetid://1053548563"
+	Objects.Rays2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 5.e-07, 0), NumberSequenceKeypoint.new(0.111, 0.0000169, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.000128, 0), NumberSequenceKeypoint.new(0.222, 0.0005392, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.0016455999999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.0040947, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.008850199999999999, 0), NumberSequenceKeypoint.new(0.444, 0.017255, 0), NumberSequenceKeypoint.new(0.4995, 0.0310941, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.0526581, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.0848063, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.13103009999999998, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.1955157, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.2832077, 0), NumberSequenceKeypoint.new(0.8325, 0.39987219999999996, 0), NumberSequenceKeypoint.new(0.888, 0.5521598, 0), NumberSequenceKeypoint.new(0.9435, 0.7476693, 0), NumberSequenceKeypoint.new(0.999, 0.99501, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays2.Parent = Objects.RadiantEffect
+
+	Objects.Attachment31 = Instance.new("Attachment")
+	Objects.Attachment31.Parent = Objects.RechargedEffect
+
+	Objects.Attachment32 = Instance.new("Attachment")
+	Objects.Attachment32.Parent = Objects.ShiningEffect
+
+	Objects.Attachment33 = Instance.new("Attachment")
+	Objects.Attachment33.Parent = Objects.ElectroBall
+
+	Objects.Attachment34 = Instance.new("Attachment")
+	Objects.Attachment34.Parent = Objects.FlashEffect
+
+	Objects.Attachment35 = Instance.new("Attachment")
+	Objects.Attachment35.Parent = Objects.FlashEffect2
+
+	Objects.Particle12 = Instance.new("ParticleEmitter")
+	Objects.Particle12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 85.0000025331974), ColorSequenceKeypoint.new(1, 9.000000413507223)}
+	Objects.Particle12.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle12.LightEmission = 1
+	Objects.Particle12.LockedToPart = true
+	Objects.Particle12.Name = "Particle1"
+	Objects.Particle12.Rate = 0.25
+	Objects.Particle12.Rotation = NumberRange.new(1.73, 1.73)
+	Objects.Particle12.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle12.Speed = NumberRange.new(0, 0)
+	Objects.Particle12.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle12.Texture = "rbxgameasset://Images/defRune"
+	Objects.Particle12.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle12.ZOffset = 0.5
+	Objects.Particle12.Parent = Objects.defParticle
+
+	Objects.Particle22 = Instance.new("ParticleEmitter")
+	Objects.Particle22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 85.0000025331974), ColorSequenceKeypoint.new(1, 255)}
+	Objects.Particle22.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle22.LightEmission = 1
+	Objects.Particle22.LockedToPart = true
+	Objects.Particle22.Name = "Particle2"
+	Objects.Particle22.Rate = 0.25
+	Objects.Particle22.RotSpeed = NumberRange.new(50, 50)
+	Objects.Particle22.Rotation = NumberRange.new(0, 50)
+	Objects.Particle22.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle22.Speed = NumberRange.new(0, 0)
+	Objects.Particle22.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle22.Texture = "http://www.roblox.com/asset/?ID=133820006"
+	Objects.Particle22.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle22.ZOffset = 0.5
+	Objects.Particle22.Parent = Objects.defParticle
+
+	Objects.Particle13 = Instance.new("ParticleEmitter")
+	Objects.Particle13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 9.000000413507223)}
+	Objects.Particle13.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle13.LightEmission = 1
+	Objects.Particle13.LockedToPart = true
+	Objects.Particle13.Name = "Particle1"
+	Objects.Particle13.Rate = 0.25
+	Objects.Particle13.Rotation = NumberRange.new(1.73, 1.73)
+	Objects.Particle13.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle13.Speed = NumberRange.new(0, 0)
+	Objects.Particle13.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle13.Texture = "rbxgameasset://Images/spdRune"
+	Objects.Particle13.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle13.ZOffset = 0.5
+	Objects.Particle13.Parent = Objects.spdParticle
+
+	Objects.Particle23 = Instance.new("ParticleEmitter")
+	Objects.Particle23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 255)}
+	Objects.Particle23.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle23.LightEmission = 1
+	Objects.Particle23.LockedToPart = true
+	Objects.Particle23.Name = "Particle2"
+	Objects.Particle23.Rate = 0.25
+	Objects.Particle23.RotSpeed = NumberRange.new(50, 50)
+	Objects.Particle23.Rotation = NumberRange.new(0, 50)
+	Objects.Particle23.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle23.Speed = NumberRange.new(0, 0)
+	Objects.Particle23.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle23.Texture = "http://www.roblox.com/asset/?ID=133820006"
+	Objects.Particle23.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle23.ZOffset = 0.5
+	Objects.Particle23.Parent = Objects.spdParticle
+
+	Objects.Particle14 = Instance.new("ParticleEmitter")
+	Objects.Particle14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(1, 9.000000413507223)}
+	Objects.Particle14.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle14.LightEmission = 1
+	Objects.Particle14.LockedToPart = true
+	Objects.Particle14.Name = "Particle1"
+	Objects.Particle14.Rate = 0.25
+	Objects.Particle14.Rotation = NumberRange.new(1.73, 1.73)
+	Objects.Particle14.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3.75, 0), NumberSequenceKeypoint.new(0.0988447, 5, 0), NumberSequenceKeypoint.new(0.4377407, 3.25, 0), NumberSequenceKeypoint.new(0.7548138999999999, 1.875, 0), NumberSequenceKeypoint.new(0.8575096999999999, 7.1875, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle14.Speed = NumberRange.new(0, 0)
+	Objects.Particle14.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle14.Texture = "rbxgameasset://Images/trueAttackRune omg there's a lot of these"
+	Objects.Particle14.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.20436279999999998, 0, 0), NumberSequenceKeypoint.new(0.7876004999999999, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle14.ZOffset = 0.5
+	Objects.Particle14.Parent = Objects.atkParticle
+
+	Objects.Particle24 = Instance.new("ParticleEmitter")
+	Objects.Particle24.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Particle24.LightEmission = 1
+	Objects.Particle24.LockedToPart = true
+	Objects.Particle24.Name = "Particle2"
+	Objects.Particle24.Rate = 0.25
+	Objects.Particle24.RotSpeed = NumberRange.new(50, 50)
+	Objects.Particle24.Rotation = NumberRange.new(0, 50)
+	Objects.Particle24.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.10141209999999999, 10, 0), NumberSequenceKeypoint.new(0.6431323, 4.625, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Particle24.Speed = NumberRange.new(0, 0)
+	Objects.Particle24.SpreadAngle = Vector2.new(100, 100)
+	Objects.Particle24.Texture = "http://www.roblox.com/asset/?ID=133820006"
+	Objects.Particle24.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.1982544, 0, 0), NumberSequenceKeypoint.new(0.7992519, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Particle24.ZOffset = 0.5
+	Objects.Particle24.Parent = Objects.atkParticle
+
+	Objects.ManualWeld = Instance.new("ManualWeld")
+	Objects.ManualWeld.Parent = Objects.Handle
+
+	Objects.ManualWeld2 = Instance.new("ManualWeld")
+	Objects.ManualWeld2.Parent = Objects.Handle
+
+	Objects.ManualWeld3 = Instance.new("ManualWeld")
+	Objects.ManualWeld3.Parent = Objects.Handle
+
+	Objects.ManualWeld4 = Instance.new("ManualWeld")
+	Objects.ManualWeld4.Parent = Objects.Handle
+
+	Objects.ManualWeld5 = Instance.new("ManualWeld")
+	Objects.ManualWeld5.Parent = Objects.Handle
+
+	Objects.ManualWeld6 = Instance.new("ManualWeld")
+	Objects.ManualWeld6.Parent = Objects.Handle
+
+	Objects.ManualWeld7 = Instance.new("ManualWeld")
+	Objects.ManualWeld7.Parent = Objects.Handle
+
+	Objects.ManualWeld8 = Instance.new("ManualWeld")
+	Objects.ManualWeld8.Parent = Objects.Handle
+
+	Objects.ManualWeld9 = Instance.new("ManualWeld")
+	Objects.ManualWeld9.Parent = Objects.Handle
+
+	Objects.ManualWeld10 = Instance.new("ManualWeld")
+	Objects.ManualWeld10.Parent = Objects.Handle
+
+	Objects.ManualWeld11 = Instance.new("ManualWeld")
+	Objects.ManualWeld11.Parent = Objects.Handle
+
+	Objects.ManualWeld12 = Instance.new("ManualWeld")
+	Objects.ManualWeld12.Parent = Objects.Handle
+
+	Objects.ManualWeld13 = Instance.new("ManualWeld")
+	Objects.ManualWeld13.Parent = Objects.Handle
+
+	Objects.ManualWeld14 = Instance.new("ManualWeld")
+	Objects.ManualWeld14.Parent = Objects.Handle
+
+	Objects.ManualWeld15 = Instance.new("ManualWeld")
+	Objects.ManualWeld15.Parent = Objects.Handle
+
+	Objects.ManualWeld16 = Instance.new("ManualWeld")
+	Objects.ManualWeld16.Parent = Objects.Handle
+
+	Objects.Mesh = Instance.new("SpecialMesh")
+	Objects.Mesh.MeshType = Enum.MeshType.Cylinder
+	Objects.Mesh.Scale = Vector3.new(0.763, 1, 1)
+	Objects.Mesh.Parent = Objects.Part8
+
+	Objects.Mesh2 = Instance.new("SpecialMesh")
+	Objects.Mesh2.MeshType = Enum.MeshType.Cylinder
+	Objects.Mesh2.Scale = Vector3.new(0.763, 1, 1)
+	Objects.Mesh2.Parent = Objects.Part9
+
+	Objects.Mesh3 = Instance.new("SpecialMesh")
+	Objects.Mesh3.MeshType = Enum.MeshType.Cylinder
+	Objects.Mesh3.Scale = Vector3.new(0.763, 1, 1)
+	Objects.Mesh3.Parent = Objects.Part15
+
+	Objects.Mesh4 = Instance.new("SpecialMesh")
+	Objects.Mesh4.MeshType = Enum.MeshType.Wedge
+	Objects.Mesh4.Scale = Vector3.new(1, 0.66, 0.99)
+	Objects.Mesh4.Parent = Objects.Wedge
+
+	Objects.Mesh5 = Instance.new("SpecialMesh")
+	Objects.Mesh5.MeshType = Enum.MeshType.Wedge
+	Objects.Mesh5.Scale = Vector3.new(1, 0.66, 0.99)
+	Objects.Mesh5.Parent = Objects.Wedge2
+
+	Objects.Mesh6 = Instance.new("SpecialMesh")
+	Objects.Mesh6.MeshType = Enum.MeshType.Wedge
+	Objects.Mesh6.Scale = Vector3.new(1, 0.66, 0.99)
+	Objects.Mesh6.Parent = Objects.Wedge3
+
+	Objects.Mesh7 = Instance.new("SpecialMesh")
+	Objects.Mesh7.MeshType = Enum.MeshType.Wedge
+	Objects.Mesh7.Scale = Vector3.new(1, 0.66, 0.99)
+	Objects.Mesh7.Parent = Objects.Wedge4
+
+	Objects.ManualWeld17 = Instance.new("ManualWeld")
+	Objects.ManualWeld17.Parent = Objects.Handle2
+
+	Objects.ManualWeld18 = Instance.new("ManualWeld")
+	Objects.ManualWeld18.Parent = Objects.Handle2
+
+	Objects.ManualWeld19 = Instance.new("ManualWeld")
+	Objects.ManualWeld19.Parent = Objects.Handle2
+
+	Objects.ManualWeld20 = Instance.new("ManualWeld")
+	Objects.ManualWeld20.Parent = Objects.Handle2
+
+	Objects.ManualWeld21 = Instance.new("ManualWeld")
+	Objects.ManualWeld21.Parent = Objects.Handle2
+
+	Objects.ManualWeld22 = Instance.new("ManualWeld")
+	Objects.ManualWeld22.Parent = Objects.Handle2
+
+	Objects.ManualWeld23 = Instance.new("ManualWeld")
+	Objects.ManualWeld23.Parent = Objects.Handle2
+
+	Objects.ManualWeld24 = Instance.new("ManualWeld")
+	Objects.ManualWeld24.Parent = Objects.Handle2
+
+	Objects.ManualWeld25 = Instance.new("ManualWeld")
+	Objects.ManualWeld25.Parent = Objects.Handle2
+
+	Objects.ManualWeld26 = Instance.new("ManualWeld")
+	Objects.ManualWeld26.Parent = Objects.Handle2
+
+	Objects.ManualWeld27 = Instance.new("ManualWeld")
+	Objects.ManualWeld27.Parent = Objects.Handle2
+
+	Objects.ManualWeld28 = Instance.new("ManualWeld")
+	Objects.ManualWeld28.Parent = Objects.Handle2
+
+	Objects.ManualWeld29 = Instance.new("ManualWeld")
+	Objects.ManualWeld29.Parent = Objects.Handle2
+
+	Objects.ManualWeld30 = Instance.new("ManualWeld")
+	Objects.ManualWeld30.Parent = Objects.Handle2
+
+	Objects.ManualWeld31 = Instance.new("ManualWeld")
+	Objects.ManualWeld31.Parent = Objects.Handle2
+
+	Objects.ManualWeld32 = Instance.new("ManualWeld")
+	Objects.ManualWeld32.Parent = Objects.Handle2
+
+	Objects.ManualWeld33 = Instance.new("ManualWeld")
+	Objects.ManualWeld33.Parent = Objects.Handle2
+
+	Objects.ManualWeld34 = Instance.new("ManualWeld")
+	Objects.ManualWeld34.Parent = Objects.Handle2
+
+	Objects.ManualWeld35 = Instance.new("ManualWeld")
+	Objects.ManualWeld35.Parent = Objects.Handle2
+
+	Objects.ManualWeld36 = Instance.new("ManualWeld")
+	Objects.ManualWeld36.Parent = Objects.Handle2
+
+	Objects.ManualWeld37 = Instance.new("ManualWeld")
+	Objects.ManualWeld37.Parent = Objects.Handle2
+
+	Objects.ManualWeld38 = Instance.new("ManualWeld")
+	Objects.ManualWeld38.Parent = Objects.Handle2
+
+	Objects.ManualWeld39 = Instance.new("ManualWeld")
+	Objects.ManualWeld39.Parent = Objects.Handle2
+
+	Objects.ManualWeld40 = Instance.new("ManualWeld")
+	Objects.ManualWeld40.Parent = Objects.Handle2
+
+	Objects.ManualWeld41 = Instance.new("ManualWeld")
+	Objects.ManualWeld41.Parent = Objects.Handle2
+
+	Objects.ManualWeld42 = Instance.new("ManualWeld")
+	Objects.ManualWeld42.Parent = Objects.Handle2
+
+	Objects.ManualWeld43 = Instance.new("ManualWeld")
+	Objects.ManualWeld43.Parent = Objects.Handle2
+
+	Objects.ManualWeld44 = Instance.new("ManualWeld")
+	Objects.ManualWeld44.Parent = Objects.Handle2
+
+	Objects.ManualWeld45 = Instance.new("ManualWeld")
+	Objects.ManualWeld45.Parent = Objects.Handle2
+
+	Objects.ManualWeld46 = Instance.new("ManualWeld")
+	Objects.ManualWeld46.Parent = Objects.Handle2
+
+	Objects.ManualWeld47 = Instance.new("ManualWeld")
+	Objects.ManualWeld47.Parent = Objects.Handle2
+
+	Objects.ManualWeld48 = Instance.new("ManualWeld")
+	Objects.ManualWeld48.Parent = Objects.Handle2
+
+	Objects.ManualWeld49 = Instance.new("ManualWeld")
+	Objects.ManualWeld49.Parent = Objects.Handle2
+
+	Objects.ManualWeld50 = Instance.new("ManualWeld")
+	Objects.ManualWeld50.Parent = Objects.Handle2
+
+	Objects.ManualWeld51 = Instance.new("ManualWeld")
+	Objects.ManualWeld51.Parent = Objects.Handle2
+
+	Objects.ManualWeld52 = Instance.new("ManualWeld")
+	Objects.ManualWeld52.Parent = Objects.Handle2
+
+	Objects.ManualWeld53 = Instance.new("ManualWeld")
+	Objects.ManualWeld53.Parent = Objects.Handle2
+
+	Objects.ManualWeld54 = Instance.new("ManualWeld")
+	Objects.ManualWeld54.Parent = Objects.Handle2
+
+	Objects.ManualWeld55 = Instance.new("ManualWeld")
+	Objects.ManualWeld55.Parent = Objects.Handle2
+
+	Objects.ManualWeld56 = Instance.new("ManualWeld")
+	Objects.ManualWeld56.Parent = Objects.Handle2
+
+	Objects.ManualWeld57 = Instance.new("ManualWeld")
+	Objects.ManualWeld57.Parent = Objects.Handle2
+
+	Objects.ManualWeld58 = Instance.new("ManualWeld")
+	Objects.ManualWeld58.Parent = Objects.Handle2
+
+	Objects.ManualWeld59 = Instance.new("ManualWeld")
+	Objects.ManualWeld59.Parent = Objects.Handle2
+
+	Objects.ManualWeld60 = Instance.new("ManualWeld")
+	Objects.ManualWeld60.Parent = Objects.Handle2
+
+	Objects.ManualWeld61 = Instance.new("ManualWeld")
+	Objects.ManualWeld61.Parent = Objects.Handle2
+
+	Objects.ManualWeld62 = Instance.new("ManualWeld")
+	Objects.ManualWeld62.Parent = Objects.Handle2
+
+	Objects.ManualWeld63 = Instance.new("ManualWeld")
+	Objects.ManualWeld63.Parent = Objects.Handle2
+
+	Objects.ManualWeld64 = Instance.new("ManualWeld")
+	Objects.ManualWeld64.Parent = Objects.Handle2
+
+	Objects.ManualWeld65 = Instance.new("ManualWeld")
+	Objects.ManualWeld65.Parent = Objects.Handle2
+
+	Objects.ManualWeld66 = Instance.new("ManualWeld")
+	Objects.ManualWeld66.Parent = Objects.Handle2
+
+	Objects.ManualWeld67 = Instance.new("ManualWeld")
+	Objects.ManualWeld67.Parent = Objects.Handle2
+
+	Objects.ManualWeld68 = Instance.new("ManualWeld")
+	Objects.ManualWeld68.Parent = Objects.Handle2
+
+	Objects.ManualWeld69 = Instance.new("ManualWeld")
+	Objects.ManualWeld69.Parent = Objects.Handle2
+
+	Objects.ManualWeld70 = Instance.new("ManualWeld")
+	Objects.ManualWeld70.Parent = Objects.Handle3
+
+	Objects.ManualWeld71 = Instance.new("ManualWeld")
+	Objects.ManualWeld71.Parent = Objects.Handle3
+
+	Objects.ManualWeld72 = Instance.new("ManualWeld")
+	Objects.ManualWeld72.Parent = Objects.Handle3
+
+	Objects.ManualWeld73 = Instance.new("ManualWeld")
+	Objects.ManualWeld73.Parent = Objects.Handle3
+
+	Objects.ManualWeld74 = Instance.new("ManualWeld")
+	Objects.ManualWeld74.Parent = Objects.Handle3
+
+	Objects.ManualWeld75 = Instance.new("ManualWeld")
+	Objects.ManualWeld75.Parent = Objects.Handle3
+
+	Objects.ManualWeld76 = Instance.new("ManualWeld")
+	Objects.ManualWeld76.Parent = Objects.Handle3
+
+	Objects.ManualWeld77 = Instance.new("ManualWeld")
+	Objects.ManualWeld77.Parent = Objects.Handle3
+
+	Objects.ManualWeld78 = Instance.new("ManualWeld")
+	Objects.ManualWeld78.Parent = Objects.Handle3
+
+	Objects.ManualWeld79 = Instance.new("ManualWeld")
+	Objects.ManualWeld79.Parent = Objects.Handle3
+
+	Objects.ManualWeld80 = Instance.new("ManualWeld")
+	Objects.ManualWeld80.Parent = Objects.Handle3
+
+	Objects.ManualWeld81 = Instance.new("ManualWeld")
+	Objects.ManualWeld81.Parent = Objects.Handle3
+
+	Objects.ManualWeld82 = Instance.new("ManualWeld")
+	Objects.ManualWeld82.Parent = Objects.Handle3
+
+	Objects.ManualWeld83 = Instance.new("ManualWeld")
+	Objects.ManualWeld83.Parent = Objects.Handle3
+
+	Objects.ManualWeld84 = Instance.new("ManualWeld")
+	Objects.ManualWeld84.Parent = Objects.Handle3
+
+	Objects.Script4 = Instance.new("Script")
+	Objects.Script4.Disabled = true
+	Objects.Script4.Parent = Objects.TEXT
+
+	Objects.Script5 = Instance.new("Script")
+	Objects.Script5.Disabled = true
+	Objects.Script5.Parent = Objects.TEXT3
+
+	Objects.Script6 = Instance.new("Script")
+	Objects.Script6.Disabled = true
+	Objects.Script6.Parent = Objects.T1
+
+	Objects.DMGVALUE = Instance.new("IntValue")
+	Objects.DMGVALUE.Name = "DMGVALUE"
+	Objects.DMGVALUE.Parent = Objects.DMGLabel
+
+	Objects.RATESTRING = Instance.new("StringValue")
+	Objects.RATESTRING.Name = "RATESTRING"
+	Objects.RATESTRING.Value = "RATING"
+	Objects.RATESTRING.Parent = Objects.RATINGLabel
+
+	Objects.TIMEVALUE = Instance.new("NumberValue")
+	Objects.TIMEVALUE.Name = "TIMEVALUE"
+	Objects.TIMEVALUE.Value = 100
+	Objects.TIMEVALUE.Parent = Objects.TIMEBar
+
+	Objects.ImageLabel = Instance.new("ImageLabel")
+	Objects.ImageLabel.Active = true
+	Objects.ImageLabel.BackgroundTransparency = 1
+	Objects.ImageLabel.Image = "rbxassetid://436792038"
+	Objects.ImageLabel.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
+	Objects.ImageLabel.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
+	Objects.ImageLabel.Parent = Objects.BillBoardGui
+
+	Objects.ImageLabel2 = Instance.new("ImageLabel")
+	Objects.ImageLabel2.Active = true
+	Objects.ImageLabel2.BackgroundTransparency = 1
+	Objects.ImageLabel2.Image = "rbxassetid://678216607"
+	Objects.ImageLabel2.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
+	Objects.ImageLabel2.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
+	Objects.ImageLabel2.Parent = Objects.BillBoardGui
+
+	Objects.ImageLabel3 = Instance.new("ImageLabel")
+	Objects.ImageLabel3.Active = true
+	Objects.ImageLabel3.BackgroundTransparency = 1
+	Objects.ImageLabel3.Image = "rbxassetid://642882626"
+	Objects.ImageLabel3.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
+	Objects.ImageLabel3.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
+	Objects.ImageLabel3.Parent = Objects.BillBoardGui2
+
+	Objects.ImageLabel4 = Instance.new("ImageLabel")
+	Objects.ImageLabel4.Active = true
+	Objects.ImageLabel4.BackgroundTransparency = 1
+	Objects.ImageLabel4.Image = "rbxassetid://678216607"
+	Objects.ImageLabel4.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
+	Objects.ImageLabel4.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
+	Objects.ImageLabel4.Parent = Objects.BillBoardGui2
+
+	Objects.ImageLabel5 = Instance.new("ImageLabel")
+	Objects.ImageLabel5.Active = true
+	Objects.ImageLabel5.BackgroundTransparency = 1
+	Objects.ImageLabel5.Image = "rbxgameasset://Images/wotda"
+	Objects.ImageLabel5.Position = UDim2.new(0.09999999999999999, 0, 0, 0)
+	Objects.ImageLabel5.Size = UDim2.new(0.7999999999999999, 0, 0.7999999999999999, 0)
+	Objects.ImageLabel5.Parent = Objects.GUI
+
+	Objects.Rays3 = Instance.new("ParticleEmitter")
+	Objects.Rays3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
+	Objects.Rays3.Lifetime = NumberRange.new(1, 1)
+	Objects.Rays3.LightEmission = 1
+	Objects.Rays3.LockedToPart = true
+	Objects.Rays3.Name = "Rays"
+	Objects.Rays3.Rate = 4
+	Objects.Rays3.RotSpeed = NumberRange.new(60, 60)
+	Objects.Rays3.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Rays3.Speed = NumberRange.new(0, 0)
+	Objects.Rays3.Texture = "rbxassetid://1084975295"
+	Objects.Rays3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays3.ZOffset = -0.001
+	Objects.Rays3.Parent = Objects.Attachment23
+
+	Objects.Wave = Instance.new("ParticleEmitter")
+	Objects.Wave.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 200.00001847743988), ColorSequenceKeypoint.new(1, 200.00001847743988)}
+	Objects.Wave.Lifetime = NumberRange.new(1, 1)
+	Objects.Wave.LightEmission = 1
+	Objects.Wave.LockedToPart = true
+	Objects.Wave.Name = "Wave"
+	Objects.Wave.Rate = 3
+	Objects.Wave.RotSpeed = NumberRange.new(-100, 100)
+	Objects.Wave.Rotation = NumberRange.new(-180, 180)
+	Objects.Wave.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8999999999999999, 0), NumberSequenceKeypoint.new(0.0555, 0.9957756999999999, 0), NumberSequenceKeypoint.new(0.111, 1.0908239, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.1844227, 0), NumberSequenceKeypoint.new(0.222, 1.2758612999999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.3644451, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.4495012, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.5303836, 0), NumberSequenceKeypoint.new(0.444, 1.6064779999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.6772063, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.7420316, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.8004612, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.8520515, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.8964105999999998, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.9332014, 0), NumberSequenceKeypoint.new(0.8325, 1.9621449, 0), NumberSequenceKeypoint.new(0.888, 1.9830207999999998, 0), NumberSequenceKeypoint.new(0.9435, 1.9956707, 0), NumberSequenceKeypoint.new(0.999, 1.9999987, 0), NumberSequenceKeypoint.new(1, 2, 0)}
+	Objects.Wave.Speed = NumberRange.new(0, 0)
+	Objects.Wave.Texture = "rbxassetid://1084977655"
+	Objects.Wave.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave.ZOffset = -0.001
+	Objects.Wave.Parent = Objects.Attachment23
+
+	Objects.Vortex_Bits = Instance.new("ParticleEmitter")
+	Objects.Vortex_Bits.Lifetime = NumberRange.new(0.6, 1)
+	Objects.Vortex_Bits.LightEmission = 1
+	Objects.Vortex_Bits.LockedToPart = true
+	Objects.Vortex_Bits.Name = "Vortex_Bits"
+	Objects.Vortex_Bits.Rate = 4
+	Objects.Vortex_Bits.Rotation = NumberRange.new(-180, 180)
+	Objects.Vortex_Bits.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(0.0555, 2.2549194999999997, 0), NumberSequenceKeypoint.new(0.111, 1.6658275999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.2068387999999999, 0), NumberSequenceKeypoint.new(0.222, 0.8551046, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.5906232, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.39605039999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.2565096, 0), NumberSequenceKeypoint.new(0.444, 0.1594025, 0), NumberSequenceKeypoint.new(0.4995, 0.09421969999999999, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.0523506, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.0268942, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.012469599999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.0050263, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.0016543999999999999, 0), NumberSequenceKeypoint.new(0.8325, 0.00039549999999999996, 0), NumberSequenceKeypoint.new(0.888, 0.0000529, 0), NumberSequenceKeypoint.new(0.9435, 0.0000016999999999999998, 0), NumberSequenceKeypoint.new(0.999, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Vortex_Bits.Speed = NumberRange.new(0, 0)
+	Objects.Vortex_Bits.Texture = "rbxassetid://1084969783"
+	Objects.Vortex_Bits.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.19999999999999998, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
+	Objects.Vortex_Bits.Parent = Objects.Attachment24
+
+	Objects.Glow2 = Instance.new("ParticleEmitter")
+	Objects.Glow2.Lifetime = NumberRange.new(1, 1)
+	Objects.Glow2.LightEmission = 1
+	Objects.Glow2.LockedToPart = true
+	Objects.Glow2.Name = "Glow"
+	Objects.Glow2.Rate = 3
+	Objects.Glow2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(1, 0.3, 0)}
+	Objects.Glow2.Speed = NumberRange.new(0, 0)
+	Objects.Glow2.Texture = "rbxassetid://867619398"
+	Objects.Glow2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Glow2.Parent = Objects.Attachment24
+
+	Objects.Rays4 = Instance.new("ParticleEmitter")
+	Objects.Rays4.Lifetime = NumberRange.new(1, 1.5)
+	Objects.Rays4.LightEmission = 1
+	Objects.Rays4.LockedToPart = true
+	Objects.Rays4.Name = "Rays"
+	Objects.Rays4.Rate = 5
+	Objects.Rays4.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.0075953999999999995, 0), NumberSequenceKeypoint.new(0.111, 0.030323899999999997, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.0680129, 0), NumberSequenceKeypoint.new(0.222, 0.1203761, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.18701579999999998, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.2674258, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.36099549999999997, 0), NumberSequenceKeypoint.new(0.444, 0.467014, 0), NumberSequenceKeypoint.new(0.4995, 0.5846760999999999, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7130883, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.851275, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9981867999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.1527077, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.3136641, 0), NumberSequenceKeypoint.new(0.8325, 1.4798335999999999, 0), NumberSequenceKeypoint.new(0.888, 1.6499538, 0), NumberSequenceKeypoint.new(0.9435, 1.8227328999999999, 0), NumberSequenceKeypoint.new(0.999, 1.9968583999999998, 0), NumberSequenceKeypoint.new(1, 2, 0)}
+	Objects.Rays4.Speed = NumberRange.new(0, 0)
+	Objects.Rays4.Texture = "rbxassetid://1053548563"
+	Objects.Rays4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.7, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays4.Parent = Objects.Attachment24
+
+	Objects.Vortex = Instance.new("ParticleEmitter")
+	Objects.Vortex.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.15397919999999998, 255), ColorSequenceKeypoint.new(1, 255)}
+	Objects.Vortex.Lifetime = NumberRange.new(4, 4)
+	Objects.Vortex.LightEmission = 1
+	Objects.Vortex.LockedToPart = true
+	Objects.Vortex.Name = "Vortex"
+	Objects.Vortex.Rate = 3
+	Objects.Vortex.RotSpeed = NumberRange.new(360, 360)
+	Objects.Vortex.Rotation = NumberRange.new(-180, 180)
+	Objects.Vortex.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.5, 0), NumberSequenceKeypoint.new(0.0555, 1.1274598, 0), NumberSequenceKeypoint.new(0.111, 0.8329137999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.6034193999999999, 0), NumberSequenceKeypoint.new(0.222, 0.4275523, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.2953116, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.19802519999999998, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.1282548, 0), NumberSequenceKeypoint.new(0.444, 0.0797013, 0), NumberSequenceKeypoint.new(0.4995, 0.0471098, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.0261753, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.0134471, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.0062347999999999995, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.0025131, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.0008271999999999999, 0), NumberSequenceKeypoint.new(0.8325, 0.00019779999999999998, 0), NumberSequenceKeypoint.new(0.888, 0.000026399999999999998, 0), NumberSequenceKeypoint.new(0.9435, 9.e-07, 0), NumberSequenceKeypoint.new(0.999, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Vortex.Speed = NumberRange.new(0, 0)
+	Objects.Vortex.Texture = "rbxassetid://1084969997"
+	Objects.Vortex.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.3, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
+	Objects.Vortex.Parent = Objects.Attachment24
+
+	Objects.Bolts = Instance.new("ParticleEmitter")
+	Objects.Bolts.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.5, 255), ColorSequenceKeypoint.new(1, 255)}
+	Objects.Bolts.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
+	Objects.Bolts.LightEmission = 1
+	Objects.Bolts.LockedToPart = true
+	Objects.Bolts.Name = "Bolts"
+	Objects.Bolts.Rate = 12
+	Objects.Bolts.Rotation = NumberRange.new(-180, 180)
+	Objects.Bolts.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4.8000001999999995, 0.39999999999999997), NumberSequenceKeypoint.new(1, 4.8000001999999995, 0.39999999999999997)}
+	Objects.Bolts.Speed = NumberRange.new(0, 0)
+	Objects.Bolts.Texture = "rbxassetid://1084955012"
+	Objects.Bolts.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Bolts.Parent = Objects.ElectricBubble2
+
+	Objects.Bubble = Instance.new("ParticleEmitter")
+	Objects.Bubble.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 255), ColorSequenceKeypoint.new(0.49480969999999996, 255), ColorSequenceKeypoint.new(1, 255)}
+	Objects.Bubble.Lifetime = NumberRange.new(1, 1)
+	Objects.Bubble.LightEmission = 1
+	Objects.Bubble.LockedToPart = true
+	Objects.Bubble.Name = "Bubble"
+	Objects.Bubble.Rate = 6
+	Objects.Bubble.Rotation = NumberRange.new(-180, 180)
+	Objects.Bubble.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(1, 4, 0)}
+	Objects.Bubble.Speed = NumberRange.new(0, 0)
+	Objects.Bubble.Texture = "rbxassetid://1084955488"
+	Objects.Bubble.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.7, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Bubble.ZOffset = 3
+	Objects.Bubble.Parent = Objects.ElectricBubble2
+
+	Objects.Bits = Instance.new("ParticleEmitter")
+	Objects.Bits.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 85.0000025331974), ColorSequenceKeypoint.new(1, 85.0000025331974)}
+	Objects.Bits.Lifetime = NumberRange.new(0.5, 1)
+	Objects.Bits.LightEmission = 1
+	Objects.Bits.LockedToPart = true
+	Objects.Bits.Name = "Bits"
+	Objects.Bits.Rate = 100
+	Objects.Bits.Rotation = NumberRange.new(-180, 180)
+	Objects.Bits.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Bits.Speed = NumberRange.new(0, 0)
+	Objects.Bits.Texture = "rbxassetid://1084996976"
+	Objects.Bits.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.25, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Bits.Parent = Objects.Attachment25
+
+	Objects.Wave2 = Instance.new("ParticleEmitter")
+	Objects.Wave2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 200.00001847743988), ColorSequenceKeypoint.new(1, 200.00001847743988)}
+	Objects.Wave2.Lifetime = NumberRange.new(1, 1.5)
+	Objects.Wave2.LightEmission = 1
+	Objects.Wave2.LockedToPart = true
+	Objects.Wave2.Name = "Wave"
+	Objects.Wave2.Rate = 3
+	Objects.Wave2.RotSpeed = NumberRange.new(250, 500)
+	Objects.Wave2.Rotation = NumberRange.new(-180, 180)
+	Objects.Wave2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Wave2.Speed = NumberRange.new(0, 0)
+	Objects.Wave2.Texture = "rbxassetid://1084996536"
+	Objects.Wave2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.39999999999999997, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave2.Parent = Objects.Attachment25
+
+	Objects.Smoke = Instance.new("ParticleEmitter")
+	Objects.Smoke.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 100.00000923871994), ColorSequenceKeypoint.new(1, 100.00000923871994)}
+	Objects.Smoke.Drag = 10
+	Objects.Smoke.Lifetime = NumberRange.new(1, 1)
+	Objects.Smoke.LightEmission = 1
+	Objects.Smoke.Name = "Smoke"
+	Objects.Smoke.Rate = 15
+	Objects.Smoke.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Smoke.Speed = NumberRange.new(50, 50)
+	Objects.Smoke.SpreadAngle = Vector2.new(90, 90)
+	Objects.Smoke.Texture = "rbxassetid://867619398"
+	Objects.Smoke.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.75, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Smoke.ZOffset = 1.5
+	Objects.Smoke.Parent = Objects.Attachment26
+
+	Objects.Icon = Instance.new("ParticleEmitter")
+	Objects.Icon.Acceleration = Vector3.new(0, 10, 0)
+	Objects.Icon.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 50.00000461935997), ColorSequenceKeypoint.new(1, 50.00000461935997)}
+	Objects.Icon.Drag = 10
+	Objects.Icon.Lifetime = NumberRange.new(0.7, 1)
+	Objects.Icon.LightEmission = 1
+	Objects.Icon.Name = "Icon"
+	Objects.Icon.Rate = 8
+	Objects.Icon.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0.5), NumberSequenceKeypoint.new(1, 1, 0.5)}
+	Objects.Icon.Speed = NumberRange.new(50, 50)
+	Objects.Icon.SpreadAngle = Vector2.new(90, 90)
+	Objects.Icon.Texture = "rbxassetid://1084979589"
+	Objects.Icon.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Icon.Parent = Objects.Attachment26
+
+	Objects.Shockwave = Instance.new("ParticleEmitter")
+	Objects.Shockwave.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 50.00000461935997), ColorSequenceKeypoint.new(1, 50.00000461935997)}
+	Objects.Shockwave.Lifetime = NumberRange.new(0.6, 0.6)
+	Objects.Shockwave.LightEmission = 1
+	Objects.Shockwave.Name = "Shockwave"
+	Objects.Shockwave.Rate = 1
+	Objects.Shockwave.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 4.0838566, 0), NumberSequenceKeypoint.new(0.111, 7.5078545, 0), NumberSequenceKeypoint.new(0.16649999999999998, 10.3472195, 0), NumberSequenceKeypoint.new(0.222, 12.672625499999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 14.550189999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 16.0414753, 0), NumberSequenceKeypoint.new(0.38849999999999996, 17.2034931, 0), NumberSequenceKeypoint.new(0.444, 18.0886993, 0), NumberSequenceKeypoint.new(0.4995, 18.7449932, 0), NumberSequenceKeypoint.new(0.5549999999999999, 19.2157211, 0), NumberSequenceKeypoint.new(0.6104999999999999, 19.5396805, 0), NumberSequenceKeypoint.new(0.6659999999999999, 19.7511044, 0), NumberSequenceKeypoint.new(0.7214999999999999, 19.879682499999998, 0), NumberSequenceKeypoint.new(0.7769999999999999, 19.9505405, 0), NumberSequenceKeypoint.new(0.8325, 19.9842567, 0), NumberSequenceKeypoint.new(0.888, 19.9968529, 0), NumberSequenceKeypoint.new(0.9435, 19.9997959, 0), NumberSequenceKeypoint.new(0.999, 20, 0), NumberSequenceKeypoint.new(1, 20, 0)}
+	Objects.Shockwave.Speed = NumberRange.new(0, 0)
+	Objects.Shockwave.Texture = "rbxassetid://1084965356"
+	Objects.Shockwave.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(0.75, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Shockwave.Parent = Objects.Attachment26
+
+	Objects.Flare = Instance.new("ParticleEmitter")
+	Objects.Flare.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 150.0000062584877), ColorSequenceKeypoint.new(1, 150.0000062584877)}
+	Objects.Flare.Lifetime = NumberRange.new(1, 1)
+	Objects.Flare.LightEmission = 1
+	Objects.Flare.Name = "Flare"
+	Objects.Flare.Rate = 1
+	Objects.Flare.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 13, 0), NumberSequenceKeypoint.new(1, 13, 0)}
+	Objects.Flare.Speed = NumberRange.new(0, 0)
+	Objects.Flare.Texture = "rbxassetid://867619398"
+	Objects.Flare.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare.ZOffset = 5
+	Objects.Flare.Parent = Objects.Attachment26
+
+	Objects.Icon2 = Instance.new("ParticleEmitter")
+	Objects.Icon2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
+	Objects.Icon2.Lifetime = NumberRange.new(1, 1)
+	Objects.Icon2.LockedToPart = true
+	Objects.Icon2.Name = "Icon"
+	Objects.Icon2.Rate = 0.5
+	Objects.Icon2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(0.0555, 3.3874215999999997, 0), NumberSequenceKeypoint.new(0.111, 2.8738216999999997, 0), NumberSequenceKeypoint.new(0.16649999999999998, 2.447917, 0), NumberSequenceKeypoint.new(0.222, 2.0991060999999998, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.8174716, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.5937785999999998, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.419476, 0), NumberSequenceKeypoint.new(0.444, 1.2866952, 0), NumberSequenceKeypoint.new(0.4995, 1.1882511, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.1176416999999998, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.069048, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.0373341999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.0180476999999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.0074189, 0), NumberSequenceKeypoint.new(0.8325, 1.0023613999999998, 0), NumberSequenceKeypoint.new(0.888, 1.0004720999999999, 0), NumberSequenceKeypoint.new(0.9435, 1.0000305, 0), NumberSequenceKeypoint.new(0.999, 1, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Icon2.Speed = NumberRange.new(0, 0)
+	Objects.Icon2.Texture = "rbxassetid://1084966670"
+	Objects.Icon2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Icon2.ZOffset = 3
+	Objects.Icon2.Parent = Objects.Attachment27
+
+	Objects.Wave3 = Instance.new("ParticleEmitter")
+	Objects.Wave3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
+	Objects.Wave3.Lifetime = NumberRange.new(2, 2)
+	Objects.Wave3.LightEmission = 1
+	Objects.Wave3.LockedToPart = true
+	Objects.Wave3.Name = "Wave"
+	Objects.Wave3.Rate = 0.5
+	Objects.Wave3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555556, 0, 0), NumberSequenceKeypoint.new(0.11111109999999999, 0, 0), NumberSequenceKeypoint.new(0.1666667, 0, 0), NumberSequenceKeypoint.new(0.22222219999999998, 0, 0), NumberSequenceKeypoint.new(0.27777779999999996, 0, 0), NumberSequenceKeypoint.new(0.3333333, 0, 0), NumberSequenceKeypoint.new(0.3888889, 0, 0), NumberSequenceKeypoint.new(0.44444439999999996, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(0.5555555999999999, 2.6879985, 0), NumberSequenceKeypoint.new(0.6111111, 3.9323734999999997, 0), NumberSequenceKeypoint.new(0.6666667, 4.5084409999999995, 0), NumberSequenceKeypoint.new(0.7222221999999999, 4.7751244999999995, 0), NumberSequenceKeypoint.new(0.7777778, 4.898582, 0), NumberSequenceKeypoint.new(0.8333332999999999, 4.9557351999999995, 0), NumberSequenceKeypoint.new(0.8888889, 4.9821935, 0), NumberSequenceKeypoint.new(0.9444444, 4.994441999999999, 0), NumberSequenceKeypoint.new(1, 5, 0)}
+	Objects.Wave3.Speed = NumberRange.new(0, 0)
+	Objects.Wave3.Texture = "rbxassetid://1084965356"
+	Objects.Wave3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave3.ZOffset = 3
+	Objects.Wave3.Parent = Objects.Attachment27
+
+	Objects.Glow3 = Instance.new("ParticleEmitter")
+	Objects.Glow3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 225.00001698732376), ColorSequenceKeypoint.new(1, 225.00001698732376)}
+	Objects.Glow3.Lifetime = NumberRange.new(2, 2)
+	Objects.Glow3.LightEmission = 1
+	Objects.Glow3.LockedToPart = true
+	Objects.Glow3.Name = "Glow"
+	Objects.Glow3.Rate = 0.5
+	Objects.Glow3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 3, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Glow3.Speed = NumberRange.new(0, 0)
+	Objects.Glow3.Texture = "rbxassetid://867619398"
+	Objects.Glow3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 1, 0), NumberSequenceKeypoint.new(0.5, 0.3, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Glow3.ZOffset = 3
+	Objects.Glow3.Parent = Objects.Attachment27
+
+	Objects.Puff = Instance.new("ParticleEmitter")
+	Objects.Puff.Acceleration = Vector3.new(0, 2, 0)
+	Objects.Puff.Drag = 15
+	Objects.Puff.Lifetime = NumberRange.new(0.19999999999999998, 0.6)
+	Objects.Puff.Name = "Puff"
+	Objects.Puff.Rate = 8
+	Objects.Puff.Rotation = NumberRange.new(-180, 180)
+	Objects.Puff.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0.19999999999999998), NumberSequenceKeypoint.new(1, 0.5, 0.19999999999999998)}
+	Objects.Puff.Speed = NumberRange.new(20, 20)
+	Objects.Puff.SpreadAngle = Vector2.new(90, 90)
+	Objects.Puff.Texture = "rbxassetid://1084987899"
+	Objects.Puff.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.7, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Puff.Parent = Objects.Attachment28
+
+	Objects.Shockwave2 = Instance.new("ParticleEmitter")
+	Objects.Shockwave2.Lifetime = NumberRange.new(0.3, 0.3)
+	Objects.Shockwave2.LightEmission = 1
+	Objects.Shockwave2.Name = "Shockwave"
+	Objects.Shockwave2.Rate = 1
+	Objects.Shockwave2.Rotation = NumberRange.new(-180, 180)
+	Objects.Shockwave2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.3777191, 0), NumberSequenceKeypoint.new(0.111, 0.7338764999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.0684721, 0), NumberSequenceKeypoint.new(0.222, 1.381506, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.6729782, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.9428885, 0), NumberSequenceKeypoint.new(0.38849999999999996, 2.1912371999999998, 0), NumberSequenceKeypoint.new(0.444, 2.4180241, 0), NumberSequenceKeypoint.new(0.4995, 2.6232491, 0), NumberSequenceKeypoint.new(0.5549999999999999, 2.8069124, 0), NumberSequenceKeypoint.new(0.6104999999999999, 2.9690141999999997, 0), NumberSequenceKeypoint.new(0.6659999999999999, 3.1095541, 0), NumberSequenceKeypoint.new(0.7214999999999999, 3.2285321, 0), NumberSequenceKeypoint.new(0.7769999999999999, 3.3259485, 0), NumberSequenceKeypoint.new(0.8325, 3.4018029999999997, 0), NumberSequenceKeypoint.new(0.888, 3.4560958999999998, 0), NumberSequenceKeypoint.new(0.9435, 3.4888272, 0), NumberSequenceKeypoint.new(0.999, 3.4999963999999997, 0), NumberSequenceKeypoint.new(1, 3.5, 0)}
+	Objects.Shockwave2.Speed = NumberRange.new(0, 0)
+	Objects.Shockwave2.Texture = "rbxassetid://1084991215"
+	Objects.Shockwave2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.39999999999999997, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Shockwave2.Parent = Objects.Attachment28
+
+	Objects.Puff2 = Instance.new("ParticleEmitter")
+	Objects.Puff2.Acceleration = Vector3.new(0, 2, 0)
+	Objects.Puff2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 200.00001847743988), ColorSequenceKeypoint.new(1, 200.00001847743988)}
+	Objects.Puff2.Drag = 8
+	Objects.Puff2.Lifetime = NumberRange.new(0.3, 0.7)
+	Objects.Puff2.Name = "Puff"
+	Objects.Puff2.Rate = 4
+	Objects.Puff2.Rotation = NumberRange.new(-180, 180)
+	Objects.Puff2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(1, 0.3, 0)}
+	Objects.Puff2.Speed = NumberRange.new(20, 20)
+	Objects.Puff2.SpreadAngle = Vector2.new(90, 90)
+	Objects.Puff2.Texture = "rbxassetid://1084987899"
+	Objects.Puff2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Puff2.ZOffset = -0.001
+	Objects.Puff2.Parent = Objects.Attachment28
+
+	Objects.Wave4 = Instance.new("ParticleEmitter")
+	Objects.Wave4.Lifetime = NumberRange.new(1, 1)
+	Objects.Wave4.LockedToPart = true
+	Objects.Wave4.Name = "Wave"
+	Objects.Wave4.Rate = 2
+	Objects.Wave4.Rotation = NumberRange.new(90, 90)
+	Objects.Wave4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.2612064, 0), NumberSequenceKeypoint.new(0.111, 0.5204289, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.7756985, 0), NumberSequenceKeypoint.new(0.222, 1.0250763, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.2666682999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.4986395, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.7192277999999999, 0), NumberSequenceKeypoint.new(0.444, 1.9267579, 0), NumberSequenceKeypoint.new(0.4995, 2.1196536999999998, 0), NumberSequenceKeypoint.new(0.5549999999999999, 2.2964496999999997, 0), NumberSequenceKeypoint.new(0.6104999999999999, 2.4558032, 0), NumberSequenceKeypoint.new(0.6659999999999999, 2.596504, 0), NumberSequenceKeypoint.new(0.7214999999999999, 2.7174833, 0), NumberSequenceKeypoint.new(0.7769999999999999, 2.8178221999999997, 0), NumberSequenceKeypoint.new(0.8325, 2.8967586, 0), NumberSequenceKeypoint.new(0.888, 2.9536929, 0), NumberSequenceKeypoint.new(0.9435, 2.9881927999999998, 0), NumberSequenceKeypoint.new(0.999, 2.9999962, 0), NumberSequenceKeypoint.new(1, 3, 0)}
+	Objects.Wave4.Speed = NumberRange.new(0, 0)
+	Objects.Wave4.Texture = "rbxassetid://1084963972"
+	Objects.Wave4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave4.Parent = Objects.Attachment29
+
+	Objects.Core = Instance.new("ParticleEmitter")
+	Objects.Core.Lifetime = NumberRange.new(1, 1)
+	Objects.Core.LightEmission = 1
+	Objects.Core.LockedToPart = true
+	Objects.Core.Name = "Core"
+	Objects.Core.Rate = 3
+	Objects.Core.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.75, 0), NumberSequenceKeypoint.new(1, 0.75, 0)}
+	Objects.Core.Speed = NumberRange.new(0, 0)
+	Objects.Core.Texture = "rbxassetid://1084962479"
+	Objects.Core.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Core.ZOffset = 0.001
+	Objects.Core.Parent = Objects.Attachment29
+
+	Objects.Rays_Thin = Instance.new("ParticleEmitter")
+	Objects.Rays_Thin.Lifetime = NumberRange.new(1, 2)
+	Objects.Rays_Thin.LightEmission = 1
+	Objects.Rays_Thin.LockedToPart = true
+	Objects.Rays_Thin.Name = "Rays_Thin"
+	Objects.Rays_Thin.Rate = 2.5
+	Objects.Rays_Thin.RotSpeed = NumberRange.new(-75, 75)
+	Objects.Rays_Thin.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays_Thin.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.43534399999999995, 0), NumberSequenceKeypoint.new(0.111, 0.8673814999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.2928308, 0), NumberSequenceKeypoint.new(0.222, 1.7084606, 0), NumberSequenceKeypoint.new(0.27749999999999997, 2.1111138, 0), NumberSequenceKeypoint.new(0.33299999999999996, 2.4977324, 0), NumberSequenceKeypoint.new(0.38849999999999996, 2.8653796, 0), NumberSequenceKeypoint.new(0.444, 3.2112632, 0), NumberSequenceKeypoint.new(0.4995, 3.5327561, 0), NumberSequenceKeypoint.new(0.5549999999999999, 3.8274162, 0), NumberSequenceKeypoint.new(0.6104999999999999, 4.0930051999999995, 0), NumberSequenceKeypoint.new(0.6659999999999999, 4.3275065, 0), NumberSequenceKeypoint.new(0.7214999999999999, 4.5291386, 0), NumberSequenceKeypoint.new(0.7769999999999999, 4.6963701, 0), NumberSequenceKeypoint.new(0.8325, 4.8279309, 0), NumberSequenceKeypoint.new(0.888, 4.9228214999999995, 0), NumberSequenceKeypoint.new(0.9435, 4.980321399999999, 0), NumberSequenceKeypoint.new(0.999, 4.9999937999999995, 0), NumberSequenceKeypoint.new(1, 5, 0)}
+	Objects.Rays_Thin.Speed = NumberRange.new(0, 0)
+	Objects.Rays_Thin.Texture = "rbxassetid://1084961641"
+	Objects.Rays_Thin.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays_Thin.Parent = Objects.Attachment29
+
+	Objects.Rays_Thick = Instance.new("ParticleEmitter")
+	Objects.Rays_Thick.Lifetime = NumberRange.new(1, 2)
+	Objects.Rays_Thick.LightEmission = 1
+	Objects.Rays_Thick.LockedToPart = true
+	Objects.Rays_Thick.Name = "Rays_Thick"
+	Objects.Rays_Thick.Rate = 2.5
+	Objects.Rays_Thick.RotSpeed = NumberRange.new(-75, 75)
+	Objects.Rays_Thick.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays_Thick.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.43534399999999995, 0), NumberSequenceKeypoint.new(0.111, 0.8673814999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.2928308, 0), NumberSequenceKeypoint.new(0.222, 1.7084606, 0), NumberSequenceKeypoint.new(0.27749999999999997, 2.1111138, 0), NumberSequenceKeypoint.new(0.33299999999999996, 2.4977324, 0), NumberSequenceKeypoint.new(0.38849999999999996, 2.8653796, 0), NumberSequenceKeypoint.new(0.444, 3.2112632, 0), NumberSequenceKeypoint.new(0.4995, 3.5327561, 0), NumberSequenceKeypoint.new(0.5549999999999999, 3.8274162, 0), NumberSequenceKeypoint.new(0.6104999999999999, 4.0930051999999995, 0), NumberSequenceKeypoint.new(0.6659999999999999, 4.3275065, 0), NumberSequenceKeypoint.new(0.7214999999999999, 4.5291386, 0), NumberSequenceKeypoint.new(0.7769999999999999, 4.6963701, 0), NumberSequenceKeypoint.new(0.8325, 4.8279309, 0), NumberSequenceKeypoint.new(0.888, 4.9228214999999995, 0), NumberSequenceKeypoint.new(0.9435, 4.980321399999999, 0), NumberSequenceKeypoint.new(0.999, 4.9999937999999995, 0), NumberSequenceKeypoint.new(1, 5, 0)}
+	Objects.Rays_Thick.Speed = NumberRange.new(0, 0)
+	Objects.Rays_Thick.Texture = "rbxassetid://1053548563"
+	Objects.Rays_Thick.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays_Thick.Parent = Objects.Attachment29
+
+	Objects.Rays5 = Instance.new("ParticleEmitter")
+	Objects.Rays5.Lifetime = NumberRange.new(1, 1)
+	Objects.Rays5.LightEmission = 1
+	Objects.Rays5.LockedToPart = true
+	Objects.Rays5.Name = "Rays"
+	Objects.Rays5.Rate = 8
+	Objects.Rays5.Rotation = NumberRange.new(90, 270)
+	Objects.Rays5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 2.4836012999999997, 0), NumberSequenceKeypoint.new(0.111, 4.4472413, 0), NumberSequenceKeypoint.new(0.16649999999999998, 5.9772038, 0), NumberSequenceKeypoint.new(0.222, 7.1496515, 0), NumberSequenceKeypoint.new(0.27749999999999997, 8.031255699999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 8.6798325, 0), NumberSequenceKeypoint.new(0.38849999999999996, 9.144968, 0), NumberSequenceKeypoint.new(0.444, 9.468658399999999, 0), NumberSequenceKeypoint.new(0.4995, 9.685934099999999, 0), NumberSequenceKeypoint.new(0.5549999999999999, 9.8254986, 0), NumberSequenceKeypoint.new(0.6104999999999999, 9.910352699999999, 0), NumberSequenceKeypoint.new(0.6659999999999999, 9.9584341, 0), NumberSequenceKeypoint.new(0.7214999999999999, 9.983245799999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 9.9944849, 0), NumberSequenceKeypoint.new(0.8325, 9.998681099999999, 0), NumberSequenceKeypoint.new(0.888, 9.9998236, 0), NumberSequenceKeypoint.new(0.9435, 9.9999943, 0), NumberSequenceKeypoint.new(0.999, 10, 0), NumberSequenceKeypoint.new(1, 10, 0)}
+	Objects.Rays5.Speed = NumberRange.new(0, 0)
+	Objects.Rays5.Texture = "rbxassetid://1053548563"
+	Objects.Rays5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.39999999999999997, 0.3), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays5.Parent = Objects.Attachment30
+
+	Objects.Rays6 = Instance.new("ParticleEmitter")
+	Objects.Rays6.Lifetime = NumberRange.new(1.5, 1.5)
+	Objects.Rays6.LightEmission = 1
+	Objects.Rays6.LockedToPart = true
+	Objects.Rays6.Name = "Rays"
+	Objects.Rays6.Rate = 1
+	Objects.Rays6.RotSpeed = NumberRange.new(22.5, 22.5)
+	Objects.Rays6.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays6.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.09999999999999999, 9, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Rays6.Speed = NumberRange.new(0, 0)
+	Objects.Rays6.Texture = "rbxassetid://1084975295"
+	Objects.Rays6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0), NumberSequenceKeypoint.new(0.75, 0.3, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays6.Parent = Objects.Attachment30
+
+	Objects.Flare2 = Instance.new("ParticleEmitter")
+	Objects.Flare2.Lifetime = NumberRange.new(1, 1)
+	Objects.Flare2.LightEmission = 1
+	Objects.Flare2.LockedToPart = true
+	Objects.Flare2.Name = "Flare"
+	Objects.Flare2.Rate = 1
+	Objects.Flare2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 7, 0), NumberSequenceKeypoint.new(1, 7, 0)}
+	Objects.Flare2.Speed = NumberRange.new(0, 0)
+	Objects.Flare2.Texture = "rbxassetid://867619398"
+	Objects.Flare2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare2.ZOffset = 4
+	Objects.Flare2.Parent = Objects.Attachment30
+
+	Objects.Circles = Instance.new("ParticleEmitter")
+	Objects.Circles.Drag = 8
+	Objects.Circles.Lifetime = NumberRange.new(1.0999999999999999, 1.0999999999999999)
+	Objects.Circles.LightEmission = 1
+	Objects.Circles.Name = "Circles"
+	Objects.Circles.Rate = 8
+	Objects.Circles.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.3, 0.19999999999999998), NumberSequenceKeypoint.new(1, 0.3, 0.19999999999999998)}
+	Objects.Circles.Speed = NumberRange.new(20, 20)
+	Objects.Circles.SpreadAngle = Vector2.new(90, 90)
+	Objects.Circles.Texture = "rbxassetid://1084982817"
+	Objects.Circles.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 1, 0), NumberSequenceKeypoint.new(0.09999999999999999, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Circles.Parent = Objects.Attachment30
+
+	Objects.Wave5 = Instance.new("ParticleEmitter")
+	Objects.Wave5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Wave5.Lifetime = NumberRange.new(0.5, 1)
+	Objects.Wave5.LightEmission = 1
+	Objects.Wave5.LockedToPart = true
+	Objects.Wave5.Name = "Wave"
+	Objects.Wave5.Rate = 3
+	Objects.Wave5.RotSpeed = NumberRange.new(-200, 200)
+	Objects.Wave5.Rotation = NumberRange.new(-180, 180)
+	Objects.Wave5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.6, 0), NumberSequenceKeypoint.new(0.0555, 0.7079198, 0), NumberSequenceKeypoint.new(0.111, 0.8096789999999999, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.9052777, 0), NumberSequenceKeypoint.new(0.222, 0.9947159999999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.0779938, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.155111, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.2260678, 0), NumberSequenceKeypoint.new(0.444, 1.290864, 0), NumberSequenceKeypoint.new(0.4995, 1.3494997, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.401975, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.4482898, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.4884439999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.5224377, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.550271, 0), NumberSequenceKeypoint.new(0.8325, 1.5719438, 0), NumberSequenceKeypoint.new(0.888, 1.587456, 0), NumberSequenceKeypoint.new(0.9435, 1.5968076999999998, 0), NumberSequenceKeypoint.new(0.999, 1.599999, 0), NumberSequenceKeypoint.new(1, 1.5999999999999999, 0)}
+	Objects.Wave5.Speed = NumberRange.new(0, 0)
+	Objects.Wave5.Texture = "rbxassetid://1084963972"
+	Objects.Wave5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.1079198, 0), NumberSequenceKeypoint.new(0.111, 0.209679, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3052778, 0), NumberSequenceKeypoint.new(0.222, 0.39471599999999996, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.47799379999999997, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.555111, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.6260678, 0), NumberSequenceKeypoint.new(0.444, 0.6908639999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.7494997, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.801975, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8482896999999999, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.888444, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.9224376999999999, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.950271, 0), NumberSequenceKeypoint.new(0.8325, 0.9719437, 0), NumberSequenceKeypoint.new(0.888, 0.987456, 0), NumberSequenceKeypoint.new(0.9435, 0.9968077999999999, 0), NumberSequenceKeypoint.new(0.999, 0.999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave5.Parent = Objects.Attachment31
+
+	Objects.Flare3 = Instance.new("ParticleEmitter")
+	Objects.Flare3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Flare3.Lifetime = NumberRange.new(0.5, 1)
+	Objects.Flare3.LightEmission = 1
+	Objects.Flare3.LockedToPart = true
+	Objects.Flare3.Name = "Flare"
+	Objects.Flare3.Rate = 1
+	Objects.Flare3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2, 0), NumberSequenceKeypoint.new(0.0555, 1.8920803, 0), NumberSequenceKeypoint.new(0.111, 1.7903209999999998, 0), NumberSequenceKeypoint.new(0.16649999999999998, 1.6947223, 0), NumberSequenceKeypoint.new(0.222, 1.605284, 0), NumberSequenceKeypoint.new(0.27749999999999997, 1.5220063, 0), NumberSequenceKeypoint.new(0.33299999999999996, 1.4448889, 0), NumberSequenceKeypoint.new(0.38849999999999996, 1.3739322, 0), NumberSequenceKeypoint.new(0.444, 1.3091359999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.2505001999999998, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.198025, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.1517103, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.1115561, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.0775622, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.049729, 0), NumberSequenceKeypoint.new(0.8325, 1.0280563, 0), NumberSequenceKeypoint.new(0.888, 1.0125439999999999, 0), NumberSequenceKeypoint.new(0.9435, 1.0031923, 0), NumberSequenceKeypoint.new(0.999, 1.000001, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare3.Speed = NumberRange.new(0, 0)
+	Objects.Flare3.Texture = "rbxassetid://867619398"
+	Objects.Flare3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.25, 0), NumberSequenceKeypoint.new(0.0555, 0.3309398, 0), NumberSequenceKeypoint.new(0.111, 0.4072593, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.4789583, 0), NumberSequenceKeypoint.new(0.222, 0.546037, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.6084953, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.6663333, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.7195507999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7681479999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.8121248, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.8514813, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8862173, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.916333, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.9418283, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.9627032, 0), NumberSequenceKeypoint.new(0.8325, 0.9789578, 0), NumberSequenceKeypoint.new(0.888, 0.9905919999999999, 0), NumberSequenceKeypoint.new(0.9435, 0.9976058, 0), NumberSequenceKeypoint.new(0.999, 0.9999992, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare3.Parent = Objects.Attachment31
+
+	Objects.Circles2 = Instance.new("ParticleEmitter")
+	Objects.Circles2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 0), ColorSequenceKeypoint.new(1, 0)}
+	Objects.Circles2.Drag = 8
+	Objects.Circles2.Lifetime = NumberRange.new(0.5, 1)
+	Objects.Circles2.LightEmission = 1
+	Objects.Circles2.LockedToPart = true
+	Objects.Circles2.Name = "Circles"
+	Objects.Circles2.Rate = 8
+	Objects.Circles2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.19999999999999998, 0), NumberSequenceKeypoint.new(1, 0.19999999999999998, 0)}
+	Objects.Circles2.Speed = NumberRange.new(10, 15)
+	Objects.Circles2.SpreadAngle = Vector2.new(180, 180)
+	Objects.Circles2.Texture = "rbxassetid://1084982817"
+	Objects.Circles2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(0.0555, 0.5539598, 0), NumberSequenceKeypoint.new(0.111, 0.6048395, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.6526389, 0), NumberSequenceKeypoint.new(0.222, 0.6973579999999999, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.7389969, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.7775555, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.8130339, 0), NumberSequenceKeypoint.new(0.444, 0.845432, 0), NumberSequenceKeypoint.new(0.4995, 0.8747499, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.9009874999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.9241448999999999, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.944222, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.9612189, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.9751354999999999, 0), NumberSequenceKeypoint.new(0.8325, 0.9859718999999999, 0), NumberSequenceKeypoint.new(0.888, 0.993728, 0), NumberSequenceKeypoint.new(0.9435, 0.9984038, 0), NumberSequenceKeypoint.new(0.999, 0.9999994999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Circles2.Parent = Objects.Attachment31
+
+	Objects.Core2 = Instance.new("ParticleEmitter")
+	Objects.Core2.Lifetime = NumberRange.new(1, 1)
+	Objects.Core2.LightEmission = 1
+	Objects.Core2.LockedToPart = true
+	Objects.Core2.Name = "Core"
+	Objects.Core2.Rate = 2
+	Objects.Core2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
+	Objects.Core2.Speed = NumberRange.new(0, 0)
+	Objects.Core2.Texture = "rbxassetid://1084962479"
+	Objects.Core2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Core2.Parent = Objects.Attachment32
+
+	Objects.Flare4 = Instance.new("ParticleEmitter")
+	Objects.Flare4.Lifetime = NumberRange.new(2, 2)
+	Objects.Flare4.LightEmission = 1
+	Objects.Flare4.LockedToPart = true
+	Objects.Flare4.Name = "Flare"
+	Objects.Flare4.Rate = 2
+	Objects.Flare4.RotSpeed = NumberRange.new(-10, 10)
+	Objects.Flare4.Rotation = NumberRange.new(-180, 180)
+	Objects.Flare4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 5, 0), NumberSequenceKeypoint.new(1, 5, 0)}
+	Objects.Flare4.Speed = NumberRange.new(0, 0)
+	Objects.Flare4.Texture = "rbxassetid://1085001473"
+	Objects.Flare4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.85, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare4.Parent = Objects.Attachment32
+
+	Objects.Rays7 = Instance.new("ParticleEmitter")
+	Objects.Rays7.Lifetime = NumberRange.new(5, 5)
+	Objects.Rays7.LightEmission = 1
+	Objects.Rays7.LockedToPart = true
+	Objects.Rays7.Name = "Rays"
+	Objects.Rays7.Rate = 0.5
+	Objects.Rays7.RotSpeed = NumberRange.new(-10, 10)
+	Objects.Rays7.Rotation = NumberRange.new(-180, 180)
+	Objects.Rays7.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.5, 0), NumberSequenceKeypoint.new(1, 1.5, 0)}
+	Objects.Rays7.Speed = NumberRange.new(0, 0)
+	Objects.Rays7.Texture = "rbxassetid://1084975295"
+	Objects.Rays7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Rays7.Parent = Objects.Attachment32
+
+	Objects.Glow4 = Instance.new("ParticleEmitter")
+	Objects.Glow4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, 249.00000035762787), ColorSequenceKeypoint.new(1, 249.00000035762787)}
+	Objects.Glow4.Lifetime = NumberRange.new(1, 1)
+	Objects.Glow4.LightEmission = 1
+	Objects.Glow4.LockedToPart = true
+	Objects.Glow4.Name = "Glow"
+	Objects.Glow4.Rate = 3
+	Objects.Glow4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.2, 0), NumberSequenceKeypoint.new(1, 1.2, 0)}
+	Objects.Glow4.Speed = NumberRange.new(0, 0)
+	Objects.Glow4.Texture = "rbxassetid://867619398"
+	Objects.Glow4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.49742709999999996, 0.71875, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Glow4.Parent = Objects.Attachment33
+
+	Objects.Bolts2 = Instance.new("ParticleEmitter")
+	Objects.Bolts2.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
+	Objects.Bolts2.LightEmission = 1
+	Objects.Bolts2.LockedToPart = true
+	Objects.Bolts2.Name = "Bolts"
+	Objects.Bolts2.Rate = 6
+	Objects.Bolts2.Rotation = NumberRange.new(-180, 180)
+	Objects.Bolts2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.7, 0.3), NumberSequenceKeypoint.new(1, 0.7, 0.3)}
+	Objects.Bolts2.Speed = NumberRange.new(0, 0)
+	Objects.Bolts2.Texture = "rbxassetid://1084959583"
+	Objects.Bolts2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Bolts2.Parent = Objects.Attachment33
+
+	Objects.Core3 = Instance.new("ParticleEmitter")
+	Objects.Core3.Lifetime = NumberRange.new(1, 1)
+	Objects.Core3.LightEmission = 1
+	Objects.Core3.LockedToPart = true
+	Objects.Core3.Name = "Core"
+	Objects.Core3.Rate = 3
+	Objects.Core3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}
+	Objects.Core3.Speed = NumberRange.new(0, 0)
+	Objects.Core3.Texture = "rbxassetid://867619398"
+	Objects.Core3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Core3.Parent = Objects.Attachment33
+
+	Objects.Bolts3 = Instance.new("ParticleEmitter")
+	Objects.Bolts3.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
+	Objects.Bolts3.LightEmission = 1
+	Objects.Bolts3.LockedToPart = true
+	Objects.Bolts3.Name = "Bolts"
+	Objects.Bolts3.Rate = 6
+	Objects.Bolts3.Rotation = NumberRange.new(-180, 180)
+	Objects.Bolts3.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1, 0.19999999999999998), NumberSequenceKeypoint.new(1, 1, 0.19999999999999998)}
+	Objects.Bolts3.Speed = NumberRange.new(0, 0)
+	Objects.Bolts3.Texture = "rbxassetid://1084959312"
+	Objects.Bolts3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Bolts3.Parent = Objects.Attachment33
+
+	Objects.Bolts4 = Instance.new("ParticleEmitter")
+	Objects.Bolts4.Lifetime = NumberRange.new(0.33299999999999996, 0.33299999999999996)
+	Objects.Bolts4.LightEmission = 1
+	Objects.Bolts4.LockedToPart = true
+	Objects.Bolts4.Name = "Bolts"
+	Objects.Bolts4.Rate = 6
+	Objects.Bolts4.Rotation = NumberRange.new(-180, 180)
+	Objects.Bolts4.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 1.25, 0.19999999999999998), NumberSequenceKeypoint.new(1, 1.25, 0.19999999999999998)}
+	Objects.Bolts4.Speed = NumberRange.new(0, 0)
+	Objects.Bolts4.Texture = "rbxassetid://1084959112"
+	Objects.Bolts4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.8831141, 0), NumberSequenceKeypoint.new(0.0555, 0.9825739, 0), NumberSequenceKeypoint.new(0.111, 0.1705374, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.3930784, 0), NumberSequenceKeypoint.new(0.222, 0.1290628, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.9207434, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.41569259999999997, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.21503339999999999, 0), NumberSequenceKeypoint.new(0.444, 0.7820672999999999, 0), NumberSequenceKeypoint.new(0.4995, 0.2320322, 0), NumberSequenceKeypoint.new(0.5549999999999999, 0.7898189999999999, 0), NumberSequenceKeypoint.new(0.6104999999999999, 0.8109989, 0), NumberSequenceKeypoint.new(0.6659999999999999, 0.9116183999999999, 0), NumberSequenceKeypoint.new(0.7214999999999999, 0.8745689, 0), NumberSequenceKeypoint.new(0.7769999999999999, 0.4192938, 0), NumberSequenceKeypoint.new(0.8325, 0.30027159999999997, 0), NumberSequenceKeypoint.new(0.888, 0.1640065, 0), NumberSequenceKeypoint.new(0.9435, 0.39603869999999997, 0), NumberSequenceKeypoint.new(0.999, 0.7003387999999999, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Bolts4.Parent = Objects.Attachment33
+
+	Objects.Flare5 = Instance.new("ParticleEmitter")
+	Objects.Flare5.Drag = 5
+	Objects.Flare5.Lifetime = NumberRange.new(0.5, 0.5)
+	Objects.Flare5.LightEmission = 1
+	Objects.Flare5.LockedToPart = true
+	Objects.Flare5.Name = "Flare"
+	Objects.Flare5.Rate = 1
+	Objects.Flare5.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2, 0), NumberSequenceKeypoint.new(1, 2, 0)}
+	Objects.Flare5.Speed = NumberRange.new(0, 0)
+	Objects.Flare5.Texture = "rbxassetid://867619398"
+	Objects.Flare5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare5.Parent = Objects.Attachment34
+
+	Objects.Sparkle = Instance.new("ParticleEmitter")
+	Objects.Sparkle.Lifetime = NumberRange.new(0.5, 0.5)
+	Objects.Sparkle.LightEmission = 1
+	Objects.Sparkle.LockedToPart = true
+	Objects.Sparkle.Name = "Sparkle"
+	Objects.Sparkle.Rate = 1
+	Objects.Sparkle.RotSpeed = NumberRange.new(300, 300)
+	Objects.Sparkle.Rotation = NumberRange.new(-180, 180)
+	Objects.Sparkle.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Sparkle.Speed = NumberRange.new(0, 0)
+	Objects.Sparkle.Texture = "rbxassetid://1053546634"
+	Objects.Sparkle.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Sparkle.Parent = Objects.Attachment34
+
+	Objects.Wave6 = Instance.new("ParticleEmitter")
+	Objects.Wave6.EmissionDirection = Enum.NormalId.Right
+	Objects.Wave6.Lifetime = NumberRange.new(0.39999999999999997, 0.39999999999999997)
+	Objects.Wave6.LockedToPart = true
+	Objects.Wave6.Name = "Wave"
+	Objects.Wave6.Rate = 1
+	Objects.Wave6.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.16187959999999998, 0), NumberSequenceKeypoint.new(0.111, 0.3145185, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.4579166, 0), NumberSequenceKeypoint.new(0.222, 0.592074, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.7169905999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.8326665, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.9391016, 0), NumberSequenceKeypoint.new(0.444, 1.0362959999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.1242496, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.2029625, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.2724346, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.332666, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.3836566, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.4254065, 0), NumberSequenceKeypoint.new(0.8325, 1.4579157, 0), NumberSequenceKeypoint.new(0.888, 1.4811839999999998, 0), NumberSequenceKeypoint.new(0.9435, 1.4952116, 0), NumberSequenceKeypoint.new(0.999, 1.4999985, 0), NumberSequenceKeypoint.new(1, 1.5, 0)}
+	Objects.Wave6.Speed = NumberRange.new(0, 0)
+	Objects.Wave6.Texture = "rbxassetid://1084952073"
+	Objects.Wave6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave6.Parent = Objects.Attachment34
+
+	Objects.Flare6 = Instance.new("ParticleEmitter")
+	Objects.Flare6.Drag = 5
+	Objects.Flare6.Lifetime = NumberRange.new(0.5, 0.5)
+	Objects.Flare6.LightEmission = 1
+	Objects.Flare6.LockedToPart = true
+	Objects.Flare6.Name = "Flare"
+	Objects.Flare6.Rate = 1
+	Objects.Flare6.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 2, 0), NumberSequenceKeypoint.new(1, 2, 0)}
+	Objects.Flare6.Speed = NumberRange.new(0, 0)
+	Objects.Flare6.Texture = "rbxassetid://867619398"
+	Objects.Flare6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Flare6.Parent = Objects.Attachment35
+
+	Objects.Sparkle2 = Instance.new("ParticleEmitter")
+	Objects.Sparkle2.Lifetime = NumberRange.new(0.5, 0.5)
+	Objects.Sparkle2.LightEmission = 1
+	Objects.Sparkle2.LockedToPart = true
+	Objects.Sparkle2.Name = "Sparkle"
+	Objects.Sparkle2.Rate = 1
+	Objects.Sparkle2.RotSpeed = NumberRange.new(300, 300)
+	Objects.Sparkle2.Rotation = NumberRange.new(-180, 180)
+	Objects.Sparkle2.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 4, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}
+	Objects.Sparkle2.Speed = NumberRange.new(0, 0)
+	Objects.Sparkle2.Texture = "rbxassetid://1053546634"
+	Objects.Sparkle2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.5, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Sparkle2.Parent = Objects.Attachment35
+
+	Objects.Wave7 = Instance.new("ParticleEmitter")
+	Objects.Wave7.EmissionDirection = Enum.NormalId.Right
+	Objects.Wave7.Lifetime = NumberRange.new(0.39999999999999997, 0.39999999999999997)
+	Objects.Wave7.LockedToPart = true
+	Objects.Wave7.Name = "Wave"
+	Objects.Wave7.Rate = 1
+	Objects.Wave7.Size = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(0.0555, 0.16187959999999998, 0), NumberSequenceKeypoint.new(0.111, 0.3145185, 0), NumberSequenceKeypoint.new(0.16649999999999998, 0.4579166, 0), NumberSequenceKeypoint.new(0.222, 0.592074, 0), NumberSequenceKeypoint.new(0.27749999999999997, 0.7169905999999999, 0), NumberSequenceKeypoint.new(0.33299999999999996, 0.8326665, 0), NumberSequenceKeypoint.new(0.38849999999999996, 0.9391016, 0), NumberSequenceKeypoint.new(0.444, 1.0362959999999999, 0), NumberSequenceKeypoint.new(0.4995, 1.1242496, 0), NumberSequenceKeypoint.new(0.5549999999999999, 1.2029625, 0), NumberSequenceKeypoint.new(0.6104999999999999, 1.2724346, 0), NumberSequenceKeypoint.new(0.6659999999999999, 1.332666, 0), NumberSequenceKeypoint.new(0.7214999999999999, 1.3836566, 0), NumberSequenceKeypoint.new(0.7769999999999999, 1.4254065, 0), NumberSequenceKeypoint.new(0.8325, 1.4579157, 0), NumberSequenceKeypoint.new(0.888, 1.4811839999999998, 0), NumberSequenceKeypoint.new(0.9435, 1.4952116, 0), NumberSequenceKeypoint.new(0.999, 1.4999985, 0), NumberSequenceKeypoint.new(1, 1.5, 0)}
+	Objects.Wave7.Speed = NumberRange.new(0, 0)
+	Objects.Wave7.Texture = "rbxassetid://1084952073"
+	Objects.Wave7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 1, 0)}
+	Objects.Wave7.Parent = Objects.Attachment35
+end
 
 ---------Replace All "LocalPlayer" With Your Name.
 --Remove "Mouse =" or "local mouse =" at the start.
@@ -4437,7 +4422,7 @@ local createsong2 = Instance.new("Sound")
 local createsong3 = Instance.new("Sound")
 local createsong4 = Instance.new("Sound")
 function playmusic()
-	
+
 	createsong.Name = "OST"
 	createsong2.Name = "BURST"
 	createsong3.Name = "OST2"
@@ -4454,7 +4439,7 @@ function playmusic()
 	createsong2.Volume = 2
 	createsong2:Play()
 	script.Effect.Parent = char.HumanoidRootPart
-	
+
 	--wait(createsong.TimeLength)
 	--createsong:Stop()
 	createsong.SoundId = "rbxassetid://7727672197" --  other good songs 1843005250 1837560230 1837807891 1842621554 9048538224
@@ -4465,7 +4450,7 @@ function playmusic()
 	createsong:Play()
 	createsong3:Play()
 	createsong4:Play()
-	
+
 end
 playmusic()
 local OUTCASTED = script:WaitForChild("WELDS"):WaitForChild("Outcasted"):Clone()
@@ -5759,18 +5744,18 @@ Skills = {
 			end
 		end)
 		char["Right Leg"].Touched:Connect(function(hit)
-		if isActive ~=0 and hit and hit.Parent and hit.Parent:FindFirstChild("Humanoid") then
-			hit.Parent = char.Parent
+			if isActive ~=0 and hit and hit.Parent and hit.Parent:FindFirstChild("Humanoid") then
+				hit.Parent = char.Parent
 				hit.Parent:Destroy()
-			
-		end
-	end)
+
+			end
+		end)
 
 		isActive = 0
 		animProg = false
 		TCooldown = false
-		
-		
+
+
 	end,
 	X = function()
 		isActive = 1
@@ -5850,11 +5835,11 @@ Skills = {
 				hit.Parent:Destroy()
 				--soundMake(4547663256 hit)
 			end
-			end)
+		end)
 		isActive = 0
 		animProg = false
-				TCooldown = false
-				
+		TCooldown = false
+
 	end,
 	C = function()
 		isActive = 1
@@ -5960,7 +5945,7 @@ Skills = {
 		spiralShock(CFrame.new(char.HumanoidRootPart.CFrame.p), 25)
 		BluntHitEffect(char.HumanoidRootPart.CFrame, 15, 15, 15, 1)
 		ScreenBlank()
-		
+
 		SpecialText("Devour!", 0.7, -5)
 		for i = 1, 10 do
 			swait()
@@ -6027,7 +6012,7 @@ Skills = {
 				game.Debris:AddItem(DM, 5)
 			end)
 		end)
-	
+
 		camShake(70, 3, char)
 		for i = 1, 20 do
 			swait()
@@ -6040,7 +6025,7 @@ Skills = {
 				CFrame.new(-0.500095785, 0.475658178, -0.00352828111, -0.230912313, -0.7026968, -0.672975957, 0.0116382837, 0.68962425, -0.724073827, 0.972904921, -0.175029904, -0.151064545)
 			}, EasingStyles.outElastic(i / 20, 0, 1, 10, 0.5, 1))
 		end
-		
+
 		wait(0.2)
 		char.DM.Touched:Connect(function(hit)
 			if   hit and hit.Parent and hit.Parent:FindFirstChild("Humanoid") then
@@ -8205,15 +8190,15 @@ mouse.KeyDown:Connect(function(key)
 			randomness == 16 then Skills.ASDASDW()  elseif 
 			randomness == 17 then Skills.DASE()  elseif 
 			randomness == 18 then Skills.SC()
-		
-		
+
+
 		end
 	end
 	--end)
 	local randomness2 = math.random(1,18)
 	if key == "e"  then
 		isActive = 0
-	
+
 		animProg = false
 		if randomness2 == 1 then Skills.Z() elseif
 			randomness2 == 2 then Skills.X() elseif 
@@ -8268,16 +8253,16 @@ end]]
 		animProg = false
 		Skills.Z()
 		-- start
-		
-		
-				
-			end
- 
-		--end)
-		-- end of func
-		--print()
 
-	
+
+
+	end
+
+	--end)
+	-- end of func
+	--print()
+
+
 	if key == "x"  then
 		isActive = 0
 		animProg = false

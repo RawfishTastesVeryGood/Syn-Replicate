@@ -1,9 +1,5 @@
--- fake sb env
-getfenv().owner = game.Players:WaitForChild("SyntaxCreator")
-owner = getfenv().owner
-
 local replicate = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/RawfishTastesVeryGood/Syn-Replicate/main/SB-ver.lua"))()
-replicate(true)
+replicate()
 
 Character = owner.Character
 
@@ -4939,36 +4935,6 @@ function resetmode()
 			RW.C0=clerp(RW.C0,cf(1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(-50)),.2)
 			LW.C0=clerp(LW.C0,cf(-1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(50)),.2)
 		end
-		if(funmode)then
-			CFuncs["Sound"].Create("rbxassetid://847061203", root, 5,1)
-			sphere(2.5,"Add",root.CFrame*angles(0,0,0),vt(100,100,2),1.25,BrickColor.new'Bright blue',true,true)
-			for i = 0, 49 do
-				PixelBlock(1,15,"Add",root.CFrame*CFrame.Angles(math.rad(math.random(-360,360)),math.rad(math.random(-360,360)),math.rad(math.random(-360,360)))*cf(0,0,-80),6,6,6,0.12,BrickColor.new("Pink"),0,true,true)
-			end
-
-			for i = 0,4,0.05 do
-				swait()
-				Pitch = 1-i/4
-				sphereMK(2.5,-1.5,"Add",root.CFrame*CFrame.Angles(math.rad(math.random(-360,360)),math.rad(math.random(-360,360)),math.rad(math.random(-360,360))),3.5,3.5,45,-0.035,MAINRUINCOLOR,100)
-				RH.C0=clerp(RH.C0,cf(1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(30)),.2)
-				LH.C0=clerp(LH.C0,cf(-1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(-90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(-30)),.2)
-				RootJoint.C0=clerp(RootJoint.C0,RootCF*cf(0,0,0 + 0.05 * math.cos(sine / 28))*angles(math.rad(30),math.rad(0),math.rad(0)),.2)
-				Torso.Neck.C0=clerp(Torso.Neck.C0,necko*angles(math.rad(30),math.rad(0),math.rad(0 - 5 * math.cos(sine / 0.2))),.2)
-				RW.C0=clerp(RW.C0,cf(1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(-50)),.2)
-				LW.C0=clerp(LW.C0,cf(-1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(50)),.2)
-			end
-			for i = 0,3,0.1 do
-				swait()
-				sphereMK(2.5,-1.5,"Add",root.CFrame*CFrame.Angles(math.rad(math.random(-360,360)),math.rad(math.random(-360,360)),math.rad(math.random(-360,360))),3.5,3.5,45,-0.035,MAINRUINCOLOR,100)
-				RH.C0=clerp(RH.C0,cf(1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(30)),.2)
-				LH.C0=clerp(LH.C0,cf(-1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(-90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(-30)),.2)
-				RootJoint.C0=clerp(RootJoint.C0,RootCF*cf(0,0,0 + 0.05 * math.cos(sine / 28))*angles(math.rad(30),math.rad(0),math.rad(0)),.2)
-				Torso.Neck.C0=clerp(Torso.Neck.C0,necko*angles(math.rad(30),math.rad(0),math.rad(0 - 5 * math.cos(sine / 0.2))),.2)
-				RW.C0=clerp(RW.C0,cf(1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(-50)),.2)
-				LW.C0=clerp(LW.C0,cf(-1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(50)),.2)
-			end
-			newTheme("rbxassetid://1564523997",48.6,1,1)
-		end
 		CFuncs["Sound"].Create("rbxassetid://206082327", root, 2.5,1)
 		CFuncs["Sound"].Create("rbxassetid://847061203", root, 5,1)
 		CFuncs["Sound"].Create("rbxassetid://239000203", root, 2.5,1)
@@ -5042,114 +5008,6 @@ function resetmode()
 		hum.WalkSpeed = storehumanoidWS
 		attack = false
 	end))
-end
-
-function funmode()
-
-	ModeOfGlitch = 455
-	storehumanoidWS = 16
-	rainbowmode = false
-	chaosmode = false
-	glitchymode = false
-	tl1.Enabled = false
-	tl2.Enabled = false
-	tl3.Enabled = false
-	newTheme("rbxassetid://1203355187",0,1,1)
-	coroutine.wrap(function()
-		attack = true
-		hum.WalkSpeed = 0
-		CFuncs["Sound"].Create("rbxassetid://136007472", root, 2.5, 1.25)
-		for i = 0,4,0.1 do
-			swait()
-			sphereMK(2.5,-1.5,"Add",root.CFrame*CFrame.Angles(math.rad(math.random(-360,360)),math.rad(math.random(-360,360)),math.rad(math.random(-360,360))),3.5,3.5,45,-0.035,MAINRUINCOLOR,100)
-			RH.C0=clerp(RH.C0,cf(1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(30)),.2)
-			LH.C0=clerp(LH.C0,cf(-1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(-90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(-30)),.2)
-			RootJoint.C0=clerp(RootJoint.C0,RootCF*cf(0,0,0 + 0.05 * math.cos(sine / 28))*angles(math.rad(30),math.rad(0),math.rad(0)),.2)
-			Torso.Neck.C0=clerp(Torso.Neck.C0,necko*angles(math.rad(30),math.rad(0),math.rad(0 - 5 * math.cos(sine / 0.2))),.2)
-			RW.C0=clerp(RW.C0,cf(1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(-50)),.2)
-			LW.C0=clerp(LW.C0,cf(-1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(50)),.2)
-		end
-		CFuncs["Sound"].Create("rbxassetid://847061203", root, 5,1)
-		for i = 0,4,0.1 do
-			swait()
-			sphereMK(2.5,-1.5,"Add",root.CFrame*CFrame.Angles(math.rad(math.random(-360,360)),math.rad(math.random(-360,360)),math.rad(math.random(-360,360))),3.5,3.5,45,-0.035,MAINRUINCOLOR,100)
-			RH.C0=clerp(RH.C0,cf(1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(30)),.2)
-			LH.C0=clerp(LH.C0,cf(-1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(-90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(-30)),.2)
-			RootJoint.C0=clerp(RootJoint.C0,RootCF*cf(0,0,0 + 0.05 * math.cos(sine / 28))*angles(math.rad(30),math.rad(0),math.rad(0)),.2)
-			Torso.Neck.C0=clerp(Torso.Neck.C0,necko*angles(math.rad(30),math.rad(0),math.rad(0 - 5 * math.cos(sine / 0.2))),.2)
-			RW.C0=clerp(RW.C0,cf(1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(-50)),.2)
-			LW.C0=clerp(LW.C0,cf(-1.05,0.4,-0.5)*angles(math.rad(140),math.rad(0),math.rad(50)),.2)
-		end
-		CFuncs["Sound"].Create("rbxassetid://206082327", root, 2.5,1)
-		CFuncs["Sound"].Create("rbxassetid://847061203", root, 5,1)
-		CFuncs["Sound"].Create("rbxassetid://239000203", root, 2.5,1)
-		CFuncs["Sound"].Create("rbxassetid://579687077", root, 2.5,0.75)
-		pcall(function() Character.ReaperShadowHead.Eye1.BrickColor = BrickColor.new'Really blue' end)
-		pcall(function() Character.ReaperShadowHead.Eye2.BrickColor = BrickColor.new'Really blue' end)
-		CameraEnshaking(5,2.5)
-		MAINRUINCOLOR = BrickColor.new("Really blue")
-		for i = 0, 49 do
-		end
-		for i = 0,3,0.1 do
-		end
-		RecolorTextAndRename("Moderated",Color3.new(1,1,1),BrickColor.new'Bright blue'.Color)
-		for i, v in pairs(mw2:GetChildren()) do
-			if v:IsA("Part") then
-				v.BrickColor = MAINRUINCOLOR
-				v.Material = "Neon"
-			end
-		end
-		for i, v in pairs(mw1:GetChildren()) do
-			if v:IsA("Part") then
-				v.Transparency = 1
-				v.BrickColor = MAINRUINCOLOR
-				v.Material = "Neon"
-			end
-		end
-		for i, v in pairs(m:GetChildren()) do
-			if v:IsA("Part") then
-				v.BrickColor = BrickColor.new("Bright blue")
-				v.Material = "Ice"
-			end
-		end
-		for i, v in pairs(m2:GetChildren()) do
-			if v:IsA("Part") then
-				v.BrickColor = BrickColor.new("Bright blue")
-				v.Material = "Glass"
-			end
-		end
-		for i, v in pairs(m3:GetChildren()) do
-			if v:IsA("Part") then
-				v.BrickColor = BrickColor.new("Bright blue")
-				v.Material = "Neon"
-			end
-		end
-		for i, v in pairs(extrawingmod1:GetChildren()) do
-			if v:IsA("Part") then
-				v.Transparency = 1
-				v.BrickColor = BrickColor.new("Really blue")
-				v.Material = "Neon"
-			end
-		end
-		for i, v in pairs(extrawingmod2:GetChildren()) do
-			if v:IsA("Part") then
-				v.Transparency = 1
-				v.BrickColor = BrickColor.new("Really blue")
-				v.Material = "Neon"
-			end
-		end
-		for i = 0,2,0.1 do
-			swait()
-			RH.C0=clerp(RH.C0,cf(1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(-30)),.2)
-			LH.C0=clerp(LH.C0,cf(-1,-1 - 0.05 * math.cos(sine / 28),0)*angles(math.rad(0),math.rad(-90),math.rad(0))*angles(math.rad(-2.5),math.rad(0),math.rad(30)),.2)
-			RootJoint.C0=clerp(RootJoint.C0,RootCF*cf(0,0,0 + 0.05 * math.cos(sine / 28))*angles(math.rad(-30),math.rad(0),math.rad(0)),.2)
-			Torso.Neck.C0=clerp(Torso.Neck.C0,necko*angles(math.rad(-30),math.rad(0),math.rad(0 - 2.5 * math.cos(sine / 0.2))),.2)
-			RW.C0=clerp(RW.C0,cf(1.45,0.4,0)*angles(math.rad(-20),math.rad(0 - 2 * math.cos(sine / 0.2)),math.rad(80 + 2 * math.cos(sine / 0.2))),.2)
-			LW.C0=clerp(LW.C0,cf(-1.45,0.4,0)*angles(math.rad(-20),math.rad(0 + 2 * math.cos(sine / 0.2)),math.rad(-80 - 2 * math.cos(sine / 0.2))),.2)
-		end
-		hum.WalkSpeed = storehumanoidWS
-		attack = false
-	end)()
 end
 
 function insanitymode()
@@ -5558,8 +5416,6 @@ mouse.KeyDown:connect(function(k)
 	elseif 		k == "q" and attack == false and ModeOfGlitch == 2 then
 		resetmode()
 	end
-	if k == "f" and attack == false and ModeOfGlitch ~= 455 then
-		funmode()
 	elseif k == "f" and attack == false and ModeOfGlitch == 455 then
 		resetmode()
 	end

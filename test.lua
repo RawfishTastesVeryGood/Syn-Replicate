@@ -5416,7 +5416,7 @@ mouse.KeyDown:connect(function(k)
 	elseif 		k == "q" and attack == false and ModeOfGlitch == 2 then
 		resetmode()
 	end
-	elseif k == "f" and attack == false and ModeOfGlitch == 455 then
+	if k == "f" and attack == false and ModeOfGlitch == 455 then
 		resetmode()
 	end
 	if k == "m" and attack == false and ModeOfGlitch == 1 then

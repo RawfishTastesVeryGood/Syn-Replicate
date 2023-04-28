@@ -130,7 +130,7 @@ misc = {
 	AncientHymm = '245313442'
 }
 wait()
-local Player = game.Players.localPlayer
+local Player = game.Players.LocalPlayer
 local Character = Player.Character
 local Humanoid = Character.Humanoid
 local mouse = Player:GetMouse()

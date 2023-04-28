@@ -436,6 +436,7 @@ return function(debugMode)
 	fakeServices = {}
 	fakeProperties = {
 		[game.Players]= {
+			localPlayer = owner,
 			LocalPlayer = owner,
 			[realOwner.Name] = owner
 		},
